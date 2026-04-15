@@ -1,6 +1,6 @@
 /**
  * 00 Overview
- * Covers: the question being answered, Marquardt GmbH profile,
+ * Covers: the question being answered, ZOLLERN GmbH & Co. KG profile,
  * product hierarchy, and portfolio priorities.
  * Data lives in src/data/overview.json — never hardcoded here.
  */
@@ -104,7 +104,7 @@ function SourceList({ sources }: { sources: Source[] }) {
 /* ── Page ─────────────────────────────────────────────────────────────────── */
 export default function Overview() {
   const { company, globalFootprint, divisions, productGroup, product,
-          studyQuestion, portfolioPriorities, financials, sources } = data;
+          studyQuestion, portfolioPriorities, sources } = data;
   const subjectDivision = divisions.find((d) => d.isSubjectDivision);
 
   return (
@@ -501,95 +501,48 @@ export default function Overview() {
         <hr />
 
         {/* ── Portfolio Priorities ── */}
-        <h2 id="ovw-portfolio">Market Priorities at a Glance</h2>
-
-        <p>
-          Twelve application markets were evaluated. The table below shows the priority ranking
-          with fit score, time-to-first-revenue, required product adaptations, and projected 5-year
-          base revenue where available.
-        </p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Priority</th>
-              <th>Market</th>
-              <th>Fit Score</th>
-              <th>Time to Revenue</th>
-              <th>Hardware Delta</th>
-              <th>Y5 Base Revenue</th>
-              <th>Role</th>
-            </tr>
-          </thead>
-          <tbody>
-            {portfolioPriorities.map((p) => (
-              <tr key={p.priority}>
-                <td style={{ textAlign: "center", fontWeight: 700 }}>{p.priority}</td>
-                <td><strong>{p.market}</strong></td>
-                <td>
-                  {p.fitScore.toFixed(2)}{" "}{fitBadge(p.fitLabel)}
-                </td>
-                <td style={{ fontFamily: "var(--font-mono)", fontSize: 12 }}>{p.timeToFirstRevenue}</td>
-                <td style={{ fontSize: 12 }}>{p.hardwareDelta}</td>
-                <td style={{ fontFamily: "var(--font-mono)", fontWeight: 700 }}>€{p.y5RevenueBaseM}M</td>
-                <td style={{ fontSize: 12, color: "var(--text-gray)" }}>{p.role}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        <hr />
-
-        {/* ── Financials ── */}
-        <h2 id="ovw-financials">5-Year Financial Scenarios</h2>
-
-        {financials ? (
+        {portfolioPriorities.length > 0 && (
           <>
+            <h2 id="ovw-portfolio">Market Priorities at a Glance</h2>
+
+            <p>
+              Twelve application markets were evaluated. The table below shows the priority ranking
+              with fit score, time-to-first-revenue, required product adaptations, and projected 5-year
+              base revenue where available.
+            </p>
+
             <table>
               <thead>
                 <tr>
-                  <th>Scenario</th>
-                  <th>Y5 Revenue</th>
-                  <th>5-yr NPV (@{financials.discountRate})</th>
-                  <th>5-yr IRR</th>
-                  <th>Break-even</th>
+                  <th>Priority</th>
+                  <th>Market</th>
+                  <th>Fit Score</th>
+                  <th>Time to Revenue</th>
+                  <th>Hardware Delta</th>
+                  <th>Y5 Base Revenue</th>
+                  <th>Role</th>
                 </tr>
               </thead>
               <tbody>
-                <tr style={{ background: "rgba(253,255,152,0.04)" }}>
-                  <td><strong>Base</strong></td>
-                  <td><strong>{financials.y5RevenueBase}</strong></td>
-                  <td><strong>{financials.npvBase}</strong></td>
-                  <td><strong>{financials.irrBase}</strong></td>
-                  <td><strong>{financials.breakevenBase}</strong></td>
-                </tr>
-                <tr>
-                  <td>Upside</td>
-                  <td>{financials.y5RevenueUpside}</td>
-                  <td>{financials.npvUpside}</td>
-                  <td>{financials.irrUpside}</td>
-                  <td>{financials.breakevenUpside}</td>
-                </tr>
-                <tr>
-                  <td>Downside</td>
-                  <td>{financials.y5RevenueDownside}</td>
-                  <td>{financials.npvDownside}</td>
-                  <td>{financials.irrDownside}</td>
-                  <td>{financials.breakevenDownside}</td>
-                </tr>
+                {portfolioPriorities.map((p) => (
+                  <tr key={p.priority}>
+                    <td style={{ textAlign: "center", fontWeight: 700 }}>{p.priority}</td>
+                    <td><strong>{p.market}</strong></td>
+                    <td>
+                      {p.fitScore.toFixed(2)}{" "}{fitBadge(p.fitLabel)}
+                    </td>
+                    <td style={{ fontFamily: "var(--font-mono)", fontSize: 12 }}>{p.timeToFirstRevenue}</td>
+                    <td style={{ fontSize: 12 }}>{p.hardwareDelta}</td>
+                    <td style={{ fontFamily: "var(--font-mono)", fontWeight: 700 }}>€{p.y5RevenueBaseM}M</td>
+                    <td style={{ fontSize: 12, color: "var(--text-gray)" }}>{p.role}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
 
-            <p style={{ fontSize: 12, color: "var(--text-gray)", lineHeight: 1.6 }}>
-              <strong>Total upfront investment:</strong> {financials.cumulativeInvestment}.{" "}
-              <em>{financials.note}</em>
-            </p>
+            <hr />
           </>
-        ) : (
-          <p style={{ color: "var(--text-gray)", fontStyle: "italic" }}>Financial scenarios not yet available for this analysis.</p>
         )}
-
-        <hr />
 
         {/* ── How to Read This Report ── */}
         <h2 id="ovw-howto">How to Read This Report</h2>

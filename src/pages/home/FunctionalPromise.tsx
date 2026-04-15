@@ -18,7 +18,7 @@ import ClickableCode from "@/components/ClickableCode";
 // Source IDs for this sub-chapter (no functional-promise-specific external sources in
 // functionalPromise.json, so we reference product sources + UNSPSC registry)
 // Note: UNSPSC registry is linked inline via ClickableCode (item 17); no separate source
-// entry needed since UNSPSC code 41112501 is clickable throughout this chapter.
+// entry needed since UNSPSC code 30102304 is clickable throughout this chapter.
 const SECTION_SOURCES = [
   "PROD-S01",
   "PROD-S02",
@@ -44,7 +44,7 @@ export default function FunctionalPromise() {
     return s.replace(/\s*\[(?:SRC|ASM)[^\]]*\]/g, "").trim();
   }
 
-  const unspscCode = "41112501";
+  const unspscCode = "30102304";
 
   return (
     <section id="section-02" className="container">
@@ -64,13 +64,13 @@ export default function FunctionalPromise() {
         <ExecutiveSummary kicker="02 / Executive Summary" title="What you are reading">
           <p className="answer">
             This chapter defines the two-level Functional Promise that drives market discovery:
-            a product-level promise (what <em>this sensor</em> does) and a commodity-level
-            promise (what <em>all flowmeters</em> do). The product-level Functional Promise is
+            a product-level promise (what <em>this capability platform</em> does) and a commodity-level
+            promise (what <em>all steel profiles</em> do). The product-level Functional Promise is
             used to assess architectural distance in new markets; the commodity-level Functional
             Promise is the search query that surfaces candidate NAICS markets in Chapter 05.
             Understanding both levels — and the Functional Promise Extension that captures
-            capabilities beyond pure flow measurement — explains why the sensor is relevant in
-            markets beyond HVAC heat pumps.
+            capabilities beyond pure shape provision — explains why the capability platform is
+            relevant in markets beyond existing application markets.
           </p>
         </ExecutiveSummary>
 
@@ -78,8 +78,8 @@ export default function FunctionalPromise() {
         <blockquote>
           <p><strong>Component:</strong> Functional Promise (Step 02)</p>
           <p><strong>Approach:</strong> Two-Level Functional Promise (product-level and commodity-level)</p>
-          <p><strong>Product:</strong> Marquardt Ultrasonic Flow Sensor</p>
-          <p><strong>Vendor:</strong> Marquardt GmbH</p>
+          <p><strong>Product:</strong> ZOLLERN Special Steel Profiles</p>
+          <p><strong>Vendor:</strong> ZOLLERN GmbH &amp; Co. KG</p>
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
         </blockquote>
 
@@ -90,10 +90,11 @@ export default function FunctionalPromise() {
         <h2 id="fp-mechanism">Underlying Mechanism</h2>
 
         <p>
-          Piezoelectric transducers (Piezo A / Piezo B) in transit-time configuration
-          alternately transmit and receive ultrasonic pulses through a fluid channel. The
-          difference in transit time between upstream and downstream signal paths is proportional
-          to fluid velocity. An embedded NTC thermistor provides simultaneous medium temperature.
+          Sequential plastic deformation of steel billets through custom-geometry roll sets
+          (hot rolling) and carbide die sets (cold drawing/rolling) produces near-net-shape
+          2D cross-sections. Optional selective induction surface hardening via high-frequency
+          electromagnetic heating and rapid quench applies a hard wear-resistant surface while
+          retaining a ductile core.
           <SourceFootnote sourceIds={["PROD-S02", "PROD-S03"]} />
         </p>
 
@@ -127,7 +128,7 @@ export default function FunctionalPromise() {
             </tr>
             <tr>
               <td><strong>Context</strong></td>
-              <td>in closed-pipe liquid circuits</td>
+              <td>{productFP.context}</td>
             </tr>
             <tr>
               <td><strong>Scope</strong></td>
@@ -152,12 +153,12 @@ export default function FunctionalPromise() {
                 <td>{i + 1}</td>
                 <td>{d}</td>
                 <td>
-                  {i === 0 && "Turbine/impeller meters require rotating parts in the flow"}
-                  {i === 1 && "Orifice-plate, venturi, and vortex meters obstruct flow"}
-                  {i === 2 && "Turbine meters require bearing replacement schedules"}
-                  {i === 3 && "Conventional setups require separate flow meter + temperature probe"}
-                  {i === 4 && "Check valves or reverse-flow sensors needed with mechanical meters"}
-                  {i === 5 && "Turbine sensors degraded by particles; Coriolis meters unaffected but cost 5–10× more"}
+                  {i === 0 && "Machining from bar stock removes 40-80% of material as chips"}
+                  {i === 1 && "Standard bar stock requires full downstream machining to reach final geometry"}
+                  {i === 2 && "Outsourced heat treatment adds lead time and logistics cost"}
+                  {i === 3 && "Standard sections (HEA/HEB, IPE) lack custom cross-sectional geometries"}
+                  {i === 4 && "External heat treaters cannot guarantee case depth or geometry match"}
+                  {i === 5 && "Most European profile competitors lack IATF 16949 automotive certification"}
                 </td>
               </tr>
             ))}
@@ -167,9 +168,9 @@ export default function FunctionalPromise() {
         <blockquote>
           <h3>Mechanism-Free Test</h3>
           <p>
-            The statement contains no technology-specific terms (no "ultrasonic,"
-            "piezoelectric," "transit-time"). The same statement would hold if flow rate were
-            measured by electromagnetic, Coriolis, or optical means — only the differentiators
+            The statement contains no technology-specific terms (no "hot rolling,"
+            "cold drawing," "induction hardening"). The same statement would hold if profiles
+            were produced by extrusion, forging, or other forming means — only the differentiators
             would change. <strong>Test passed.</strong>
           </p>
         </blockquote>
@@ -197,13 +198,13 @@ export default function FunctionalPromise() {
             </tr>
             <tr>
               <td><strong>UNSPSC Title</strong></td>
-              <td>Flowmeters</td>
+              <td>Steel profiles</td>
             </tr>
             <tr>
               <td><strong>UNSPSC Path</strong></td>
               <td>
-                41 Laboratory and Measuring &gt; 11 Measuring Instruments &gt; 25 Liquid
-                and Gas Flow &gt; 01 Flowmeters
+                30 Structures and Building and Construction and Manufacturing Components &gt;
+                10 Structural components and basic shapes &gt; 23 Profiles &gt; 04 Steel profiles
               </td>
             </tr>
             <tr>
@@ -225,7 +226,7 @@ export default function FunctionalPromise() {
 
         <p style={{ color: "var(--text-gray)", marginBottom: "0.75rem" }}>
           Tied to UNSPSC Classification above —{" "}
-          <ClickableCode kind="unspsc" code={unspscCode} /> (Flowmeters)
+          <ClickableCode kind="unspsc" code={unspscCode} /> (Steel profiles)
         </p>
 
         <table>
@@ -239,7 +240,7 @@ export default function FunctionalPromise() {
             <tr>
               <td><strong>Commodity or Group</strong></td>
               <td>
-                Flowmeters (<ClickableCode kind="unspsc" code={unspscCode} />)
+                Steel profiles (<ClickableCode kind="unspsc" code={unspscCode} />)
                 <SourceFootnote sourceIds={["PROD-S02"]} />
               </td>
             </tr>
@@ -281,13 +282,15 @@ export default function FunctionalPromise() {
             <tr>
               <td><strong>Functional Promise Extension</strong></td>
               <td>
-                The underlying transit-time ultrasonic principle also enables: (1) liquid
-                concentration measurement — glycol percentage detection via speed-of-sound
-                shifts; (2) medium anomaly detection — air bubble presence, empty-pipe
-                conditions; (3) fluid temperature monitoring — via integrated thermistor.
+                The underlying precision forming capability also enables: (1) functional
+                surface engineering — selective hardening delivers wear-resistant surfaces
+                for tribological applications; (2) structural integration — profiles can
+                serve as load-bearing linear guides or rails; (3) material engineering —
+                multi-alloy processing enables application-specific mechanical properties
+                (spring, bearing, tool steel grades).
                 These cross into UNSPSC classes{" "}
-                <ClickableCode kind="unspsc" code="41115600" /> (Liquid analyzers) and{" "}
-                <ClickableCode kind="unspsc" code="41112201" /> (Temperature sensors).
+                <ClickableCode kind="unspsc" code="31161500" /> (Processed metal shapes) and{" "}
+                <ClickableCode kind="unspsc" code="31161600" /> (Metal bars and rods).
                 <SourceFootnote sourceIds={["PROD-S07", "PROD-S08"]} />
               </td>
             </tr>
@@ -298,8 +301,9 @@ export default function FunctionalPromise() {
             <tr>
               <td><strong>Market Discovery Use</strong></td>
               <td>
-                Phase A secondary search: "What industries need real-time detection of liquid
-                composition anomalies in closed-pipe systems?"
+                Phase A secondary search: "What industries need precision metal components
+                with engineered surface hardness and near-net-shape geometry to eliminate
+                downstream machining?"
               </td>
             </tr>
           </tbody>
@@ -308,12 +312,12 @@ export default function FunctionalPromise() {
         <blockquote>
           <h3>Justification for Extension</h3>
           <p>
-            The Marquardt sensor's feature set (Digital Anomaly Detection, Integrated
-            Temperature Sensing) delivers capabilities beyond pure flow measurement. The
-            glycol-concentration detection and bubble/empty-pipe diagnostics are not flowmeter
-            functions — they are process analytics functions that happen to be co-located in
-            the same sensor body. This broadens the addressable market beyond traditional
-            flowmeter buyers.
+            ZOLLERN's capability platform (Selective Induction Surface Hardening, Multi-Alloy
+            Grade Processing, Proprietary Die Library) delivers capabilities beyond pure shape
+            provision. The surface hardening and functional geometry capabilities are not
+            generic steel profile functions — they are precision engineering functions that
+            happen to be co-located in the same production platform. This broadens the
+            addressable market beyond traditional steel profile buyers.
             <SourceFootnote sourceIds={["PROD-S07", "PROD-S08"]} />
           </p>
         </blockquote>
@@ -353,10 +357,11 @@ export default function FunctionalPromise() {
             <tr>
               <td><strong>Functional Promise Scope Impact</strong></td>
               <td>
-                Component-level Functional Promise is narrow: "measure flow + temperature at
-                one point." The subsystem-level promise would be broader: "regulate thermal
-                energy transfer." The Functional Promise as stated is correctly scoped to the
-                component level.
+                Material/component-level Functional Promise is narrow: "provide custom
+                cross-sectional shapes with defined tolerances and surface properties."
+                The subsystem-level promise would be broader: "enable precise mechanical
+                guidance or structural load transfer." The Functional Promise as stated is
+                correctly scoped to the material/component level.
               </td>
             </tr>
           </tbody>
@@ -410,24 +415,25 @@ export default function FunctionalPromise() {
               <td><strong>A: NAICS code Discovery (primary)</strong></td>
               <td>Commodity Functional Promise</td>
               <td>
-                "What industries need to quantify the volumetric or mass flow rate of fluids
-                traversing a closed conduit?"
+                "What industries need elongated metal shapes with defined cross-sectional
+                geometry for structural, mechanical, or guiding functions?"
               </td>
             </tr>
             <tr>
               <td><strong>A: NAICS code Discovery (secondary)</strong></td>
               <td>Functional Promise Extension</td>
               <td>
-                "What industries need real-time detection of liquid composition anomalies in
-                closed-pipe systems?"
+                "What industries need precision metal components with engineered surface
+                hardness and near-net-shape geometry to reduce downstream machining?"
               </td>
             </tr>
             <tr>
               <td><strong>B: Architecture Distance</strong></td>
               <td>Product Functional Promise + specs</td>
               <td>
-                "How close is this market's use case to measuring flow rate and temperature
-                in closed-pipe liquid circuits without contact, pressure drop, or moving parts?"
+                "How close is this market's use case to supplying custom cross-sectional metal
+                shapes with tight dimensional tolerances and selectable surface hardness in
+                near-net-shape geometry?"
               </td>
             </tr>
           </tbody>

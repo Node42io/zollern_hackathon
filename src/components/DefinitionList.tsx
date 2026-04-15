@@ -7,8 +7,8 @@
  * Usage:
  *   <DefinitionList
  *     items={[
- *       { key: "technology_class", value: "Ultrasonic Transit-Time Flow Measurement" },
- *       { key: "UNSPSC Code", value: <ClickableCode kind="unspsc" code="41112501" /> },
+ *       { key: "technology_class", value: "Precision Steel Profile Manufacturing" },
+ *       { key: "UNSPSC Code", value: <ClickableCode kind="unspsc" code="30102304" /> },
  *     ]}
  *   />
  */

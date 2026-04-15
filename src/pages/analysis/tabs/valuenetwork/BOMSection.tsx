@@ -24,56 +24,49 @@ interface BOMItem {
  * Maps technology-scope features to physical components.
  */
 function buildBOMFromProduct(product: ProductDecomposition): BOMItem[] {
-  // Core sensor components derived from the product data
+  // Core production inputs derived from the product data
   const derived: BOMItem[] = [
     {
       id: "BOM-01",
-      component: "Piezoelectric Transducers (× 2)",
-      function: "Emit and receive ultrasonic pulses for transit-time flow measurement",
-      category: "Measurement",
-      keyAttribute: "Matched pair; alternating transmit/receive mode",
+      component: "Steel Billet / Coil (raw material)",
+      function: "Input material for hot rolling or cold drawing — carbon, alloy, bearing, spring, or tool steel grades",
+      category: "Materials",
+      keyAttribute: "Grade range: C45, C60, 42CrMo4, 16MnCr5, 34CrNiMo6, 100Cr6, stainless",
     },
     {
       id: "BOM-02",
-      component: "NTC Thermistor",
-      function: "Simultaneous medium temperature measurement alongside flow",
-      category: "Sensing",
-      keyAttribute: "Wetted element; enables real-time temperature compensation",
+      component: "Custom Roll Set / Die Set",
+      function: "Define the 2D cross-section geometry during hot rolling or cold drawing",
+      category: "Tooling",
+      keyAttribute: `Die cost €5–15K per geometry; lead time 6–12 weeks; 300+ year die library`,
     },
     {
       id: "BOM-03",
-      component: "Flow Body (DN12/14/20/25 variants)",
-      function: "Straight-through fluid channel with zero pressure drop",
-      category: "Mechanical",
-      keyAttribute: "Polymer housing; KTW/WRAS drinking-water approved",
+      component: "Induction Hardening Coil",
+      function: "Selectively harden profile surfaces via electromagnetic induction heating + quench",
+      category: "Process",
+      keyAttribute: `Up to ${product.specifications.find((s) => s.name === "Surface Hardness (induction-hardened)")?.value ?? "64"} HRC; depth 0.5–5 mm`,
     },
     {
       id: "BOM-04",
-      component: "Signal Processing PCB",
-      function: "Calculate transit-time difference, apply compensation algorithms, generate output signal",
-      category: "Electronics",
-      keyAttribute: "Onboard anomaly detection (bubbles, empty-pipe, glycol);\nbidirectional detection",
+      component: "Heat Treatment (normalizing, Q&T, case hardening)",
+      function: "Achieve target mechanical properties across the full cross-section",
+      category: "Process",
+      keyAttribute: "Grade-specific cycles; tensile strength up to 1,200 MPa (34CrNiMo6 Q&T)",
     },
     {
       id: "BOM-05",
-      component: "RAST 2.5 Connector (3/4-pole)",
-      function: "Electrical interface to host controller (UART, LIN, or frequency output)",
-      category: "Interface",
-      keyAttribute: "Configurable at order level: UART / LIN / frequency pulse",
+      component: "CNC Machining (cutting, drilling, milling, grinding)",
+      function: "Transform profiles into finished parts (Fertigteile) with holes, chamfers, mating features",
+      category: "Mechanical",
+      keyAttribute: "Extends offering from semi-finished material to ready-to-install component",
     },
     {
       id: "BOM-06",
-      component: "Seals & O-rings",
-      function: "Hydraulic sealing of the flow body at pressure rating",
-      category: "Mechanical",
-      keyAttribute: `Max 10 bar continuous; burst >${product.specifications.find((s) => s.name === "Burst Pressure")?.value ?? "9"} bar`,
-    },
-    {
-      id: "BOM-07",
-      component: "Acoustic Coupling Material",
-      function: "Couple piezoelectric transducers to the fluid channel wall",
-      category: "Materials",
-      keyAttribute: "Matched acoustic impedance to water/glycol media",
+      component: "EN 10204 3.1 Material Certificate",
+      function: "Provide traceable material certification from melt to delivery",
+      category: "Quality",
+      keyAttribute: "IATF 16949 certified supply chain; required for automotive and regulated markets",
     },
   ];
 

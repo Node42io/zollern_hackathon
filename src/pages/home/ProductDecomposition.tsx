@@ -65,7 +65,7 @@ export default function ProductDecomposition() {
         {/* Item 40: Executive Summary */}
         <ExecutiveSummary kicker="01 / Executive Summary" title="What you are reading">
           <p className="answer">
-            This chapter decomposes the Marquardt Ultrasonic Flow Sensor into its underlying
+            This chapter decomposes ZOLLERN Special Steel Profiles into its underlying
             mechanism, functional promise, feature set, and physical specifications. Understanding what the product
             actually <em>does</em> at each level (mechanism → function → outcome)
             is the foundation for every market-entry decision that follows: it tells us which
@@ -88,7 +88,7 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* ── Product Breakdown ── */}
-        <h2 id="prod-three-levels">What the Sensor Does — Three Levels</h2>
+        <h2 id="prod-three-levels">What the Product Does — Three Levels</h2>
 
         <table>
           <thead>
@@ -194,7 +194,7 @@ export default function ProductDecomposition() {
           </tbody>
         </table>
 
-        <h3>Differentiators vs Alternative Flow Measurement Mechanisms</h3>
+        <h3>Differentiators vs Alternative Steel Profile Manufacturing Mechanisms</h3>
 
         <table>
           <thead>
@@ -230,10 +230,11 @@ export default function ProductDecomposition() {
 
         <p>
           <em>
-            All flowmeter technologies (ultrasonic, Coriolis, electromagnetic, turbine, vortex,
-            orifice-plate, thermal) share the same fundamental function — measuring how much
-            fluid passes through. The differences are in mechanism, accuracy, media
-            compatibility, and installation constraints, not in function.
+            All steel profile manufacturing technologies (hot rolling, cold drawing, cold rolling,
+            extrusion, forging) share the same fundamental function — delivering elongated metal
+            shapes with defined cross-sectional geometry. The differences are in dimensional
+            precision, surface quality, alloy compatibility, and production volume economics,
+            not in function.
           </em>
           <SourceFootnote sourceIds={["PROD-S03", "PROD-S05"]} />
         </p>
@@ -243,7 +244,7 @@ export default function ProductDecomposition() {
         {/* ── Features ── */}
         <h2 id="prod-features">Features</h2>
 
-        <h3>Technology-Level Features (apply to all ultrasonic transit-time flowmeters)</h3>
+        <h3>Technology-Level Features (apply to precision steel profile manufacturing)</h3>
 
         <table>
           <thead>
@@ -267,7 +268,7 @@ export default function ProductDecomposition() {
           </tbody>
         </table>
 
-        <h3>Vendor-Level Features (Marquardt-specific)</h3>
+        <h3>Vendor-Level Features (ZOLLERN-specific)</h3>
 
         <table>
           <thead>
@@ -380,38 +381,38 @@ export default function ProductDecomposition() {
             <tr>
               <td>
                 <strong>
-                  <ClickableCode kind="unspsc" code="41112501" />
+                  <ClickableCode kind="unspsc" code="30102304" />
                 </strong>
               </td>
-              <td>Flowmeters</td>
+              <td>Steel profiles</td>
               <td><span className="badge badge--strong">92%</span></td>
               <td>
-                Ultrasonic flow sensors are a type of flowmeter. UNSPSC code 41112501 covers
-                all flowmeter technologies including ultrasonic, electromagnetic, Coriolis,
-                and turbine variants.
+                ZOLLERN's primary output is custom-geometry steel profiles produced via hot
+                rolling and cold drawing. UNSPSC code 30102304 covers all rolled and drawn
+                steel profile shapes including custom, structural, and precision profiles.
                 <SourceFootnote sourceIds={["PROD-S02", "PROD-S03"]} />
               </td>
             </tr>
             <tr>
               <td>
-                <ClickableCode kind="unspsc" code="41111927" />
+                <ClickableCode kind="unspsc" code="30102303" />
               </td>
-              <td>Ultrasonic sensors</td>
-              <td><span className="badge badge--moderate">52%</span></td>
+              <td>Rolled shapes</td>
+              <td><span className="badge badge--moderate">55%</span></td>
               <td>
-                Matches the sensing technology (ultrasonic transduction) but describes the
-                transducer type, not the product's primary function (flow measurement).
+                Matches the hot-rolling production process but describes the forming method
+                rather than the product's primary identity (precision profiles for OEM use).
               </td>
             </tr>
             <tr>
               <td>
-                <ClickableCode kind="unspsc" code="41112201" />
+                <ClickableCode kind="unspsc" code="30102701" />
               </td>
-              <td>Temperature sensors</td>
-              <td><span className="badge badge--weak">35%</span></td>
+              <td>Steel bars</td>
+              <td><span className="badge badge--weak">30%</span></td>
               <td>
-                The sensor includes integrated temperature measurement, but this is a secondary
-                function. The primary product identity is a flowmeter.
+                Cold-drawn profiles can take bar form, but the primary product identity is
+                custom cross-sectional profiles, not standard round or flat bar stock.
               </td>
             </tr>
           </tbody>
@@ -419,7 +420,7 @@ export default function ProductDecomposition() {
 
         <p>
           <strong>Selected:</strong>{" "}
-          <ClickableCode kind="unspsc" code="41112501" /> — Flowmeters (highest confidence,
+          <ClickableCode kind="unspsc" code="30102304" /> — Steel profiles (highest confidence,
           validated)
         </p>
 
@@ -429,8 +430,8 @@ export default function ProductDecomposition() {
         <h2 id="prod-validation">Validation Notes</h2>
 
         <p>
-          The decomposition was cross-referenced against published research on ultrasonic
-          transit-time flow measurement technology.
+          The decomposition was cross-referenced against published research on precision steel
+          profile manufacturing technology.
           <SourceFootnote sourceIds={["PROD-S01", "PROD-S02", "PROD-S03"]} />
           Key validation findings:
         </p>
@@ -438,32 +439,34 @@ export default function ProductDecomposition() {
         <ul>
           <li>
             <strong>Functional Promise</strong> confirmed solution-agnostic: does not mention
-            "ultrasonic," "Marquardt," or "piezoelectric."
+            "ZOLLERN," specific alloy grades, or proprietary process names.
             <SourceFootnote sourceIds={["PROD-S07"]} />
           </li>
           <li>
             <strong>Feature scoping</strong> validated: technology-level features apply to
-            any ultrasonic transit-time flowmeter; vendor-level features are Marquardt-specific.
+            any precision steel profile manufacturing capability platform; vendor-level features
+            are ZOLLERN-specific.
             <SourceFootnote sourceIds={["PROD-S08"]} />
           </li>
           <li>
-            <strong>Air bubble constraint</strong> added from published research — well-documented
-            limitation of transit-time technology (&gt;2% vol degrades accuracy).
+            <strong>Minimum order quantity constraint</strong> noted — new die geometry requires
+            upfront tooling investment; MOQ applies per geometry to amortize die cost.
             <SourceFootnote sourceIds={["PROD-S04", "PROD-S05"]} />
           </li>
           <li>
-            <strong>Minimum straight pipe run</strong> added from published research — standard
-            installation constraint for inline flowmeters.
+            <strong>Carbon content requirement</strong> for induction hardening confirmed —
+            minimum 0.35% carbon content required for martensitic transformation.
             <SourceFootnote sourceIds={["PROD-S03"]} />
           </li>
           <li>
-            <strong>Temperature-dependent accuracy</strong> quantified: ~1.5% error
-            uncompensated, ~0.2% with NTC compensation.
+            <strong>Cold-forming cross-section limit</strong> quantified: maximum 2,500 mm²
+            for drawing; larger sections require hot rolling only.
             <SourceFootnote sourceIds={["PROD-S04", "PROD-S06"]} />
           </li>
           <li>
-            <strong>UNSPSC code 41112501 "Flowmeters"</strong> confirmed as the correct
-            commodity classification — classifies by primary function, not sensing mechanism.
+            <strong>UNSPSC code 30102304 "Steel profiles"</strong> confirmed as the correct
+            commodity classification — classifies by primary product identity (custom profiles),
+            not by forming process.
             <SourceFootnote sourceIds={["PROD-S02"]} />
           </li>
         </ul>

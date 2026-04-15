@@ -85,7 +85,7 @@ export default function RankingTable({ markets }: Props) {
                     >
                       {m.marketName}
                     </Link>
-                    {m.naicsCode === "41112501" && (
+                    {m.naicsCode === "30102304" && (
                       <small
                         style={{
                           display: "block",

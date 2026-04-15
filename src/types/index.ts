@@ -180,12 +180,13 @@ export interface IncumbentTechnology {
 export interface PositioningRow {
   technology: string;
   share: string;
-  pressureDrop: string;
-  movingParts: string;
-  accuracy: string;
-  unitCost: string;
-  continuousOutput: string;
-  heatMeterReady: string;
+  customGeometry?: string;
+  toleranceClass?: string;
+  materialWaste?: string;
+  unitCost?: string;
+  nearNetShape?: string;
+  surfaceHardening?: string;
+  [key: string]: string | undefined;
 }
 
 export interface HomeMarketCompetition {

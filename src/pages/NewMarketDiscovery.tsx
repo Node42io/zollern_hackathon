@@ -91,7 +91,7 @@ export default function NewMarketDiscovery() {
       <PageHeader
         kicker="Step 02a + 02b / UNSPSC-to-NAICS Cross-Classification & Architecture Distance / New Markets for an Existing Product"
         title="New Market Discovery"
-        description="Candidate markets discovered, scored by architecture distance, and ranked by 6-factor composite scoring for the Marquardt Ultrasonic Flow Sensor."
+        description="Candidate markets discovered, scored by architecture distance, and ranked by 6-factor composite scoring for ZOLLERN Special Steel Profiles."
       />
 
       {/* ── 1. Executive Summary ─────────────────────────────────────── */}
@@ -100,10 +100,10 @@ export default function NewMarketDiscovery() {
         <div className="md">
         <ExecutiveSummary title="What You're Looking At">
           <p className="answer">
-            This page covers the full new-market discovery pipeline for the
-            Marquardt Ultrasonic Flow Sensor (UNSPSC{" "}
-            <ClickableCode kind="unspsc" code="41112501" /> — Flowmeters). The
-            pipeline discovered <strong>16 candidate markets</strong> via
+            This page covers the full new-market discovery pipeline for
+            ZOLLERN Special Steel Profiles (UNSPSC{" "}
+            <ClickableCode kind="unspsc" code="30102304" /> — Steel profiles). The
+            pipeline discovered <strong>14 new markets</strong> via
             UNSPSC-to-NAICS cross-classification, ranked them by architecture
             distance, carried 8 through full constraint and fit analysis, and
             produced a <strong>6-factor composite score</strong> for each.
@@ -163,7 +163,7 @@ export default function NewMarketDiscovery() {
               <tr>
                 <td><strong>UNSPSC Context</strong></td>
                 <td>
-                  <ClickableCode kind="unspsc" code="41112501" /> — Flowmeters{" "}
+                  <ClickableCode kind="unspsc" code="30102304" /> — Steel profiles{" "}
                   <SourceFootnote sourceIds={["DISC-S14"]} />
                 </td>
               </tr>
@@ -181,11 +181,8 @@ export default function NewMarketDiscovery() {
               <tr>
                 <td><strong>Excluded Markets</strong></td>
                 <td>
-                  <ClickableCode kind="naics" code="333415" /> — Air-Conditioning
-                  and Warm Air Heating Equipment and Commercial and Industrial
-                  Refrigeration Equipment Manufacturing (current home market —
-                  sensor already deployed in heat pump and chiller OEM
-                  applications)
+                  12 existing application markets — profiles already supplied
+                  to these industries and excluded from new-market discovery
                 </td>
               </tr>
             </tbody>
@@ -193,27 +190,26 @@ export default function NewMarketDiscovery() {
 
           <h3>Primary Functional Promise Search Query</h3>
           <pre>
-            <code>{`"41112501 Flowmeters applications industries markets NAICS codes.
- Where is this commodity class used across manufacturing, process industries,
- healthcare, agriculture, energy, infrastructure, food processing, beverage,
- pharmaceutical, chemical, semiconductor, building systems, HVAC, automotive,
- data centers, water/wastewater, marine, laboratory/research?
- What industries need to quantify the volumetric or mass flow rate of
- fluids traversing a closed conduit?
+            <code>{`"30102304 Steel profiles applications industries markets NAICS codes.
+ Where is this commodity class used across manufacturing, construction,
+ automotive, rail, mining, energy, agriculture, material handling,
+ defence, tooling, and precision mechanical systems?
+ What industries need precision linear motion, tribological interfaces,
+ or mechanical retention profiles machined from bar stock?
  Return specific industry names and 6-digit NAICS codes."`}</code>
           </pre>
 
           <h3>Functional Promise Extension Search Query</h3>
           <pre>
-            <code>{`"What industries need real-time detection of liquid composition anomalies
- in closed-pipe systems? Glycol concentration monitoring, bubble detection,
- empty-pipe diagnostics, fluid temperature monitoring.
+            <code>{`"What industries need precision linear motion, tribological interfaces,
+ or mechanical retention profiles in near-net-shape steel bar stock?
+ Precision linear motion, tribological interfaces, mechanical retention profiles.
  Return specific industry names and 6-digit NAICS codes."`}</code>
           </pre>
 
           <h3>
-            Candidates ({candidates.length} discovered, 1 excluded as home
-            market)
+            Candidates ({candidates.length} discovered, 12 existing application
+            markets excluded)
           </h3>
 
           {/* Confidence legend — Item 35: shown once near first confidence badge */}
@@ -391,19 +387,19 @@ export default function NewMarketDiscovery() {
             <tbody>
               <tr>
                 <td><strong>Product</strong></td>
-                <td>Marquardt Ultrasonic Flow Sensor</td>
+                <td>ZOLLERN Special Steel Profiles</td>
               </tr>
               <tr>
                 <td><strong>Technology Class</strong></td>
-                <td>Ultrasonic Transit-Time Flow Measurement</td>
+                <td>Precision Steel Profile Manufacturing</td>
               </tr>
               <tr>
                 <td><strong>Mechanism</strong></td>
-                <td>Piezoelectric transducers, transit-time difference proportional to fluid velocity</td>
+                <td>Sequential plastic deformation through custom die sets producing near-net-shape 2D cross-sections with optional induction surface hardening</td>
               </tr>
               <tr>
                 <td><strong>Key Specs</strong></td>
-                <td>Flow 0.25–60 l/min, DN12–DN25, 0–10 bar, +2 to 90°C, water/glycol media, RAST 2.5 connector</td>
+                <td>Cross-sections 5–7,650 mm², tolerance ±0.02 mm, hardness up to 64 HRC, bar length up to 12 m, carbon/alloy/bearing/spring/tool steels</td>
               </tr>
               <tr>
                 <td><strong>Scoring Type</strong></td>
@@ -527,9 +523,9 @@ export default function NewMarketDiscovery() {
                 <td>16</td>
               </tr>
               <tr>
-                <td><strong>Home Market Excluded</strong></td>
+                <td><strong>Existing Markets Excluded</strong></td>
                 <td>
-                  1 (<ClickableCode kind="naics" code="333415" /> — current heat pump OEM market)
+                  12 existing application markets excluded from new-market discovery
                 </td>
               </tr>
               <tr>
@@ -547,9 +543,7 @@ export default function NewMarketDiscovery() {
               <tr>
                 <td><strong>Not Analyzed Downstream</strong></td>
                 <td>
-                  9 (Data Centers, Wineries, Boilers/HX, Dairy, Soft Drinks,
-                  Water Utilities, Pharma, Wastewater, Semiconductor, Chemical
-                  — pipeline scope limit)
+                  14 new markets discovered — remaining outside pipeline scope limit
                 </td>
               </tr>
             </tbody>

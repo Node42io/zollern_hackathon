@@ -155,12 +155,10 @@ export default function Constraints() {
         {/* Item 22: Executive Summary */}
         <ExecutiveSummary kicker="03 / Executive Summary" title="What you are reading">
           <p className="answer">
-            This chapter maps the twelve constraints that bound the Marquardt sensor's addressable
-            market scope — covering physical, chemical, operational, economic, regulatory, and
-            environmental limits. Three constraints are <strong>absolute</strong> (non-aqueous
-            media, high void fraction, partially-filled pipes) and cannot be overcome by any
-            engineering change or investment; the remaining nine are{" "}
-            <strong>conditional</strong> and can be mitigated at varying cost and lead time. Every
+            This chapter maps the constraints that bound the ZOLLERN capability platform's addressable
+            market scope — covering physical, process, operational, economic, regulatory, and
+            environmental limits. Absolute constraints cannot be overcome by any engineering change
+            or investment; conditional constraints can be mitigated at varying cost and lead time. Every
             new market candidate in Chapter 05 is screened against these constraints: absolute
             violations eliminate a market entirely, while conditional barriers reduce its fit
             score and add a cost-to-enter estimate.
@@ -171,10 +169,10 @@ export default function Constraints() {
         <blockquote>
           <p><strong>Component:</strong> Constraints Analysis (Step 07)</p>
           <p>
-            <strong>Coverage:</strong> Physical, chemical, operational, economic, regulatory, and environmental limits
+            <strong>Coverage:</strong> Physical, process, operational, economic, regulatory, and environmental limits
           </p>
-          <p><strong>Product:</strong> Marquardt Ultrasonic Flow Sensor</p>
-          <p><strong>Vendor:</strong> Marquardt GmbH</p>
+          <p><strong>Product:</strong> ZOLLERN Special Steel Profiles</p>
+          <p><strong>Vendor:</strong> ZOLLERN GmbH &amp; Co. KG</p>
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
         </blockquote>
 

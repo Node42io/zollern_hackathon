@@ -87,7 +87,7 @@ function parseStrategySteps(raw: string): string[] {
 
 export default function MarketRationaleCard({ market }: Props) {
   const steps = parseStrategySteps(market.entryStrategy);
-  const isReference = market.naicsCode === "41112501";
+  const isReference = market.naicsCode === "30102304";
 
   return (
     <div

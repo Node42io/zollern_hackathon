@@ -128,15 +128,14 @@ export default function HomeMarketCompetition() {
       <div style={{ padding: "0 56px" }}>
         <ExecutiveSummary kicker="Market Competition / Overview" title="Our current ground">
           <p className="answer">
-            Air-Conditioning and Warm Air Heating Equipment Manufacturing (NAICS 333415) is the
-            Marquardt ultrasonic flow sensor's current, commercialized home market — the OEM
-            slot inside residential and commercial heat pumps, boilers, and solar thermal systems.
-            The Competition tab maps the incumbent technology landscape here, covering the six
-            competing measurement technologies, their market-share tiers, and switching-cost
-            dynamics. The remaining tabs — Job-to-be-Done, Value Network, Kano, Compatibility,
-            and Alternatives — use the same analysis applied throughout New Market
-            Analysis, giving a home-market baseline against which every new-market opportunity
-            can be directly benchmarked.
+            ZOLLERN's Steel Profiles division competes across 12 established application markets —
+            from linear guides and elevator rails to automotive components and medical instruments.
+            The Competition tab maps the incumbent technology landscape, covering the competing
+            manufacturing technologies (machined bar stock, forgings, castings, roll-formed sections),
+            their market-share tiers, and switching-cost dynamics. The remaining tabs — Job-to-be-Done,
+            Value Network, Kano, Compatibility, and Alternatives — use the same analysis applied
+            throughout Market Analysis, giving a home-market baseline against which every adjacency
+            opportunity can be directly benchmarked.
           </p>
         </ExecutiveSummary>
       </div>

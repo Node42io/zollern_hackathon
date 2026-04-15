@@ -2,7 +2,7 @@
  * 04 Home Market Competition (renamed from "Incumbents Home")
  * Replicates 04-incumbents.html in React, with TODO items applied:
  *   - Item 25: Renamed to "Home Market Competition"
- *   - Item 26: Source callout for Marquardt briefing + SourceFootnote RS016/RS034
+ *   - Item 26: Source callout for ZOLLERN hackathon briefing + SourceFootnote RS016/RS034
  *   - Item 27: "Incumbent Technologies" → "Competing Technologies"
  *   - Item 28: Per-technology market-share SourceFootnote
  *   - Item 29: Per-technology switching-cost assessment
@@ -74,24 +74,24 @@ export default function HomeMarketCompetition() {
         {/* Item 40: Executive Summary */}
         <ExecutiveSummary kicker="04 / Executive Summary" title="What you are reading">
           <p className="answer">
-            This chapter maps the six competing technologies currently serving the HVAC OEM
-            flow-measurement slot that Marquardt's ultrasonic sensor targets. For each technology
-            you will see: the physical measurement principle, estimated market-share tier,
-            key vendors, strengths and weaknesses, and — per Item 29 — a technology-specific
-            switching-cost assessment. This matters because switching cost determines how fast
-            Marquardt can displace incumbents, even when the technical case is clear. Vortex
-            (SIKA, Huba Control) is the dominant incumbent; EU Ecodesign regulation is
-            actively eliminating pump-integrated estimation, creating structural pull for
-            dedicated sensors.
+            This chapter maps the competing semi-finished steel input alternatives currently
+            serving the construction machinery, automotive, linear guides, and elevator systems
+            markets that ZOLLERN Special Steel Profiles targets. For each alternative you will
+            see: the production mechanism, estimated market-share tier, key vendors, strengths
+            and weaknesses, and — per Item 29 — a technology-specific switching-cost assessment.
+            This matters because switching cost determines how fast ZOLLERN can displace
+            incumbents, even when the technical case is clear. Machined bar stock (BGH, voestalpine)
+            is the dominant incumbent; tightening tolerances in precision mechanical engineering
+            are creating structural pull for near-net-shape cold-drawn profiles.
           </p>
         </ExecutiveSummary>
 
         {/* Metadata block */}
         <blockquote>
           <p><strong>Component:</strong> Competitive Landscape (Step 03)</p>
-          <p><strong>Approach:</strong> Technology-by-technology competitive breakdown with switching cost assessment</p>
-          <p><strong>Product:</strong> Marquardt Ultrasonic Flow Sensor</p>
-          <p><strong>Vendor:</strong> Marquardt GmbH</p>
+          <p><strong>Approach:</strong> Alternative-by-alternative competitive breakdown with switching cost assessment</p>
+          <p><strong>Product:</strong> ZOLLERN Special Steel Profiles</p>
+          <p><strong>Vendor:</strong> ZOLLERN GmbH &amp; Co. KG</p>
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
         </blockquote>
 
@@ -112,7 +112,7 @@ export default function HomeMarketCompetition() {
           color: "var(--text-gray)",
           letterSpacing: "0.02em",
         }}>
-          Source: Marquardt customer briefing (internal)
+          Source: ZOLLERN hackathon briefing (internal)
           <SourceFootnote sourceIds={["RS016"]} />
         </div>
 
@@ -148,7 +148,7 @@ export default function HomeMarketCompetition() {
             </tr>
             <tr>
               <td><strong>Subject Technology (excluded)</strong></td>
-              <td>Ultrasonic Transit-Time Flow Measurement</td>
+              <td>Precision Cold-Drawn / Cold-Rolled Steel Profiles (ZOLLERN)</td>
             </tr>
             <tr>
               <td><strong>Overall Switching Cost</strong></td>
@@ -162,14 +162,17 @@ export default function HomeMarketCompetition() {
         </table>
 
         <p>
-          This is Marquardt's <strong>home market</strong> — the OEM sensor slot inside
-          residential and commercial heat pumps, boilers, and solar thermal systems. Heat pump
-          OEMs (Daikin, Viessmann, Bosch, Vaillant, Mitsubishi Electric, Samsung) integrate
-          inline flow sensors to measure hydronic circuit flow for heat quantity metering,
-          fault detection, and efficiency optimization.
+          This is ZOLLERN's <strong>home market</strong> — the semi-finished steel input slot
+          inside construction machinery, automotive drivelines, linear guide systems, and elevator
+          installations. Machine builders and Tier-1 suppliers integrate precision steel profiles
+          as structural and functional semi-finished material, relying on near-net-shape geometry
+          to reduce downstream CNC machining, lower material waste by 40–80%, and meet tight
+          dimensional tolerances (IT6–IT8 class).
           <SourceFootnote sourceIds={["RS001", "RS028", "RS032"]} />
-          {" "}EU Ecodesign regulations increasingly mandate integrated heat metering, making
-          a dedicated flow sensor a regulatory requirement rather than an optional component.
+          {" "}Stricter quality norms in automotive (IATF 16949) and elevator safety (EN 81)
+          increasingly demand dimensional traceability per profile batch, making
+          a qualified near-net-shape supplier a certification requirement rather than a
+          commodity choice.
           <SourceFootnote sourceIds={["RS013", "RS034"]} />
         </p>
 
@@ -310,33 +313,34 @@ export default function HomeMarketCompetition() {
         <table>
           <thead>
             <tr>
-              <th>Technology</th>
+              <th>Alternative</th>
               <th>Share</th>
-              <th>Pressure Drop</th>
-              <th>Moving Parts</th>
-              <th>Accuracy</th>
+              <th>Custom Geometry</th>
+              <th>Tolerance Class</th>
+              <th>Material Waste</th>
               <th>Unit Cost (OEM)</th>
-              <th>Continuous</th>
-              <th>Heat Meter Ready</th>
+              <th>Near-Net-Shape</th>
+              <th>Surface Hardening</th>
             </tr>
           </thead>
           <tbody>
             {homeMarket.positioningTable.map((row, i) => {
-              const isSubject = row.share === "subject";
+              const r = row as Record<string, string>;
+              const isSubject = r.share === "subject";
               return (
                 <tr
-                  key={row.technology}
+                  key={r.technology}
                   style={isSubject ? { background: "rgba(253,255,152,0.04)" } : undefined}
                 >
                   <td>
                     {isSubject
-                      ? <em style={{ color: "var(--accent-yellow)" }}>{row.technology}</em>
-                      : <strong>{row.technology}</strong>
+                      ? <em style={{ color: "var(--accent-yellow)" }}>{r.technology}</em>
+                      : <strong>{r.technology}</strong>
                     }
                   </td>
                   <td>
-                    <span className={SHARE_CLASS[row.share] ?? "badge badge--neutral"}>
-                      {row.share}
+                    <span className={SHARE_CLASS[r.share] ?? "badge badge--neutral"}>
+                      {r.share}
                     </span>
                     {!isSubject && (
                       <SourceFootnote
@@ -344,12 +348,12 @@ export default function HomeMarketCompetition() {
                       />
                     )}
                   </td>
-                  <td>{row.pressureDrop || "—"}</td>
-                  <td>{row.movingParts || "—"}</td>
-                  <td>{row.accuracy || "—"}</td>
-                  <td>{row.unitCost || "—"}</td>
-                  <td>{row.continuousOutput || "—"}</td>
-                  <td>{row.heatMeterReady || "—"}</td>
+                  <td>{r.customGeometry || "—"}</td>
+                  <td>{r.toleranceClass || "—"}</td>
+                  <td>{r.materialWaste || "—"}</td>
+                  <td>{r.unitCost || "—"}</td>
+                  <td>{r.nearNetShape || "—"}</td>
+                  <td>{r.surfaceHardening || "—"}</td>
                 </tr>
               );
             })}
@@ -359,16 +363,16 @@ export default function HomeMarketCompetition() {
         <div className="answer-box">
           <h3>Key Insight</h3>
           <p className="answer">
-            The Marquardt ultrasonic sensor combines the <strong>zero-pressure-drop</strong>{" "}
-            and <strong>no-moving-parts</strong> advantages of electromagnetic sensors with
-            the <strong>OEM cost point</strong> of vortex sensors. Its primary competitive
-            displacement target is the <strong>dominant vortex segment (SIKA VVX)</strong>,
-            where the ultrasonic sensor offers strictly lower pressure drop and comparable or
-            better accuracy at a similar cost.
+            The ZOLLERN cold-drawn steel profile combines the <strong>custom geometry</strong>{" "}
+            advantage of forged blanks with the <strong>precision tolerance</strong> (IT6–IT8) of
+            machined bar stock — at a fraction of the machining cost. Its primary competitive
+            displacement target is the <strong>dominant machined bar stock segment</strong> (BGH,
+            voestalpine), where the cold-drawn profile offers strictly lower material waste and
+            comparable or better dimensional accuracy at lower total cost.
             <SourceFootnote sourceIds={["RS001", "RS002", "RS003"]} />
             {" "}The secondary displacement target is the{" "}
-            <strong>impeller/turbine installed base</strong>, where the ultrasonic sensor
-            eliminates all mechanical wear failure modes.
+            <strong>hot-rolled structural section installed base</strong>, where precision profiles
+            eliminate the post-machining step entirely for functional fits.
             <SourceFootnote sourceIds={["RS005", "RS006"]} />
           </p>
         </div>
@@ -388,13 +392,13 @@ export default function HomeMarketCompetition() {
           </thead>
           <tbody>
             {[
-              ["3–8 competing technologies identified", `Complete — ${incumbents.length} technologies`],
-              ["Subject technology excluded from list", "Complete — Ultrasonic Transit-Time not listed"],
-              ["Mechanism describes physical principle, not marketing", "Complete — all mechanisms specify physics"],
-              ["Technology class used, not vendor product names as primary", "Complete"],
+              ["3–8 competing alternatives identified", `Complete — ${incumbents.length} alternatives`],
+              ["Subject technology excluded from list", "Complete — ZOLLERN cold-drawn profiles not listed as incumbent"],
+              ["Mechanism describes production principle, not marketing", "Complete — all mechanisms specify manufacturing physics"],
+              ["Alternative class used, not vendor product names as primary", "Complete"],
               ["Market share uses tier enum (dominant/significant/niche/emerging)", "Complete"],
               ["Strengths/weaknesses are specific and technical", "Complete"],
-              ["Per-technology switching cost assessed", "Complete — see each technology block above"],
+              ["Per-technology switching cost assessed", "Complete — see each alternative block above"],
               ["Source references on all market-share claims", "Complete"],
             ].map(([check, result], i) => (
               <tr key={i}>
