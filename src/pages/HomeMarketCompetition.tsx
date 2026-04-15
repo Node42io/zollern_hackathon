@@ -33,7 +33,7 @@ import AlternativesTab from "@/pages/analysis/tabs/AlternativesTab";
    Constants
    ========================================================================= */
 
-const HOME_MARKET_SLUG = "ac-home-heating";
+const HOME_MARKET_SLUG = "linear-guides";
 
 const HOME_TABS = [
   { slug: "competition", label: "Market Competition" },
