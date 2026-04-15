@@ -1,127 +1,24 @@
 /**
- * Page: /home-market  and  /home-market/:tab
- * 04 Home Market — tabbed layout matching New Market Analysis structure.
+ * Page: /home-market
+ * 04 Home Market Competition — shows the incumbent technology landscape
+ * across ZOLLERN's 12 existing application markets.
  *
- * Tabs (in order):
- *   competition   — Home Market Competition (existing content)
- *   jtbd          — Job-to-be-Done Analysis
- *   value-network — Value Network & BOM
- *   kano          — Kano Analysis
- *   compatibility — Compatibility & Constraint Analysis
- *   alternatives  — Alternative Solutions Analysis
- *
- * Default tab: competition
+ * Per-market deep-dive (JTBD, VN, BOM, etc.) is in Page 08 Market Analysis.
  */
-
-import { NavLink, useParams } from "react-router-dom";
 
 import PageHeader from "@/components/PageHeader";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 
-// Existing competition section — DO NOT modify the source file
+// The competition analysis content
 import HomeMarketCompetitionSection from "@/pages/home/HomeMarketCompetition";
 
-// Tab components — same ones used by New Market Analysis
-import JTBDTab from "@/pages/analysis/tabs/JTBDTab";
-import ValueNetworkTab from "@/pages/analysis/tabs/ValueNetworkTab";
-import BOMTab from "@/pages/analysis/tabs/BOMTab";
-import KanoTab from "@/pages/analysis/tabs/KanoTab";
-import CompatibilityTab from "@/pages/analysis/tabs/CompatibilityTab";
-import AlternativesTab from "@/pages/analysis/tabs/AlternativesTab";
-
-/* =========================================================================
-   Constants
-   ========================================================================= */
-
-const HOME_MARKET_SLUG = "linear-guides";
-
-const HOME_TABS = [
-  { slug: "competition", label: "Market Competition" },
-  { slug: "jtbd", label: "Job-to-be-Done Analysis" },
-  { slug: "value-network", label: "Value Network" },
-  { slug: "bom", label: "Bill of Materials" },
-  { slug: "kano", label: "Kano Analysis" },
-  { slug: "compatibility", label: "Compatibility & Constraint Analysis" },
-  { slug: "alternatives", label: "Alternative Solutions Analysis" },
-];
-
-const VALID_TABS = new Set(HOME_TABS.map((t) => t.slug));
-const DEFAULT_TAB = "competition";
-
-/* =========================================================================
-   Local tab strip (links to /home-market/:tab instead of /analysis/...)
-   Uses the same .analysis-tabs / .analysis-tab CSS classes as AnalysisTabs.
-   ========================================================================= */
-
-function HomeMarketTabStrip({ activeTab }: { activeTab: string }) {
-  return (
-    <nav
-      role="tablist"
-      aria-label="Home market sections"
-      className="analysis-tabs"
-    >
-      {HOME_TABS.map((t) => (
-        <NavLink
-          key={t.slug}
-          to={`/home-market/${t.slug}`}
-          role="tab"
-          aria-selected={t.slug === activeTab}
-          className={[
-            "analysis-tab",
-            t.slug === activeTab ? "is-active" : "",
-          ]
-            .filter(Boolean)
-            .join(" ")}
-        >
-          {t.label}
-        </NavLink>
-      ))}
-    </nav>
-  );
-}
-
-/* =========================================================================
-   Tab content switcher
-   ========================================================================= */
-
-function TabContent({ tabSlug }: { tabSlug: string }) {
-  switch (tabSlug) {
-    case "competition":
-      return <HomeMarketCompetitionSection />;
-    case "jtbd":
-      return <JTBDTab marketSlug={HOME_MARKET_SLUG} />;
-    case "value-network":
-      return <ValueNetworkTab marketSlug={HOME_MARKET_SLUG} />;
-    case "bom":
-      return <BOMTab marketSlug={HOME_MARKET_SLUG} />;
-    case "kano":
-      return <KanoTab marketSlug={HOME_MARKET_SLUG} />;
-    case "compatibility":
-      return <CompatibilityTab marketSlug={HOME_MARKET_SLUG} />;
-    case "alternatives":
-      return <AlternativesTab marketSlug={HOME_MARKET_SLUG} />;
-    default:
-      return <HomeMarketCompetitionSection />;
-  }
-}
-
-/* =========================================================================
-   Main page component
-   ========================================================================= */
-
 export default function HomeMarketCompetition() {
-  const { tab } = useParams<{ tab?: string }>();
-
-  // Resolve active tab — fall back to default when missing or invalid
-  const activeTab =
-    tab && VALID_TABS.has(tab) ? tab : DEFAULT_TAB;
-
   return (
     <div>
       {/* ─── Page header ─────────────────────────────────────────────── */}
       <PageHeader
         kicker="04 · Market Competition · NAICS 331110"
-        title="Market Competition"
+        title="Home Market Competition"
       />
 
       {/* ─── Executive summary ────────────────────────────────────────── */}
@@ -130,30 +27,17 @@ export default function HomeMarketCompetition() {
           <p className="answer">
             ZOLLERN's Steel Profiles division competes across 12 established application markets —
             from linear guides and elevator rails to automotive components and medical instruments.
-            The Competition tab maps the incumbent technology landscape, covering the competing
+            This page maps the incumbent technology landscape, covering the competing
             manufacturing technologies (machined bar stock, forgings, castings, roll-formed sections),
-            their market-share tiers, and switching-cost dynamics. The remaining tabs — Job-to-be-Done,
-            Value Network, Kano, Compatibility, and Alternatives — use the same analysis applied
-            throughout Market Analysis, giving a home-market baseline against which every adjacency
-            opportunity can be directly benchmarked.
+            their market-share tiers, and switching-cost dynamics. For per-market deep-dives
+            (JTBD, Value Network, BOM, ODI), see <strong>Page 08 — Market Analysis</strong>.
           </p>
         </ExecutiveSummary>
       </div>
 
-      {/* ─── Tab strip ────────────────────────────────────────────────── */}
-      <div
-        style={{
-          borderBottom: "1px solid var(--border-subtle)",
-          padding: "0 32px",
-          background: "var(--bg-page)",
-        }}
-      >
-        <HomeMarketTabStrip activeTab={activeTab} />
-      </div>
-
-      {/* ─── Tab content ──────────────────────────────────────────────── */}
+      {/* ─── Competition content ──────────────────────────────────────── */}
       <div style={{ padding: "0 56px" }}>
-        <TabContent tabSlug={activeTab} />
+        <HomeMarketCompetitionSection />
       </div>
     </div>
   );

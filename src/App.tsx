@@ -23,7 +23,6 @@ export default function App() {
           <Route path="/constraints" element={<Constraints />} />
           <Route path="/capabilities" element={<CapabilityRegister />} />
           <Route path="/home-market" element={<HomeMarketCompetition />} />
-          <Route path="/home-market/:tab" element={<HomeMarketCompetition />} />
           <Route path="/discovery" element={<NewMarketDiscovery />} />
           <Route path="/analysis" element={<NewMarketAnalysis />} />
           <Route path="/analysis/:marketSlug" element={<NewMarketAnalysis />} />
