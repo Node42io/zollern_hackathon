@@ -1,0 +1,81 @@
+{
+  "slug": "pump-components",
+  "marketName": "Pump Components",
+  "naicsCode": "333911",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies near-net-shape steel profile blanks at L0/L1 for four distinct parts inside a crescent internal gear pump. Output type: Internal Gear Pump (Crescent Design).",
+  "outputTypes": [
+    { "id": "OT-2", "name": "Internal Gear Pump - Crescent Design", "hydronic": false, "sensorFit": "primary", "notes": "Most profile-intensive pump type; uses rotor profiles, crescent insert, bore liner, and shaft sections." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.2", "L4.3"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Hydraulic Working Subsystem",
+      "costSharePct": 40,
+      "keyDesignChoice": "Gear mechanism type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Crescent gear design (inner gear + ring gear + crescent)", "sharePct": 55, "trend": "stable" },
+        { "name": "Gerotor design (matched trochoidal inner + outer gear, no crescent)", "sharePct": 45, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1a", "name": "Rotor Module (Inner Rotor + Outer Ring Gear)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN feeds inner rotor as near-net-shape profile blank", "alternatives": [
+          { "name": "Cold-drawn near-net-shape alloy steel profile (ZOLLERN)", "sharePct": 25, "trend": "stable", "isMarquardt": true },
+          { "name": "Ground/turned bar stock machined to gear profile", "sharePct": 55, "trend": "stable" },
+          { "name": "Forged steel blank + machined", "sharePct": 15, "trend": "stable" },
+          { "name": "Powder metal sintered blank", "sharePct": 5, "trend": "stable" }
+        ]},
+        { "id": "L3.1b", "name": "Crescent Module (Crescent Insert)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN feeds crescent insert as near-net-shape profile blank - highest differentiation position", "alternatives": [
+          { "name": "Cold-drawn near-net-shape alloy steel profile (ZOLLERN)", "sharePct": 25, "trend": "growing", "isMarquardt": true },
+          { "name": "Machined from bar stock", "sharePct": 60, "trend": "stable" },
+          { "name": "Sintered / powder metal", "sharePct": 15, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Pressure Containment Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Housing material",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Cast iron housing (GG-25 / EN-GJL-250)", "sharePct": 60, "trend": "stable" },
+        { "name": "Ductile iron housing (GGG-40)", "sharePct": 25, "trend": "growing" },
+        { "name": "Steel housing (machined from billet)", "sharePct": 15, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Drive Shaft Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Shaft manufacturing method",
+      "isMarquardtAnchor": true,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "CNC-turned from round bar stock", "sharePct": 65, "trend": "stable" },
+        { "name": "Cold-drawn shaped profile blank (ZOLLERN)", "sharePct": 20, "trend": "growing" },
+        { "name": "Forged + machined shaft", "sharePct": 15, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Sealing Subsystem",
+      "costSharePct": 20,
+      "keyDesignChoice": "Shaft seal type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Mechanical face seal (SiC/carbon)", "sharePct": 50, "trend": "stable" },
+        { "name": "Lip seal (FKM/NBR)", "sharePct": 35, "trend": "stable" },
+        { "name": "Magnetic coupling (sealless)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

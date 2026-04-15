@@ -1,0 +1,437 @@
+{
+  "id": "JTBD_elevator_guide_rails",
+  "title": "Jobs-to-be-Done Analysis — Elevator Guide Rails (NAICS 333921)",
+  "type": "jtbd_analysis",
+  "market_slug": "elevator_guide_rails",
+  "is_per_market": true,
+  "sections": [
+    {
+      "title": "Dual-Level Job Structure",
+      "content": "For intermediate goods like guide rails, the JTBD framework operates at two levels: the **specification job** (engineering) and the **procurement job** (purchasing). Both must be satisfied for market entry. [SRC: Burleson JTBD framework]"
+    },
+    {
+      "title": "5-Level Job Pyramid",
+      "content": "| Level | Job Type | Statement | Owner |\n|-------|----------|-----------|-------|\n| L1 (Aspirational) | Life goal | \"Ensure safe, reliable vertical transportation for building occupants\" | Building owner / operator |\n| L2 (Strategic) | Strategic outcome | \"Install and maintain elevator systems that meet safety codes with minimal lifecycle cost\" | Elevator OEM (Schindler, KONE, Otis, TK Elevator) |\n| L3 (Core functional) | Core job | \"Specify and procure guide rails that guarantee car guidance accuracy under all load and speed conditions\" | Elevator system engineer |\n| L4 (Related functional) | Support job | \"Source guide rail material that arrives on time, meets EN 81-1 specs, and minimizes total installed cost\" | Procurement / supply chain manager |\n| L5 (Emotional/social) | Emotional job | \"Confidence that the guide rail supplier is reliable and will not cause project delays or safety incidents\" | Project manager / quality director |"
+    },
+    {
+      "title": "Core Job (L3) Decomposition — 8-Step Job Map",
+      "content": "| Step | Job Step | Description | Importance (1-10) | Current Satisfaction (1-10) | Gap |\n|------|----------|-------------|-------------------|---------------------------|-----|\n| 1 | Define requirements | Determine rail profile, material grade, hardness from elevator speed, capacity, and shaft layout | 9 | 7 | 2 |\n| 2 | Locate suppliers | Find qualified guide rail manufacturers with EN 81-1 / EN 81-50 certification | 8 | 6 | 2 |\n| 3 | Evaluate samples | Test dimensional accuracy, hardness, straightness, surface quality of sample rails | 9 | 5 | 4 |\n| 4 | Negotiate terms | Agree pricing, MOQ, lead time, quality guarantees, tooling amortization | 7 | 6 | 1 |\n| 5 | Order & schedule | Place orders timed to building construction schedule (rail installation = early phase) | 8 | 5 | 3 |\n| 6 | Receive & inspect | Incoming inspection: dimensional check, hardness test, straightness measurement | 9 | 6 | 3 |\n| 7 | Install in shaft | Mount guide rail sections in hoistway, align with plumb laser, torque fishplate bolts | 10 | 7 | 3 |\n| 8 | Validate & certify | Load test, ride quality test, TUeV or notified body sign-off | 10 | 8 | 2 |"
+    },
+    {
+      "title": "Underserved Outcomes (Gap >= 3)",
+      "content": "| Step | Outcome | Importance | Satisfaction | Opportunity Score | Category |\n|------|---------|-----------|-------------|------------------|----------|\n| 3 | Minimize variation between sample and production rails | 9 | 5 | 13 | UNDERSERVED |\n| 5 | Minimize lead time from order to delivery for repeat orders | 8 | 5 | 11 | UNDERSERVED |\n| 6 | Minimize effort required for incoming dimensional inspection | 9 | 6 | 12 | UNDERSERVED |\n| 7 | Minimize time to align guide rail sections in hoistway | 10 | 7 | 13 | UNDERSERVED |\n\n**Opportunity algorithm**: Importance + (Importance - Satisfaction) = Opportunity Score. Scores >= 10 indicate underserved outcomes. [SRC: Ulwick ODI methodology]"
+    },
+    {
+      "title": "Specification Job — Key Requirements",
+      "content": "| Requirement | Standard | Typical Spec | Tolerance | Criticality |\n|-------------|----------|-------------|-----------|-------------|\n| Rail profile geometry | ISO 7465 | T89/B (89mm web) | +0.5/-0 mm web height | CRITICAL — car shoe clearance |\n| Rail head straightness | EN 81-50 | 0.3 mm/m max | Measured over 1m gauge | CRITICAL — ride quality |\n| Running surface hardness | OEM spec | 50-55 HRC (induction) | +/-3 HRC | HIGH — shoe wear life |\n| Running surface roughness | OEM spec | Ra 1.6-3.2 um | As rolled/ground | MEDIUM — lubrication |\n| Joint face flatness | EN 81-1 Annex G | 0.05 mm max | Measured across joint | CRITICAL — continuity |\n| Length tolerance | ISO 7465 | 5,000 +/-1 mm | Per bar | HIGH — installation fit |\n| Material cert | EN 10204 | Type 3.1 | - | MANDATORY |"
+    },
+    {
+      "title": "Procurement Job — Decision Criteria",
+      "content": "| Criterion | Weight | Current Best | Pain Point |\n|-----------|--------|-------------|------------|\n| Unit price (EUR/m) | 25% | Savera (scale advantage) | Asian imports at 15-20% discount but quality risk |\n| Delivery reliability (% OTIF) | 20% | VOL-Stahl (95%+) | Savera sometimes 8-10 week delays on peak demand |\n| Quality consistency (reject rate) | 20% | Montanstahl (<1%) | Some suppliers 3-5% reject on straightness |\n| Lead time (weeks, repeat orders) | 15% | 4-6 weeks | New profile sizes: 10-14 weeks |\n| Technical support / engineering | 10% | Montanstahl | Most suppliers reactive, not proactive |\n| Payment terms | 5% | Net 60 standard | - |\n| Sustainability / CO2 footprint | 5% | Emerging requirement | No supplier differentiated yet |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"jtbd\": {\n    \"market\": \"Elevator Guide Rails\",\n    \"naics\": \"333921\",\n    \"job_pyramid\": [\n      {\"level\": \"L1\", \"type\": \"aspirational\", \"statement\": \"Ensure safe, reliable vertical transportation for building occupants\"},\n      {\"level\": \"L2\", \"type\": \"strategic\", \"statement\": \"Install and maintain elevator systems that meet safety codes with minimal lifecycle cost\"},\n      {\"level\": \"L3\", \"type\": \"core_functional\", \"statement\": \"Specify and procure guide rails that guarantee car guidance accuracy under all load and speed conditions\"},\n      {\"level\": \"L4\", \"type\": \"related_functional\", \"statement\": \"Source guide rail material that arrives on time, meets EN 81-1 specs, and minimizes total installed cost\"},\n      {\"level\": \"L5\", \"type\": \"emotional\", \"statement\": \"Confidence in supplier reliability and safety performance\"}\n    ],\n    \"job_map\": [\n      {\"step\": 1, \"name\": \"Define requirements\", \"importance\": 9, \"satisfaction\": 7},\n      {\"step\": 2, \"name\": \"Locate suppliers\", \"importance\": 8, \"satisfaction\": 6},\n      {\"step\": 3, \"name\": \"Evaluate samples\", \"importance\": 9, \"satisfaction\": 5},\n      {\"step\": 4, \"name\": \"Negotiate terms\", \"importance\": 7, \"satisfaction\": 6},\n      {\"step\": 5, \"name\": \"Order & schedule\", \"importance\": 8, \"satisfaction\": 5},\n      {\"step\": 6, \"name\": \"Receive & inspect\", \"importance\": 9, \"satisfaction\": 6},\n      {\"step\": 7, \"name\": \"Install in shaft\", \"importance\": 10, \"satisfaction\": 7},\n      {\"step\": 8, \"name\": \"Validate & certify\", \"importance\": 10, \"satisfaction\": 8}\n    ],\n    \"underserved_outcomes\": [\n      {\"step\": 3, \"outcome\": \"Minimize sample-to-production variation\", \"opportunity_score\": 13},\n      {\"step\": 5, \"outcome\": \"Minimize repeat-order lead time\", \"opportunity_score\": 11},\n      {\"step\": 6, \"outcome\": \"Minimize incoming inspection effort\", \"opportunity_score\": 12},\n      {\"step\": 7, \"outcome\": \"Minimize hoistway alignment time\", \"opportunity_score\": 13}\n    ]\n  },\n  \"entities\": [\n    {\"label\": \"Job\", \"slug\": \"job__elevator_guide_rail_specification\", \"name\": \"Specify and procure guide rails for elevator car guidance\"},\n    {\"label\": \"JobStep\", \"slug\": \"js__evaluate_samples\", \"name\": \"Evaluate guide rail samples\"},\n    {\"label\": \"JobStep\", \"slug\": \"js__install_in_shaft\", \"name\": \"Install guide rails in hoistway\"}\n  ]\n}\n```\n\n---\n\n*Sources: [EN 81-20:2020 — Safety rules for lifts](https://standards.cencenelec.eu/), [EN 81-50:2020 — Examinations and tests](https://standards.cencenelec.eu/), [Ulwick — Outcome-Driven Innovation](https://jobs-to-be-done.com/), [Elevator World Magazine — Supplier Survey 2023](https://www.elevatorworld.com/), [Burleson — JTBD Handbook](https://jobstobedone.org/)*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Level",
+        "Job Type",
+        "Statement",
+        "Owner"
+      ],
+      "rows": [
+        {
+          "Level": "L1 (Aspirational)",
+          "Job Type": "Life goal",
+          "Statement": "\"Ensure safe, reliable vertical transportation for building occupants\"",
+          "Owner": "Building owner / operator"
+        },
+        {
+          "Level": "L2 (Strategic)",
+          "Job Type": "Strategic outcome",
+          "Statement": "\"Install and maintain elevator systems that meet safety codes with minimal lifecycle cost\"",
+          "Owner": "Elevator OEM (Schindler, KONE, Otis, TK Elevator)"
+        },
+        {
+          "Level": "L3 (Core functional)",
+          "Job Type": "Core job",
+          "Statement": "\"Specify and procure guide rails that guarantee car guidance accuracy under all load and speed conditions\"",
+          "Owner": "Elevator system engineer"
+        },
+        {
+          "Level": "L4 (Related functional)",
+          "Job Type": "Support job",
+          "Statement": "\"Source guide rail material that arrives on time, meets EN 81-1 specs, and minimizes total installed cost\"",
+          "Owner": "Procurement / supply chain manager"
+        },
+        {
+          "Level": "L5 (Emotional/social)",
+          "Job Type": "Emotional job",
+          "Statement": "\"Confidence that the guide rail supplier is reliable and will not cause project delays or safety incidents\"",
+          "Owner": "Project manager / quality director"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Step",
+        "Job Step",
+        "Description",
+        "Importance (1-10)",
+        "Current Satisfaction (1-10)",
+        "Gap"
+      ],
+      "rows": [
+        {
+          "Step": "1",
+          "Job Step": "Define requirements",
+          "Description": "Determine rail profile, material grade, hardness from elevator speed, capacity, and shaft layout",
+          "Importance (1-10)": "9",
+          "Current Satisfaction (1-10)": "7",
+          "Gap": "2"
+        },
+        {
+          "Step": "2",
+          "Job Step": "Locate suppliers",
+          "Description": "Find qualified guide rail manufacturers with EN 81-1 / EN 81-50 certification",
+          "Importance (1-10)": "8",
+          "Current Satisfaction (1-10)": "6",
+          "Gap": "2"
+        },
+        {
+          "Step": "3",
+          "Job Step": "Evaluate samples",
+          "Description": "Test dimensional accuracy, hardness, straightness, surface quality of sample rails",
+          "Importance (1-10)": "9",
+          "Current Satisfaction (1-10)": "5",
+          "Gap": "4"
+        },
+        {
+          "Step": "4",
+          "Job Step": "Negotiate terms",
+          "Description": "Agree pricing, MOQ, lead time, quality guarantees, tooling amortization",
+          "Importance (1-10)": "7",
+          "Current Satisfaction (1-10)": "6",
+          "Gap": "1"
+        },
+        {
+          "Step": "5",
+          "Job Step": "Order & schedule",
+          "Description": "Place orders timed to building construction schedule (rail installation = early phase)",
+          "Importance (1-10)": "8",
+          "Current Satisfaction (1-10)": "5",
+          "Gap": "3"
+        },
+        {
+          "Step": "6",
+          "Job Step": "Receive & inspect",
+          "Description": "Incoming inspection: dimensional check, hardness test, straightness measurement",
+          "Importance (1-10)": "9",
+          "Current Satisfaction (1-10)": "6",
+          "Gap": "3"
+        },
+        {
+          "Step": "7",
+          "Job Step": "Install in shaft",
+          "Description": "Mount guide rail sections in hoistway, align with plumb laser, torque fishplate bolts",
+          "Importance (1-10)": "10",
+          "Current Satisfaction (1-10)": "7",
+          "Gap": "3"
+        },
+        {
+          "Step": "8",
+          "Job Step": "Validate & certify",
+          "Description": "Load test, ride quality test, TUeV or notified body sign-off",
+          "Importance (1-10)": "10",
+          "Current Satisfaction (1-10)": "8",
+          "Gap": "2"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Step",
+        "Outcome",
+        "Importance",
+        "Satisfaction",
+        "Opportunity Score",
+        "Category"
+      ],
+      "rows": [
+        {
+          "Step": "3",
+          "Outcome": "Minimize variation between sample and production rails",
+          "Importance": "9",
+          "Satisfaction": "5",
+          "Opportunity Score": "13",
+          "Category": "UNDERSERVED"
+        },
+        {
+          "Step": "5",
+          "Outcome": "Minimize lead time from order to delivery for repeat orders",
+          "Importance": "8",
+          "Satisfaction": "5",
+          "Opportunity Score": "11",
+          "Category": "UNDERSERVED"
+        },
+        {
+          "Step": "6",
+          "Outcome": "Minimize effort required for incoming dimensional inspection",
+          "Importance": "9",
+          "Satisfaction": "6",
+          "Opportunity Score": "12",
+          "Category": "UNDERSERVED"
+        },
+        {
+          "Step": "7",
+          "Outcome": "Minimize time to align guide rail sections in hoistway",
+          "Importance": "10",
+          "Satisfaction": "7",
+          "Opportunity Score": "13",
+          "Category": "UNDERSERVED"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Requirement",
+        "Standard",
+        "Typical Spec",
+        "Tolerance",
+        "Criticality"
+      ],
+      "rows": [
+        {
+          "Requirement": "Rail profile geometry",
+          "Standard": "ISO 7465",
+          "Typical Spec": "T89/B (89mm web)",
+          "Tolerance": "+0.5/-0 mm web height",
+          "Criticality": "CRITICAL — car shoe clearance"
+        },
+        {
+          "Requirement": "Rail head straightness",
+          "Standard": "EN 81-50",
+          "Typical Spec": "0.3 mm/m max",
+          "Tolerance": "Measured over 1m gauge",
+          "Criticality": "CRITICAL — ride quality"
+        },
+        {
+          "Requirement": "Running surface hardness",
+          "Standard": "OEM spec",
+          "Typical Spec": "50-55 HRC (induction)",
+          "Tolerance": "+/-3 HRC",
+          "Criticality": "HIGH — shoe wear life"
+        },
+        {
+          "Requirement": "Running surface roughness",
+          "Standard": "OEM spec",
+          "Typical Spec": "Ra 1.6-3.2 um",
+          "Tolerance": "As rolled/ground",
+          "Criticality": "MEDIUM — lubrication"
+        },
+        {
+          "Requirement": "Joint face flatness",
+          "Standard": "EN 81-1 Annex G",
+          "Typical Spec": "0.05 mm max",
+          "Tolerance": "Measured across joint",
+          "Criticality": "CRITICAL — continuity"
+        },
+        {
+          "Requirement": "Length tolerance",
+          "Standard": "ISO 7465",
+          "Typical Spec": "5,000 +/-1 mm",
+          "Tolerance": "Per bar",
+          "Criticality": "HIGH — installation fit"
+        },
+        {
+          "Requirement": "Material cert",
+          "Standard": "EN 10204",
+          "Typical Spec": "Type 3.1",
+          "Tolerance": "-",
+          "Criticality": "MANDATORY"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Criterion",
+        "Weight",
+        "Current Best",
+        "Pain Point"
+      ],
+      "rows": [
+        {
+          "Criterion": "Unit price (EUR/m)",
+          "Weight": "25%",
+          "Current Best": "Savera (scale advantage)",
+          "Pain Point": "Asian imports at 15-20% discount but quality risk"
+        },
+        {
+          "Criterion": "Delivery reliability (% OTIF)",
+          "Weight": "20%",
+          "Current Best": "VOL-Stahl (95%+)",
+          "Pain Point": "Savera sometimes 8-10 week delays on peak demand"
+        },
+        {
+          "Criterion": "Quality consistency (reject rate)",
+          "Weight": "20%",
+          "Current Best": "Montanstahl (<1%)",
+          "Pain Point": "Some suppliers 3-5% reject on straightness"
+        },
+        {
+          "Criterion": "Lead time (weeks, repeat orders)",
+          "Weight": "15%",
+          "Current Best": "4-6 weeks",
+          "Pain Point": "New profile sizes: 10-14 weeks"
+        },
+        {
+          "Criterion": "Technical support / engineering",
+          "Weight": "10%",
+          "Current Best": "Montanstahl",
+          "Pain Point": "Most suppliers reactive, not proactive"
+        },
+        {
+          "Criterion": "Payment terms",
+          "Weight": "5%",
+          "Current Best": "Net 60 standard",
+          "Pain Point": "-"
+        },
+        {
+          "Criterion": "Sustainability / CO2 footprint",
+          "Weight": "5%",
+          "Current Best": "Emerging requirement",
+          "Pain Point": "No supplier differentiated yet"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "jtbd": {
+        "market": "Elevator Guide Rails",
+        "naics": "333921",
+        "job_pyramid": [
+          {
+            "level": "L1",
+            "type": "aspirational",
+            "statement": "Ensure safe, reliable vertical transportation for building occupants"
+          },
+          {
+            "level": "L2",
+            "type": "strategic",
+            "statement": "Install and maintain elevator systems that meet safety codes with minimal lifecycle cost"
+          },
+          {
+            "level": "L3",
+            "type": "core_functional",
+            "statement": "Specify and procure guide rails that guarantee car guidance accuracy under all load and speed conditions"
+          },
+          {
+            "level": "L4",
+            "type": "related_functional",
+            "statement": "Source guide rail material that arrives on time, meets EN 81-1 specs, and minimizes total installed cost"
+          },
+          {
+            "level": "L5",
+            "type": "emotional",
+            "statement": "Confidence in supplier reliability and safety performance"
+          }
+        ],
+        "job_map": [
+          {
+            "step": 1,
+            "name": "Define requirements",
+            "importance": 9,
+            "satisfaction": 7
+          },
+          {
+            "step": 2,
+            "name": "Locate suppliers",
+            "importance": 8,
+            "satisfaction": 6
+          },
+          {
+            "step": 3,
+            "name": "Evaluate samples",
+            "importance": 9,
+            "satisfaction": 5
+          },
+          {
+            "step": 4,
+            "name": "Negotiate terms",
+            "importance": 7,
+            "satisfaction": 6
+          },
+          {
+            "step": 5,
+            "name": "Order & schedule",
+            "importance": 8,
+            "satisfaction": 5
+          },
+          {
+            "step": 6,
+            "name": "Receive & inspect",
+            "importance": 9,
+            "satisfaction": 6
+          },
+          {
+            "step": 7,
+            "name": "Install in shaft",
+            "importance": 10,
+            "satisfaction": 7
+          },
+          {
+            "step": 8,
+            "name": "Validate & certify",
+            "importance": 10,
+            "satisfaction": 8
+          }
+        ],
+        "underserved_outcomes": [
+          {
+            "step": 3,
+            "outcome": "Minimize sample-to-production variation",
+            "opportunity_score": 13
+          },
+          {
+            "step": 5,
+            "outcome": "Minimize repeat-order lead time",
+            "opportunity_score": 11
+          },
+          {
+            "step": 6,
+            "outcome": "Minimize incoming inspection effort",
+            "opportunity_score": 12
+          },
+          {
+            "step": 7,
+            "outcome": "Minimize hoistway alignment time",
+            "opportunity_score": 13
+          }
+        ]
+      },
+      "entities": [
+        {
+          "label": "Job",
+          "slug": "job__elevator_guide_rail_specification",
+          "name": "Specify and procure guide rails for elevator car guidance"
+        },
+        {
+          "label": "JobStep",
+          "slug": "js__evaluate_samples",
+          "name": "Evaluate guide rail samples"
+        },
+        {
+          "label": "JobStep",
+          "slug": "js__install_in_shaft",
+          "name": "Install guide rails in hoistway"
+        }
+      ]
+    }
+  ],
+  "has_bom": true,
+  "naics_sector_type": "manufacturing"
+}

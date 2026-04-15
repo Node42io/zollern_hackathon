@@ -1,0 +1,333 @@
+{
+  "marketName": "Precision Steel Profile Manufacturing (12 Existing Home Markets)",
+  "naicsCode": "331221",
+  "naicsTitle": "Rolled Steel Shape Manufacturing",
+  "functionalNeed": "Provide precision near-net-shape steel profiles via hot rolling, cold drawing, cold rolling, and induction hardening — eliminating downstream CNC machining and reducing material waste by 40–80% [SRC: 01_product_decomposition — technology classification]",
+  "switchingCost": "moderate-to-high",
+  "switchingCostFactors": {
+    "Tooling Integration": "Moderate-High — custom die geometry (€5–20K per profile) creates lock-in once qualified. Switching suppliers requires re-tooling and first-article inspection.",
+    "Quality Certification": "High — markets such as elevator (EN 81), automotive (IATF 16949/PPAP), and medical (ISO 13485/MDR) require formal re-qualification per supplier change, taking 6–24 months.",
+    "Material Traceability": "Moderate — pressure equipment (PED) and rail (TSI) markets require EN 10204 3.1 material certificates traceable to specific heats. New supplier must demonstrate equivalent traceability.",
+    "Supply Chain": "Moderate — limited number of European cold-drawing specialists (BGH, Montanstahl, Keystone, Rathbone) means switching options are few. Geographic proximity to DACH customer base is an advantage.",
+    "Overall": "moderate-to-high — switching is technically straightforward for standard profiles but commercially and certification-wise significant for regulated markets. 3–12 month switching cycle typical, extending to 24 months for medical and automotive."
+  },
+  "incumbents": [
+    {
+      "technologyName": "Standard Hot-Rolled Structural Steel Sections",
+      "mechanism": "Continuous casting billet → hot rolling through progressive roll sequence → standard H/I/U/channel sections per EN 10034/10055. Low cost, massive global supply, but standard geometries only with ±0.5–1.0mm tolerances and scale/decarb surface.",
+      "marketShareEstimate": "dominant",
+      "keyVendors": [
+        "ArcelorMittal",
+        "voestalpine",
+        "SSAB",
+        "Tata Steel",
+        "ThyssenKrupp Steel",
+        "Saarstahl"
+      ],
+      "strengths": [
+        "Massive global supply; immediate stock availability",
+        "Extremely low cost per kg (commodity pricing)",
+        "Standard EN/ASTM sizing with engineering databases",
+        "S355/S460/S690 and Hardox wear grades available"
+      ],
+      "weaknesses": [
+        "Standard geometries only — no custom cross-section without minimum hundreds-of-tonnes mill order",
+        "Wide tolerances ±0.5–3.0mm; scale and decarburization surface",
+        "Post-machining almost always required for functional fits",
+        "No induction hardening or near-net-shape capability"
+      ],
+      "confidence": 0.8,
+      "shareSourceIds": ["HOME-S01", "HOME-S02"],
+      "switchingCostLevel": "low",
+      "switchingCostLabel": "Low",
+      "switchingCostNarrative": "Hot-rolled sections are commodity products available from multiple global suppliers. Switching between hot-rolled suppliers is trivial — standard sizing and EN compliance mean drop-in replacement. However, switching FROM hot-rolled TO precision cold-drawn profiles requires design re-engineering to exploit near-net-shape benefits, which is a separate commercial discussion."
+    },
+    {
+      "technologyName": "Bright-Drawn Carbon / Alloy Round Bar (Cold-Finished)",
+      "mechanism": "Hot-rolled bar descaled → cold-drawn through circular die to h9/h11 tolerance → improved surface finish and machinability. Standard round/hex/square sections only — no custom profile geometry.",
+      "marketShareEstimate": "significant",
+      "keyVendors": [
+        "BGH Edelstahl",
+        "Saarstahl",
+        "voestalpine",
+        "Swiss Steel",
+        "Böhler",
+        "Ovako"
+      ],
+      "strengths": [
+        "Better tolerance than hot-rolled (h9/h11)",
+        "Improved surface finish and machinability",
+        "Alloy and stainless grades available",
+        "Standard diameters stocked for immediate delivery"
+      ],
+      "weaknesses": [
+        "Round/hex/square sections only — no custom profile cross-sections",
+        "Post-machining still required for functional fits on non-round geometry",
+        "40–80% material waste when machining complex shapes from round bar",
+        "No induction hardening integration"
+      ],
+      "confidence": 0.8,
+      "shareSourceIds": ["HOME-S03", "HOME-S04"],
+      "switchingCostLevel": "low",
+      "switchingCostLabel": "Low-Moderate",
+      "switchingCostNarrative": "Bright-drawn bar is the primary incumbent in pump, hydraulic, firearms, and medical markets. Switching to ZOLLERN near-net-shape profiles eliminates 40–80% machining waste and reduces cycle time, but requires customer design adaptation to exploit the custom cross-section. The switching motivation is strong (cost reduction) but the switching effort is moderate (re-engineering + first-article qualification)."
+    },
+    {
+      "technologyName": "Roll-Formed High-Strength Steel Strip",
+      "mechanism": "AHSS/HSLA coil (DP600–DP980) cold roll-formed through progressive dies with integrated punching and cutting in-line. High-speed, high-volume production for thin-wall open or closed section profiles.",
+      "marketShareEstimate": "significant",
+      "keyVendors": [
+        "Welser Profile",
+        "Kirchhoff Automotive",
+        "voestalpine Profilafroid",
+        "Hadley Group",
+        "Sadef"
+      ],
+      "strengths": [
+        "Millions-per-year volume capability",
+        "Integrated press/cut operations at high speed",
+        "IATF 16949 certified for automotive",
+        "AHSS-compatible for lightweighting; thin-wall efficient"
+      ],
+      "weaknesses": [
+        "Open sections limit torsional resistance",
+        "Tolerances ±0.2–0.5mm typical",
+        "Geometry limited to strip-feedable profiles",
+        "Not suitable for solid cross-sections or bearing surfaces"
+      ],
+      "confidence": 0.7,
+      "shareSourceIds": ["HOME-S05", "HOME-S06"],
+      "switchingCostLevel": "moderate",
+      "switchingCostLabel": "Moderate",
+      "switchingCostNarrative": "Roll-forming dominates automotive and door system markets for thin-wall profiles. ZOLLERN's cold-drawn solid profiles compete in a different segment — precision solid cross-sections for bearing surfaces, sliding fits, and structural load paths where roll-formed thin-wall is structurally inadequate. The competition is segment-specific rather than head-to-head."
+    },
+    {
+      "technologyName": "Aluminum Extrusions",
+      "mechanism": "Heated aluminum billet extruded through custom die → complex hollow or solid cross-sections including integrated thermal breaks, cable ducts, and mounting channels. Low die cost (~€1–5K) vs. steel cold-drawing dies.",
+      "marketShareEstimate": "significant",
+      "keyVendors": [
+        "Hydro Building Systems (Sapa)",
+        "Constellium",
+        "Schüco",
+        "AMAG",
+        "Norsk Hydro"
+      ],
+      "strengths": [
+        "Complex hollow sections impossible in cold drawing",
+        "Lightweight (2.7 g/cm³ vs. 7.8 for steel)",
+        "Corrosion-free without coating",
+        "Low-cost custom die (€1–5K vs. €5–20K for steel)",
+        "Dominant in door/window systems and growing in automotive/rail"
+      ],
+      "weaknesses": [
+        "1/3 stiffness and ~1/2 strength of steel (more material needed)",
+        "Not suitable for wear-critical, high-strength, or hardened applications",
+        "Aluminum alloys only — no alloy steel option",
+        "FSW/MIG joining more complex than steel welding"
+      ],
+      "confidence": 0.7,
+      "shareSourceIds": ["HOME-S07", "HOME-S08"],
+      "switchingCostLevel": "high",
+      "switchingCostLabel": "High (material class change)",
+      "switchingCostNarrative": "Aluminum extrusion is ZOLLERN's primary material-class competitor in door systems, rail, automotive, and general mechanical engineering. Switching between aluminum and steel is not a drop-in replacement — it requires complete structural re-design. ZOLLERN cannot compete where aluminum's weight advantage is decisive, but wins where steel's strength, stiffness, hardness, and wear resistance are required."
+    },
+    {
+      "technologyName": "CNC Machining from Billet / Bar Stock",
+      "mechanism": "4/5-axis CNC machining of carbon/alloy/stainless steel bar stock to finished geometry. Any 3D shape possible, no tooling cost for short runs, but 40–80% material waste and slow cycle time at volume.",
+      "marketShareEstimate": "dominant",
+      "keyVendors": [
+        "Eaton Steel",
+        "Deutsche Edelstahlwerke",
+        "Böhler",
+        "Aubert & Duval",
+        "specialty machine shops"
+      ],
+      "strengths": [
+        "Any 3D geometry achievable including complex internal features",
+        "No tooling cost for short runs or prototypes",
+        "Premium market positioning (firearms, medical, generator keybars)",
+        "Full material certification and heat traceability"
+      ],
+      "weaknesses": [
+        "40–80% material waste — the primary cost and sustainability weakness",
+        "Higher cycle time vs. near-net-shape at production volume",
+        "Costly at scale (CNC time = $50–150/hr)",
+        "No structural grain flow benefit (machined, not formed)"
+      ],
+      "confidence": 0.8,
+      "shareSourceIds": ["HOME-S09", "HOME-S10"],
+      "switchingCostLevel": "moderate",
+      "switchingCostLabel": "Moderate",
+      "switchingCostNarrative": "CNC machining from bar stock is the default manufacturing method across firearms, pump components, generator keybars, and medical instruments. ZOLLERN's near-net-shape profiles offer 40–80% material savings and reduced cycle time as the core value proposition. Switching requires customer design adaptation to use the near-net cross-section plus first-article qualification, but the TCO motivation is strong."
+    },
+    {
+      "technologyName": "Cold-Drawn T-Section Guide Rails (Direct Competitors — Elevator)",
+      "mechanism": "Carbon steel billet → hot rolling → cold drawing through T-section die → precision web/flange to EN 81 tolerance class T. Hardened flange surface for guide shoe/roller contact. Standardized T45–T127 sizes globally stocked.",
+      "marketShareEstimate": "dominant",
+      "keyVendors": [
+        "MONTEFERRO (Italy)",
+        "VOL-Stahl (Austria/Germany)",
+        "Savera Start",
+        "Ningbo Xinda Group",
+        "Jiangsu Ard Elevator Parts",
+        "Zhejiang Bonly"
+      ],
+      "strengths": [
+        "EN 81-20/50 certified; standard T-sizes globally stocked",
+        "Precise T-section geometry to tolerance class T",
+        "Hardened flange surface for guide shoe/roller contact",
+        "Established global distribution and elevator OEM relationships"
+      ],
+      "weaknesses": [
+        "Chinese manufacturers dominating on price — margin pressure",
+        "Standardized geometry reduces differentiation",
+        "Heavy vs. hollow tube-welded alternatives",
+        "No integrated finishing (straightening, drilling) — multi-supplier value chain"
+      ],
+      "confidence": 0.8,
+      "shareSourceIds": ["HOME-S11", "HOME-S12"],
+      "switchingCostLevel": "very-high",
+      "switchingCostLabel": "Very High",
+      "switchingCostNarrative": "Elevator guide rails are ZOLLERN's most directly competitive market — the product technology is identical to the incumbents (cold-drawn T-section). Switching between guide rail suppliers requires EN 81 re-certification, shaft tolerance validation, and guide shoe compatibility testing. ZOLLERN's differentiation path is vertical integration (profile → straightened/drilled finished rail) to capture downstream value, not profile-level displacement."
+    }
+  ],
+  "positioningTable": [
+    {
+      "technology": "Hot-Rolled Structural (ArcelorMittal, SSAB)",
+      "share": "dominant",
+      "toleranceClass": "±0.5–3.0mm",
+      "customGeometry": "No (standard only)",
+      "surfaceHardening": "No",
+      "materialWaste": "Low (near-final)",
+      "unitCost": "€",
+      "nearNetShape": "No"
+    },
+    {
+      "technology": "Bright-Drawn Round Bar (BGH, Ovako)",
+      "share": "significant",
+      "toleranceClass": "h9/h11",
+      "customGeometry": "No (round/hex/square)",
+      "surfaceHardening": "No",
+      "materialWaste": "High (40–80% for complex)",
+      "unitCost": "€€",
+      "nearNetShape": "No"
+    },
+    {
+      "technology": "Roll-Formed Strip (Welser, voestalpine)",
+      "share": "significant",
+      "toleranceClass": "±0.2–0.5mm",
+      "customGeometry": "Limited (thin-wall open)",
+      "surfaceHardening": "No",
+      "materialWaste": "Low",
+      "unitCost": "€",
+      "nearNetShape": "Partial"
+    },
+    {
+      "technology": "Aluminum Extrusion (Hydro, Schüco)",
+      "share": "significant",
+      "toleranceClass": "±0.1–0.3mm",
+      "customGeometry": "Yes (incl. hollow)",
+      "surfaceHardening": "No (anodizing only)",
+      "materialWaste": "Low",
+      "unitCost": "€€",
+      "nearNetShape": "Yes"
+    },
+    {
+      "technology": "CNC from Bar Stock (machine shops)",
+      "share": "dominant",
+      "toleranceClass": "IT6–IT8",
+      "customGeometry": "Yes (any 3D)",
+      "surfaceHardening": "Outsourced",
+      "materialWaste": "Very High (40–80%)",
+      "unitCost": "€€€€",
+      "nearNetShape": "No"
+    },
+    {
+      "technology": "Cold-Drawn T-Rail (Monteferro, VOL-Stahl)",
+      "share": "dominant (elevator)",
+      "toleranceClass": "EN 81 Class T",
+      "customGeometry": "Standard T only",
+      "surfaceHardening": "Partial (flange)",
+      "materialWaste": "Low",
+      "unitCost": "€€",
+      "nearNetShape": "Yes"
+    },
+    {
+      "technology": "ZOLLERN Steel Profiles (subject)",
+      "share": "subject",
+      "toleranceClass": "IT8–IT10 (cold-drawn)",
+      "customGeometry": "Yes (custom 2D cross-section)",
+      "surfaceHardening": "Yes (integrated IH)",
+      "materialWaste": "Very Low (near-net)",
+      "unitCost": "€€–€€€",
+      "nearNetShape": "Yes"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "ArcelorMittal Europe — Long Products catalog",
+      "prefixedId": "HOME-S01"
+    },
+    {
+      "id": "S02",
+      "label": "SSAB — Hardox wear plate product range",
+      "prefixedId": "HOME-S02"
+    },
+    {
+      "id": "S03",
+      "label": "BGH Edelstahl — Cold-drawn special steel profiles",
+      "prefixedId": "HOME-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Ovako — Precision bar and tube products",
+      "prefixedId": "HOME-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Welser Profile — Roll-formed steel profiles",
+      "prefixedId": "HOME-S05"
+    },
+    {
+      "id": "S06",
+      "label": "voestalpine Profilafroid — Cold-rolled profiles",
+      "prefixedId": "HOME-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Hydro Building Systems — Aluminum extrusion profiles",
+      "prefixedId": "HOME-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Constellium — Automotive aluminum extrusions",
+      "prefixedId": "HOME-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Rathbone Precision Metals — Cold-drawn profiles (competitor reference)",
+      "prefixedId": "HOME-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Montanstahl — Special steel profiles",
+      "prefixedId": "HOME-S10"
+    },
+    {
+      "id": "S11",
+      "label": "MONTEFERRO — Elevator guide rails",
+      "prefixedId": "HOME-S11"
+    },
+    {
+      "id": "S12",
+      "label": "VOL-Stahl — Elevator guide rails and precision profiles",
+      "prefixedId": "HOME-S12"
+    },
+    {
+      "id": "S13",
+      "label": "04_incumbents_home.md — full incumbent technology analysis across 12 markets",
+      "prefixedId": "HOME-S13"
+    }
+  ]
+}

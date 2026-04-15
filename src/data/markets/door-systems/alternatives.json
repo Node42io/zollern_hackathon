@@ -1,0 +1,12 @@
+{
+  "naicsCode": "332321",
+  "marketName": "Door Systems",
+  "slug": "door-systems",
+  "alternatives": [
+    { "name": "In-house roll forming (Dahlstrom, Metform, Bradbury lines)", "unspsc": "24111601", "tradeoffs": "CapEx EUR 200-500K per line; tolerance +-0.2 mm max; no hardened surface option; limited to pre-coated/galvanized coil; economical only at very high volumes. Strength: pre-galvanized delivery (no C10 issue). ~40% share." },
+    { "name": "Cold-drawn / cold-rolled specialty profiles (ZOLLERN, GMH, Montanstahl)", "unspsc": "30102304", "tradeoffs": "IT8 tolerance (+-0.02 mm); IH to 64 HRC; integral seal groove geometry for fire doors (EN 1634). Weakness: 6-12 week die lead; min ~100 kg; C10 corrosion mitigation required (external galvanizing adds 2-4 weeks). ~25% share." },
+    { "name": "Standard hot-rolled structural sections (ArcelorMittal, voestalpine)", "unspsc": "30264000", "tradeoffs": "Tolerance only +-0.5 mm; requires secondary grinding for precision applications; no integral seal groove; no hardened running surface; limited shape catalog (angles, channels, T-sections only). ~25% share." },
+    { "name": "Aluminum extruded profiles (Hydro, Constellium, Schuco)", "unspsc": "30122100", "tradeoffs": "Aluminum door systems only - hard constraint C6 blocks ZOLLERN; lower surface hardness (Vickers ~15 vs 64 HRC steel); insufficient for fire-rated steel door code compliance; higher unit cost. ~10% share." },
+    { "name": "Do nothing - CNC machine from bar stock", "unspsc": "--- (Status Quo)", "tradeoffs": "40-70% material waste; highest unit machining cost; fully flexible for one-off geometries; zero minimum batch; zero tooling investment; no minimum lead time." }
+  ]
+}

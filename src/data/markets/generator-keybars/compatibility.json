@@ -1,0 +1,16 @@
+{
+  "naicsCode": "335312",
+  "marketName": "Motor and Generator Manufacturing",
+  "slug": "generator-keybars",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Dovetail/T-Slot Cross-Section Geometry", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Keybar cross-section is a constant 2D profile — exactly the geometry class cold-drawing is designed for. Well within ZOLLERN's draw bench capacity and maximum cross-section area (7,650 mm2).", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Alloy Range (42CrMo4, C60)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "42CrMo4 and C60 are standard ZOLLERN production grades. Fatigue limit ~480 MPa at 10^7 cycles for tempered 42CrMo4.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Maximum Cross-Section Area", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Keybar cross-sections for turbo-generators and hydro-generators are well below the 2,500 mm2 cold-draw limit.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Surface Roughness (Ra <= 3.2 um)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Cold-drawn inherent Ra 0.4-3.2 um meets the lamination contact quality requirement without additional finishing.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "EN 10204 3.1 Material Certification", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN provides EN 10204 3.1 as standard per delivery lot with heat-to-bar traceability.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": { "knockouts": 0, "mitigable": 0, "none": 5, "marketStatus": "SURVIVING", "totalMitigationCost": "", "totalMitigationTime": "" },
+  "sources": []
+}

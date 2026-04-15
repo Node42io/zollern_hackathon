@@ -1,0 +1,23 @@
+{
+  "naicsCode": "333921",
+  "marketName": "Elevator Guide Rails",
+  "slug": "elevator-guide-rails",
+  "coreJobStatement": "Enable safe, reliable, energy-efficient vertical transport of people and goods within multi-story structures",
+  "productJobStatement": "Help Guide Rail System to constrain cabin and counterweight lateral movement with dimensional accuracy, wear resistance, and installation traceability within elevator hoistways",
+  "anchorLevel": "L4 (Steel guide rail profile body within L5 Guide Rail System under L6b Hoistway Components Manufacturing)",
+  "lPath": "",
+  "segments": [
+    { "segmentNumber": 1, "name": "High-rise commercial", "qualifier": "", "characteristics": ">10 floors, >2.5 m/s, high traffic, EN 81-20 full scope", "isTargetable": true, "targetabilityReason": "IT8 cold-drawn rail mandatory; tightest straightness tolerance", "circumstance": ">10 floors, >2.5 m/s, high traffic, EN 81-20 full scope", "alternativesDiffer": "IT8 cold-drawn mandatory" },
+    { "segmentNumber": 2, "name": "Standard residential", "qualifier": "", "characteristics": "<=10 floors, <=1.6 m/s, medium traffic", "isTargetable": false, "targetabilityReason": "Hot-rolled + machined acceptable; cold-drawn premium often not justified", "circumstance": "<=10 floors, <=1.6 m/s, medium traffic", "alternativesDiffer": "Hot-rolled acceptable" },
+    { "segmentNumber": 3, "name": "Freight / industrial", "qualifier": "", "characteristics": "Heavy loads, high duty-cycle, larger cabin", "isTargetable": true, "targetabilityReason": "Oversized or reinforced section; lower speed tolerance", "circumstance": "Heavy loads, high duty-cycle, larger cabin", "alternativesDiffer": "Oversized section common" },
+    { "segmentNumber": 4, "name": "Retrofit / modernization", "qualifier": "", "characteristics": "Existing hoistway, constrained bracket spacing, replace-in-place", "isTargetable": true, "targetabilityReason": "Tolerance determines fit to legacy bracket positions; custom section common", "circumstance": "Existing hoistway, constrained bracket spacing, replace-in-place", "alternativesDiffer": "Tolerance critical for legacy fit" },
+    { "segmentNumber": 5, "name": "Premium / specialty", "qualifier": "", "characteristics": "Hospital, cleanroom, luxury residential - vibration and surface quality critical", "isTargetable": true, "targetabilityReason": "Cold-drawn + IH mandated; A95 vibration limit critical", "circumstance": "Hospital, cleanroom, luxury residential - vibration and surface quality critical", "alternativesDiffer": "Cold-drawn + IH mandatory" }
+  ],
+  "alternatives": [
+    { "name": "Cold-drawn precision T-section (ZOLLERN position)", "unspsc": "30264000", "tradeoffs": "Higher unit cost; 6m max bar length; 6-12 week die lead time for new sizes; IT8 tolerance and IH available. ~40% share." },
+    { "name": "Hot-rolled + post-machined T-section (ArcelorMittal, voestalpine)", "unspsc": "30264000", "tradeoffs": "+-0.5 mm tolerance without machining step; no integrated surface hardening; secondary machining cost; dominant for standard/freight. ~45% share." },
+    { "name": "Cold-formed hollow steel section (MONTEFERRO, Zhangjiagang Mofeel)", "unspsc": "30264000", "tradeoffs": "~20% material saving; lower cross-section inertia limits speed; non-standard guide shoe compatibility; mainly low/mid-rise. ~10% share." },
+    { "name": "Stainless / aluminium special rail", "unspsc": "30264000", "tradeoffs": "Corrosion advantage; lower strength limits load rating; aluminium not hardenable; premium pricing; niche residential/light-duty. ~4% share." },
+    { "name": "Machined from solid bar (legacy / repair)", "unspsc": "30264000", "tradeoffs": "60-80% material waste; highest per-unit cost; no near-net geometry; long lead time; declining share. ~5% share." }
+  ]
+}

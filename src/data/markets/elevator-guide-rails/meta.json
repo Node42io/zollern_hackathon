@@ -1,0 +1,21 @@
+{
+  "slug": "elevator-guide-rails",
+  "name": "Elevator Guide Rails",
+  "naicsCode": "333921",
+  "isReference": true,
+  "rank": 6,
+  "scores": {
+    "odi": 5.6,
+    "featureFit": 6.5,
+    "constraintCompatibility": 10,
+    "jobCoverage": 5.0,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 5.5,
+    "composite": 6.3
+  },
+  "recommendation": "investigate",
+  "rationale": "Existing ZOLLERN market. Guide rail segment TAM ~$3.5-5.4B globally (2024), CAGR 5-6%. ZOLLERN wins 15/23 needs with net weighted delta +342 - strongest coverage profile of all existing markets. All 4 losses are minor (delta=-1). 6 needs with delta >= +4 (major differentiation). Zero knockout constraints.",
+  "entryStrategy": "Reference only - existing market. Strongest ZOLLERN position. Expand into high-rise and retrofit segments where IT8 tolerance and IH are mandatory.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

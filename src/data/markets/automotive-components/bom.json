@@ -1,0 +1,81 @@
+{
+  "slug": "automotive-components",
+  "marketName": "Other Motor Vehicle Parts Manufacturing",
+  "naicsCode": "336390",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies precision cold-drawn steel profiles that physically become seat rail tracks, window regulator guides, drivetrain shaft blanks, and body structural inserts. ZOLLERN position is L1 (near-net-shape profile section, input part to Tier 1 assembly).",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Seat Rail Adjustment Assembly", "hydronic": false, "sensorFit": "primary", "notes": "Complete fore/aft seat adjustment mechanism supplied by Tier 1 to OEM. ZOLLERN contributes at L1 — precision profile section in structural rail." },
+    { "id": "OT-2", "name": "Window Regulator Assembly", "hydronic": false, "sensorFit": "primary", "notes": "Power/manual window lift mechanism. ZOLLERN contributes at L1 — guide rail section in guide rail subsystem." },
+    { "id": "OT-3", "name": "Drivetrain Shaft Blank", "hydronic": false, "sensorFit": "secondary", "notes": "Cold-drawn precision blank for transmission/driveshaft components. Same material position as OT1." },
+    { "id": "OT-4", "name": "Body Structural Insert", "hydronic": false, "sensorFit": "secondary", "notes": "Custom-section steel insert reinforcing A/B/C-pillar or rocker sections." }
+  ],
+  "marquardtAnchorIds": ["L4.S1", "L4.W1"],
+  "l4Subsystems": [
+    {
+      "id": "L4.S1",
+      "name": "Structural Rail Subsystem (OT1)",
+      "costSharePct": 35,
+      "keyDesignChoice": "Rail profile section manufacturing type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Roll-formed AHSS/HSLA strip section", "sharePct": 60, "trend": "stable" },
+        { "name": "Cold-drawn precision profile section (ZOLLERN)", "sharePct": 20, "trend": "stable" },
+        { "name": "Hot-stamped (press-hardened) section", "sharePct": 12, "trend": "growing" },
+        { "name": "Extruded aluminum section", "sharePct": 8, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.S1.1", "name": "Upper Rail Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Profile assembly (section + end caps)", "sharePct": 100, "trend": "stable" }
+        ]},
+        { "id": "L3.S1.2", "name": "Lower Rail Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Profile assembly (section + end caps)", "sharePct": 100, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.S2",
+      "name": "Sliding Mechanism Subsystem (OT1)",
+      "costSharePct": 25,
+      "keyDesignChoice": "Bearing type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Ball bearing cage assembly", "sharePct": 65, "trend": "growing" },
+        { "name": "Roller bearing cage assembly", "sharePct": 25, "trend": "stable" },
+        { "name": "Polymer slide bearing", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.W1",
+      "name": "Guide Rail Subsystem (OT2)",
+      "costSharePct": 30,
+      "keyDesignChoice": "Guide profile manufacturing type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Roll-formed steel channel section", "sharePct": 55, "trend": "stable" },
+        { "name": "Cold-drawn precision profile channel (ZOLLERN)", "sharePct": 25, "trend": "stable" },
+        { "name": "Extruded aluminum guide profile", "sharePct": 20, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.W3",
+      "name": "Drive Mechanism Subsystem (OT2)",
+      "costSharePct": 35,
+      "keyDesignChoice": "Drive principle",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Cable drum motor assembly", "sharePct": 70, "trend": "growing" },
+        { "name": "Scissor arm regulator", "sharePct": 20, "trend": "declining" },
+        { "name": "Rack-and-pinion assembly", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    }
+  ]
+}

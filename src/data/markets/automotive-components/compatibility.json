@@ -1,0 +1,68 @@
+{
+  "naicsCode": "336390",
+  "marketName": "Other Motor Vehicle Parts Manufacturing",
+  "slug": "automotive-components",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Minimum Carbon Content (C5)",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Some seat rail applications require >0.45% C for surface hardness. ZOLLERN standard grade range includes C45 (0.42-0.50% C) and 42CrMo4 which meets this requirement.",
+      "mitigation": "Specify C45 or 42CrMo4 grade for hardness-critical applications; verify carbon content in EN 10204 3.1 cert per heat",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Tooling Lead Time (C8)",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "6-12 week die lead time for new geometry can conflict with OEM program launch timelines. Mitigated by die library reuse and parallel PPAP.",
+      "mitigation": "Leverage existing die library for standard seat rail and guide channel geometries; initiate die design in parallel with OEM drawing approval phase",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Induction Hardening Length (C9)",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Maximum IH coil length may limit hardening of very long seat rail profiles (>1,500 mm). Mitigated by multi-pass IH or customer-side IH.",
+      "mitigation": "Multi-pass IH for profiles exceeding single-coil length; alternatively deliver unhardened and Tier 1 applies IH in-house",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "IATF 16949 Certification",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "ZOLLERN already holds IATF 16949 certification. EN 10204 3.1 material documentation and PPAP Level 3 capability in place.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Profile Width (160 mm)",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Seat rail profiles, window regulator guides, and drivetrain shaft blanks are all well within 160 mm maximum width constraint.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 3,
+    "none": 2,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": []
+}

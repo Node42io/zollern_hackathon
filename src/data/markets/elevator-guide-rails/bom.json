@@ -1,0 +1,109 @@
+{
+  "slug": "elevator-guide-rails",
+  "marketName": "Elevator Guide Rails",
+  "naicsCode": "333921",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies steel guide rail profile body at L4 (subsystem of L5 Guide Rail System). Output type: Traction Elevator (complete installed system).",
+  "outputTypes": [
+    { "id": "OT-A/B", "name": "Traction Elevator (passenger, low-rise to high-rise)", "hydronic": false, "sensorFit": "primary", "notes": "Dominant elevator type. Full L4->L0 decomposition." }
+  ],
+  "marquardtAnchorIds": ["L4.3"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Drive / Traction Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Motor technology",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Gearless PMSM (permanent magnet synchronous)", "sharePct": 50, "trend": "growing" },
+        { "name": "Geared VFD induction motor", "sharePct": 30, "trend": "declining" },
+        { "name": "Gearless AC induction (wound rotor)", "sharePct": 15, "trend": "stable" },
+        { "name": "Hydraulic power unit (low-rise)", "sharePct": 5, "trend": "declining" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.2",
+      "name": "Suspension Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Suspension medium",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Steel wire rope (8x19 or 6x19 construction)", "sharePct": 60, "trend": "stable" },
+        { "name": "Coated steel belt (flat belt, e.g. Schindler/KONE)", "sharePct": 30, "trend": "growing" },
+        { "name": "Aramid-core rope (lightweight)", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Guidance Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Guide rail profile type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Solid T-section steel rail (cold-drawn or hot-rolled + machined)", "sharePct": 78, "trend": "stable" },
+        { "name": "Hollow section steel guide rail", "sharePct": 18, "trend": "growing" },
+        { "name": "Stainless steel / aluminium special rail", "sharePct": 4, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.3.1", "name": "Guide Rail Profile Body (T-section)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN PRIMARY - cold-drawn precision T-section at IT8 tolerance with in-line induction hardening to 64 HRC", "alternatives": [
+          { "name": "Cold-drawn precision T-section (ZOLLERN)", "sharePct": 40, "trend": "stable", "isMarquardt": true },
+          { "name": "Hot-rolled + post-machined T-section (ArcelorMittal, voestalpine)", "sharePct": 45, "trend": "stable" },
+          { "name": "Cold-formed hollow section (MONTEFERRO, Zhangjiagang Mofeel)", "sharePct": 10, "trend": "growing" },
+          { "name": "Machined from solid bar (legacy / repair)", "sharePct": 5, "trend": "declining" }
+        ]},
+        { "id": "L3.3.2", "name": "Rail Fishplate (Splice Connector)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Machined steel fishplate (paired)", "sharePct": 85, "trend": "stable" },
+          { "name": "Adjustable splice plate", "sharePct": 15, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.4",
+      "name": "Safety Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Safety gear type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Progressive safety gear (high-speed)", "sharePct": 60, "trend": "growing" },
+        { "name": "Instantaneous safety gear (low-speed)", "sharePct": 30, "trend": "declining" },
+        { "name": "Instantaneous with buffered action", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.5",
+      "name": "Control / Electrical Subsystem",
+      "costSharePct": 20,
+      "keyDesignChoice": "Controller architecture",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Microprocessor-based controller + VFD", "sharePct": 80, "trend": "stable" },
+        { "name": "IoT-enabled smart controller (predictive maintenance)", "sharePct": 20, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.6",
+      "name": "Cabin / Car Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Cabin construction",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Steel frame + composite panel cabin", "sharePct": 60, "trend": "stable" },
+        { "name": "Steel frame + stainless steel panel", "sharePct": 25, "trend": "stable" },
+        { "name": "Aluminium frame + glass panel (panoramic)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

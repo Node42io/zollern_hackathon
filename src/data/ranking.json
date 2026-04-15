@@ -1,0 +1,262 @@
+{
+  "productName": "ZOLLERN Special Steel Profiles",
+  "vendorName": "ZOLLERN GmbH & Co. KG",
+  "technologyClass": "Precision Steel Profile Manufacturing",
+  "unspscCode": "30102304",
+  "unspscTitle": "Steel profiles",
+  "customProductGroup": "Custom precision steel profiles via hot rolling, cold drawing, cold rolling, and induction hardening",
+  "commodityFunctionalPromise": "Near-net-shape custom cross-section steel profiles with integrated induction hardening, eliminating 40–80% downstream CNC machining waste and 1–2 process steps (DN up to 160mm width, ≤2,500mm² cold-drawn, ≤4,000mm² IH).",
+  "totalMarketsEvaluated": 12,
+  "marketsEliminatedByConstraints": 0,
+  "weights": {
+    "odi_opportunity": 0.20,
+    "feature_fit": 0.20,
+    "constraint_compatibility": 0.15,
+    "job_coverage": 0.15,
+    "vn_hierarchy": 0.10,
+    "incumbent_vulnerability": 0.20
+  },
+  "rankedMarkets": [
+    {
+      "rank": 1,
+      "slug": "general-mechanical-engineering",
+      "marketName": "General Mechanical Engineering",
+      "naicsCode": "332999",
+      "scores": {
+        "odi": 7.5,
+        "featureFit": 8.5,
+        "constraintCompatibility": 9.0,
+        "jobCoverage": 8.0,
+        "vnHierarchy": 8.0,
+        "incumbentVulnerability": 8.5,
+        "composite": 8.15
+      },
+      "recommendation": "pursue",
+      "rationale": "Highest composite score driven by strongest feature fit (8.5) and incumbent vulnerability (8.5) — 40–80% machining waste from bar stock is the core displacement argument. Low switching cost (no certification required). Catalog program + hardened slideway profiles = double process-elimination value proposition. 67%→100% VN coverage feasible.",
+      "entryStrategy": "1) Launch catalog profile program (20–30 standard geometries on stock). 2) Lead with hardened slideway profiles as flagship. 3) Target German Maschinenbau SMEs via distribution. 4) Prove double-process-elimination TCO. 5) Scale via Fertigteile (pre-cut, faced, drilled) as 2–3x revenue multiplier.",
+      "estimatedTimeToEntry": "0–6 months",
+      "estimatedInvestment": "€100–300K (catalog inventory)"
+    },
+    {
+      "rank": 2,
+      "slug": "pump-components",
+      "marketName": "Pump Components",
+      "naicsCode": "333911",
+      "scores": {
+        "odi": 7.0,
+        "featureFit": 8.0,
+        "constraintCompatibility": 8.5,
+        "jobCoverage": 7.5,
+        "vnHierarchy": 7.0,
+        "incumbentVulnerability": 8.0,
+        "composite": 7.70
+      },
+      "recommendation": "pursue",
+      "rationale": "Pre-hardened IH blanks as standard value-add repositions ZOLLERN from 'profile supplier' to 'pre-hardened blank supplier' at 20–40% price premium. Dominant incumbent (precision round bar) wastes material on non-round geometries. Centrifugal shaft expansion opens new sub-segment. 50%→87.5% VN coverage via phased vertical integration.",
+      "entryStrategy": "1) Offer pre-hardened profile blanks as standard value-add on existing sales. 2) Expand into centrifugal pump shaft profiles. 3) Target Grundfos, KSB, Wilo sub-tier suppliers. 4) Phase into rotor machining (€3.5–7.3M) for vertical integration.",
+      "estimatedTimeToEntry": "0–3 months (pre-hardened blanks immediate)",
+      "estimatedInvestment": "Zero (Tier 1); €3.5–7.3M (Tier 3 vertical integration)"
+    },
+    {
+      "rank": 3,
+      "slug": "hydraulic-cylinders",
+      "marketName": "Hydraulic Cylinders",
+      "naicsCode": "333995",
+      "scores": {
+        "odi": 7.0,
+        "featureFit": 7.5,
+        "constraintCompatibility": 8.0,
+        "jobCoverage": 7.5,
+        "vnHierarchy": 7.0,
+        "incumbentVulnerability": 7.5,
+        "composite": 7.45
+      },
+      "recommendation": "pursue",
+      "rationale": "Rod IH hardening as value-add is zero-capex, using existing equipment and existing customers. REACH Cr(VI) pressure on hard chrome creates regulatory tailwind for IH-hardened rod profiles. End-cap blank expansion adds adjacent revenue stream. 60%→80% VN coverage feasible via bundled supply.",
+      "entryStrategy": "1) Offer rod IH hardening as standard value-add on existing cylinder rod sales. 2) Position as chrome-free REACH-compliant alternative. 3) Expand into end-cap profile blanks. 4) Target Bosch Rexroth, Parker Hannifin, Bucher Hydraulics sub-tier supply chain. 5) Bundle rod + end-cap as system supply.",
+      "estimatedTimeToEntry": "0–3 months",
+      "estimatedInvestment": "Zero (existing equipment)"
+    },
+    {
+      "rank": 4,
+      "slug": "elevator-guide-rails",
+      "marketName": "Elevator Guide Rails",
+      "naicsCode": "333921",
+      "scores": {
+        "odi": 6.5,
+        "featureFit": 7.5,
+        "constraintCompatibility": 10.0,
+        "jobCoverage": 7.0,
+        "vnHierarchy": 5.0,
+        "incumbentVulnerability": 5.5,
+        "composite": 7.00
+      },
+      "recommendation": "pursue",
+      "rationale": "Perfect constraint compatibility (10.0) — the product was designed for this exact application. Low incumbent vulnerability (5.5) because ZOLLERN IS the direct competitor technology. Differentiation path is vertical integration (profile → straightened/drilled finished rail) for 2.5x revenue per meter and 20%→80% VN coverage. €500K–1M investment.",
+      "entryStrategy": "1) Invest in straightening and drilling line (€500K–1M). 2) Offer finished rail delivery (straightened, cut, drilled) vs. raw profile. 3) Target Schindler, KONE, ThyssenKrupp Elevator sub-tier. 4) Differentiate on European quality + finished-rail service vs. Chinese raw-profile pricing. 5) Expand to sill/frame jamb profiles.",
+      "estimatedTimeToEntry": "6–12 months (vertical integration)",
+      "estimatedInvestment": "€500K–1M"
+    },
+    {
+      "rank": 5,
+      "slug": "medical-instruments",
+      "marketName": "Medical Instruments",
+      "naicsCode": "339112",
+      "scores": {
+        "odi": 7.5,
+        "featureFit": 7.0,
+        "constraintCompatibility": 6.5,
+        "jobCoverage": 6.5,
+        "vnHierarchy": 6.0,
+        "incumbentVulnerability": 7.5,
+        "composite": 7.00
+      },
+      "recommendation": "pursue",
+      "rationale": "Highest ODI opportunity alongside gen. mech. eng. — 60–80% machining waste from round bar is the primary displacement argument in the €65B medical instrument market. Tuttlingen surgical cluster proximity (~60 km from ZOLLERN Sigmaringendorf) creates a logistics moat. 5 mitigable constraints (most of any market) but ISO 13485 certification creates a competitive moat once obtained.",
+      "entryStrategy": "1) Obtain ISO 13485 certification (€100–200K, 12–18 months). 2) Target Tuttlingen cluster surgical instrument OEMs. 3) Lead with sterilization tray profiles as entry product. 4) Specify martensitic 420SS for autoclave-compatible instruments. 5) Expand to scissors blades, retractor arms, blade carrier profiles.",
+      "estimatedTimeToEntry": "12–18 months (certification gating)",
+      "estimatedInvestment": "€100–200K"
+    },
+    {
+      "rank": 6,
+      "slug": "door-systems",
+      "marketName": "Door Systems",
+      "naicsCode": "332321",
+      "scores": {
+        "odi": 6.5,
+        "featureFit": 7.5,
+        "constraintCompatibility": 8.5,
+        "jobCoverage": 7.0,
+        "vnHierarchy": 7.0,
+        "incumbentVulnerability": 6.5,
+        "composite": 7.15
+      },
+      "recommendation": "pursue",
+      "rationale": "Frame profile expansion opens 10–20x addressable market vs. current precision track/sill niche. Aluminum extrusions dominate but cannot match steel for blast/security/fire-rated doors. Galvanized delivery partnership eliminates corrosion objection. Strong adjacency from existing sliding door track profiles.",
+      "entryStrategy": "1) Expand from precision track/sill into hot-rolled structural frame sections. 2) Establish galvanizing delivery partnership for outdoor/corrosion applications. 3) Target security/fire-rated door OEMs where steel strength is non-negotiable. 4) Position integrated IH for hardened track surfaces. 5) Scale via door hardware profile expansion.",
+      "estimatedTimeToEntry": "3–6 months",
+      "estimatedInvestment": "€100–200K"
+    },
+    {
+      "rank": 7,
+      "slug": "generator-keybars",
+      "marketName": "Generator Keybars",
+      "naicsCode": "335312",
+      "scores": {
+        "odi": 6.5,
+        "featureFit": 8.0,
+        "constraintCompatibility": 10.0,
+        "jobCoverage": 6.0,
+        "vnHierarchy": 5.0,
+        "incumbentVulnerability": 6.0,
+        "composite": 6.95
+      },
+      "recommendation": "pursue",
+      "rationale": "Perfect constraint compatibility (10.0) and strong feature fit (8.0) — ZOLLERN's cold-drawn dovetail profiles eliminate 40–70% machining waste vs. incumbent machined bar. Rotor slot wedge profiles offer 90% capability overlap with existing keybar production. Wind turbine stator keybars (NEW adjacent market) represent major growth vector driven by wind energy boom.",
+      "entryStrategy": "1) Expand into rotor slot wedge profiles for existing turbine OEM customers. 2) Qualify for wind turbine stator keybars (Siemens Gamesa, Vestas, GE Renewable). 3) Leverage existing GE/Siemens Energy relationships. 4) Position 30–50% cost reduction vs. machined bar. 5) Offer pre-cut Fertigteile delivery.",
+      "estimatedTimeToEntry": "0–3 months (slot wedges); 12–18 months (wind turbine OEM qualification)",
+      "estimatedInvestment": "Zero (Tier 1); €100–200K (wind turbine OEM qual)"
+    },
+    {
+      "rank": 8,
+      "slug": "linear-guides",
+      "marketName": "Linear Guides",
+      "naicsCode": "333249",
+      "scores": {
+        "odi": 6.0,
+        "featureFit": 7.0,
+        "constraintCompatibility": 10.0,
+        "jobCoverage": 6.5,
+        "vnHierarchy": 6.0,
+        "incumbentVulnerability": 5.5,
+        "composite": 6.70
+      },
+      "recommendation": "investigate",
+      "rationale": "Perfect constraint compatibility but moderate incumbent vulnerability (5.5) — recirculating ball rail systems (THK, HIWIN) deliver a complete rail+carriage system that ZOLLERN cannot match without carriage integration. Differentiation is in custom slideway bed profiles for machine tools and contaminated-environment industrial applications where ZOLLERN's IH surface hardening eliminates separate hardening and grinding steps.",
+      "entryStrategy": "1) Target custom slideway bed profiles for machine tool OEMs. 2) Lead with hardened slideway as double-process-elimination. 3) Investigate precision grinding integration (€2–10M) for long-term 60%→80% VN coverage. 4) Avoid competing head-to-head with THK/HIWIN on rail+carriage systems.",
+      "estimatedTimeToEntry": "3–6 months",
+      "estimatedInvestment": "Zero (Tier 1); €2–10M (grinding integration, Tier 3)"
+    },
+    {
+      "rank": 9,
+      "slug": "firearms-components",
+      "marketName": "Firearms Components",
+      "naicsCode": "332994",
+      "scores": {
+        "odi": 6.5,
+        "featureFit": 7.0,
+        "constraintCompatibility": 8.0,
+        "jobCoverage": 6.0,
+        "vnHierarchy": 5.0,
+        "incumbentVulnerability": 7.0,
+        "composite": 6.70
+      },
+      "recommendation": "investigate",
+      "rationale": "Barrel blank round profiles are zero-capex with 90%+ capability overlap — the simplest die geometry in ZOLLERN's portfolio. Strong incumbent vulnerability (7.0) due to 50–80% machining waste in dominant CNC-from-billet approach. Two mitigable constraints: IH length range (short parts) and ITAR/EAR export control (6–12 months compliance). Vertical integration NOT recommended due to forging barrier and regulatory burden.",
+      "entryStrategy": "1) Launch barrel blank round profiles for European sport/hunting rifle manufacturers. 2) Qualify with 2–3 DACH firearms OEMs (Blaser, Steyr, SIG Sauer Germany). 3) Assess ITAR registration timeline for US market. 4) Do NOT pursue vertical integration (forging barrier, regulatory burden).",
+      "estimatedTimeToEntry": "3–6 months (EU); 12–18 months (US — ITAR)",
+      "estimatedInvestment": "Zero (profile supply); medium (ITAR compliance)"
+    },
+    {
+      "rank": 10,
+      "slug": "automotive-components",
+      "marketName": "Automotive Components",
+      "naicsCode": "336399",
+      "scores": {
+        "odi": 6.0,
+        "featureFit": 6.5,
+        "constraintCompatibility": 7.0,
+        "jobCoverage": 6.5,
+        "vnHierarchy": 5.0,
+        "incumbentVulnerability": 5.0,
+        "composite": 6.05
+      },
+      "recommendation": "investigate",
+      "rationale": "High entry barrier: IATF 16949 re-qualification, PPAP, and CQI-9 audit required. Roll-formed AHSS strip (Welser, Kirchhoff) dominates at volume with millions-per-year capability. ZOLLERN's niche is precision solid cross-sections (seat rails, sunroof tracks, hinge profiles) where roll-formed thin-wall is structurally inadequate. 3 mitigable constraints (min carbon, tooling lead time, IH length). Key question: does CQI-9 capex justify automotive volume commitment?",
+      "entryStrategy": "1) Complete CQI-9 IH audit (~€20K). 2) Target tier-2 automotive seat rail and sunroof track OEMs. 3) Lead with Fertigteile CNC blanks (pre-cut, faced, drilled). 4) Prove IT8 tolerance eliminates downstream machining. 5) Scale via PPAP-qualified production volumes.",
+      "estimatedTimeToEntry": "6–12 months (CQI-9 + PPAP)",
+      "estimatedInvestment": "€20K (CQI-9 audit)"
+    },
+    {
+      "rank": 11,
+      "slug": "construction-machinery",
+      "marketName": "Construction Machinery",
+      "naicsCode": "333120",
+      "scores": {
+        "odi": 5.5,
+        "featureFit": 6.0,
+        "constraintCompatibility": 6.5,
+        "jobCoverage": 5.5,
+        "vnHierarchy": 5.0,
+        "incumbentVulnerability": 4.5,
+        "composite": 5.55
+      },
+      "recommendation": "defer",
+      "rationale": "Lowest incumbent vulnerability (4.5) — hot-rolled structural steel and Hardox plate are commodity products at extremely low €/kg that ZOLLERN cannot match on price. 4 mitigable constraints (max width, max IH cross-section, corrosion, high-temp oxidation). Focus narrowly on high-strength S690QL grade qualification and wear strip aftermarket program (250–1,000 hr recurring replacement cycle). Vertical integration NOT recommended — fundamentally different business model.",
+      "entryStrategy": "1) Qualify S690QL high-strength grade (€50–100K). 2) Launch wear strip aftermarket program (recurring replacement revenue). 3) Target Liebherr, Caterpillar, Komatsu sub-tier for niche precision guide profiles only. 4) Do NOT compete on structural sections vs. hot-rolled commodity.",
+      "estimatedTimeToEntry": "3–6 months (grade qual)",
+      "estimatedInvestment": "€50–100K"
+    },
+    {
+      "rank": 12,
+      "slug": "rail-vehicle-parts",
+      "marketName": "Rail Vehicle Parts",
+      "naicsCode": "336510",
+      "scores": {
+        "odi": 5.5,
+        "featureFit": 5.5,
+        "constraintCompatibility": 8.5,
+        "jobCoverage": 5.0,
+        "vnHierarchy": 4.0,
+        "incumbentVulnerability": 4.5,
+        "composite": 5.55
+      },
+      "recommendation": "defer",
+      "rationale": "High switching cost (TSI/NTR homologation) combined with low incumbent vulnerability (4.5) — standard hot-rolled sections and aluminum extrusions dominate with massive scale and low cost. ZOLLERN's opportunity is narrowly focused on bogie frame profiles (7/10 adjacency) and wider alloy grade expansion. Vertical integration NOT recommended — heavy fabrication is a fundamentally different capability set. 17%→50% VN coverage theoretically possible but not commercially justified.",
+      "entryStrategy": "1) Expand alloy grade program (S355J2, S690QL, Weldox/Strenx grades). 2) Target bogie frame structural profiles for Alstom, Siemens Mobility, Stadler. 3) Offer weld-prep delivery (pre-chamfered, pre-cut). 4) Focus on running gear where steel strength trumps aluminum weight advantage.",
+      "estimatedTimeToEntry": "6–12 months (grade qual + TSI)",
+      "estimatedInvestment": "€50–100K per grade qualification"
+    }
+  ],
+  "executiveSummary": "All 12 existing markets survive constraint knockout — zero markets eliminated. Eight markets receive PURSUE recommendations and four receive INVESTIGATE or DEFER. The analysis identifies three strategic tiers: Tier 1 (immediate, zero-capex) generates €8–24M/yr from pre-hardened blanks, Fertigteile expansion, barrel blanks, rotor slot wedges, rod IH value-add, hardened slideways, and wear strip aftermarket. Tier 2 (€670K–1.4M investment) generates €17–49M/yr from the catalog profile program, ISO 13485 certification, door system expansion, and S690QL grade qualification. Tier 3 (€6.8–19.7M strategic investment) generates €27–81M/yr from elevator vertical integration, precision grinding, and pump rotor machining. The single most impactful move is the catalog profile program (€100–300K, 20–30 standard geometries on stock) — it eliminates the #1 customer objection (die cost + 6–12 week lead time) across ALL markets simultaneously. Base scenario: €103M/yr incremental revenue (~27% of ZOLLERN Group €385M), transforming the Steel Profiles division from structural decline to strategic expansion."
+}

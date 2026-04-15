@@ -1,0 +1,162 @@
+{
+  "naicsCode": "339112",
+  "marketName": "Surgical and Medical Instrument Manufacturing",
+  "slug": "medical-instruments",
+  "coreJobStatement": "Design, manufacture, and deliver precision surgical and medical instruments that enable clinicians to perform diagnostic, therapeutic, and interventional procedures with controlled force, accurate positioning, and repeatable ergonomic handling [SRC: VN_medical_instruments]",
+  "productJobStatement": "Help Instrument Material Production to supply precision-drawn, near-net-shape stainless steel instrument profile stock at +-0.02 mm dimensional tolerance and controlled hardness potential (hardenable to 50-60 HRC) with biocompatible as-drawn surface (Ra <= 0.4 um) — consistently across batches — for instrument forging, machining, and finishing",
+  "anchorLevel": "L5 (material — instrument-grade steel profile / bar stock within L6a)",
+  "lPath": "L7 Surgical & Medical Instrument Ecosystem > L6a Instrument Material Production > L5 Instrument-Grade Steel Profile / Bar Stock",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Premium Reusable Instrument OEM",
+      "qualifier": "Aesculap, KLS Martin, Hu-Friedy",
+      "characteristics": "High-end reusable instruments at medium volume; tightest metallurgical and finish requirements; ISO 13485 + MDR compliance",
+      "isTargetable": true,
+      "targetabilityReason": "Non-standard geometries and tight metallurgy create profile demand",
+      "circumstance": "High-end reusable instruments at medium volume; tightest metallurgical and finish requirements; ISO 13485 + MDR compliance",
+      "alternativesDiffer": "Yes — drop-forged blank dominant; custom profile for non-standard geometries"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Tuttlingen Instrument Cluster (SME contract manufacturers)",
+      "qualifier": "400+ SME instrument makers",
+      "characteristics": "Medium-low volume; diverse instrument catalog; cost-sensitive",
+      "isTargetable": true,
+      "targetabilityReason": "Standard bar stock dominant; limited custom profile adoption currently",
+      "circumstance": "400+ SME instrument makers in Tuttlingen/Sialkot; medium-low volume; diverse instrument catalog; cost-sensitive",
+      "alternativesDiffer": "Yes — standard bar stock dominant; limited custom profile adoption"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Endoscopic / MIS Instrument Maker",
+      "qualifier": "Karl Storz, Stryker Endo",
+      "characteristics": "Thin-wall tubular shafts at high precision; growing volume; OD 3-10 mm",
+      "isTargetable": true,
+      "targetabilityReason": "Precision tube stock dominant; profiled tube/channel for instrument tips",
+      "circumstance": "Thin-wall tubular shafts at high precision; growing volume; OD 3-10 mm",
+      "alternativesDiffer": "Yes — precision tube stock dominant; Swiss-lathe from bar; profiled tube for tips"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Sterilization Tray Maker",
+      "qualifier": "Hupfer, Wagner, SMP",
+      "characteristics": "Stainless steel profiles for tray rails and dividers; standardized cross-sections; high volume",
+      "isTargetable": true,
+      "targetabilityReason": "Standard stainless profiles dominant; custom channel profiles for locking",
+      "circumstance": "Stainless steel profiles for tray rails and dividers; standardized cross-sections; high volume",
+      "alternativesDiffer": "Yes — standard stainless profiles dominant; custom channel profiles for locking"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Custom cold-drawn precision stainless steel instrument profile (near-net-shape)",
+      "unspsc": "30102304",
+      "tradeoffs": "6-12 week tooling lead time for new geometry; >=100 kg min batch; limited to stainless/alloy steel; requires ISO 10993 biocompatibility documentation from supplier"
+    },
+    {
+      "name": "Standard stainless steel round/flat/hex bar stock (full machining in-house)",
+      "unspsc": "31161501",
+      "tradeoffs": "40-70% material waste; high machining cost; in-house CNC capacity required; widely available from multiple distributors; ~55% market share"
+    },
+    {
+      "name": "Drop-forged instrument blank (closed-die, near-net-shape)",
+      "unspsc": "31171501",
+      "tradeoffs": "Forging die investment 5-20K EUR; forging-specific surface texture requires full finishing; limited geometry flexibility per die; ~20% share"
+    },
+    {
+      "name": "MIM (metal injection molding) pre-form (small/complex parts)",
+      "unspsc": "31171501",
+      "tradeoffs": "Size-limited (< 50 g typical); shrinkage tolerance +-0.3%; debinding and sintering add process steps; growing for disposable and endoscopic; ~10% share"
+    },
+    {
+      "name": "Do nothing — continue with current bar stock supplier (status quo)",
+      "unspsc": "",
+      "tradeoffs": "Zero switching cost; zero qualification effort; hidden cost in material waste and CNC capacity tied up"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Specify instrument material: steel grade, cross-section geometry, tolerance class, hardness potential, surface finish, biocompatibility requirements",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Material spec drives die design, grade selection, and downstream processing pathway",
+      "rawStatement": "Specify instrument material: steel grade, cross-section geometry, tolerance class, hardness potential, surface finish, biocompatibility requirements",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Material specification drives die design, grade selection, and downstream processing pathway"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify and qualify medical-grade steel profile supplier; ISO 13485 supplier audit + ISO 10993 biocompatibility file required",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Supplier qualification for medical device material is a multi-month barrier",
+      "rawStatement": "Identify and qualify medical-grade steel profile supplier; ISO 13485 supplier audit + ISO 10993 biocompatibility file required",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Supplier qualification for medical device material supply is a multi-month barrier"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Incoming inspection: dimensional check, hardness spot-check, material certificate verification, surface roughness measurement per batch",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Every incoming batch must pass inspection gates before release to machining",
+      "rawStatement": "Incoming inspection: dimensional check, hardness spot-check, material certificate verification, surface roughness measurement per batch",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Every incoming batch must pass inspection gates before release to machining"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Pre-machining release decision: batch compliant with purchase spec? Material certificate traceable? Biocompatibility file current?",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Release decision gates all downstream processing",
+      "rawStatement": "Pre-machining release decision: batch compliant with purchase spec? Material certificate traceable? Biocompatibility file current?",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Release decision gates all downstream processing"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Profile stock dimensional consistency and metallurgical uniformity drive machining productivity, forging quality, and heat-treatment response",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Profile stock properties directly affect downstream processing outcomes",
+      "rawStatement": "Profile stock dimensional consistency and metallurgical uniformity drive machining productivity, forging quality, and heat-treatment response",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Profile stock properties directly affect downstream machining productivity and heat-treatment response"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Track batch-to-batch drift in profile dimensions, surface finish, grain structure, and inclusion content",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Drift detection prevents propagation of metallurgical variability into finished instruments",
+      "rawStatement": "Track batch-to-batch drift in profile dimensions, surface finish, grain structure, and inclusion content",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Drift detection prevents propagation of metallurgical variability into finished instruments"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "VN_medical_instruments.md",
+      "url": "VN_medical_instruments.md",
+      "prefixedId": "JTBD-MEDICAL-INSTRUMENTS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "BOM_medical_instruments.md",
+      "url": "BOM_medical_instruments.md",
+      "prefixedId": "JTBD-MEDICAL-INSTRUMENTS-S02"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "hydraulic-cylinders",
+  "name": "Fluid Power Cylinder and Actuator Manufacturing",
+  "naicsCode": "333995",
+  "isReference": true,
+  "rank": 9,
+  "scores": {
+    "odi": 5.85,
+    "featureFit": 5.4,
+    "constraintCompatibility": 9.5,
+    "jobCoverage": 5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 5.0,
+    "composite": 5.96
+  },
+  "recommendation": "reference",
+  "rationale": "Existing ZOLLERN market. Cold-drawn precision round bar and shaped profiles for piston rod blanks, cylinder barrel tube blanks, and end-cap blanks. Market size USD 16.2B global (2025). Key buyers: Caterpillar, Liebherr, Bosch Rexroth, Parker Hannifin.",
+  "entryStrategy": "Existing market — differentiate via in-line IH coupled with alloy grade (42CrMo4 guaranteed >=54 HRC), IT8 OD tolerance, and EN 10204 3.1 standard delivery.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

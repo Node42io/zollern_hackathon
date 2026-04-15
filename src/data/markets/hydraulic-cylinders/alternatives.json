@@ -1,0 +1,12 @@
+{
+  "naicsCode": "333995",
+  "marketName": "Fluid Power Cylinder and Actuator Manufacturing",
+  "slug": "hydraulic-cylinders",
+  "alternatives": [
+    { "name": "Cold-drawn precision round bar (C45 / 42CrMo4) — ZOLLERN", "unspsc": "30102304", "tradeoffs": "Min batch ~100 kg; 6-12 week tooling lead for new OD; max OD ~56 mm for cold-draw; IT8 tolerance +-0.02 mm; in-line IH up to 64 HRC; EN 10204 3.1 standard; IATF 16949 [SRC: JTBD_hydraulic_cylinders]" },
+    { "name": "Precision-turned + OD-ground bar from hot-rolled stock", "unspsc": "31161501", "tradeoffs": "20-30% more material waste; additional turning operation; hot-rolled tolerance +-0.5 mm requires heavier grinding stock [SRC: JTBD_hydraulic_cylinders]" },
+    { "name": "Forged rod blank (large-diameter, heavy-duty)", "unspsc": "31151500", "tradeoffs": "High tooling cost; min batch ~500 kg; 8-16 week lead time; not suited for OD < ~80 mm [SRC: JTBD_hydraulic_cylinders]" },
+    { "name": "Pre-ground commercial piston rod stock (e.g. Ovako Cromax)", "unspsc": "31161504", "tradeoffs": "ISO f7 OD; Ra <0.2 um; limited to standard ODs in 5 mm steps; limited alloy range — mostly C45; no 42CrMo4 IH coupling; zero tooling risk [SRC: ADJ_hydraulic_cylinders]" },
+    { "name": "Do nothing / outsource to contract rod bar processor", "unspsc": "", "tradeoffs": "Zero in-house metallurgical control; extended supply chain; quality traceability risk; zero P1 burden on internal engineering team" }
+  ]
+}

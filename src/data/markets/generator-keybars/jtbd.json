@@ -1,0 +1,168 @@
+{
+  "naicsCode": "335312",
+  "marketName": "Motor and Generator Manufacturing",
+  "slug": "generator-keybars",
+  "coreJobStatement": "Manufacture rotating electrical machines that reliably convert between mechanical and electrical energy at specified power, voltage, frequency, and efficiency ratings [SRC: VN_generator_keybars]",
+  "productJobStatement": "Help Stator Structural Frame to anchor silicon steel lamination segments axially, maintain stator slot geometry within design tolerances, and resist cyclic 2x line-frequency electromagnetic forcing (100-120 Hz) over a 30-year machine operating lifetime",
+  "anchorLevel": "L4 (subsystem component — keybar profile within stator structural frame)",
+  "lPath": "L7 Electrical Machine Manufacturing Ecosystem > L6b Stator Core Assembly > L5 Stator Structural Frame > L4 Keybar Profiles",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Turbo-generator OEM (large)",
+      "qualifier": "GE Vernova, Siemens Energy, Alstom, Hitachi Energy",
+      "characteristics": "Building 12-72 keybar machines with hydrogen or water cooling; ISO/IEC type testing required",
+      "isTargetable": true,
+      "targetabilityReason": "Highest precision demand; longest machine life; strictest qualification",
+      "circumstance": "Building 12-72 keybar machines with hydrogen or water cooling; ISO/IEC type testing required",
+      "alternativesDiffer": "Yes — highest precision demand; longest machine life; strictest qualification"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Hydro-generator OEM",
+      "qualifier": "",
+      "characteristics": "Large-diameter slow-speed machines; high keybar count; less standardised cross-sections",
+      "isTargetable": true,
+      "targetabilityReason": "Higher keybar volume per machine; large-format tolerances",
+      "circumstance": "Large-diameter slow-speed machines; high keybar count; less standardised cross-sections",
+      "alternativesDiffer": "Yes — higher keybar volume per machine; large-format tolerances"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Industrial motor OEM",
+      "qualifier": "",
+      "characteristics": "Continuous-duty motors; standardised frame sizes; some geometry repeat",
+      "isTargetable": true,
+      "targetabilityReason": "Higher run volumes; price competition",
+      "circumstance": "Continuous-duty motors; standardised frame sizes; some geometry repeat",
+      "alternativesDiffer": "Yes — higher run volumes; price competition"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Stator rewind contractor",
+      "qualifier": "",
+      "characteristics": "Replacing worn or damaged keybars in service; must match original geometry exactly",
+      "isTargetable": true,
+      "targetabilityReason": "No design flexibility; die re-qualification required",
+      "circumstance": "Replacing worn or damaged keybars in service; must match original geometry exactly",
+      "alternativesDiffer": "Yes — no design flexibility; die re-qualification required"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "CNC-machined from alloy bar (in-house or job shop)",
+      "unspsc": "73152800",
+      "tradeoffs": "50-70% material waste; high per-unit machining cost; in-house capital and programming burden; no die lead time; full geometry flexibility [SRC: JTBD_generator_keybars]"
+    },
+    {
+      "name": "Cold-drawn near-net-shape profile (ZOLLERN path)",
+      "unspsc": "30102304",
+      "tradeoffs": "6-12 wk die lead time for new geometry; 100 kg minimum order; ~40-70% machining waste eliminated; IT8 tolerance; requires OEM first-article qualification [SRC: JTBD_generator_keybars]"
+    },
+    {
+      "name": "Standard catalog steel profile stock",
+      "unspsc": "30102304",
+      "tradeoffs": "Limited geometry options; may require significant secondary machining to meet dovetail spec; no custom geometry; off-the-shelf delivery"
+    },
+    {
+      "name": "Welded / fabricated keybar",
+      "unspsc": "30103000",
+      "tradeoffs": "Lower dimensional accuracy; stress concentrations at welds; HAZ fatigue risk; maintenance/retrofit only; not viable for new OEM build"
+    },
+    {
+      "name": "Do nothing / continue in-house machining (status quo)",
+      "unspsc": "",
+      "tradeoffs": "Zero switching cost; zero new qualification burden; full geometry control; tradeoff: high material waste, in-house capacity tied up"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Define keybar cross-section geometry, alloy, tolerance class, length, surface roughness, and EN 10204 3.1 cert requirement",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Keybar spec is the first constraint; geometry error cascades through lamination tooling",
+      "rawStatement": "Define keybar cross-section geometry, alloy, tolerance class, length, surface roughness, and EN 10204 3.1 cert requirement",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Keybar geometry specification is the first constraint; errors cascade through lamination tooling"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify and qualify keybar suppliers for required geometry; verify stock or confirm die availability",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Supplier qualification, lead time, and geometry availability determine schedule",
+      "rawStatement": "Identify and qualify keybar suppliers for required geometry; verify stock or confirm die availability",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Supplier qualification, lead time, and geometry availability determine stator assembly schedule"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Receive and incoming-inspect keybar bars; cut to stator core length; verify alloy cert",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Dimensional compliance and cert chain must be verified before assembly begins",
+      "rawStatement": "Receive and incoming-inspect keybar bars; cut to stator core length; verify alloy cert",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Dimensional compliance and material traceability must be confirmed before assembly"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "CMM-verify keybar geometry against tolerance envelope; confirm alloy traceability",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Keybars are geometry-critical — misfit discovered post-installation is extremely costly",
+      "rawStatement": "CMM-verify keybar geometry against tolerance envelope; confirm alloy traceability to EN 10204 3.1",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Misfit discovered post-installation requires stator disassembly — extremely costly"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Install keybars into stator frame slots; stack lamination segments; apply axial clamping",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Install fit depends entirely on keybar geometry accuracy",
+      "rawStatement": "Install keybars into stator frame slots; stack lamination segments; apply axial clamping",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Install fit depends entirely on keybar geometry accuracy"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Monitor stator core dimensions and slot alignment during lamination stacking; El-CID core test",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Keybar geometry deviation shows up in progressive slot misalignment during stacking",
+      "rawStatement": "Monitor stator core dimensions and slot alignment during lamination stacking",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Keybar geometry deviation shows up in progressive slot misalignment during stacking"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "VN_generator_keybars.md",
+      "url": "VN_generator_keybars.md",
+      "prefixedId": "JTBD-GENERATOR-KEYBARS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "BOM_generator_keybars.md",
+      "url": "BOM_generator_keybars.md",
+      "prefixedId": "JTBD-GENERATOR-KEYBARS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "04b_existing_markets.md",
+      "url": "04b_existing_markets.md",
+      "prefixedId": "JTBD-GENERATOR-KEYBARS-S03"
+    }
+  ]
+}

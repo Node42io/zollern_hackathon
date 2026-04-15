@@ -1,0 +1,88 @@
+{
+  "slug": "general-mechanical-engineering",
+  "marketName": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+  "naicsCode": "332999",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies near-net-shape steel profile sections at L1 for three positions inside a CNC machine slideway assembly: Slideway Rail (cold-drawn flat/trapezoidal profile with IH sliding face), Wear Strip Insert (cold-drawn flat profile with IH to 64 HRC), and Sub-Frame Rail (cold-drawn or hot-rolled structural profile). Output type: CNC Machine Slideway Assembly.",
+  "outputTypes": [
+    { "id": "OT-1", "name": "CNC Machine Slideway Assembly", "hydronic": false, "sensorFit": "primary", "notes": "Most profile-intensive type. Full BOM decomposed. Uses slideway profiles, wear strips, and sub-frame sections." },
+    { "id": "OT-2", "name": "Clamping Fixture Assembly", "hydronic": false, "sensorFit": "secondary", "notes": "T-slot, dovetail, custom clamping profiles for machine fixtures." },
+    { "id": "OT-3", "name": "Machine Base Sub-Frame", "hydronic": false, "sensorFit": "secondary", "notes": "Structural profile sections for machine base frames." },
+    { "id": "OT-4", "name": "Jig & Tooling Plate Assembly", "hydronic": false, "sensorFit": "secondary", "notes": "Precision rectangular bar profiles for jig and fixture bases." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.2"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Guide & Bearing Surface Subsystem",
+      "costSharePct": 40,
+      "keyDesignChoice": "Linear guidance mechanism design",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Hardened flat slideway (box way / V-way) — ZOLLERN target", "sharePct": 40, "trend": "stable" },
+        { "name": "Linear ball/roller guideway (recirculating — THK, Hiwin)", "sharePct": 50, "trend": "growing" },
+        { "name": "Hydrostatic slideway (oil film)", "sharePct": 8, "trend": "stable" },
+        { "name": "Magnetic levitation / air bearing", "sharePct": 2, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1a", "name": "Slideway Rail Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Cold-drawn near-net-shape IH profile (ZOLLERN)", "sharePct": 15, "trend": "growing" },
+          { "name": "Hot-rolled bar/plate + milling + separate IH", "sharePct": 55, "trend": "stable" },
+          { "name": "Pre-cut plate blank + grinding", "sharePct": 20, "trend": "stable" },
+          { "name": "Cast iron integral way (GJL-250 Meehanite)", "sharePct": 10, "trend": "declining" }
+        ]},
+        { "id": "L3.1b", "name": "Wear Strip Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "IH flat profile (C60/100Cr6 — ZOLLERN)", "sharePct": 25, "trend": "growing" },
+          { "name": "Ground tool steel flat bar", "sharePct": 40, "trend": "stable" },
+          { "name": "Bronze/polymer wear strip", "sharePct": 25, "trend": "stable" },
+          { "name": "Hard chrome plated steel strip", "sharePct": 10, "trend": "declining" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Structural Support Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Sub-frame construction method",
+      "isMarquardtAnchor": true,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Cold-drawn/hot-rolled structural profile (ZOLLERN)", "sharePct": 15, "trend": "stable" },
+        { "name": "Welded plate fabrication", "sharePct": 50, "trend": "stable" },
+        { "name": "Cast iron machine base", "sharePct": 30, "trend": "declining" },
+        { "name": "Polymer concrete machine base", "sharePct": 5, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Lubrication Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Lubrication delivery method",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Centralized oil lubrication system", "sharePct": 50, "trend": "stable" },
+        { "name": "Grease-based manual lubrication", "sharePct": 30, "trend": "declining" },
+        { "name": "Minimal quantity lubrication (MQL)", "sharePct": 20, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Retention & Adjustment Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Pre-load adjustment mechanism",
+      "isMarquardtAnchor": false,
+      "confidence": "low",
+      "alternatives": [
+        { "name": "Gib strip + adjustment screw (traditional)", "sharePct": 70, "trend": "stable" },
+        { "name": "Tapered gib with hydraulic pre-load", "sharePct": 20, "trend": "growing" },
+        { "name": "Spring-loaded self-adjusting gib", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

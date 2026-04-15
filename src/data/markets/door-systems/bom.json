@@ -1,0 +1,85 @@
+{
+  "slug": "door-systems",
+  "marketName": "Door Systems",
+  "naicsCode": "332321",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies custom cold-drawn alloy steel guide rail profiles at L1 depth. Output type: Industrial Sliding Door System (top-hung overhead rail architecture, ~55% of industrial sliding door market).",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Industrial/Commercial Sliding Door System (top-hung overhead rail)", "hydronic": false, "sensorFit": "primary", "notes": "Top-hung overhead rail = dominant architecture at 55% share." }
+  ],
+  "marquardtAnchorIds": ["L4.1"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Guide & Running Gear Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Guide architecture type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Top-hung overhead single rail (panel suspended)", "sharePct": 55, "trend": "stable" },
+        { "name": "Bottom-rolling floor track only", "sharePct": 20, "trend": "declining" },
+        { "name": "Double top-hung (tandem rails, panels >1,000 kg)", "sharePct": 15, "trend": "stable" },
+        { "name": "Biparting / two-leaf folding-sliding", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1.1", "name": "Guide Track Module (overhead running rail)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN PRIMARY - custom cold-drawn alloy steel guide rail profile with roller guidance groove + sealing lip, IT8 tol., optional IH", "alternatives": [
+          { "name": "Cold-drawn/cold-rolled specialty profile (ZOLLERN, GMH, Montanstahl)", "sharePct": 25, "trend": "stable", "isMarquardt": true },
+          { "name": "In-house roll-formed sections", "sharePct": 40, "trend": "stable" },
+          { "name": "Hot-rolled structural sections (ArcelorMittal, voestalpine)", "sharePct": 25, "trend": "stable" },
+          { "name": "Extruded aluminum sections (Hydro, Constellium)", "sharePct": 10, "trend": "growing" }
+        ]},
+        { "id": "L3.1.2", "name": "Carriage/Roller Assembly", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Ball bearing roller carriage (steel)", "sharePct": 60, "trend": "stable" },
+          { "name": "Polymer wheel carriage (nylon/POM)", "sharePct": 30, "trend": "growing" },
+          { "name": "Needle bearing roller carriage", "sharePct": 10, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Door Panel Subsystem",
+      "costSharePct": 35,
+      "keyDesignChoice": "Panel construction",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Insulated sandwich panel (steel skin + PU/mineral wool core)", "sharePct": 55, "trend": "growing" },
+        { "name": "Single-skin steel panel (solid or ribbed)", "sharePct": 30, "trend": "stable" },
+        { "name": "Glazed panel (tempered glass + steel frame)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Drive & Operating Subsystem",
+      "costSharePct": 20,
+      "keyDesignChoice": "Drive type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Electric motor + belt/chain drive", "sharePct": 55, "trend": "stable" },
+        { "name": "Direct-drive linear motor", "sharePct": 15, "trend": "growing" },
+        { "name": "Manual operation (spring-assisted)", "sharePct": 20, "trend": "declining" },
+        { "name": "Pneumatic operator", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Sealing & Weatherproofing Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Seal type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "EPDM blade seal (perimeter)", "sharePct": 45, "trend": "stable" },
+        { "name": "Brush seal (dust/debris)", "sharePct": 30, "trend": "stable" },
+        { "name": "Intumescent strip (fire-rated)", "sharePct": 15, "trend": "growing" },
+        { "name": "Inflatable seal (cold storage)", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

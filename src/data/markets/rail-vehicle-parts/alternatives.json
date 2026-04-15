@@ -1,0 +1,12 @@
+{
+  "naicsCode": "336510",
+  "marketName": "Rail Vehicle Parts",
+  "slug": "rail-vehicle-parts",
+  "alternatives": [
+    { "name": "Custom hot-rolled / cold-drawn special geometry profiles (ZOLLERN)", "unspsc": "30102304", "tradeoffs": "Near-net-shape for bogie sills, floor beams, door frames, body pillars; reduces downstream machining/fit-up. Weakness: Custom die NRE EUR 5-30K/geometry; 6-12 wk tooling lead; min batch ~100 kg; corrosion mitigation required (C10). ~40% share." },
+    { "name": "Standard hot-rolled structural sections (I, U, T, H, L profiles)", "unspsc": "30264000", "tradeoffs": "No tooling lead time; commodity sourcing from ArcelorMittal, voestalpine, thyssenkrupp. Requires extensive machining/fit-up to achieve custom geometry; significant material waste vs near-net; limited profile type freedom. ~35% share." },
+    { "name": "Aluminium alloy extrusions", "unspsc": "40161601", "tradeoffs": "~60-70% weight saving vs steel; growing in passenger carbodies. Different weld process required (TIG); incompatible with standard steel carbody weld procedures; outside ZOLLERN capability (C6 material constraint); higher unit cost. ~20% share." },
+    { "name": "CNC-machined parts from bar stock or plate", "unspsc": "31161501", "tradeoffs": "Maximum geometry freedom; no tooling. Very high machining cycle time; 40-80% material removal waste; cost-prohibitive at series volumes; suitable only for prototypes or single-unit specials. ~5% share." },
+    { "name": "Do nothing / redesign to standard stock", "unspsc": "--- (Status Quo)", "tradeoffs": "Zero NRE and zero lead time. Forces design team to accept geometry compromises; may increase assembly complexity, weight, or weld count to achieve equivalent structural performance." }
+  ]
+}

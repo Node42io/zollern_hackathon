@@ -1,0 +1,21 @@
+{
+  "slug": "automotive-components",
+  "name": "Other Motor Vehicle Parts Manufacturing",
+  "naicsCode": "336390",
+  "isReference": true,
+  "rank": 7,
+  "scores": {
+    "odi": 5.48,
+    "featureFit": 5.2,
+    "constraintCompatibility": 9,
+    "jobCoverage": 4.5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 4.6,
+    "composite": 5.63
+  },
+  "recommendation": "reference",
+  "rationale": "Existing ZOLLERN market. Precision cold-drawn profiles supply seat rail tracks, window regulator guides, drivetrain shaft blanks, and body structural inserts to Tier 1 automotive OEMs. IATF 16949 certified with EN 10204 3.1 documentation. 0 knockout constraints; 3 mitigable (C5 min carbon, C8 tooling lead time, C9 IH length).",
+  "entryStrategy": "Existing market — expand share in seat system Tier 1s (Adient, Lear, Faurecia) and body/closure Tier 1s (Magna, Gestamp, Kirchhoff) via PPAP-ready near-net-shape profiles with integrated IH.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

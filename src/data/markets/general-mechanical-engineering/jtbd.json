@@ -1,0 +1,172 @@
+{
+  "naicsCode": "332999",
+  "marketName": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+  "slug": "general-mechanical-engineering",
+  "coreJobStatement": "Design and manufacture miscellaneous fabricated metal products — including machine bases, slideways, clamping fixtures, jigs, structural brackets, and custom mechanical assemblies — that meet specified dimensional accuracy, load capacity, and surface quality requirements for industrial machinery and equipment applications [SRC: VN_general_mechanical_engineering]",
+  "productJobStatement": "Help Precision-formed steel profile sections [L5, Material & Semi-Finished Stock Procurement] to supply precision-dimensioned steel section blanks for machine slideways, clamping interfaces, wear strip inserts, fixture bases, and structural brackets — within specified dimensional tolerance, surface hardness, and material grade — as ready-to-machine or ready-to-assemble inputs for subsequent machine builder machining, hardening, and assembly",
+  "anchorLevel": "L4 (component/subsystem — slideway profiles, clamping profiles, wear strips within L5)",
+  "lPath": "L7 General Mechanical Engineering Ecosystem > L6a Material & Semi-Finished Stock Procurement > L5 Precision-Formed Steel Profile Sections > L4 Slideway / Clamping / Wear Strip Profiles",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Heavy-duty machine tool builders",
+      "qualifier": "Lathes, boring mills, grinders",
+      "characteristics": "Long-travel slideways; high static/dynamic load; vibration damping; 55-62 HRC hardened running face",
+      "isTargetable": true,
+      "targetabilityReason": "Cast iron integral ways still common; IH steel rails require qualification",
+      "circumstance": "Long-travel slideways; high static/dynamic load; vibration damping; 55-62 HRC hardened running face",
+      "alternativesDiffer": "Yes — cast iron integral ways still common; IH steel rails require qualification"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "CNC machining center OEMs",
+      "qualifier": "Vertical/horizontal mills",
+      "characteristics": "Precision linear guidance; high traverse speed; thermal stability; tight flatness over long travel",
+      "isTargetable": true,
+      "targetabilityReason": "Competing with THK/Hiwin linear recirculating guideways; flat ways for heavy-cutting variants only",
+      "circumstance": "Precision linear guidance; high traverse speed; thermal stability; tight flatness over long travel",
+      "alternativesDiffer": "Yes — competing with recirculating guideways; flat ways for heavy-cutting variants only"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Special-purpose machine builders",
+      "qualifier": "Packaging, food, textile, woodworking",
+      "characteristics": "Custom machine configurations; medium precision; diverse cross-section geometries; small-to-medium batch",
+      "isTargetable": true,
+      "targetabilityReason": "Custom geometry value highest here; clamping/fixture profiles vary per machine",
+      "circumstance": "Custom machine configurations; medium precision; diverse cross-section geometries; small-to-medium batch",
+      "alternativesDiffer": "Yes — clamping/fixture profiles vary per machine; custom geometry value highest here"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Fixture and tooling manufacturers",
+      "qualifier": "Jig builders, modular workholding",
+      "characteristics": "Tight datum surfaces; interchangeability; hardness for locating faces",
+      "isTargetable": true,
+      "targetabilityReason": "Competing with precision-ground flat bar stock; Norelem/Kipp standard elements",
+      "circumstance": "Tight datum surfaces; interchangeability; hardness for locating faces",
+      "alternativesDiffer": "Yes — competing with precision-ground flat bar stock and standard elements"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "MRO / replacement slideway supply",
+      "qualifier": "",
+      "characteristics": "Interchangeability with OEM drawing; short lead-time; matching hardness and geometry",
+      "isTargetable": true,
+      "targetabilityReason": "Existing geometry required; no die investment; status quo supplier dominates",
+      "circumstance": "Interchangeability with OEM drawing; short lead-time; matching hardness and geometry",
+      "alternativesDiffer": "Yes — existing geometry required; no die investment; status quo dominates"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Hot-rolled standard bar stock + plate stock (flame-cut, CNC-milled)",
+      "unspsc": "31161501",
+      "tradeoffs": "50-80% stock removal for non-rectangular shapes; separate IH or case hardening step required; unlimited availability; zero qualification burden; ~55% share"
+    },
+    {
+      "name": "Cold-drawn / cold-rolled near-net-shape profiles (ZOLLERN position)",
+      "unspsc": "30102304",
+      "tradeoffs": "6-12 week die lead time for new geometry; ~100 kg min batch; steel-only; limited to constant 2D cross-section; pre-hardened delivery eliminates OEM hardening step; ~12% share"
+    },
+    {
+      "name": "Pre-cut flame/laser-cut plate blanks",
+      "unspsc": "31161800",
+      "tradeoffs": "Zero tooling cost; lead time 1-3 weeks; high material waste (nesting losses); no hardness advantage; rough cut requires finish milling; ~23% share"
+    },
+    {
+      "name": "Cast iron integral slideway (GJL-250 Meehanite)",
+      "unspsc": "31121500",
+      "tradeoffs": "Inherent wear resistance; excellent vibration damping; long casting lead time (6-12 weeks); heavy; declining for precision applications; ~15% of slideways"
+    },
+    {
+      "name": "Do nothing / continue with existing supplier (status quo)",
+      "unspsc": "",
+      "tradeoffs": "Zero switching cost; zero qualification burden; most common competitor; only displaced by cost advantage, quality improvement, or supply failure at incumbent"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Specify slideway/clamping/wear-strip profile geometry, dimensional tolerances, material grade, surface hardness, and certification requirements",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Geometry spec drives die design feasibility and near-net-shape advantage calculation",
+      "rawStatement": "Specify slideway/clamping/wear-strip profile geometry, dimensional tolerances, material grade, surface hardness, and certification requirements",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Geometry spec drives die design feasibility and near-net-shape advantage calculation"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify and technically pre-qualify suppliers capable of producing the specified profile cross-section in required grade, tolerance, and hardness",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Profile supplier pool for custom cross-sections is narrow; qualification is effort-intensive",
+      "rawStatement": "Identify and technically pre-qualify suppliers capable of producing the specified profile cross-section in required grade, tolerance, and hardness",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Profile supplier pool for custom cross-sections is narrow; qualification is effort-intensive"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Submit geometry drawing for die design; receive first-article profiles; validate dimensional compliance, hardness, and material certificate",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Die qualification is the primary barrier step for near-net-shape profile supply",
+      "rawStatement": "Submit geometry drawing for die design; receive first-article profiles; validate dimensional compliance, hardness, and material certificate",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Die qualification is the primary barrier step for near-net-shape profile supply"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Approve first-article inspection, material certificate, and documentation before releasing production order",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Slideway dimensional errors propagate to machine accuracy",
+      "rawStatement": "Approve first-article inspection, material certificate, and documentation before releasing production order",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Certification integrity is critical — slideway dimensional errors propagate to machine accuracy"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Receive production batch; incoming dimensional, hardness, and straightness inspection; release to machining or direct assembly",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-hardened profiles go directly to assembly, not to heat treatment",
+      "rawStatement": "Receive production batch; incoming dimensional, hardness, and straightness inspection; release to machining or direct assembly",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Lot-level compliance is the execution risk; pre-hardened profiles go to assembly, not to heat treatment"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Track lot-to-lot dimensional, hardness, and straightness consistency across ongoing deliveries",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Drift causes silent machine accuracy degradation across multiple machines",
+      "rawStatement": "Track lot-to-lot dimensional, hardness, and straightness consistency across ongoing deliveries",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Drift causes silent machine accuracy degradation across multiple machines"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "VN_general_mechanical_engineering.md",
+      "url": "VN_general_mechanical_engineering.md",
+      "prefixedId": "JTBD-GENERAL-MECHANICAL-ENGINEERING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "BOM_general_mechanical_engineering.md",
+      "url": "BOM_general_mechanical_engineering.md",
+      "prefixedId": "JTBD-GENERAL-MECHANICAL-ENGINEERING-S02"
+    }
+  ]
+}

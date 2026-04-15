@@ -1,0 +1,162 @@
+{
+  "naicsCode": "333120",
+  "marketName": "Construction Machinery Manufacturing",
+  "slug": "construction-machinery",
+  "coreJobStatement": "Design, manufacture, and deliver powered earthmoving, lifting, compaction, and drilling equipment that repositions terrain, lifts loads, and prepares ground at construction, mining, and infrastructure job sites",
+  "outputTypes": [
+    "Hydraulic excavators (dominant segment; boom/arm/bucket assembly)",
+    "Crawler dozers (track undercarriage + blade)",
+    "Wheel loaders (articulated frame + bucket)",
+    "Motor graders (long frame + moldboard blade)",
+    "Compactors (drum/vibratory unit)",
+    "Mobile cranes (telescopic or lattice boom)",
+    "Foundation drilling rigs (Kelly bar + rotary drive)"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what process steps and equipment compose the construction equipment manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$225B global (2024); CAGR ~3-6% through 2030. Caterpillar 16% share ($37.8B revenue), Komatsu 10.7% ($28.5B), XCMG, Volvo CE, Liebherr, Hitachi, Doosan, SANY [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Structural Steel Fabrication",
+      "type": "Core",
+      "jobFamily": "Cut, form, weld, and stress-relieve steel structural assemblies (boom, arm, frame, undercarriage) to design geometry and strength specification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Hydraulic System Manufacturing",
+      "type": "Core",
+      "jobFamily": "Manufacture pumps, cylinders, valves, and hose assemblies that convert engine power to working force",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Drivetrain & Undercarriage",
+      "type": "Core",
+      "jobFamily": "Assemble track chain, rollers, motors, final drives, and pivot components for ground contact and propulsion",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Cab & Operator Interface",
+      "type": "Core",
+      "jobFamily": "Fabricate ROPS/FOPS cab structure, install controls, displays, and HVAC for operator station",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Machine Assembly & Integration",
+      "type": "Core",
+      "jobFamily": "Integrate structural, hydraulic, drivetrain, and cab subsystems into complete machine",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Surface Treatment & Painting",
+      "type": "Core",
+      "jobFamily": "Shot blast, prime, and liquid-paint all structural and cosmetic surfaces for corrosion protection",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Testing & Commissioning",
+      "type": "Core",
+      "jobFamily": "Load test, pressure test, and commission completed machine to OEM specification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Quality & Metrology",
+      "type": "Horizontal",
+      "jobFamily": "CMM dimensional inspection, weld NDE, and process audit across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Engineering & Design",
+      "type": "Horizontal",
+      "jobFamily": "FEA, CAD, welding procedure qualification, and design-for-manufacturing across all programs",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Steel Input Materials",
+      "functionalJob": "Steel profiles, plate stock, hollow sections, and forgings for structural fabrication. ZOLLERN PRIMARY POSITION — boom/arm chord profiles, slide guide channels, pivot pin blanks, frame cross-members, wear strips.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "CNC Plate Cutting Equipment",
+      "functionalJob": "Laser cutting head, plasma torch assembly, gantry drive for plate stock preparation.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Press Brakes & Plate Rolls",
+      "functionalJob": "CNC back-gauge, hydraulic ram & tooling for plate forming operations.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "Welding Equipment",
+      "functionalJob": "Wire feeder, power source, and robot arm for structural weld fabrication of boom/arm/frame assemblies.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Pivot Pins & Bushings",
+      "functionalJob": "Precision pivot pin blank, bronze/steel bushing, and retention hardware. ZOLLERN SECONDARY POSITION — cold-drawn alloy steel pivot pin blanks.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Hydraulic Pumps",
+      "functionalJob": "Piston/barrel assembly, swashplate & servo control for hydraulic power generation.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Hydraulic Cylinders",
+      "functionalJob": "Cylinder barrel tube, piston rod, end cap, and sealing assembly for linear actuation.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": null,
+  "strategicPosition": "ZOLLERN PRIMARY at L5 Steel Input Materials under L6a Structural Steel Fabrication. SECONDARY at L5 Pivot Pins & Bushings under L6c Drivetrain & Undercarriage. Supplies boom/arm chord profiles (S355/S690), IH slide guide channels (C60/100Cr6), cold-drawn pivot pin blanks (42CrMo4), frame cross-members, and wear strip profiles.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333120 — Construction Machinery Manufacturing",
+      "url": "https://data.census.gov",
+      "prefixedId": "VN-CONSTRUCTION-MACHINERY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Global Construction Equipment Market — Industry Reports",
+      "url": "",
+      "prefixedId": "VN-CONSTRUCTION-MACHINERY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "04b_existing_markets.md — ZOLLERN capability mapping",
+      "prefixedId": "VN-CONSTRUCTION-MACHINERY-S03"
+    }
+  ]
+}

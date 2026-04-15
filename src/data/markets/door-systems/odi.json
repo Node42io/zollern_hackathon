@@ -1,0 +1,28 @@
+{
+  "naicsCode": "332321",
+  "marketName": "Door Systems",
+  "slug": "door-systems",
+  "summary": { "totalNeeds": 22, "underservedCount": 6, "overservedCount": 0, "avgOpportunityScore": 10.6 },
+  "top5Opportunities": [
+    { "rank": 1, "needId": "N04", "statement": "Minimize likelihood that guide profile without IH fails to achieve required surface hardness for rated cycle count", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 2, "needId": "N17", "statement": "Minimize likelihood of corrosion-induced structural failure within first 10 years", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 3, "needId": "N19", "statement": "Minimize likelihood of fire door seal groove outside EN 1634 intumescent strip compression tolerance", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 4, "needId": "N10", "statement": "Minimize likelihood of sub-spec surface hardness (<55 HRC) reaching assembly undetected", "importance": 9, "satisfaction": 5, "opportunity": 13, "zone": "Underserved" },
+    { "rank": 5, "needId": "N14", "statement": "Minimize likelihood of guide rail surface spalling undetected until roller bearing failure causes door jam", "importance": 8, "satisfaction": 3, "opportunity": 13, "zone": "Underserved" }
+  ],
+  "needs": [
+    { "id": "N01", "statement": "Minimize time to commission new custom guide profile die from CAD to qualified first-article delivery", "jobStep": "DEFINE", "importance": 7, "satisfaction": 3, "opportunity": 11, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "6-12 week tooling lead time", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N04", "statement": "Minimize likelihood that guide profile without induction hardening fails to achieve required surface hardness for rated cycle count", "jobStep": "DEFINE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Un-hardened C45 guide flanges wear within 20-50K cycles vs 500K+ for IH surfaces", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N06", "statement": "Minimize likelihood of unplanned lead-time increase >4 weeks on established replenishment order", "jobStep": "LOCATE", "importance": 8, "satisfaction": 4, "opportunity": 12, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Peak production disruption from supply delay", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N10", "statement": "Minimize likelihood of guide profiles with sub-specification surface hardness (<55 HRC) reaching door assembly without detection", "jobStep": "CONFIRM", "importance": 9, "satisfaction": 5, "opportunity": 13, "isUnderserved": false, "isOverserved": false, "productRelated": false, "importanceRationale": "IH to 64 HRC with in-line quality check; un-hardened profiles cause early field failure", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N14", "statement": "Minimize likelihood of guide rail surface pitting or spalling undetected until roller failure causes door jam", "jobStep": "MONITOR", "importance": 8, "satisfaction": 3, "opportunity": 13, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Surface defect onset to detection gap in operational door", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N17", "statement": "Minimize likelihood of corrosion-induced structural failure of outdoor guide rail section within first 10 years", "jobStep": "MODIFY", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Bare steel delivery requires external hot-dip galvanizing; once galvanized, equivalent protection", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N19", "statement": "Minimize likelihood of fire-rated door failing EN 1634 certification due to seal groove outside intumescent strip compression tolerance", "jobStep": "CONCLUDE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Cold-drawn achieves +-0.02 mm on groove dimensions — within +-0.05 mm EN 1634 requirement", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N21", "statement": "Minimize likelihood of receiving guide profile batches without EN 10204 3.1 material test report", "jobStep": "CONCLUDE", "importance": 8, "satisfaction": 7, "opportunity": 9, "isUnderserved": false, "isOverserved": false, "productRelated": true, "importanceRationale": "Fire-door and pressure-equipment applications require material certificates", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] }
+  ],
+  "flaggedRationalesCount": 22,
+  "sources": [
+    { "id": "S01", "label": "JTBD_door_systems.md", "url": "JTBD_door_systems.md", "prefixedId": "ODI-DOOR-S01" },
+    { "id": "S02", "label": "ADJ_door_systems.md", "url": "ADJ_door_systems.md", "prefixedId": "ODI-DOOR-S02" }
+  ]
+}

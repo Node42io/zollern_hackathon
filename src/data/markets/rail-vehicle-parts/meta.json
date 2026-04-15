@@ -1,0 +1,21 @@
+{
+  "slug": "rail-vehicle-parts",
+  "name": "Rail Vehicle Parts",
+  "naicsCode": "336510",
+  "isReference": true,
+  "rank": 4,
+  "scores": {
+    "odi": 5.2,
+    "featureFit": 5.8,
+    "constraintCompatibility": 8.0,
+    "jobCoverage": 4.5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 4.8,
+    "composite": 5.5
+  },
+  "recommendation": "investigate",
+  "rationale": "Existing ZOLLERN market. US industry ~$20B (2025). ZOLLERN supplies hot-rolled and cold-drawn profiles for carbody structures, bogie frames, door frames. Constraint C10 (corrosion) mitigable via weathering steel S355J2W or zinc-rich primer. Certification-intensive (EN 15085-CL1, EN 12663).",
+  "entryStrategy": "Reference only - existing market. Leverage EN 10204 3.1 traceability advantage in certification-heavy rail programs.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

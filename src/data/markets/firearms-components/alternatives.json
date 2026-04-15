@@ -1,0 +1,12 @@
+{
+  "naicsCode": "332994",
+  "marketName": "Firearms Components",
+  "slug": "firearms-components",
+  "alternatives": [
+    { "name": "Cold-drawn near-net steel profiles (ZOLLERN)", "unspsc": "30102304", "tradeoffs": "IT8 tolerance (+-0.02 mm); eliminates 40-60% secondary machining for receivers, slide rails, bolt carriers. Weakness: 6-12 week tooling lead; 100 kg min batch; cannot IH short parts in-house (C9); ITAR/EAR compliance required (C13). ~25% share." },
+    { "name": "Drop / hammer forged blanks", "unspsc": "31162200", "tradeoffs": "Superior grain structure for high-stress military receivers; dominant for M16 upper/lower forgings; barrel forging at H&K/Walther produces rifling simultaneously. Weakness: longer die lead + forging trial; flash removal adds machining step; +-0.5-1.0 mm tolerance. ~45% share." },
+    { "name": "CNC billet machining from bar stock", "unspsc": "31161501", "tradeoffs": "Zero tooling lead; single-piece flexibility; +-0.01 mm machined tolerance. 60-70% material waste; highest machining cycle time; uneconomic at volume; scores 10/10 on all flexibility needs. ~25% share." },
+    { "name": "Investment casting (trigger groups, small parts)", "unspsc": "31161900", "tradeoffs": "Complex 3D geometries; +-0.3-0.5 mm accuracy; not suited for constant-cross-section profiles; limited to trigger groups and small structural components (PCC, Hitchiner). ~5% share." },
+    { "name": "No measurement / continue billet machining (Status Quo)", "unspsc": "--- (Status Quo)", "tradeoffs": "Zero switching cost; zero new supplier qualification; retains all machining waste; zero acquisition burden. Dominant competitor because there is no P1 friction." }
+  ]
+}

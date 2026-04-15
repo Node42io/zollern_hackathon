@@ -1,0 +1,21 @@
+{
+  "slug": "door-systems",
+  "name": "Door Systems",
+  "naicsCode": "332321",
+  "isReference": true,
+  "rank": 5,
+  "scores": {
+    "odi": 5.3,
+    "featureFit": 5.9,
+    "constraintCompatibility": 8.0,
+    "jobCoverage": 4.4,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 5.0,
+    "composite": 5.6
+  },
+  "recommendation": "investigate",
+  "rationale": "Existing ZOLLERN market. ~$36.3B global industrial door systems (2025). ZOLLERN wins 9/22 needs overall but against volume-viable incumbents only (roll forming, hot-rolled), net weighted delta is +83. Key differentiators: surface hardness for cycle life (N04), fire door seal groove precision (N19), EN 10204 3.1 material certificates (N21).",
+  "entryStrategy": "Reference only - existing market. Target fire-rated and high-cycle industrial door OEMs where hardness and seal groove precision justify premium.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

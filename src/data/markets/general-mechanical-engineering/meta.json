@@ -1,0 +1,21 @@
+{
+  "slug": "general-mechanical-engineering",
+  "name": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+  "naicsCode": "332999",
+  "isReference": true,
+  "rank": 12,
+  "scores": {
+    "odi": 5.64,
+    "featureFit": 5.5,
+    "constraintCompatibility": 9,
+    "jobCoverage": 5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 4.9,
+    "composite": 5.84
+  },
+  "recommendation": "reference",
+  "rationale": "Existing ZOLLERN market. Near-net-shape profiles for machine slideways, clamping sections, wear strips, jig/fixture bases, and structural brackets. Profile-intensive segment estimated USD 4-6B (2025). Highest differentiation in hardened flat slideway segment (40% of linear guidance) where pre-hardened delivery eliminates OEM hardening step entirely.",
+  "entryStrategy": "Existing market — target heavy-duty machine tool builders and special-purpose machine OEMs where IH slideway profiles eliminate L6c (Surface Treatment & Hardening) at the OEM.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

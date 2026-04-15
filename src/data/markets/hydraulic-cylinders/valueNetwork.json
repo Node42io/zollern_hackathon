@@ -1,0 +1,167 @@
+{
+  "naicsCode": "333995",
+  "marketName": "Fluid Power Cylinder and Actuator Manufacturing",
+  "slug": "hydraulic-cylinders",
+  "coreJobStatement": "Enable controlled linear force and displacement in machines and infrastructure by converting pressurized fluid energy into repeatable, measurable stroke and load",
+  "outputTypes": [
+    "Welded hydraulic cylinders (53% share) — heavy-duty, custom bore; construction/industrial",
+    "Tie-rod hydraulic cylinders (22%) — standard light-medium duty; industrial",
+    "Mill-type / heavy-duty cylinders (12%) — forged bodies; mining, press, steel mill",
+    "Telescopic hydraulic cylinders (8%) — multi-stage; dump trucks, cranes",
+    "Pneumatic cylinders / linear actuators (5%) — lower pressure; light industrial"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what process steps and equipment compose the hydraulic cylinder manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "USD 16.2B global (2025); 5.98% CAGR to USD 21.7B by 2030. Double-acting segment 71.4% revenue share. Welded segment 53.4% revenue share. [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Input Material & Blank Supply",
+      "type": "Core",
+      "jobFamily": "Source and qualify steel bar/tube blanks, seal kits, and forgings to cylinder design spec",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Bore Preparation",
+      "type": "Core",
+      "jobFamily": "Finish cylinder tube inner diameter to Ra <= 0.4 um for dynamic seal running surface",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Piston Rod Fabrication",
+      "type": "Core",
+      "jobFamily": "Grind and surface-treat piston rod to final OD tolerance and corrosion resistance",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Component Machining",
+      "type": "Core",
+      "jobFamily": "Machine end caps, pistons, flanges, and ports to design tolerances",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Seal & Accessory Kitting",
+      "type": "Core",
+      "jobFamily": "Assemble and qualify seal stacks, wipers, and static seals for pressure rating",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Cylinder Assembly",
+      "type": "Core",
+      "jobFamily": "Assemble barrel, rod, piston, and end components into pressure-rated unit",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Testing & Validation",
+      "type": "Core",
+      "jobFamily": "Pressure-cycle, stroke, and leakage test completed cylinder to design spec",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Finishing & Dispatch",
+      "type": "Core",
+      "jobFamily": "Apply corrosion protection, mark, and package cylinder for delivery",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Quality Assurance & Metrology",
+      "type": "Horizontal",
+      "jobFamily": "Dimensional, pressure, surface compliance across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.10",
+      "name": "Engineering & Application Design",
+      "type": "Horizontal",
+      "jobFamily": "Custom cylinder specification, FEA analysis, application engineering",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Precision Steel Bar / Rod Blank",
+      "functionalJob": "Cold-drawn precision round bar (C45 / 42CrMo4) for piston rod blanks. ZOLLERN PRIMARY POSITION. 65% share of rod blank input.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Cylinder Tube Blank",
+      "functionalJob": "Cold-drawn seamless + honed tube (60% share), skived & roller-burnished tube (30%), welded-drawn tube (10%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "End-Cap / Flange Blank",
+      "functionalJob": "Die-forged steel blank (55%), bar-stock blank (30%), nodular iron casting (15%). ZOLLERN SECONDARY POSITION at bar-stock blank.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "Seal & O-Ring Set",
+      "functionalJob": "Polyurethane / PTFE dynamic seal sets (Parker, Trelleborg, Freudenberg, SKF) — 65% share.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Bore Finishing Machine",
+      "functionalJob": "Skiving & roller burnishing (45%), honing machine (40%), precision boring + honing (15%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Cylindrical Grinding Machine",
+      "functionalJob": "Precision OD grinding of piston rod to ISO f7 tolerance before chrome plating.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Hard Chrome Plating Line",
+      "functionalJob": "Electroplating of piston rod surface to 20-50 um chrome thickness for corrosion and wear resistance.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": null,
+  "strategicPosition": "ZOLLERN supplies precision cold-drawn bar at IT8 tolerance (+-0.02 mm) with in-line IH up to 64 HRC. Position at L5 (Precision Steel Bar / Rod Blank) under L6a (Input Material & Blank Supply). Also SECONDARY position at L5 End-Cap / Flange Blank. ANCILLARY position via EN 10204 3.1 material certification.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333995 — Fluid Power Cylinder and Actuator Manufacturing",
+      "url": "https://data.census.gov",
+      "prefixedId": "VN-HYDRAULIC-CYLINDERS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Hydraulic Cylinder Market — Industry Reports",
+      "url": "",
+      "prefixedId": "VN-HYDRAULIC-CYLINDERS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "04b_existing_markets.md — ZOLLERN capability mapping",
+      "prefixedId": "VN-HYDRAULIC-CYLINDERS-S03"
+    }
+  ]
+}

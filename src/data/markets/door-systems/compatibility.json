@@ -1,0 +1,23 @@
+{
+  "naicsCode": "332321",
+  "marketName": "Door Systems",
+  "slug": "door-systems",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Corrosion Protection (C10)", "constraintType": "soft", "threshold": "No inherent corrosion protection; outdoor exposure common", "verdict": "mitigable", "rationale": "Industrial door guide rails are frequently exposed to outdoor weather, loading dock environments, and chemical wash-down. Bare steel delivery requires external hot-dip galvanizing (EN ISO 1461) adding 2-4 weeks to lead time.", "mitigation": "External hot-dip galvanizing (EN ISO 1461) or zinc-rich primer; planned adjacency: offer galvanized-as-delivered to reduce gap vs roll-formed (pre-galvanized coil)", "mitigationCost": "EUR 0.30-0.80/kg for galvanizing", "mitigationTime": "2-4 weeks additional lead time" },
+    { "constraintName": "Steel-Only Material (C6)", "constraintType": "hard", "threshold": "No aluminium", "verdict": "mitigable", "rationale": "Aluminium extruded door profiles account for ~10% of market (Hydro, Constellium). ZOLLERN cannot serve aluminium door segment. Steel door systems (~90%) are fully addressable.", "mitigation": "Focus on steel sliding, fire-rated, security, and industrial door segments (90% of addressable market)", "mitigationCost": "None - market segmentation", "mitigationTime": "N/A" },
+    { "constraintName": "Tooling Lead 6-12 Weeks (C8)", "constraintType": "soft", "threshold": "6-12 weeks for new guide rail geometry", "verdict": "mitigable", "rationale": "New door model programs have 6-12 month development cycles; die lead fits within product development timeline. Repeat geometry orders ship within days.", "mitigation": "Die library of common T-slot and guide rail cross-sections; early engagement with door OEM engineering", "mitigationCost": "Low", "mitigationTime": "Within OEM program timeline" },
+    { "constraintName": "Minimum Batch ~100 kg (C7)", "constraintType": "soft", "threshold": "100 kg minimum economic batch", "verdict": "none", "rationale": "Industrial door guide rail orders typically exceed 100 kg per batch. Standard orders are 200-1000 kg for production runs.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Fire Code Compliance (EN 1634)", "constraintType": "hard", "threshold": "Seal groove tolerance +-0.05 mm for intumescent strip compression", "verdict": "none", "rationale": "ZOLLERN cold-drawn profiles achieve +-0.02 mm on seal groove dimensions - well within +-0.05 mm EN 1634 requirement. This is actually a ZOLLERN advantage vs roll-forming (+-0.2 mm).", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 3,
+    "none": 2,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "Low",
+    "totalMitigationTime": "2-4 weeks for galvanizing"
+  },
+  "sources": []
+}

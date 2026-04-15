@@ -1,0 +1,17 @@
+{
+  "naicsCode": "332999",
+  "marketName": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+  "slug": "general-mechanical-engineering",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Material Grade Range (C45, 42CrMo4, C60, 100Cr6)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "All slideway and wear-strip grades (C45, 42CrMo4 for structural; C60, 100Cr6 for wear faces) are standard ZOLLERN production grades.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "IH Hardness (55-64 HRC on sliding face)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN in-line induction hardening achieves up to 64 HRC with +-1.5 HRC control. Slideway running face hardness requirement (55-62 HRC) is fully within capability.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Running-Face Flatness (+-0.03 mm/m)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Cold-drawn profiles with IH deliver running-face flatness meeting +-0.03 mm/m specification. IT8 dimensional control ensures consistent geometry.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Maximum Profile Width (160 mm)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Slideway rail profiles, clamping sections, and wear strips are typically within 160 mm width. Machine base sub-frames may require wider sections handled via dual-profile design.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Minimum Carbon Content for IH (>=0.35% C)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "C45 (0.42-0.50% C), C60 (0.57-0.65% C), and 100Cr6 (0.95-1.05% C) all exceed the 0.35% C minimum for reliable induction hardening.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Die Investment Amortization (100 kg minimum)", "constraintType": "", "threshold": "", "verdict": "mitigable", "rationale": "Custom die NRE (5-15K EUR) requires minimum production volume for economic payback. Machine builders with low-volume custom geometries face higher unit costs.", "mitigation": "Leverage die library for standard slideway and clamping geometries; amortize custom die cost over multi-year supply contract", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": { "knockouts": 0, "mitigable": 1, "none": 5, "marketStatus": "SURVIVING", "totalMitigationCost": "", "totalMitigationTime": "" },
+  "sources": []
+}

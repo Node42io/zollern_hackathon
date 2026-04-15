@@ -1,0 +1,23 @@
+{
+  "naicsCode": "336510",
+  "marketName": "Rail Vehicle Parts",
+  "slug": "rail-vehicle-parts",
+  "coreJobStatement": "Design, manufacture, and commission rail vehicles that transport passengers and freight safely, reliably, and on schedule",
+  "productJobStatement": "Help Carbody Fabrication to supply precision structural steel cross-section shapes at specified geometry, dimensional tolerance, and material grade for direct welded integration into rail vehicle carbody and bogie assemblies",
+  "anchorLevel": "L5 (Structural Steel Profiles within L6b Carbody Fabrication); L4 secondary (Bogie Frame Profiles within L6c)",
+  "lPath": "",
+  "segments": [
+    { "segmentNumber": 1, "name": "New platform design team", "qualifier": "", "characteristics": "Developing new vehicle architecture requiring new profile geometries and material qualification", "isTargetable": true, "targetabilityReason": "Full spec + qualification cycle", "circumstance": "Developing new vehicle architecture requiring new profile geometries and material qualification", "alternativesDiffer": "Custom profile vs standard structural sections" },
+    { "segmentNumber": 2, "name": "Series production program", "qualifier": "", "characteristics": "Running active production program with repeat geometry orders; speed and consistency critical", "isTargetable": true, "targetabilityReason": "Repeat supply consistency; lead time = shipping only", "circumstance": "Active production program with repeat geometry orders; speed and consistency critical", "alternativesDiffer": "Repeat custom vs standard" },
+    { "segmentNumber": 3, "name": "Fleet upgrade / retrofit", "qualifier": "", "characteristics": "Replacing structural members in existing vehicles; geometry constrained by original design", "isTargetable": true, "targetabilityReason": "Geometry constrained by original design", "circumstance": "Replacing structural members in existing vehicles", "alternativesDiffer": "Must match existing geometry" },
+    { "segmentNumber": 4, "name": "Freight wagon fabricator", "qualifier": "", "characteristics": "High-volume, heavy-duty structural profiles; cost and lead time primary drivers", "isTargetable": true, "targetabilityReason": "Heavy steel profiles dominant", "circumstance": "High-volume, heavy-duty structural profiles; cost and lead time primary drivers", "alternativesDiffer": "Cost competition stronger" },
+    { "segmentNumber": 5, "name": "Tier 1 carbody sub-contractor", "qualifier": "", "characteristics": "Fabricates carbody shells on contract for OEMs; must satisfy OEM certification upstream", "isTargetable": true, "targetabilityReason": "OEM certification pass-through", "circumstance": "Fabricates carbody shells on contract for OEMs; must satisfy OEM certification requirements", "alternativesDiffer": "EN 15085-CL1 required" }
+  ],
+  "alternatives": [
+    { "name": "Custom hot-rolled / cold-drawn special geometry profiles", "unspsc": "30102304", "tradeoffs": "Custom die NRE (EUR 5-30K/geometry); 6-12 wk tooling lead time for new geometries; min batch ~100 kg; near-net-shape reduces downstream machining. ZOLLERN position." },
+    { "name": "Standard hot-rolled structural sections (I, U, T, H, L profiles)", "unspsc": "30264000", "tradeoffs": "No tooling lead time; commodity sourcing; requires extensive machining/fit-up to achieve custom geometry; significant material waste vs near-net; limited profile type freedom." },
+    { "name": "Aluminium alloy extrusions", "unspsc": "40161601", "tradeoffs": "~60-70% weight saving vs steel; different weld process required (TIG Al alloy); incompatible with ZOLLERN (C6 material constraint); higher unit cost." },
+    { "name": "CNC-machined parts from bar stock or plate", "unspsc": "31161501", "tradeoffs": "Maximum geometry freedom; no tooling; very high machining cycle time; 40-80% material waste; cost-prohibitive at series volumes." },
+    { "name": "Do nothing / redesign to standard stock", "unspsc": "---", "tradeoffs": "Zero NRE and zero lead time; forces design team to accept geometry compromises; may increase assembly complexity, weight, or weld count." }
+  ]
+}

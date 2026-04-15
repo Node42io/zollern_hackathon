@@ -1,0 +1,84 @@
+{
+  "slug": "linear-guides",
+  "marketName": "Linear Guides",
+  "naicsCode": "333249",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies precision steel guide rail profiles (L1) that end up in the linear guide product. NAICS 333249 is where the guide system is manufactured. This BOM shows what is inside the ball linear guide system.",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Ball-type recirculating linear guide system (rail + carriage assembly)", "hydronic": false, "sensorFit": "primary", "notes": "~45% of linear guide market. Full decomposition L4->L0." }
+  ],
+  "marquardtAnchorIds": ["L4a"],
+  "l4Subsystems": [
+    {
+      "id": "L4a",
+      "name": "Rail Guidance Subsystem",
+      "costSharePct": 35,
+      "keyDesignChoice": "Rail profile manufacturing method",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Single-piece standard rail body module", "sharePct": 82, "trend": "stable" },
+        { "name": "Segmented rail body module (joined sections for >3 m travel)", "sharePct": 12, "trend": "stable" },
+        { "name": "Integrated rack-and-rail module (guide + drive rack combined)", "sharePct": 6, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1.1", "name": "Rail Body Module", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN enters at L2/L1: near-net-shape rail blank assembly with precision steel guide rail profile", "alternatives": [
+          { "name": "Cold-drawn near-net-shape profile + precision grind (ZOLLERN)", "sharePct": 40, "trend": "stable", "isMarquardt": true },
+          { "name": "Standard bar stock + heavy CNC material removal", "sharePct": 30, "trend": "declining" },
+          { "name": "Cold-rolled precision profile + precision grind", "sharePct": 15, "trend": "stable" },
+          { "name": "Through-hardened bearing steel bar (pre-hardened)", "sharePct": 10, "trend": "stable" },
+          { "name": "Wire EDM / special process (precision niche)", "sharePct": 5, "trend": "stable" }
+        ]},
+        { "id": "L3.1.2", "name": "Rail Mounting Interface Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Machined through-holes in rail body (integral)", "sharePct": 90, "trend": "stable" },
+          { "name": "Plastic screw cover cap assembly", "sharePct": 10, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4b",
+      "name": "Carriage/Block Subsystem",
+      "costSharePct": 35,
+      "keyDesignChoice": "Carriage body material",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Machined steel carriage body module", "sharePct": 50, "trend": "stable" },
+        { "name": "Machined aluminum carriage body module", "sharePct": 30, "trend": "growing" },
+        { "name": "Cast iron carriage body module", "sharePct": 15, "trend": "declining" },
+        { "name": "Polymer composite carriage body module", "sharePct": 5, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4c",
+      "name": "Sealing & Protection Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Seal material",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "NBR elastomeric wiper seal", "sharePct": 40, "trend": "stable" },
+        { "name": "Polyurethane wiper seal", "sharePct": 30, "trend": "growing" },
+        { "name": "PTFE low-friction seal", "sharePct": 20, "trend": "growing" },
+        { "name": "FKM (chemical resistant)", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4d",
+      "name": "Lubrication Delivery Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Lubrication method",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Grease injection port system (lithium/EP grease)", "sharePct": 65, "trend": "stable" },
+        { "name": "Oil mist / recirculating oil lubrication", "sharePct": 25, "trend": "stable" },
+        { "name": "Solid lubricant / dry lubrication (cleanroom, vacuum)", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

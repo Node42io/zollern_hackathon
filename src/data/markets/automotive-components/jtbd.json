@@ -1,0 +1,168 @@
+{
+  "naicsCode": "336390",
+  "marketName": "Other Motor Vehicle Parts Manufacturing",
+  "slug": "automotive-components",
+  "coreJobStatement": "Manufacture and deliver qualified precision metal components that meet OEM dimensional, material, and performance specifications for integration into vehicle body, closure, seat, and drivetrain programs [SRC: VN_automotive_components]",
+  "productJobStatement": "Help Incoming Material Qualification to receive and release near-net-shape steel profile sections that meet OEM dimensional, material-grade, and surface hardness specifications — without requiring primary forming at Tier 1 — across the full program life",
+  "anchorLevel": "L5 (standalone semi-finished product delivered to Tier 1 incoming dock)",
+  "lPath": "L7 Automotive Component Manufacturing Ecosystem > L6a Incoming Material Qualification > L5 Precision Steel Profile Stock",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "High-volume seat system Tier 1",
+      "qualifier": "Adient, Lear, Faurecia",
+      "characteristics": "Continuous JIT production; mandatory IATF 16949 third-party audit; OEM-directed program changes without lead time",
+      "isTargetable": true,
+      "targetabilityReason": "OEM program dictates profile geometry and approval protocol",
+      "circumstance": "Continuous JIT production; mandatory IATF 16949 third-party audit; OEM-directed program changes without lead time",
+      "alternativesDiffer": "Yes — OEM program dictates profile geometry and approval protocol"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Body / closure stamping Tier 1",
+      "qualifier": "Magna, Gestamp, Kirchhoff",
+      "characteristics": "High geometric mix per platform; structural crash performance requirements; corrosion protection mandatory",
+      "isTargetable": true,
+      "targetabilityReason": "Crush/crash specs add material certification requirements",
+      "circumstance": "High geometric mix per platform; structural crash performance requirements; corrosion protection mandatory",
+      "alternativesDiffer": "Yes — crush/crash specs add material certification requirements"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Drivetrain precision machining specialist",
+      "qualifier": "GKN, Hirschvogel, Neher",
+      "characteristics": "Highest tolerance class (IT6-IT8); multi-platform shaft programs; surface hardness on journal diameters",
+      "isTargetable": true,
+      "targetabilityReason": "Tightest dimensional and material traceability burden",
+      "circumstance": "Highest tolerance class (IT6-IT8); multi-platform shaft programs; surface hardness on journal diameters",
+      "alternativesDiffer": "Yes — tightest dimensional and material traceability burden"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Tier 2 contract machining house",
+      "qualifier": "CZ/PL/DE mid-size CNC shops",
+      "characteristics": "Converts profile stock to finished parts for Tier 1; sources material independently; lower PPAP depth",
+      "isTargetable": true,
+      "targetabilityReason": "PPAP level often Level 1-2; price sensitivity higher",
+      "circumstance": "Converts profile stock to finished parts for Tier 1; sources material independently; lower PPAP depth",
+      "alternativesDiffer": "Yes — PPAP level often Level 1-2; price sensitivity higher"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Near-net-shape precision cold-drawn / cold-rolled profile stock",
+      "unspsc": "30102304",
+      "tradeoffs": "Custom tooling lead 6-12 weeks; min 100 kg economic batch; 2D constant cross-section only; die ownership complication at program end; higher unit cost vs. bar stock"
+    },
+    {
+      "name": "Standard round / flat bar stock machined to near-net at Tier 1",
+      "unspsc": "31161501",
+      "tradeoffs": "40-80% material waste at Tier 1; machining cycle time consumes Tier 1 CNC capacity; no integrated surface hardness; no near-net geometry benefit"
+    },
+    {
+      "name": "Cold roll-formed structural open section (non-precision)",
+      "unspsc": "30102200",
+      "tradeoffs": "Tolerance class +-0.5 mm (inadequate for IT8 bearing surfaces); limited cross-section complexity; no in-line induction hardening; suitable only for structural OT3"
+    },
+    {
+      "name": "Hot-forged blank with post-machining",
+      "unspsc": "31161600",
+      "tradeoffs": "Higher per-unit cost; forging batch minimum >500 units; longer die-change cycle; different supply chain entirely; only viable for 3D-varying geometry"
+    },
+    {
+      "name": "Do nothing — continue machining from bar stock (status quo)",
+      "unspsc": "",
+      "tradeoffs": "Zero P1 burden; 40-80% machining waste embedded in Tier 1 unit cost; no new qualification; no tooling investment"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Specify profile geometry, IT tolerance class, material grade, surface hardness, and certification requirements per OEM drawing",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Profile geometry and grade spec are the primary inputs ZOLLERN needs to produce and certify the part",
+      "rawStatement": "Specify profile geometry, IT tolerance class, material grade, surface hardness, and certification requirements per OEM drawing",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Profile geometry and grade specification are the primary inputs ZOLLERN needs to produce and certify the part"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify and pre-qualify a precision steel profile supplier capable of producing the specified cross-section geometry at required volume",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "ZOLLERN is discovered and evaluated at this step; supplier capability is assessed here",
+      "rawStatement": "Identify and pre-qualify a precision steel profile supplier capable of producing the specified cross-section geometry at required volume",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "ZOLLERN is discovered and evaluated at this step; supplier capability (Cpk, IATF cert) is assessed here"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Execute PPAP qualification: die trial, first-article dimensional inspection, SPC study, EN 10204 3.1 certification",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "ZOLLERN's 6-12 week tooling lead time and PPAP readiness directly determine timeline",
+      "rawStatement": "Execute PPAP qualification: die trial, first-article dimensional inspection, SPC study, EN 10204 3.1 certification",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "ZOLLERN's 6-12 week tooling lead time and PPAP documentation capability directly determine program launch timeline"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Verify each profile delivery against OEM drawing dimensions and material certification before releasing to production",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Incoming inspection of ZOLLERN profiles — IT8 tolerance requires CMM or dedicated gauging",
+      "rawStatement": "Verify each profile delivery against OEM drawing dimensions and material certification before releasing to production",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Incoming inspection of ZOLLERN profiles requires CMM or dedicated gauging for IT8 tolerance class"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Release certified profile stock to Tier 1 forming / machining operations on JIT call-off schedule",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Delivery logistics and call-off management",
+      "rawStatement": "Release certified profile stock to Tier 1 forming and machining operations on JIT call-off schedule",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Delivery logistics and call-off execution; relevant but ZOLLERN's precision differentiates less here"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Track ongoing SPC data, surface hardness, and delivery performance across the program production life",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "ZOLLERN's SPC output feeds Tier 1's control charts; dimensional drift creates downstream rework",
+      "rawStatement": "Track ongoing SPC data, surface hardness, and delivery performance across the program production life",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "ZOLLERN's SPC output feeds Tier 1 control charts; dimensional drift in delivered profiles creates downstream rework"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "VN_automotive_components.md",
+      "url": "VN_automotive_components.md",
+      "prefixedId": "JTBD-AUTOMOTIVE-COMPONENTS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "BOM_automotive_components.md",
+      "url": "BOM_automotive_components.md",
+      "prefixedId": "JTBD-AUTOMOTIVE-COMPONENTS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "04b_existing_markets.md",
+      "url": "04b_existing_markets.md",
+      "prefixedId": "JTBD-AUTOMOTIVE-COMPONENTS-S03"
+    }
+  ]
+}

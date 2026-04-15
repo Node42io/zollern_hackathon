@@ -1,0 +1,21 @@
+{
+  "slug": "linear-guides",
+  "name": "Linear Guides",
+  "naicsCode": "333249",
+  "isReference": true,
+  "rank": 1,
+  "scores": {
+    "odi": 5.53,
+    "featureFit": 6.2,
+    "constraintCompatibility": 10,
+    "jobCoverage": 4.5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 5.05,
+    "composite": 6.0
+  },
+  "recommendation": "investigate",
+  "rationale": "Existing ZOLLERN market. Cleanest constraint profile (0 knockouts). ZOLLERN wins on 9/20 needs (dimensional consistency, hardness uniformity, traceability) but loses on 6 high-magnitude flexibility/sourcing needs. Net weighted delta -20. Physics-driven advantages vs. structural die-model friction.",
+  "entryStrategy": "Reference only - existing market. Leverage die library for repeat geometries; mitigate sole-source risk via die escrow.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

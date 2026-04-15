@@ -1,0 +1,577 @@
+{
+  "commodityFP": "Provide elongated metal shapes with defined cross-sectional geometry for structural, mechanical, or guiding functions [SRC: 02_functional_promise]",
+  "unspscContext": "31151900 — Profiles [SRC: 01_product_decomposition]",
+  "fpExtension": "The underlying precision cross-section forming and controllable surface hardening capability also addresses: (1) precision linear motion systems requiring hardened running surfaces; (2) tribological interface profiles for sliding/bearing contacts; (3) custom mechanical retention profiles (dovetail/T-slot keybars for electromagnetic stator assemblies) [SRC: 02_functional_promise]",
+  "extensionDomains": "Linear motion guidance, Tribological interface profiles, Mechanical retention profiles",
+  "discoveryType": "manufacturing_capability_platform",
+  "discoveryTracks": [
+    {
+      "trackId": 1,
+      "trackName": "Machining Intensity Discovery",
+      "question": "Which industries currently CNC-machine constant-cross-section steel parts from bar stock at high volume, wasting 40-80% material?",
+      "logic": "ZOLLERN's primary value proposition is near-net-shape geometry that eliminates downstream machining waste. The strongest candidates are industries where parts are constant 2D cross-section, current process is CNC machining from bar stock, annual volumes justify custom die investment, and parts require medium/high-carbon or alloy steel.",
+      "marketsFound": 5
+    },
+    {
+      "trackId": 2,
+      "trackName": "Application Analogy Discovery",
+      "question": "Which NEW industries have applications functionally analogous to ZOLLERN's 12 proven markets — but in industries where ZOLLERN is not yet present?",
+      "logic": "Each of ZOLLERN's 12 home markets embodies a pattern (guide rail, structural profile, wear strip, precision blank). Transferring proven patterns to analogous applications in adjacent industries is the lowest-risk expansion path.",
+      "marketsFound": 5
+    },
+    {
+      "trackId": 3,
+      "trackName": "Barrier-Protected Niche Discovery",
+      "question": "Which applications combine tight tolerances (IT8-IT10) + high recurring volume + certification barriers that protect incumbents — and where ZOLLERN's existing certifications (IATF 16949, EN 10204 3.1) create an entry advantage?",
+      "logic": "Markets with high switching costs favor incumbents but also protect against commoditization once qualified. ZOLLERN's existing quality infrastructure and in-line induction hardening capability are transferable entry credentials.",
+      "marketsFound": 4
+    }
+  ],
+  "excludedMarkets": [
+    { "naics": "333249", "title": "Linear Guides", "reason": "existing_home_market" },
+    { "naics": "332994", "title": "Firearms Components", "reason": "existing_home_market" },
+    { "naics": "333911", "title": "Pump Components", "reason": "existing_home_market" },
+    { "naics": "336510", "title": "Rail Vehicle Parts", "reason": "existing_home_market" },
+    { "naics": "332321", "title": "Door Systems", "reason": "existing_home_market" },
+    { "naics": "333921", "title": "Elevator Guide Rails", "reason": "existing_home_market" },
+    { "naics": "336390", "title": "Automotive Components", "reason": "existing_home_market" },
+    { "naics": "335312", "title": "Generator Keybars", "reason": "existing_home_market" },
+    { "naics": "333995", "title": "Hydraulic Cylinders", "reason": "existing_home_market" },
+    { "naics": "333120", "title": "Construction Machinery", "reason": "existing_home_market" },
+    { "naics": "339112", "title": "Medical Instruments", "reason": "existing_home_market" },
+    { "naics": "332999", "title": "General Mechanical Engineering", "reason": "existing_home_market" }
+  ],
+  "candidates": [
+    {
+      "naics": "333993",
+      "title": "Packaging Machinery Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "machining_intensity",
+      "confidence": 0.82,
+      "capabilityMatch": 7,
+      "switchingBarrier": 5
+    },
+    {
+      "naics": "333517",
+      "title": "Machine Tool Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "machining_intensity",
+      "confidence": 0.90,
+      "capabilityMatch": 9,
+      "switchingBarrier": 7
+    },
+    {
+      "naics": "333515",
+      "title": "Cutting Tool and Machine Tool Accessory Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "machining_intensity",
+      "confidence": 0.80,
+      "capabilityMatch": 7,
+      "switchingBarrier": 5
+    },
+    {
+      "naics": "333514",
+      "title": "Special Die and Tool, Die Set, Jig, and Fixture Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "machining_intensity",
+      "confidence": 0.78,
+      "capabilityMatch": 7,
+      "switchingBarrier": 3
+    },
+    {
+      "naics": "333613",
+      "title": "Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "growing",
+      "discoverySource": "machining_intensity",
+      "confidence": 0.85,
+      "capabilityMatch": 8,
+      "switchingBarrier": 6
+    },
+    {
+      "naics": "333111",
+      "title": "Farm Machinery and Equipment Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "application_analogy",
+      "confidence": 0.86,
+      "capabilityMatch": 8,
+      "switchingBarrier": 4
+    },
+    {
+      "naics": "333131",
+      "title": "Mining Machinery and Equipment Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "application_analogy",
+      "confidence": 0.91,
+      "capabilityMatch": 9,
+      "switchingBarrier": 8
+    },
+    {
+      "naics": "333922",
+      "title": "Conveyor and Conveying Equipment Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "growing",
+      "discoverySource": "application_analogy",
+      "confidence": 0.83,
+      "capabilityMatch": 8,
+      "switchingBarrier": 4
+    },
+    {
+      "naics": "333611",
+      "title": "Turbine and Turbine Generator Set Units Manufacturing",
+      "fpFit": "direct",
+      "adoption": "growing",
+      "discoverySource": "application_analogy",
+      "confidence": 0.94,
+      "capabilityMatch": 10,
+      "switchingBarrier": 9
+    },
+    {
+      "naics": "333244",
+      "title": "Printing Machinery and Equipment Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "application_analogy",
+      "confidence": 0.72,
+      "capabilityMatch": 6,
+      "switchingBarrier": 5
+    },
+    {
+      "naics": "333923",
+      "title": "Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "barrier_protected_niche",
+      "confidence": 0.89,
+      "capabilityMatch": 9,
+      "switchingBarrier": 7
+    },
+    {
+      "naics": "333924",
+      "title": "Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "barrier_protected_niche",
+      "confidence": 0.90,
+      "capabilityMatch": 9,
+      "switchingBarrier": 7
+    },
+    {
+      "naics": "336612",
+      "title": "Boat Building",
+      "fpFit": "stretch",
+      "adoption": "established",
+      "discoverySource": "barrier_protected_niche",
+      "confidence": 0.68,
+      "capabilityMatch": 5,
+      "switchingBarrier": 7
+    },
+    {
+      "naics": "333243",
+      "title": "Sawmill, Woodworking, and Paper Machinery Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "barrier_protected_niche",
+      "confidence": 0.74,
+      "capabilityMatch": 6,
+      "switchingBarrier": 5
+    }
+  ],
+  "archDistanceData": [
+    {
+      "naics": "333611",
+      "title": "Turbine & Generator Sets (keybar extension)",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGHEST"
+    },
+    {
+      "naics": "333131",
+      "title": "Mining Machinery (shaft guide rails)",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "333517",
+      "title": "Machine Tool Manufacturing (precision guideways)",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "333924",
+      "title": "Forklift Mast Profiles (mast channels)",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "333923",
+      "title": "Crane & Hoist Systems (runway rails)",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "333111",
+      "title": "Farm Machinery (wear profiles, tillage blanks)",
+      "distance": 2,
+      "usesTech": true,
+      "fpFit": "adjacent",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "333613",
+      "title": "Power Transmission / Gears (gear rack profiles)",
+      "distance": 2,
+      "usesTech": true,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "333922",
+      "title": "Conveyor Equipment (chain guide wear profiles)",
+      "distance": 2,
+      "usesTech": true,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "333993",
+      "title": "Packaging Machinery (forming jaws, sealing bars)",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "333515",
+      "title": "Cutting Tool Accessories (tool holder blanks)",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "333514",
+      "title": "Special Die & Tool (die shoe profiles)",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "333244",
+      "title": "Printing Machinery (doctor blade holders)",
+      "distance": 4,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "LOW"
+    },
+    {
+      "naics": "333243",
+      "title": "Woodworking & Paper Machinery (knife holders, guides)",
+      "distance": 4,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "LOW"
+    },
+    {
+      "naics": "336612",
+      "title": "Boat Building (structural hull profiles)",
+      "distance": 5,
+      "usesTech": false,
+      "fpFit": "stretch",
+      "priority": "LOW"
+    }
+  ],
+  "candidateDetails": [
+    {
+      "naics": "333993",
+      "title": "Packaging Machinery Manufacturing",
+      "job": "Supply near-net-shape forming jaw and sealing bar profiles for thermoform-fill-seal and form-fill-seal packaging lines",
+      "whyNeeded": "Forming jaws and sealing bars are constant 2D cross-sections in tool/alloy steel (C45, 42CrMo4), currently CNC-machined from rectangular bar stock with 50-70% material waste. High-volume packaging lines consume thousands of replacement jaws annually. Cold-drawn profiles with induction-hardened contact surfaces eliminate most secondary machining.",
+      "alternatives": "CNC-machined bar stock (dominant), wire EDM from plate (niche for complex contours), investment cast blanks (rare)",
+      "marketSize": "Global packaging machinery ~$55B; precision steel forming/sealing components ~$1-3B",
+      "confidence": 0.82
+    },
+    {
+      "naics": "333517",
+      "title": "Machine Tool Manufacturing",
+      "job": "Supply hardened precision guideway profiles for lathe/mill beds, tailstock slideways, and cross-slide guides",
+      "whyNeeded": "Machine tool beds require hardened, precision-ground guideways for slide contact — functionally identical to ZOLLERN's linear guide rail capability. The industry is shifting from hand-scraped cast iron ways to bolt-on profile guide systems. Cold-drawn induction-hardened profiles at IT8 tolerance with 64 HRC surface hardness directly match specification.",
+      "alternatives": "Hand-scraped cast iron ways (legacy dominant), bolt-on recirculating ball profile rails (THK/HIWIN — growing), precision-ground hardened steel inserts (niche)",
+      "marketSize": "Global machine tool market ~$80B; guideway/bed profile segment ~$500M-$1B. ~924 US manufacturers.",
+      "confidence": 0.90
+    },
+    {
+      "naics": "333515",
+      "title": "Cutting Tool and Machine Tool Accessory Manufacturing",
+      "job": "Supply near-net-shape boring bar blanks, tool holder profiles, and chuck jaw blanks with non-round cross-sections",
+      "whyNeeded": "Tool holders, boring bars, and chuck jaws have non-round cross-sections (rectangular with keyways, hex with flats, custom clamping profiles) currently machined from round bar with 30-50% material waste. Cold-drawn profiles to the tool holder cross-section eliminate most secondary machining. Fragmented market across hundreds of tool manufacturers.",
+      "alternatives": "Precision ground round/hex bar stock (dominant), hot-forged blanks (niche for large tools), MIM/sintered blanks (emerging for small inserts)",
+      "marketSize": "Global cutting tool market ~$22B; tool holder/accessory steel blanks ~$500M. ~1,619 US establishments.",
+      "confidence": 0.80
+    },
+    {
+      "naics": "333514",
+      "title": "Special Die and Tool, Die Set, Jig, and Fixture Manufacturing",
+      "job": "Supply precision-ground die shoe profiles, guide pillar blanks, and locating rail profiles for progressive dies and fixture bases",
+      "whyNeeded": "Die sets and progressive die systems use precision-ground flat stock, guide pillars, and custom rail profiles as structural base materials. Cold-drawn profiles with induction-hardened guide surfaces reduce machining time 40-60%. Low switching barriers — easy to change component suppliers.",
+      "alternatives": "Precision ground flat stock and round bar (dominant), pre-hardened die steel plate (Bohler, Uddeholm), standard die set components (Danly, Fibro)",
+      "marketSize": "Global tooling industry ~$7B; precision steel die/fixture blanks ~$500M-$1B. ~1,619 US establishments.",
+      "confidence": 0.78
+    },
+    {
+      "naics": "333613",
+      "title": "Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing",
+      "job": "Supply cold-drawn linear gear rack profiles, spline shaft blanks, and keyway insert profiles with induction-hardened tooth/contact surfaces",
+      "whyNeeded": "Gear racks (linear gears) are constant-cross-section profiles with involute tooth geometry — a near-perfect near-net-shape candidate. Currently hobbed or broached from bar stock with 40-60% material waste. Cold-drawn gear rack profiles with IH-hardened tooth surfaces offer dramatic cost reduction at volume. DIN/ISO gear quality standards (DIN 3962/3963) create switching barriers.",
+      "alternatives": "Hobbed/broached gear rack from bar stock (dominant), precision milled rack (niche), cast gear rack (large/low-precision)",
+      "marketSize": "Global power transmission equipment ~$25B; gear rack/spline steel blanks ~$1-2B",
+      "confidence": 0.85
+    },
+    {
+      "naics": "333111",
+      "title": "Farm Machinery and Equipment Manufacturing",
+      "job": "Supply near-net-shape wear-resistant profiles for tillage points, harvester knife bars, combine feeder chain guides, and seed drill metering components",
+      "whyNeeded": "Farm equipment OEMs consume millions of wear-resistant steel parts annually — tillage points, knife bars, guide profiles — all constant 2D cross-sections in medium/high-carbon or boron steel (C60, 42CrMo4, 27MnCrB5). Currently hot-forged with significant post-machining. Near-net-shape cold-drawn profiles with IH-hardened working edges eliminate 40-60% machining waste. Annual replacement volumes easily amortize die costs.",
+      "alternatives": "Hot-forged blanks with post-machining (dominant for tillage), laser-cut plate (harvester knives), machined bar stock (guide profiles)",
+      "marketSize": "Global farm machinery ~$170B; steel wear/structural profile components ~$2-5B. ~1,036 US manufacturers.",
+      "confidence": 0.86
+    },
+    {
+      "naics": "333131",
+      "title": "Mining Machinery and Equipment Manufacturing",
+      "job": "Supply T-section guide rails for mine shaft cage/skip systems, longwall conveyor chain guide profiles, and headframe structural profiles",
+      "whyNeeded": "Mine shaft cage guides are T-section steel rails guiding skip and cage conveyances — functionally identical to elevator guide rails but in harsher conditions (dust, vibration, longer spans). Subject to mining safety regulations (EN 14071, MSHA). ZOLLERN's proven elevator guide rail T-section geometry, metallurgy, and cold-drawing + induction-hardening capability transfer directly. Very high switching barrier due to safety certification.",
+      "alternatives": "Hot-rolled structural T-sections with post-machining (dominant), cold-drawn T-rails from Chinese manufacturers (growing), welded plate T-sections (niche/maintenance)",
+      "marketSize": "Global mining equipment ~$28B; mine shaft guide rail + wear profile segment ~$200-500M. 69 US manufacturers.",
+      "confidence": 0.91
+    },
+    {
+      "naics": "333922",
+      "title": "Conveyor and Conveying Equipment Manufacturing",
+      "job": "Supply induction-hardened chain guide wear profiles, belt conveyor bed support profiles, and automated warehouse shuttle guide rails",
+      "whyNeeded": "Conveyor chain guides and bed support profiles are constant 2D cross-sections requiring wear resistance and dimensional precision for chain/roller engagement. Warehouse automation and e-commerce logistics boom drives massive installations — thousands of meters of guide profiles per distribution center. IH-hardened steel profiles offer 5-10x wear life vs. standard steel sections.",
+      "alternatives": "UHMWPE wear strips (light-duty dominant), standard hot-rolled steel sections (heavy-duty dominant), machined flat bar guides (moderate), aluminum extrusions (light-duty sortation)",
+      "marketSize": "Global conveyor equipment ~$10B; steel wear/guide profile components ~$500M-$1B. 351 US manufacturers.",
+      "confidence": 0.83
+    },
+    {
+      "naics": "333611",
+      "title": "Turbine and Turbine Generator Set Units Manufacturing",
+      "job": "Supply precision dovetail/T-slot stator keybar profiles for wind, steam, gas, and hydropower turbine generators",
+      "whyNeeded": "Direct extension of ZOLLERN's proven generator keybar market (NAICS 335312) to turbine generator manufacturing. Same dovetail/T-slot cold-drawn profiles for stator core retention. Wind energy boom (>100 GW/year new installations, 40-80 keybars per turbine generator) creates massive incremental demand. OEM qualification with Siemens Energy, GE Vernova, Vestas opens multi-year frame contracts. Extremely high switching barrier — each turbine platform requires dimensionally qualified keybars specific to stator lamination tooling.",
+      "alternatives": "Precision machined bar stock with 40-70% waste (dominant), hot-extruded keybar blanks (niche/legacy), copper keybars (large turbogenerators >100 MW only)",
+      "marketSize": "Global turbine market ~$180B; stator keybar/retention profile segment ~$300-800M. 537 US manufacturers.",
+      "confidence": 0.94
+    },
+    {
+      "naics": "333244",
+      "title": "Printing Machinery and Equipment Manufacturing",
+      "job": "Supply precision doctor blade holder profiles, ink chamber blade profiles, and impression cylinder bearer profiles for flexographic and gravure presses",
+      "whyNeeded": "Doctor blade holders and ink chamber profiles require tight dimensional control for consistent ink metering. Constant 2D cross-sections in spring/tool steel. Cold-drawn profiles with precision surfaces match ZOLLERN's capability, but some doctor blades (<1mm) may fall below economic cross-section range. Market dominated by few large press OEMs (Heidelberg, Koenig & Bauer, Bobst, PCMC).",
+      "alternatives": "Precision ground flat bar stock (dominant), stamped spring steel strip (doctor blades themselves), laser-cut plate profiles (niche)",
+      "marketSize": "Global printing machinery ~$8B; precision steel profile components ~$100-300M",
+      "confidence": 0.72
+    },
+    {
+      "naics": "333923",
+      "title": "Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",
+      "job": "Supply cold-drawn crane runway rail profiles (DIN 536 KP-series), monorail I-beam profiles, and hoist guide track profiles with hardened running surfaces",
+      "whyNeeded": "Crane runway rails and monorail beams are constant 2D cross-sections requiring hardened running surfaces for crane wheel contact — structurally and functionally analogous to elevator guide rails. Subject to EN 15011/EN 13001 crane safety and Machinery Directive 2006/42/EC. ZOLLERN's elevator guide rail competence (T-section cold drawing + induction hardening) transfers with minimal adaptation. EN 10204 3.1 material certification transfers directly.",
+      "alternatives": "Standard hot-rolled crane rails per DIN 536 (ArcelorMittal, voestalpine — dominant), precision-ground rail inserts (niche for high-precision gantry cranes), Hardox wear plate strips (niche/retrofit)",
+      "marketSize": "Global crane/hoist market ~$15B; crane rail/track profile segment ~$500M-$1B",
+      "confidence": 0.89
+    },
+    {
+      "naics": "333924",
+      "title": "Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",
+      "job": "Supply cold-drawn C-channel and I-section mast profiles with induction-hardened inner running surfaces for forklift, reach truck, and stacker carriages",
+      "whyNeeded": "Forklift mast profiles are constant 2D cross-sections in medium-carbon steel (S355-S460, C45) with IH-hardened inner running surfaces for roller chain and carriage guidance — functionally identical to elevator guide rails. ~1.5M forklifts produced annually (Toyota, KION/Linde, Jungheinrich, Mitsubishi, Crown), each using 2-6 mast section profiles. EN 16307/ISO 3691 forklift safety standards create defensible switching barrier.",
+      "alternatives": "Roll-formed + post-ground channel sections (dominant), hot-rolled structural channels with machined inner surfaces (legacy), cold-drawn precision channels (emerging)",
+      "marketSize": "Global forklift market ~$60B; mast profile steel components ~$1-3B. ~1.5M forklifts produced annually.",
+      "confidence": 0.90
+    },
+    {
+      "naics": "336612",
+      "title": "Boat Building",
+      "job": "Supply structural keel bars, rub rail profiles, hull stiffener T-profiles, and deck edge profiles for commercial/military steel vessels",
+      "whyNeeded": "Commercial and military steel vessels use custom-geometry structural profiles for keel bars, frame sections, hull stiffeners, and deck edges. These are constant 2D cross-sections in shipbuilding grades (S355J2, GL-A/B/D/E). However, marine corrosion (constraint C10) is a major issue requiring grade substitution or coating. Classification society certification (Lloyd's Register, DNV, Bureau Veritas, ABS) creates high switching barrier. Value-add of precision cold finishing is limited for structural marine applications.",
+      "alternatives": "Standard hot-rolled structural sections (ArcelorMittal, Tata Steel — dominant), plasma-cut plate with welded assembly (significant), extruded aluminum (growing for superstructure)",
+      "marketSize": "Global boat/ship building ~$150B; structural steel profile segment for steel vessels ~$1-3B",
+      "confidence": 0.68
+    },
+    {
+      "naics": "333243",
+      "title": "Sawmill, Woodworking, and Paper Machinery Manufacturing",
+      "job": "Supply precision planer knife holder profiles, bandsaw blade guide profiles, and paper machine doctor blade holder profiles with hardened contact surfaces",
+      "whyNeeded": "Woodworking and paper machinery use precision steel profiles for knife holders, saw blade guides, and doctor blade supports. Constant 2D cross-sections in tool steel (C80, 100Cr6) or spring steel with hardened contact surfaces. Planer knife holders are a strong fit: long constant-cross-section profiles up to 1,000 mm in hardened tool steel. Paper machine doctor blade holders require straightness <=0.1 mm/m — achievable with cold drawing.",
+      "alternatives": "Precision ground rectangular bar stock (dominant), laser-cut + ground plate profiles (niche), powder metallurgy blanks (emerging for small knives)",
+      "marketSize": "Global woodworking/paper machinery ~$5B; precision steel profile components ~$200-400M",
+      "confidence": 0.74
+    }
+  ],
+  "crossMarketPatterns": [
+    {
+      "pattern": "Elevator rail analogy is the strongest entry vector",
+      "markets": ["Mining (M07)", "Crane/Hoist (M11)", "Forklift (M12)"],
+      "implication": "Three large markets where ZOLLERN's proven T-section guide rail competence transfers with minimal die adaptation. Combined addressable segment >$2B."
+    },
+    {
+      "pattern": "Generator keybar extension to wind energy is immediate revenue",
+      "markets": ["Turbine/Generator (M09)"],
+      "implication": "Same technology, same cross-section families, same OEM buyer relationships (Siemens Energy, GE). Wind energy boom creates massive incremental demand."
+    },
+    {
+      "pattern": "Machining waste argument works best with high-volume OEMs",
+      "markets": ["Farm Machinery (M06)", "Packaging (M01)", "Power Transmission (M05)"],
+      "implication": "Near-net-shape ROI scales with volume. Target OEMs consuming >10,000 units/year per geometry."
+    },
+    {
+      "pattern": "Induction hardening is the premium differentiator",
+      "markets": ["Machine Tools (M02)", "Conveyor (M08)", "Forklift (M12)", "Crane (M11)"],
+      "implication": "Markets where hardened running surfaces are essential pay a premium vs. un-hardened alternatives. ZOLLERN's in-line IH is a capability few profile mills offer."
+    },
+    {
+      "pattern": "Certification transferability creates entry advantage",
+      "markets": ["Turbine (M09)", "Mining (M07)", "Crane (M11)", "Forklift (M12)"],
+      "implication": "ZOLLERN's IATF 16949 + EN 10204 3.1 infrastructure is directly transferable to safety-certified markets. Competitors without this face 6-12 month qualification delay."
+    }
+  ],
+  "priorityMatrix": [
+    { "rank": 1, "naics": "333611", "title": "Turbine & Generator Sets", "track": "Analogy", "capabilityMatch": 10, "switchingBarrier": 9, "priority": "HIGHEST" },
+    { "rank": 2, "naics": "333131", "title": "Mining Machinery", "track": "Analogy", "capabilityMatch": 9, "switchingBarrier": 8, "priority": "HIGH" },
+    { "rank": 3, "naics": "333517", "title": "Machine Tool Mfg", "track": "Machining Intensity", "capabilityMatch": 9, "switchingBarrier": 7, "priority": "HIGH" },
+    { "rank": 4, "naics": "333924", "title": "Forklift Mast Profiles", "track": "Barrier-Protected", "capabilityMatch": 9, "switchingBarrier": 7, "priority": "HIGH" },
+    { "rank": 5, "naics": "333923", "title": "Crane & Hoist Systems", "track": "Barrier-Protected", "capabilityMatch": 9, "switchingBarrier": 7, "priority": "HIGH" },
+    { "rank": 6, "naics": "333111", "title": "Farm Machinery", "track": "Analogy", "capabilityMatch": 8, "switchingBarrier": 4, "priority": "HIGH" },
+    { "rank": 7, "naics": "333922", "title": "Conveyor Equipment", "track": "Analogy", "capabilityMatch": 8, "switchingBarrier": 4, "priority": "MEDIUM" },
+    { "rank": 8, "naics": "333613", "title": "Power Transmission / Gears", "track": "Machining Intensity", "capabilityMatch": 8, "switchingBarrier": 6, "priority": "MEDIUM" },
+    { "rank": 9, "naics": "333993", "title": "Packaging Machinery", "track": "Machining Intensity", "capabilityMatch": 7, "switchingBarrier": 5, "priority": "MEDIUM" },
+    { "rank": 10, "naics": "333515", "title": "Cutting Tool Accessories", "track": "Machining Intensity", "capabilityMatch": 7, "switchingBarrier": 5, "priority": "MEDIUM" },
+    { "rank": 11, "naics": "333514", "title": "Special Die & Tool", "track": "Machining Intensity", "capabilityMatch": 7, "switchingBarrier": 3, "priority": "MEDIUM" },
+    { "rank": 12, "naics": "333244", "title": "Printing Machinery", "track": "Analogy", "capabilityMatch": 6, "switchingBarrier": 5, "priority": "LOW" },
+    { "rank": 13, "naics": "333243", "title": "Woodworking & Paper", "track": "Barrier-Protected", "capabilityMatch": 6, "switchingBarrier": 5, "priority": "LOW" },
+    { "rank": 14, "naics": "336612", "title": "Boat Building", "track": "Barrier-Protected", "capabilityMatch": 5, "switchingBarrier": 7, "priority": "LOW" }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333993 — Packaging Machinery Manufacturing (IBISWorld)",
+      "url": "https://www.naics.com/naics-code-description/?code=333993",
+      "prefixedId": "DISC-S01"
+    },
+    {
+      "id": "S02",
+      "label": "NAICS 333517 — Machine Tool Manufacturing (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/333517/machine-tool-manufacturing/",
+      "prefixedId": "DISC-S02"
+    },
+    {
+      "id": "S03",
+      "label": "NAICS 333515 — Cutting Tool and Machine Tool Accessory Manufacturing",
+      "url": "https://www.naics.com/naics-code-description/?code=333515",
+      "prefixedId": "DISC-S03"
+    },
+    {
+      "id": "S04",
+      "label": "NAICS 333514 — Special Die and Tool Manufacturing (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/333514/special-die-and-tool-die-set-jig-and-fixture-manufacturing/",
+      "prefixedId": "DISC-S04"
+    },
+    {
+      "id": "S05",
+      "label": "NAICS 333613 — Speed Changer, Drive, and Gear Manufacturing",
+      "url": "https://www.naics.com/six-digit-naics/",
+      "prefixedId": "DISC-S05"
+    },
+    {
+      "id": "S06",
+      "label": "NAICS 333111 — Farm Machinery and Equipment Manufacturing (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/333111/farm-machinery-and-equipment-manufacturing/",
+      "prefixedId": "DISC-S06"
+    },
+    {
+      "id": "S07",
+      "label": "NAICS 333131 — Mining Machinery and Equipment Manufacturing (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/333131/mining-machinery-and-equipment-manufacturing/",
+      "prefixedId": "DISC-S07"
+    },
+    {
+      "id": "S08",
+      "label": "NAICS 333922 — Conveyor and Conveying Equipment Manufacturing",
+      "url": "https://www.naics.com/naics-code-description/?code=333922",
+      "prefixedId": "DISC-S08"
+    },
+    {
+      "id": "S09",
+      "label": "NAICS 333611 — Turbine and Turbine Generator Set Units Manufacturing (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/333611/turbine-and-turbine-generator-set-units-manufacturing/",
+      "prefixedId": "DISC-S09"
+    },
+    {
+      "id": "S10",
+      "label": "NAICS 333244 — Printing Machinery and Equipment Manufacturing (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/333244/printing-machinery-and-equipment-manufacturing/",
+      "prefixedId": "DISC-S10"
+    },
+    {
+      "id": "S11",
+      "label": "NAICS 333923 — Overhead Crane, Hoist, and Monorail Manufacturing",
+      "url": "https://www.naics.com/naics-code-description/?code=333923",
+      "prefixedId": "DISC-S11"
+    },
+    {
+      "id": "S12",
+      "label": "NAICS 333924 — Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",
+      "url": "https://www.naics.com/naics-code-description/?code=333924",
+      "prefixedId": "DISC-S12"
+    },
+    {
+      "id": "S13",
+      "label": "NAICS 336612 — Boat Building (IBISWorld)",
+      "url": "https://www.ibisworld.com/classifications/naics/336612/boat-building/",
+      "prefixedId": "DISC-S13"
+    },
+    {
+      "id": "S14",
+      "label": "NAICS 333243 — Sawmill, Woodworking, and Paper Machinery Manufacturing",
+      "url": "https://www.naics.com/naics-code-description/?code=333243",
+      "prefixedId": "DISC-S14"
+    },
+    {
+      "id": "S15",
+      "label": "01_product_decomposition.md — capability brief, cross-section specifications, steel grades, UNSPSC classification",
+      "prefixedId": "DISC-S15"
+    },
+    {
+      "id": "S16",
+      "label": "02_functional_promise.md — commodity FP, FP extensions, capability platform definition",
+      "prefixedId": "DISC-S16"
+    },
+    {
+      "id": "S17",
+      "label": "03_constraints.md — 14 constraints with absolute/conditional classification",
+      "prefixedId": "DISC-S17"
+    },
+    {
+      "id": "S18",
+      "label": "04b_existing_markets.md — 12 existing home markets with NAICS codes and supply descriptions",
+      "prefixedId": "DISC-S18"
+    }
+  ]
+}

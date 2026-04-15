@@ -1,0 +1,162 @@
+{
+  "naicsCode": "333995",
+  "marketName": "Fluid Power Cylinder and Actuator Manufacturing",
+  "slug": "hydraulic-cylinders",
+  "coreJobStatement": "Enable controlled linear force and displacement in machines and infrastructure by converting pressurized fluid energy into repeatable, measurable stroke and load [SRC: VN_hydraulic_cylinders]",
+  "productJobStatement": "Help L6a Input Material & Blank Supply to supply piston rod blanks at OD tolerance, straightness, alloy grade, and carbon content required for subsequent grinding, chrome plating, and induction hardening into pressure-rated cylinder rods",
+  "anchorLevel": "L5 (standalone product — precision steel bar / rod blank)",
+  "lPath": "L7 Fluid Power Motion & Control Ecosystem > L6a Input Material & Blank Supply > L5 Precision Steel Bar / Rod Blank",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Construction equipment OEMs",
+      "qualifier": "Caterpillar, Liebherr",
+      "characteristics": "High force, custom stroke, outdoor exposure, high volume",
+      "isTargetable": true,
+      "targetabilityReason": "Design tolerance, volume commitment, and certification requirements differ",
+      "circumstance": "High force, custom stroke, outdoor exposure, high volume",
+      "alternativesDiffer": "Yes — design tolerance and volume commitment differ from industrial"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Agricultural machinery OEMs",
+      "qualifier": "",
+      "characteristics": "Cost-sensitive, high volume, weather exposure",
+      "isTargetable": true,
+      "targetabilityReason": "Cost sensitivity drives different rod blank specifications",
+      "circumstance": "Cost-sensitive, high volume, weather exposure",
+      "alternativesDiffer": "Yes — cost sensitivity drives different rod blank specifications"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Industrial machinery OEMs",
+      "qualifier": "",
+      "characteristics": "Precision, clean environments, high duty cycle, low-mid pressure",
+      "isTargetable": true,
+      "targetabilityReason": "Precision requirements differ from mobile/off-highway",
+      "circumstance": "Precision, clean environments, high duty cycle, low-mid pressure",
+      "alternativesDiffer": "Yes — precision requirements and duty cycle constraints differ"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Mobile / off-highway OEMs",
+      "qualifier": "",
+      "characteristics": "Extreme conditions, high pressure (>=350 bar), vibration, contamination",
+      "isTargetable": true,
+      "targetabilityReason": "Extreme performance envelope alters rod blank requirements",
+      "circumstance": "Extreme conditions, high pressure (>=350 bar), vibration, contamination",
+      "alternativesDiffer": "Yes — extreme performance envelope alters rod blank requirements"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Cold-drawn precision round bar (C45 / 42CrMo4)",
+      "unspsc": "30102304",
+      "tradeoffs": "Min batch ~100 kg; 6-12 week tooling lead for new OD; max OD ~56 mm for cold-draw (2,500 mm2); no custom cross-section"
+    },
+    {
+      "name": "Precision-turned + OD-ground bar from hot-rolled stock",
+      "unspsc": "31161501",
+      "tradeoffs": "20-30% more material waste; additional turning operation; hot-rolled tolerance +-0.5 mm requires heavier grinding stock"
+    },
+    {
+      "name": "Forged rod blank (large-diameter, heavy-duty)",
+      "unspsc": "31151500",
+      "tradeoffs": "High tooling cost; min batch ~500 kg; 8-16 week lead time; not suited for OD < ~80 mm"
+    },
+    {
+      "name": "Commercially available pre-ground piston rod stock",
+      "unspsc": "31161504",
+      "tradeoffs": "Limited to standard ODs (25-100 mm in 5 mm steps); standard alloy grades only; no custom geometry or induction hardening"
+    },
+    {
+      "name": "Do nothing / outsource to contract rod bar processor",
+      "unspsc": "",
+      "tradeoffs": "Zero in-house metallurgical control; extended supply chain; quality traceability risk; zero P1 burden on internal engineering team"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Define piston rod blank OD, length, alloy grade, carbon content, and tolerance requirements",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Blank specification is the gating input to ZOLLERN's die selection and alloy routing",
+      "rawStatement": "Define piston rod blank OD, length, alloy grade, carbon content, and tolerance requirements",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Blank specification is the gating input to ZOLLERN's die selection and alloy routing"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify and qualify rod blank suppliers meeting spec and delivery requirements",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Supplier qualification is directly where ZOLLERN competes",
+      "rawStatement": "Identify and qualify rod blank suppliers meeting spec and delivery requirements",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Supplier qualification is directly where ZOLLERN competes"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Issue drawing, request quote, submit trial order, and initiate first-article qualification",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "ZOLLERN's tooling lead time and FAI process are active friction points",
+      "rawStatement": "Issue drawing, request quote, submit trial order, and initiate first-article qualification",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "ZOLLERN's tooling lead time and FAI process are active friction points"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Verify incoming material — certs, dimensional, hardness — against spec",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "EN 10204 3.1, OD tolerance, and hardness are ZOLLERN's primary conformance outputs",
+      "rawStatement": "Verify incoming material — certs, dimensional, hardness — against spec",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "EN 10204 3.1, OD tolerance, and hardness are ZOLLERN's primary conformance outputs"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Process blank through rod manufacturing cell — grinding, surface treatment, IH",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Blank OD tolerance and surface quality directly constrain grinding and chrome plating outcomes",
+      "rawStatement": "Process blank through rod manufacturing cell — grinding, surface treatment, IH",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Blank OD tolerance and surface quality directly constrain grinding and chrome plating outcomes"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Monitor rod geometry, surface quality, and hardness in-process across batches",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Lot-to-lot blank consistency determines monitoring burden",
+      "rawStatement": "Monitor rod geometry, surface quality, and hardness in-process",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Lot-to-lot blank consistency determines monitoring burden"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "VN_hydraulic_cylinders.md",
+      "url": "VN_hydraulic_cylinders.md",
+      "prefixedId": "JTBD-HYDRAULIC-CYLINDERS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "BOM_hydraulic_cylinders.md",
+      "url": "BOM_hydraulic_cylinders.md",
+      "prefixedId": "JTBD-HYDRAULIC-CYLINDERS-S02"
+    }
+  ]
+}

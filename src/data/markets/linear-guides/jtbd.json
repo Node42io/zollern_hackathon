@@ -1,0 +1,23 @@
+{
+  "naicsCode": "333249",
+  "marketName": "Linear Guides",
+  "slug": "linear-guides",
+  "coreJobStatement": "Design, manufacture, and deliver precision linear motion guide systems that enable accurate, repeatable, load-capable linear travel in industrial machinery and automation equipment",
+  "productJobStatement": "Help Rail Material Production to supply precision-hardened, near-net-shape guide rail profile stock at IT8 dimensional tolerance (+-0.02 mm) and >=58 HRC surface hardness - consistently across batches - for guide rail grinding and assembly",
+  "anchorLevel": "L5 (Steel Rail Profile Stock within L6a Rail Material Production)",
+  "lPath": "",
+  "segments": [
+    { "segmentNumber": 1, "name": "Precision Guide OEM (SP/UP grade)", "qualifier": "", "characteristics": "Produces SP/UP accuracy rails at high volume; tightest tolerance requirements", "isTargetable": true, "targetabilityReason": "Near-net custom profile needed", "circumstance": "Produces SP/UP accuracy rails at high volume; tightest tolerance requirements", "alternativesDiffer": "Near-net custom profile OR full in-house bar machining" },
+    { "segmentNumber": 2, "name": "Standard Grade Guide OEM (H/P grade)", "qualifier": "", "characteristics": "High-volume, cost-driven; grinds down larger allowances", "isTargetable": true, "targetabilityReason": "Standard bar stock dominant", "circumstance": "High-volume, cost-driven; grinds down larger allowances", "alternativesDiffer": "Standard bar stock dominant; some hot-rolled blanks" },
+    { "segmentNumber": 3, "name": "Machine Tool OEM (custom slideway)", "qualifier": "", "characteristics": "Specifies proprietary rail geometry per platform; low-medium volume", "isTargetable": true, "targetabilityReason": "Custom profile from specialist", "circumstance": "Specifies proprietary rail geometry per platform; low-medium volume", "alternativesDiffer": "Custom profile from specialist; machine from plate" },
+    { "segmentNumber": 4, "name": "Automation System Integrator", "qualifier": "", "characteristics": "Buys finished guide rail assemblies; rarely specifies profile stock", "isTargetable": false, "targetabilityReason": "Downstream - no profile purchasing decision", "circumstance": "Buys finished guide rail assemblies; rarely specifies profile stock", "alternativesDiffer": "Buys finished rails only" },
+    { "segmentNumber": 5, "name": "Specialist Rail Producer (niche)", "qualifier": "", "characteristics": "Crossed-roller, miniature, or corrosion-resistant niches", "isTargetable": true, "targetabilityReason": "Custom profile + precision grinding outsourced", "circumstance": "Crossed-roller, miniature, or corrosion-resistant niches", "alternativesDiffer": "Custom profile + precision grinding outsourced" }
+  ],
+  "alternatives": [
+    { "name": "Custom cold-drawn, induction-hardened steel rail profile (near-net-shape)", "unspsc": "30102304", "tradeoffs": "6-12 week tooling lead time for new geometry; >=100 kg min batch; steel/stainless only; supplier base limited. ZOLLERN position ~25% share." },
+    { "name": "Bearing steel round/flat bar stock (full machining in-house)", "unspsc": "31161501", "tradeoffs": "40-80% material waste; high machining cost and cycle time; in-house machine capacity required; lower purchased cost. Dominant ~60% share." },
+    { "name": "Hot-rolled special profile + full grinding allowance", "unspsc": "30264000", "tradeoffs": "+-0.5 mm as-delivered tolerance; larger grinding stock removal; higher risk of profile distortion post-harden. ~15% share." },
+    { "name": "Pre-hardened ground flat die steel plate", "unspsc": "31191601", "tradeoffs": "~3x material cost; no profile geometry option; only works for flat/dovetail slides (OT5); grade limitations. ~3% share." },
+    { "name": "Outsourced finished precision-ground rail profile", "unspsc": "30102304", "tradeoffs": "Highest unit cost; 4-8 week lead time; limited geometry flexibility; no design-in control. ~2% share." }
+  ]
+}

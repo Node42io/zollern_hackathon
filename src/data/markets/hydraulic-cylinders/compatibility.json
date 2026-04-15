@@ -1,0 +1,16 @@
+{
+  "naicsCode": "333995",
+  "marketName": "Fluid Power Cylinder and Actuator Manufacturing",
+  "slug": "hydraulic-cylinders",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Rod OD Range (20-56 mm for cold-draw)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Standard piston rod ODs for tie-rod and welded cylinders fall within 20-56 mm range. Larger OD (>80 mm) mill-type rods require forging — outside ZOLLERN cold-draw scope.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Alloy Grade (C45 / 42CrMo4)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "C45 is the dominant piston rod material globally; 42CrMo4 for high-load applications (>=250 bar). Both are standard ZOLLERN production grades.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "IH Hardness (>=54 HRC)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN in-line IH achieves up to 64 HRC. 42CrMo4 provides carbon assurance for reliable >=54 HRC at rod end transitions.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Straightness (<=0.2 mm/m)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Cold-drawn + straightened rod blanks achieve <=0.2 mm/m — meeting the standard piston rod requirement.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "EN 10204 3.1 / PED 2014/68/EU Compliance", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN provides EN 10204 3.1 material test reports as standard delivery. PED traceability requirement is met.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": { "knockouts": 0, "mitigable": 0, "none": 5, "marketStatus": "SURVIVING", "totalMitigationCost": "", "totalMitigationTime": "" },
+  "sources": []
+}

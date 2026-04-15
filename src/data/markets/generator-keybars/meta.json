@@ -1,0 +1,21 @@
+{
+  "slug": "generator-keybars",
+  "name": "Motor and Generator Manufacturing",
+  "naicsCode": "335312",
+  "isReference": true,
+  "rank": 8,
+  "scores": {
+    "odi": 5.72,
+    "featureFit": 5.6,
+    "constraintCompatibility": 10,
+    "jobCoverage": 5,
+    "vnHierarchy": 4,
+    "incumbentVulnerability": 5.1,
+    "composite": 5.9
+  },
+  "recommendation": "reference",
+  "rationale": "Existing ZOLLERN market. Cold-drawn near-net-shape dovetail/T-slot keybar profiles for large generator stator assemblies. 0 knockout constraints — keybar cross-section is constant 2D, well within cold-draw capacity and alloy range. Key OEM buyers: GE Vernova, Siemens Energy, ABB, Hitachi Energy.",
+  "entryStrategy": "Existing market — expand from turbo-generator OEMs into hydro-generator and industrial motor segments via die library leverage and 42CrMo4 fatigue data provision.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

@@ -1,0 +1,23 @@
+{
+  "naicsCode": "333921",
+  "marketName": "Elevator Guide Rails",
+  "slug": "elevator-guide-rails",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "2D Cross-Section Only (C1)", "constraintType": "hard", "threshold": "Constant cross-section along length", "verdict": "none", "rationale": "Elevator guide rails are T-section profiles with constant cross-section along their full length (typically 5-6 m bars). Perfect geometric match for cold-drawing.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Steel-Only Material (C6)", "constraintType": "hard", "threshold": "No aluminium or non-ferrous", "verdict": "none", "rationale": "~96% of elevator guide rails are steel (solid T-section ~78%, hollow steel ~18%). Aluminium/stainless represent only ~4% niche (residential/light-duty). Steel-only constraint does not restrict the primary market.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Maximum Bar Length 6m (C4)", "constraintType": "soft", "threshold": "6m maximum bar length from cold-drawing line", "verdict": "none", "rationale": "Standard elevator guide rail lengths are 5m (Europe) and 5.3m (ISO 7465). ZOLLERN 6m max exceeds the standard requirement. Hot-rolled competitors offer 12m bars with fewer splice joints, but 5m/6m is industry standard.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Corrosion Protection (C10)", "constraintType": "soft", "threshold": "No inherent corrosion protection", "verdict": "none", "rationale": "Elevator guide rails operate inside enclosed hoistways - dry, indoor environment. No corrosion protection required for standard applications. Specialty applications (marine, outdoor hydraulic lifts) may require treatment, but these are niche.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Tooling Lead 6-12 Weeks (C8)", "constraintType": "soft", "threshold": "6-12 weeks for new T-section sizes", "verdict": "none", "rationale": "Elevator guide rail T-section sizes are standardized per ISO 7465 / EN 81-1. ZOLLERN die library already covers the primary EN 50 sizes. New sizes required only for non-standard applications.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 0,
+    "none": 5,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": []
+}

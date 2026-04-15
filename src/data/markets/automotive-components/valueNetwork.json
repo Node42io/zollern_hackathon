@@ -1,0 +1,204 @@
+{
+  "naicsCode": "336390",
+  "marketName": "Other Motor Vehicle Parts Manufacturing",
+  "slug": "automotive-components",
+  "coreJobStatement": "Manufacture and deliver qualified precision metal components that meet OEM dimensional, material, and performance specifications for integration into vehicle body, closure, seat, and drivetrain programs",
+  "outputTypes": [
+    "Seat & Comfort Systems (seat rail tracks, headrest guide tubes, recline mechanism blanks)",
+    "Body Closure Systems (window regulator guide profiles, sill tracks, latch reinforcement profiles)",
+    "Body Structural Reinforcement (B-pillar insert profiles, sill reinforcement inserts, door impact beam blanks)",
+    "Drivetrain Profile Components (driveshaft section blanks, spline inserts, torque tube sections)",
+    "Chassis & Suspension Profiles (subframe cross-member sections, anti-roll bar blanks)"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what process steps and equipment compose the automotive component manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$62B US (2017 census); global seat rail track long-slide segment $229M (2025) growing to $652M by 2034; window regulator segment ~$10-16B global (2024) [SRC: IBISWorld, Intel Market Research, Future Market Insights]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Incoming Material Qualification",
+      "type": "Core",
+      "jobFamily": "Procure, qualify, and induct steel semi-finished forms to OEM material specification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Primary Forming",
+      "type": "Core",
+      "jobFamily": "Transform raw/semi-finished stock into near-net-shape component geometry",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Precision Secondary Machining",
+      "type": "Core",
+      "jobFamily": "Machine, drill, mill, and grind components to OEM final dimensional specification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Surface & Thermal Engineering",
+      "type": "Core",
+      "jobFamily": "Apply heat treatment and protective coating to meet service life and corrosion requirements",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Sub-Assembly & Joining",
+      "type": "Core",
+      "jobFamily": "Integrate component elements into shippable Tier 1 sub-assembly unit",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "PPAP, Testing & OEM Delivery",
+      "type": "Core",
+      "jobFamily": "Validate against OEM drawing, obtain production part approval, deliver to assembly line",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality Management (IATF 16949 / VDA 6.3)",
+      "type": "Horizontal",
+      "jobFamily": "Maintain IATF 16949 compliance, VDA 6.3 process audit, SPC monitoring across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "APQP / Process Engineering",
+      "type": "Horizontal",
+      "jobFamily": "Advanced Product Quality Planning, PFMEA, control plan management across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "JIT Supply Chain & Kanban",
+      "type": "Horizontal",
+      "jobFamily": "Just-in-time delivery management, Kanban replenishment, call-off scheduling",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Precision Steel Profile Stock",
+      "functionalJob": "Near-net-shape custom cold-drawn / cold-rolled profiles for seat tracks, guide rails, and shaft blanks. Reduces Tier 1 machining cost 40-80%. ZOLLERN PRIMARY POSITION. ~12% share at L6a.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Standard Round / Flat Bar Stock",
+      "functionalJob": "Commodity round/flat bar machined to near-net at Tier 1. ~53% share. Sourced from Ovako, Bohler, Schmolz+Bickenbach.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Roll-Formed Structural Section",
+      "functionalJob": "Open profile, non-precision roll-formed sections for structural inserts and chassis sections not requiring IT8 tolerance. ~25% share.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "Drawn-Over-Mandrel Tube / Hollow Section",
+      "functionalJob": "Seat back tubes, sill reinforcement hollow forms. ~10% share.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.5",
+      "name": "High-Strength Sheet Coil (AHSS)",
+      "functionalJob": "Advanced high-strength steel DP/CP/TRIP coil for body stampings. ~60% share in sheet input.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Stamping Press Line",
+      "functionalJob": "Progressive die stamping for sheet body parts. Dominant forming method at ~50% share.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Cold Roll-Forming Line",
+      "functionalJob": "Multi-pass cold roll-forming mill for sill profiles, window guide tracks, and structural sections. ~75% share in roll-formed segment.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "CNC Turning & Milling Center",
+      "functionalJob": "Secondary machining of functional features on seat rail profiles, shaft blanks, and guide channel sections.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Induction Hardening Cell",
+      "functionalJob": "Surface hardening of seat rail sliding surfaces and drivetrain journal diameters to 55-64 HRC.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Automated Assembly Cell",
+      "functionalJob": "Integration of rail profiles with bearings, locking mechanisms, and mounting hardware into shippable seat rail or regulator assemblies.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "CMM & SPC Station",
+      "functionalJob": "Coordinate measurement machine for PPAP dimensional reports and ongoing SPC monitoring of Key Product Characteristics.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": null,
+  "strategicPosition": "ZOLLERN holds IATF 16949 certification and supplies precision cold-drawn profiles at IT8 tolerance (+-0.02 mm) with in-line induction hardening. Position at L5 under L6a Incoming Material Qualification. ~12% share of precision steel profile input.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 336390 — US Census Bureau",
+      "url": "https://data.census.gov",
+      "prefixedId": "VN-AUTOMOTIVE-COMPONENTS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "IBISWorld — Other Motor Vehicle Parts Manufacturing",
+      "url": "https://www.ibisworld.com",
+      "prefixedId": "VN-AUTOMOTIVE-COMPONENTS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Future Market Insights — Window Regulator Market",
+      "url": "https://www.futuremarketinsights.com",
+      "prefixedId": "VN-AUTOMOTIVE-COMPONENTS-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Intel Market Research — Seat Long-Slide Track Market",
+      "url": "https://www.intelmarketresearch.com",
+      "prefixedId": "VN-AUTOMOTIVE-COMPONENTS-S04"
+    },
+    {
+      "id": "S05",
+      "label": "04b_existing_markets.md — ZOLLERN capability and market mapping",
+      "prefixedId": "VN-AUTOMOTIVE-COMPONENTS-S05"
+    }
+  ]
+}

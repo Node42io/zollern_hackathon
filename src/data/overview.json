@@ -1,0 +1,204 @@
+{
+  "company": {
+    "name": "ZOLLERN GmbH & Co. KG",
+    "legalForm": "GmbH & Co. KG (limited partnership with a limited liability company as general partner)",
+    "ownership": "Family-owned (50% Karl Friedrich von Hohenzollern, 50% Merckle Unternehmensgruppe since 1989)",
+    "founded": 1708,
+    "hq": "Laucherthal, 72517 Sigmaringendorf, Baden-Württemberg, Germany",
+    "ceo": {
+      "name": "Dr. Jerry Mackel, Dr. Oliver Picht, Mario Zirn",
+      "since": "Current",
+      "note": "Three-person Geschaeftsfuehrung (Managing Directors); Karl Friedrich Prince of Hohenzollern chairs the Advisory Board (Beiratsvorsitzender)"
+    },
+    "revenue": {
+      "value": "~385M EUR",
+      "year": 2025,
+      "note": "Industry estimate — ZOLLERN is private with no public filings. Single-source figure."
+    },
+    "employees": {
+      "value": 2300,
+      "year": 2025,
+      "note": "Approximately 2,300 group-wide per direct briefing; ~800 in Steel Profiles division (estimated). Wikipedia cites ~3,200 (likely peak); Craft.co shows ~1,000 (entity scope mismatch)."
+    },
+    "sites": 17,
+    "countries": 3,
+    "continents": 3,
+    "rdIntensity": "Not publicly disclosed",
+    "patentsTotal": null,
+    "patentsGranted": null,
+    "primaryNaics": "331221",
+    "primaryNaicsTitle": "Rolled Steel Shape Manufacturing"
+  },
+  "globalFootprint": {
+    "regions": [
+      {
+        "region": "Germany (HQ)",
+        "sites": ["Laucherthal / Sigmaringendorf (HQ, Steel Profiles, Casting)", "Herbertingen (Steel Profiles)", "Aulendorf (Drive Technology)", "Mannheim (Drive Technology)", "Dorsten (Casting)", "Soest (Drive Technology, Winches)", "Braunschweig (BHW Gleitlager, Bearings)", "Osterode am Harz (Bearings)"]
+      },
+      {
+        "region": "Europe (ex-Germany)",
+        "sites": ["Additional offices and plants per company website"]
+      },
+      {
+        "region": "Asia & North America",
+        "sites": ["Additional offices per company website — 17 plants and offices total across Europe, Asia, and North America"]
+      }
+    ]
+  },
+  "divisions": [
+    {
+      "name": "Steel Profiles (Stahlprofile)",
+      "type": "Manufacturing / Metal Processing",
+      "description": "Custom-geometry precision steel profiles via hot rolling, cold drawing, cold rolling, and optional induction hardening. Serves 12+ application sectors including linear guides, automotive, elevator rails, firearms, and industrial machinery.",
+      "isSubjectDivision": true
+    },
+    {
+      "name": "Drive Technology (Antriebstechnik)",
+      "type": "Industrial",
+      "description": "Gearboxes, winches, direct drives, automation systems, and rotary table systems for industrial applications.",
+      "isSubjectDivision": false
+    },
+    {
+      "name": "Investment Casting (Feinguss)",
+      "type": "Aerospace / Industrial / Energy",
+      "description": "Investment casting for aerospace, industrial, and energy applications. Growth segment.",
+      "isSubjectDivision": false
+    },
+    {
+      "name": "Sand Casting & Forging (Sandguss und Schmiede)",
+      "type": "Heavy Industry",
+      "description": "Sand casting, shell mould casting, centrifugal casting, and forging for heavy industrial applications.",
+      "isSubjectDivision": false
+    },
+    {
+      "name": "Bearing Technology (Gleitlagertechnik)",
+      "type": "Specialized / Industrial",
+      "description": "Plain bearings, hydrostatic and aerostatic bearings via subsidiary BHW Gleitlager.",
+      "isSubjectDivision": false
+    }
+  ],
+  "productGroup": {
+    "name": "Special Steel Profiles",
+    "scope": "Custom-geometry precision steel profiles — hot-rolled, cold-drawn, cold-rolled — with optional induction hardening and mechanical processing",
+    "families": [
+      {
+        "name": "Hot-Rolled Profiles",
+        "technology": "Hot rolling through custom roll sets",
+        "status": "Core production — cross-sections 100-7,650 mm2"
+      },
+      {
+        "name": "Cold-Drawn Profiles",
+        "technology": "Cold drawing through carbide die sets",
+        "status": "Core production — cross-sections 5-2,500 mm2, IT8 tolerance"
+      },
+      {
+        "name": "Cold-Rolled Profiles",
+        "technology": "Precision cold rolling",
+        "status": "Core production — cross-sections 10-500 mm2"
+      },
+      {
+        "name": "Induction-Hardened Profiles",
+        "technology": "Selective induction surface hardening up to 64 HRC",
+        "status": "Value-added option — in-line integration"
+      },
+      {
+        "name": "Mechanically Processed Profiles",
+        "technology": "CNC cutting, drilling, milling, grinding",
+        "status": "Value-added option — downstream finishing"
+      }
+    ]
+  },
+  "product": {
+    "name": "ZOLLERN Special Steel Profiles",
+    "family": "Custom-Geometry Precision Steel Profiles",
+    "bomLevel": "L1-L2 (semi-finished material / near-net-shape input component)",
+    "homeMarketNaics": "331221",
+    "homeMarketTitle": "Rolled Steel Shape Manufacturing",
+    "whitepaper": null,
+    "productPage": "https://www.zollern.com/spezialprofile-und-fertigteile",
+    "variants": [
+      {
+        "id": "Hot-Rolled",
+        "status": "Serial production",
+        "crossSection": "100-7,650 mm2",
+        "tolerance": "+-0.5 mm",
+        "maxLength": "12 m (bars) or 2,000 kg (coils)",
+        "isSerial": true,
+        "note": "Bulk shaping from billet via custom roll sets"
+      },
+      {
+        "id": "Cold-Drawn",
+        "status": "Serial production",
+        "crossSection": "5-2,500 mm2",
+        "tolerance": "+-0.02 mm (IT8)",
+        "maxLength": "6 m (bars)",
+        "isSerial": true,
+        "note": "Precision finishing through carbide dies — primary value driver"
+      },
+      {
+        "id": "Cold-Rolled",
+        "status": "Serial production",
+        "crossSection": "10-500 mm2",
+        "tolerance": "Precision",
+        "maxLength": "Bars",
+        "isSerial": true,
+        "note": "Precision flat and shaped profiles"
+      },
+      {
+        "id": "Induction-Hardened",
+        "status": "Serial production (value-add)",
+        "crossSection": "Up to 4,000 mm2",
+        "tolerance": "Per base profile",
+        "maxLength": "2,200-9,000 mm",
+        "isSerial": true,
+        "note": "Selective surface hardening up to 64 HRC, depth 0.5-5 mm"
+      }
+    ]
+  },
+  "studyQuestion": {
+    "q1": {
+      "german": "Welche Anwendungen und Maerkte fuer Stahlprofile gibt es, wie attraktiv sind diese Markt-Segmente und wie koennte ein passendes Geschaeftsmodell aussehen?",
+      "english": "What applications and markets exist for steel profiles, how attractive are these market segments, and what could a fitting business model look like?",
+      "answer": "Analysis ongoing. The study evaluates both adjacent opportunities in 12 existing application markets (linear guides, firearms, pump components, rail vehicles, door systems, elevator guide rails, automotive, generator keybars, hydraulic cylinders, construction machinery, medical instruments, general mechanical engineering) and new market discovery via NAICS/UNSPSC classification. The near-net-shape value proposition — eliminating 40-80% of downstream machining waste — is the central differentiator. Markets must absorb meaningful tonnage to justify idle capacity utilization."
+    },
+    "q2": {
+      "german": "Wo koennen angrenzende Produkt- und Marktchancen die freie Kapazitaet absorbieren und den Margen-Mix verbessern?",
+      "english": "Where can adjacent product and market opportunities absorb idle capacity and improve the margin mix?",
+      "answer": "Analysis ongoing. The strategic imperative is to offset revenue erosion in traditional core markets under intense price competition. With an estimated 30-40% idle capacity across key processes, the study identifies both upward movement in the value network (from semi-finished material to finished components) and lateral expansion into high-value application sectors where precision geometry, surface hardness, and near-net-shape economics create defensible margins."
+    }
+  },
+  "portfolioPriorities": [],
+  "financials": null,
+  "sources": [
+    {
+      "id": "OVW-S01",
+      "label": "ZOLLERN GmbH & Co. KG — Official Website (Steel Profiles)",
+      "url": "https://www.zollern.com/spezialprofile-und-fertigteile"
+    },
+    {
+      "id": "OVW-S02",
+      "label": "ZOLLERN GmbH & Co. KG — Wikipedia (de)",
+      "url": "https://de.wikipedia.org/wiki/Zollern_(Unternehmen)"
+    },
+    {
+      "id": "OVW-S03",
+      "label": "ZOLLERN/HS Albstadt-Sigmaringen Project Briefing (2026)",
+      "url": null
+    },
+    {
+      "id": "OVW-S04",
+      "label": "Handelsregister — Amtsgericht Ulm HRA 710542",
+      "url": null
+    },
+    {
+      "id": "OVW-S05",
+      "label": "Benjamin Widmann — Head of Sales, Steel Profiles (direct contact)",
+      "url": null
+    },
+    {
+      "id": "OVW-S06",
+      "label": "Frank Leyhr — Head of Strategy & Performance (direct contact)",
+      "url": null
+    }
+  ]
+}

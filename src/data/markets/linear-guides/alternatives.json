@@ -1,0 +1,12 @@
+{
+  "naicsCode": "333249",
+  "marketName": "Linear Guides",
+  "slug": "linear-guides",
+  "alternatives": [
+    { "name": "Custom cold-drawn, induction-hardened precision profile (ZOLLERN)", "unspsc": "30102304", "tradeoffs": "IT8 tolerance (+-0.02 mm); in-line IH to 58-64 HRC; near-net-shape reduces grinding stock to <0.3 mm. Weakness: 6-12 week tooling lead for new geometry; EUR 5-15K die NRE; min batch ~100 kg; sole-source dependency. ~25% share." },
+    { "name": "Bearing steel round/flat bar stock (in-house machining)", "unspsc": "31161501", "tradeoffs": "Zero tooling lead; unlimited geometry flexibility; available from Ovako, Bohler, Sandvik, Carpenter. 40-80% material waste; high machining cost and cycle time; no pre-hardening. Dominant ~60% share." },
+    { "name": "Hot-rolled T-section/flat profile + full grinding allowance", "unspsc": "30264000", "tradeoffs": "+-0.5 mm as-delivered tolerance; lower cost entry; greater grinding stock removal (2-5 mm); higher distortion risk post-harden. ~15% share." },
+    { "name": "Pre-hardened ground flat die steel plate (Bohler Calmax, Uddeholm Caldie)", "unspsc": "31191601", "tradeoffs": "~3x material cost; no profile geometry option; only works for flat/dovetail slides (OT5); limited grade selection. ~3% niche share." },
+    { "name": "Outsourced finished precision-ground rail profile", "unspsc": "30102304", "tradeoffs": "Highest unit cost; 4-8 week lead time; limited geometry flexibility; no design-in control; delivers Ra <=0.4 um vs ZOLLERN Ra 0.4-1.6 um. ~2% share." }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "naicsCode": "336510",
+  "marketName": "Rail Vehicle Parts",
+  "slug": "rail-vehicle-parts",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Corrosion Protection (C10)", "constraintType": "soft", "threshold": "No inherent corrosion protection on bare steel profiles", "verdict": "mitigable", "rationale": "Rail vehicle carbody and bogie profiles are exposed to outdoor weather, road salt spray, and tunnel moisture. Bare steel profiles require corrosion treatment before/after installation.", "mitigation": "Weathering steel (S355J2W) for structural members; zinc-rich primer + polyurethane topcoat system; hot-dip galvanizing (ISO 1461) for underframe components", "mitigationCost": "Low - standard rail industry practice", "mitigationTime": "2-4 weeks for galvanizing subcontract" },
+    { "constraintName": "Steel-Only Material (C6)", "constraintType": "hard", "threshold": "No aluminium or non-ferrous", "verdict": "mitigable", "rationale": "Aluminium alloy extrusions account for ~20% of carbody construction and are growing (weight reduction driver). ZOLLERN cannot serve the aluminium carbody segment. Steel-body vehicles (~55%) and freight wagons (~100%) remain fully addressable.", "mitigation": "Focus on steel-body vehicle programs (OT2, OT5, OT6) and bogie frames (all OTs)", "mitigationCost": "None - market segmentation", "mitigationTime": "N/A" },
+    { "constraintName": "Tooling Lead 6-12 Weeks (C8)", "constraintType": "soft", "threshold": "6-12 weeks for new profile geometry", "verdict": "mitigable", "rationale": "New vehicle platform programs have 2-4 year development cycles; 6-12 week die lead fits within PPAP timeline. Series production repeat orders ship within days.", "mitigation": "Early engagement in vehicle design phase; die qualification aligned to PPAP milestones", "mitigationCost": "Low", "mitigationTime": "Within program timeline" },
+    { "constraintName": "Profile Width Limit (C3)", "constraintType": "hard", "threshold": "Maximum profile width ~160 mm", "verdict": "mitigable", "rationale": "Freight wagon underframe crossmembers may approach 160 mm width limit for very wide flanges. Most passenger car profiles are well within range.", "mitigation": "Limit to passenger car and standard bogie profiles; wide freight sections from standard structural mill", "mitigationCost": "None", "mitigationTime": "N/A" },
+    { "constraintName": "EN 15085-CL1 Weld Certification", "constraintType": "soft", "threshold": "Profiles must be weldable under EN 15085-CL1", "verdict": "none", "rationale": "ZOLLERN steel grades (S355, 42CrMo4, C45) are standard EN 15085 welding materials. No constraint from material side; weld qualification is at the fabricator, not the profile supplier.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 4,
+    "none": 1,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "Low",
+    "totalMitigationTime": "2-4 weeks for corrosion treatment"
+  },
+  "sources": []
+}

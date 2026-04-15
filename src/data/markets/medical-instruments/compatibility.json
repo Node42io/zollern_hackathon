@@ -1,0 +1,17 @@
+{
+  "naicsCode": "339112",
+  "marketName": "Surgical and Medical Instrument Manufacturing",
+  "slug": "medical-instruments",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Biocompatibility (ISO 10993)", "constraintType": "", "threshold": "", "verdict": "mitigable", "rationale": "Surgical instruments require biocompatible material with documented ISO 10993 testing. ZOLLERN stainless grades (1.4021, 1.4028, 1.4112, 1.4542) are inherently biocompatible but require formal documentation.", "mitigation": "Provide ISO 10993 biocompatibility file for each stainless grade; maintain file currency with notified body", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "FDA 510(k) / MDR 2017/745 Regulatory", "constraintType": "", "threshold": "", "verdict": "mitigable", "rationale": "Material supplier must be on OEM's approved supplier list with ISO 13485 audit trail. ZOLLERN IATF 16949 is partial overlap but not equivalent.", "mitigation": "Extend quality system documentation to address ISO 13485 supplier audit requirements; provide UDI lot-level traceability", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Sterilization Durability (>1,000 autoclave cycles)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Martensitic stainless steels (1.4021, 1.4028) with proper passivation withstand >1,000 autoclave cycles at 134C. Standard ZOLLERN capability.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Surface Finish (Ra <= 0.4 um)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Cold-drawn profiles achieve Ra 0.4 um as-drawn. Meets instrument surface specification without additional polishing.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Hardness Range (45-58 HRC for cutting instruments)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN stainless grades (1.4021, 1.4028, 1.4112) are hardenable to 50-60 HRC via through-hardening or precipitation hardening. Meets cutting instrument requirement.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Corrosion Resistance (passivation per ASTM A967)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN stainless profiles have Cr content >=12% enabling stable chromium oxide passive film formation per ASTM A967 passivation.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": { "knockouts": 0, "mitigable": 2, "none": 4, "marketStatus": "SURVIVING", "totalMitigationCost": "", "totalMitigationTime": "" },
+  "sources": []
+}

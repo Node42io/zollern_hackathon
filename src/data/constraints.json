@@ -1,0 +1,204 @@
+{
+  "constraints": [
+    {
+      "name": "2D Constant Cross-Section Only",
+      "constraintType": "physical",
+      "description": "Cold drawing and cold rolling can only produce profiles with a constant cross-section along the entire length. Any geometry that varies in the third dimension (tapers, steps, undercuts, 3D-varying) is physically impossible without downstream machining. This is an inherent limit of the drawing/rolling process.",
+      "thresholdValue": null,
+      "thresholdUnit": null,
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Aerospace structural components",
+        "Automotive complex shafts",
+        "Medical implants",
+        "Turbine blades"
+      ]
+    },
+    {
+      "name": "Max Cold-Draw Cross-Section",
+      "constraintType": "physical",
+      "description": "Maximum achievable cross-sectional area via cold drawing is limited to approximately 2,500 mm² by draw force, die stress, and material flow constraints. Profiles exceeding this require hot rolling or forging.",
+      "thresholdValue": "2,500",
+      "thresholdUnit": "mm²",
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Heavy industrial profiles",
+        "Mining equipment",
+        "Large machine-tool guideways"
+      ]
+    },
+    {
+      "name": "Max Profile Width",
+      "constraintType": "physical",
+      "description": "Maximum profile width achievable is 160 mm, constrained by die geometry, draw bench capacity, and material flow stability during cold drawing.",
+      "thresholdValue": "160",
+      "thresholdUnit": "mm",
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Construction machinery structures",
+        "Heavy industrial frames"
+      ]
+    },
+    {
+      "name": "Max IH Cross-Section",
+      "constraintType": "physical",
+      "description": "Maximum cross-section for induction hardening is approximately 4,000 mm², limited by inductor coil geometry and through-heating risk on larger sections. Cross-sections above this limit require alternative hardening methods (flame, furnace).",
+      "thresholdValue": "4,000",
+      "thresholdUnit": "mm²",
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Construction machinery",
+        "Large hydraulic cylinder rods",
+        "Heavy mining shafts"
+      ]
+    },
+    {
+      "name": "Min Carbon Content for Hardening",
+      "constraintType": "physical",
+      "description": "Induction hardening requires a minimum carbon content of 0.35% C to achieve the martensitic transformation necessary for surface hardness. Low-carbon structural steels and austenitic stainless grades cannot be induction hardened.",
+      "thresholdValue": "0.35",
+      "thresholdUnit": "% C",
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Medical (austenitic stainless grades)",
+        "Structural steel construction"
+      ]
+    },
+    {
+      "name": "Steel-Only Material Scope",
+      "constraintType": "physical",
+      "description": "ZOLLERN's cold drawing and rolling equipment is designed exclusively for carbon and alloy steel. Titanium, aluminum, copper alloys, and non-ferrous metals cannot be processed. This is a hard equipment constraint.",
+      "thresholdValue": null,
+      "thresholdUnit": null,
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Aerospace (Ti/Al alloys)",
+        "Medical (Ti implants)",
+        "Marine (Cu alloys)",
+        "Lightweight automotive (Al)"
+      ]
+    },
+    {
+      "name": "Min Economic Batch for Custom Die",
+      "constraintType": "economic",
+      "description": "Custom die tooling costs €5–20K per geometry. Below approximately 100 kg total order volume, the die amortization makes per-unit cost uncompetitive versus CNC machining from bar stock. Die NRE can be charged separately to mitigate.",
+      "thresholdValue": "100",
+      "thresholdUnit": "kg",
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Medical instruments",
+        "Defence prototyping",
+        "R&D prototype quantities"
+      ]
+    },
+    {
+      "name": "Custom Tooling Lead Time",
+      "constraintType": "operational",
+      "description": "New custom die design, manufacture, and first-article inspection requires 6–12 weeks. This lead time is incompatible with JIT production programs or rapid procurement cycles unless dies are pre-commissioned.",
+      "thresholdValue": "6–12",
+      "thresholdUnit": "weeks",
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Automotive JIT programs",
+        "Rapid-response defence procurement",
+        "Product launches"
+      ]
+    },
+    {
+      "name": "Induction Hardening Length Range",
+      "constraintType": "physical",
+      "description": "Induction hardening line accepts workpiece lengths of 2,200–9,000 mm. Parts shorter than 2,200 mm or longer than 9,000 mm cannot be processed in-house and require outsourced heat treatment or alternative hardening methods.",
+      "thresholdValue": "2,200–9,000",
+      "thresholdUnit": "mm",
+      "isAbsolute": true,
+      "affectedMarketsHint": [
+        "Firearms (short parts)",
+        "Medical instruments",
+        "Short-stroke hydraulic cylinders"
+      ]
+    },
+    {
+      "name": "Carbon Steel Corrosion Susceptibility",
+      "constraintType": "chemical",
+      "description": "Carbon and low-alloy steel corrodes rapidly in aqueous acidic (pH < 5) or chloride-rich (> 100 ppm Cl⁻) environments without surface treatment. Applications in wet, corrosive, or sterilization environments require protective coatings (galvanizing, chrome, nickel) or specification of corrosion-resistant grades (420SS, weathering steel).",
+      "thresholdValue": "pH < 5 or Cl⁻ > 100",
+      "thresholdUnit": "ppm Cl⁻ / pH",
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Door systems (outdoor)",
+        "Pump components (wetted)",
+        "Marine applications",
+        "Medical (sterilization)"
+      ]
+    },
+    {
+      "name": "High-Strength Grade Hydrogen Embrittlement",
+      "constraintType": "chemical",
+      "description": "Quenched-and-tempered grades exceeding 1,000 MPa UTS are susceptible to hydrogen-induced stress cracking in hydrogen environments or after electroplating without proper bake-out. Requires hydrogen bake-out per ISO 9587 or grade limitation below 1,000 MPa for electroplated applications.",
+      "thresholdValue": "1,000",
+      "thresholdUnit": "MPa UTS",
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Automotive (H₂ fuel cell adjacency)",
+        "Electroplated high-strength components",
+        "Oil/gas sour service"
+      ]
+    },
+    {
+      "name": "High-Temperature Oxidation Limit",
+      "constraintType": "environmental",
+      "description": "Carbon and low-alloy steel oxidizes significantly above 450°C and structural creep begins above ~400°C. Applications adjacent to exhaust systems, furnaces, or high-temperature processes require heat-resistant ferritic/martensitic grades or thermal-barrier coatings.",
+      "thresholdValue": "450",
+      "thresholdUnit": "°C ambient",
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Construction machinery (exhaust-adjacent)",
+        "Industrial furnace adjacency",
+        "Power plant auxiliaries"
+      ]
+    },
+    {
+      "name": "Defence / Firearms Export Control",
+      "constraintType": "regulatory",
+      "description": "Profiles destined for firearms and defence end-use are subject to ITAR (US), EAR (US), and EU dual-use export regulations (2021/821) regardless of the steel specification. Registration and compliance programs required for US-destined defence supply.",
+      "thresholdValue": null,
+      "thresholdUnit": null,
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Firearms components (ITAR/EAR)",
+        "Military vehicle structures",
+        "Defence equipment"
+      ]
+    },
+    {
+      "name": "Pressure Equipment Material Documentation",
+      "constraintType": "regulatory",
+      "description": "Profiles used as pressure-retaining structural members must be delivered with EN 10204 3.1 certified material test reports to comply with PED 2014/68/EU and ASME BPVC equivalents. Standard delivery does not include 3.1 certs — must be specified at order.",
+      "thresholdValue": null,
+      "thresholdUnit": null,
+      "isAbsolute": false,
+      "affectedMarketsHint": [
+        "Hydraulic cylinders (PED)",
+        "Pump pressure-retaining parts",
+        "Piping systems"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — constraints, specifications, features, technology classification",
+      "prefixedId": "CONSTR-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md — complements, BOM position, functional promise scope",
+      "prefixedId": "CONSTR-S02"
+    },
+    {
+      "id": "S03",
+      "label": "03_constraints.md — enriched constraint set (Step 07 + Step 08 compatibility)",
+      "prefixedId": "CONSTR-S03"
+    }
+  ]
+}

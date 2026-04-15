@@ -1,0 +1,419 @@
+{
+  "id": "COMP_elevator_guide_rails",
+  "title": "Competitive Landscape — Elevator Guide Rails (NAICS 333921)",
+  "type": "competitive_intel",
+  "market_slug": "elevator_guide_rails",
+  "is_per_market": true,
+  "sections": [
+    {
+      "title": "Market Structure",
+      "content": "The European elevator guide rail market is an oligopoly with 4 established players controlling approximately 85% of the market. The remaining 15% is served by Asian imports (primarily Chinese and Indian producers) and small regional fabricators. [SRC: web_search]"
+    },
+    {
+      "title": "Competitor Profiles",
+      "content": "### Tier 1: Established Guide Rail Specialists\n\n| Company | HQ | Revenue (est.) | Guide Rail Share | Employees | Ownership |\n|---------|----|--------------:|-----------------|----------|-----------|\n| Savera Group | Carpi, Italy | EUR 180M | 35% (Europe) | ~900 | Private (Savera family) |\n| Montanstahl AG | Stabio, Switzerland | EUR 120M | 20% (Europe) | ~350 | Private |\n| Monteferro | Modena, Italy | EUR 45M | 15% (Europe) | ~200 | Private |\n| VOL-Stahl GmbH | Linz, Austria | EUR 35M | 12% (Europe) | ~120 | Private |\n\n### Tier 2: Asian / Low-Cost Producers\n\n| Company | HQ | Revenue (est.) | Market Position | Threat Level |\n|---------|----|--------------:|----------------|-------------|\n| Shenyang Bluelight | Shenyang, China | EUR 60M | Growing in price-sensitive segments | MEDIUM — quality gap narrowing |\n| Jinhua Shunyu | Jinhua, China | EUR 25M | Low-end residential | LOW — not EN 81 certified |\n| Bharat Forge (rail division) | Pune, India | EUR 15M (rail div.) | Emerging exporter | LOW-MEDIUM — targeting MENA first |"
+    },
+    {
+      "title": "Detailed Competitor Analysis",
+      "content": "### Savera Group — Market Leader\n\n| Dimension | Assessment | Source |\n|-----------|-----------|--------|\n| **Strengths** | Largest scale (70,000+ t/year capacity), full product range T45-T140, in-house hardening, global distribution, 60+ years in guide rails | [SRC: web_search] |\n| **Weaknesses** | Italian labor costs rising, aging production equipment in Carpi plant, delivery delays reported (8-10 weeks on peak demand) | [SRC: web_search] |\n| **Strategy** | Defend market share through scale + breadth; expanding in Middle East and Asia-Pacific | [SRC: web_search] |\n| **ZOLLERN differentiation** | NNS cost advantage (35% material savings), faster delivery via German proximity to DACH customers, in-house hardening | - |\n| **Vulnerability score** | 5/10 — Dominant but stretched thin; slow on small orders | - |\n\n### Montanstahl AG — Premium Specialist\n\n| Dimension | Assessment | Source |\n|-----------|-----------|--------|\n| **Strengths** | Swiss precision reputation, custom profile expertise, hot + cold process range, strong engineering support | [SRC: web_search] |\n| **Weaknesses** | Swiss franc cost base (CHF vs EUR disadvantage), smaller scale, subcontracts induction hardening | [SRC: web_search] |\n| **Strategy** | Premium positioning, technical specification influence, architectural + industrial diversification | [SRC: web_search] |\n| **ZOLLERN differentiation** | In-house induction hardening (vs subcontracted), EUR cost base, comparable technical capability | - |\n| **Vulnerability score** | 6/10 — Premium price creates room for cost-competitive alternative | - |\n\n### VOL-Stahl GmbH — Direct Comparator\n\n| Dimension | Assessment | Source |\n|-----------|-----------|--------|\n| **Strengths** | Austrian manufacturer (DACH proximity), successfully integrated L5→L4 in 2019, won Schindler/KONE contracts | [SRC: web_search] |\n| **Weaknesses** | Small scale (~8,000 t/year capacity), limited product range (T70-T127 only), subcontracts hardening | [SRC: web_search] |\n| **Strategy** | Niche DACH supplier, relationship-driven sales, quick delivery on standard sizes | [SRC: web_search] |\n| **ZOLLERN differentiation** | Larger capacity (can absorb bigger contracts), in-house hardening, broader material grade range | - |\n| **Vulnerability score** | 7/10 — Most directly comparable; ZOLLERN has scale and process advantages | - |\n\n### Monteferro — Installation-Focused\n\n| Dimension | Assessment | Source |\n|-----------|-----------|--------|\n| **Strengths** | Vertically integrated to installation kits (rails + brackets + fishplates), strong in Italian market | [SRC: web_search] |\n| **Weaknesses** | Limited geographic reach outside Italy, smaller profile range, higher kit prices | [SRC: web_search] |\n| **Strategy** | Kit selling to reduce customer procurement complexity; Southern European focus | [SRC: web_search] |\n| **ZOLLERN differentiation** | DACH geographic advantage, lower material cost via NNS, broader process capability | - |\n| **Vulnerability score** | 4/10 — Strong in Italy but not a direct threat in DACH region | - |"
+    },
+    {
+      "title": "Competitive Positioning Map",
+      "content": "| Dimension | Savera | Montanstahl | VOL-Stahl | Monteferro | ZOLLERN (potential) |\n|-----------|--------|-------------|-----------|------------|-------------------|\n| Scale (t/year) | 70,000+ | 25,000 | 8,000 | 12,000 | 18,000 (idle capacity) |\n| Product range | T45-T140 | T45-T127 | T70-T127 | T70-T89 | T89 (expandable) |\n| In-house hardening | YES | NO | NO | YES | YES |\n| EN 81 certified | YES | YES | YES | YES | **NOT YET** |\n| DACH delivery (days) | 10-15 | 5-10 | 3-7 | 15-20 | **2-5** (Sigmaringendorf) |\n| Material cost base | Medium (Italy) | High (Switzerland) | Medium (Austria) | Medium (Italy) | **Low (NNS advantage)** |\n| Custom profiles | LIMITED | YES | LIMITED | NO | **YES (core capability)** |"
+    },
+    {
+      "title": "Entry Strategy Implications",
+      "content": "| Finding | Implication |\n|---------|------------|\n| VOL-Stahl (vulnerability 7/10) is the most directly comparable competitor | ZOLLERN should position against VOL-Stahl first — same region, larger scale |\n| Montanstahl subcontracts hardening | ZOLLERN's in-house hardening is a differentiator for quality and cost |\n| Savera has delivery delays at peak | ZOLLERN's DACH proximity + idle capacity = reliability advantage |\n| No competitor emphasizes NNS material savings | NNS value proposition is a white space in current market messaging |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"competitive_landscape\": {\n    \"market\": \"Elevator Guide Rails\",\n    \"naics\": \"333921\",\n    \"market_structure\": \"oligopoly\",\n    \"top4_market_share_pct\": 82,\n    \"competitors\": [\n      {\n        \"name\": \"Savera Group\",\n        \"hq\": \"Carpi, Italy\",\n        \"revenue_eur_m\": 180,\n        \"market_share_pct\": 35,\n        \"employees\": 900,\n        \"vulnerability_score\": 5,\n        \"tier\": 1\n      },\n      {\n        \"name\": \"Montanstahl AG\",\n        \"hq\": \"Stabio, Switzerland\",\n        \"revenue_eur_m\": 120,\n        \"market_share_pct\": 20,\n        \"employees\": 350,\n        \"vulnerability_score\": 6,\n        \"tier\": 1\n      },\n      {\n        \"name\": \"Monteferro\",\n        \"hq\": \"Modena, Italy\",\n        \"revenue_eur_m\": 45,\n        \"market_share_pct\": 15,\n        \"employees\": 200,\n        \"vulnerability_score\": 4,\n        \"tier\": 1\n      },\n      {\n        \"name\": \"VOL-Stahl GmbH\",\n        \"hq\": \"Linz, Austria\",\n        \"revenue_eur_m\": 35,\n        \"market_share_pct\": 12,\n        \"employees\": 120,\n        \"vulnerability_score\": 7,\n        \"tier\": 1\n      }\n    ],\n    \"zollern_advantages\": [\n      \"NNS 35% material savings (unique positioning)\",\n      \"In-house induction hardening (vs Montanstahl/VOL-Stahl subcontracting)\",\n      \"DACH proximity (2-5 day delivery vs 10-20 days from Italy/Switzerland)\",\n      \"18,000 t/year idle capacity (can absorb large contracts)\",\n      \"Custom profile design capability (core competency)\"\n    ],\n    \"primary_target_competitor\": \"VOL-Stahl GmbH\"\n  },\n  \"entities\": [\n    {\"label\": \"Competitor\", \"slug\": \"comp__savera_group\", \"name\": \"Savera Group (Guide Rail Market Leader)\"},\n    {\"label\": \"Competitor\", \"slug\": \"comp__montanstahl\", \"name\": \"Montanstahl AG (Premium Specialist)\"},\n    {\"label\": \"Competitor\", \"slug\": \"comp__vol_stahl\", \"name\": \"VOL-Stahl GmbH (DACH Direct Comparator)\"},\n    {\"label\": \"Competitor\", \"slug\": \"comp__monteferro\", \"name\": \"Monteferro (Installation Kit Specialist)\"}\n  ]\n}\n```\n\n---\n\n*Sources: [Savera Group](https://www.saveragroup.com/), [Montanstahl AG](https://www.montanstahl.com/), [VOL-Stahl GmbH](https://www.vol-stahl.at/), [Monteferro S.r.l.](https://www.monteferro.it/), [Elevator World — Supplier Directory](https://www.elevatorworld.com/), [VDMA Aufzuege Statistics 2024](https://aufzuege-fahrtreppen.vdma.org/)*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Company",
+        "HQ",
+        "Revenue (est.)",
+        "Guide Rail Share",
+        "Employees",
+        "Ownership"
+      ],
+      "rows": [
+        {
+          "Company": "Savera Group",
+          "HQ": "Carpi, Italy",
+          "Revenue (est.)": "EUR 180M",
+          "Guide Rail Share": "35% (Europe)",
+          "Employees": "~900",
+          "Ownership": "Private (Savera family)"
+        },
+        {
+          "Company": "Montanstahl AG",
+          "HQ": "Stabio, Switzerland",
+          "Revenue (est.)": "EUR 120M",
+          "Guide Rail Share": "20% (Europe)",
+          "Employees": "~350",
+          "Ownership": "Private"
+        },
+        {
+          "Company": "Monteferro",
+          "HQ": "Modena, Italy",
+          "Revenue (est.)": "EUR 45M",
+          "Guide Rail Share": "15% (Europe)",
+          "Employees": "~200",
+          "Ownership": "Private"
+        },
+        {
+          "Company": "VOL-Stahl GmbH",
+          "HQ": "Linz, Austria",
+          "Revenue (est.)": "EUR 35M",
+          "Guide Rail Share": "12% (Europe)",
+          "Employees": "~120",
+          "Ownership": "Private"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Company",
+        "HQ",
+        "Revenue (est.)",
+        "Market Position",
+        "Threat Level"
+      ],
+      "rows": [
+        {
+          "Company": "Shenyang Bluelight",
+          "HQ": "Shenyang, China",
+          "Revenue (est.)": "EUR 60M",
+          "Market Position": "Growing in price-sensitive segments",
+          "Threat Level": "MEDIUM — quality gap narrowing"
+        },
+        {
+          "Company": "Jinhua Shunyu",
+          "HQ": "Jinhua, China",
+          "Revenue (est.)": "EUR 25M",
+          "Market Position": "Low-end residential",
+          "Threat Level": "LOW — not EN 81 certified"
+        },
+        {
+          "Company": "Bharat Forge (rail division)",
+          "HQ": "Pune, India",
+          "Revenue (est.)": "EUR 15M (rail div.)",
+          "Market Position": "Emerging exporter",
+          "Threat Level": "LOW-MEDIUM — targeting MENA first"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Dimension",
+        "Assessment",
+        "Source"
+      ],
+      "rows": [
+        {
+          "Dimension": "**Strengths**",
+          "Assessment": "Largest scale (70,000+ t/year capacity), full product range T45-T140, in-house hardening, global distribution, 60+ years in guide rails",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Weaknesses**",
+          "Assessment": "Italian labor costs rising, aging production equipment in Carpi plant, delivery delays reported (8-10 weeks on peak demand)",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Strategy**",
+          "Assessment": "Defend market share through scale + breadth; expanding in Middle East and Asia-Pacific",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**ZOLLERN differentiation**",
+          "Assessment": "NNS cost advantage (35% material savings), faster delivery via German proximity to DACH customers, in-house hardening",
+          "Source": "-"
+        },
+        {
+          "Dimension": "**Vulnerability score**",
+          "Assessment": "5/10 — Dominant but stretched thin; slow on small orders",
+          "Source": "-"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Dimension",
+        "Assessment",
+        "Source"
+      ],
+      "rows": [
+        {
+          "Dimension": "**Strengths**",
+          "Assessment": "Swiss precision reputation, custom profile expertise, hot + cold process range, strong engineering support",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Weaknesses**",
+          "Assessment": "Swiss franc cost base (CHF vs EUR disadvantage), smaller scale, subcontracts induction hardening",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Strategy**",
+          "Assessment": "Premium positioning, technical specification influence, architectural + industrial diversification",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**ZOLLERN differentiation**",
+          "Assessment": "In-house induction hardening (vs subcontracted), EUR cost base, comparable technical capability",
+          "Source": "-"
+        },
+        {
+          "Dimension": "**Vulnerability score**",
+          "Assessment": "6/10 — Premium price creates room for cost-competitive alternative",
+          "Source": "-"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Dimension",
+        "Assessment",
+        "Source"
+      ],
+      "rows": [
+        {
+          "Dimension": "**Strengths**",
+          "Assessment": "Austrian manufacturer (DACH proximity), successfully integrated L5→L4 in 2019, won Schindler/KONE contracts",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Weaknesses**",
+          "Assessment": "Small scale (~8,000 t/year capacity), limited product range (T70-T127 only), subcontracts hardening",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Strategy**",
+          "Assessment": "Niche DACH supplier, relationship-driven sales, quick delivery on standard sizes",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**ZOLLERN differentiation**",
+          "Assessment": "Larger capacity (can absorb bigger contracts), in-house hardening, broader material grade range",
+          "Source": "-"
+        },
+        {
+          "Dimension": "**Vulnerability score**",
+          "Assessment": "7/10 — Most directly comparable; ZOLLERN has scale and process advantages",
+          "Source": "-"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Dimension",
+        "Assessment",
+        "Source"
+      ],
+      "rows": [
+        {
+          "Dimension": "**Strengths**",
+          "Assessment": "Vertically integrated to installation kits (rails + brackets + fishplates), strong in Italian market",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Weaknesses**",
+          "Assessment": "Limited geographic reach outside Italy, smaller profile range, higher kit prices",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**Strategy**",
+          "Assessment": "Kit selling to reduce customer procurement complexity; Southern European focus",
+          "Source": "[SRC: web_search]"
+        },
+        {
+          "Dimension": "**ZOLLERN differentiation**",
+          "Assessment": "DACH geographic advantage, lower material cost via NNS, broader process capability",
+          "Source": "-"
+        },
+        {
+          "Dimension": "**Vulnerability score**",
+          "Assessment": "4/10 — Strong in Italy but not a direct threat in DACH region",
+          "Source": "-"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Dimension",
+        "Savera",
+        "Montanstahl",
+        "VOL-Stahl",
+        "Monteferro",
+        "ZOLLERN (potential)"
+      ],
+      "rows": [
+        {
+          "Dimension": "Scale (t/year)",
+          "Savera": "70,000+",
+          "Montanstahl": "25,000",
+          "VOL-Stahl": "8,000",
+          "Monteferro": "12,000",
+          "ZOLLERN (potential)": "18,000 (idle capacity)"
+        },
+        {
+          "Dimension": "Product range",
+          "Savera": "T45-T140",
+          "Montanstahl": "T45-T127",
+          "VOL-Stahl": "T70-T127",
+          "Monteferro": "T70-T89",
+          "ZOLLERN (potential)": "T89 (expandable)"
+        },
+        {
+          "Dimension": "In-house hardening",
+          "Savera": "YES",
+          "Montanstahl": "NO",
+          "VOL-Stahl": "NO",
+          "Monteferro": "YES",
+          "ZOLLERN (potential)": "YES"
+        },
+        {
+          "Dimension": "EN 81 certified",
+          "Savera": "YES",
+          "Montanstahl": "YES",
+          "VOL-Stahl": "YES",
+          "Monteferro": "YES",
+          "ZOLLERN (potential)": "**NOT YET**"
+        },
+        {
+          "Dimension": "DACH delivery (days)",
+          "Savera": "10-15",
+          "Montanstahl": "5-10",
+          "VOL-Stahl": "3-7",
+          "Monteferro": "15-20",
+          "ZOLLERN (potential)": "**2-5** (Sigmaringendorf)"
+        },
+        {
+          "Dimension": "Material cost base",
+          "Savera": "Medium (Italy)",
+          "Montanstahl": "High (Switzerland)",
+          "VOL-Stahl": "Medium (Austria)",
+          "Monteferro": "Medium (Italy)",
+          "ZOLLERN (potential)": "**Low (NNS advantage)**"
+        },
+        {
+          "Dimension": "Custom profiles",
+          "Savera": "LIMITED",
+          "Montanstahl": "YES",
+          "VOL-Stahl": "LIMITED",
+          "Monteferro": "NO",
+          "ZOLLERN (potential)": "**YES (core capability)**"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Finding",
+        "Implication"
+      ],
+      "rows": [
+        {
+          "Finding": "VOL-Stahl (vulnerability 7/10) is the most directly comparable competitor",
+          "Implication": "ZOLLERN should position against VOL-Stahl first — same region, larger scale"
+        },
+        {
+          "Finding": "Montanstahl subcontracts hardening",
+          "Implication": "ZOLLERN's in-house hardening is a differentiator for quality and cost"
+        },
+        {
+          "Finding": "Savera has delivery delays at peak",
+          "Implication": "ZOLLERN's DACH proximity + idle capacity = reliability advantage"
+        },
+        {
+          "Finding": "No competitor emphasizes NNS material savings",
+          "Implication": "NNS value proposition is a white space in current market messaging"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "competitive_landscape": {
+        "market": "Elevator Guide Rails",
+        "naics": "333921",
+        "market_structure": "oligopoly",
+        "top4_market_share_pct": 82,
+        "competitors": [
+          {
+            "name": "Savera Group",
+            "hq": "Carpi, Italy",
+            "revenue_eur_m": 180,
+            "market_share_pct": 35,
+            "employees": 900,
+            "vulnerability_score": 5,
+            "tier": 1
+          },
+          {
+            "name": "Montanstahl AG",
+            "hq": "Stabio, Switzerland",
+            "revenue_eur_m": 120,
+            "market_share_pct": 20,
+            "employees": 350,
+            "vulnerability_score": 6,
+            "tier": 1
+          },
+          {
+            "name": "Monteferro",
+            "hq": "Modena, Italy",
+            "revenue_eur_m": 45,
+            "market_share_pct": 15,
+            "employees": 200,
+            "vulnerability_score": 4,
+            "tier": 1
+          },
+          {
+            "name": "VOL-Stahl GmbH",
+            "hq": "Linz, Austria",
+            "revenue_eur_m": 35,
+            "market_share_pct": 12,
+            "employees": 120,
+            "vulnerability_score": 7,
+            "tier": 1
+          }
+        ],
+        "zollern_advantages": [
+          "NNS 35% material savings (unique positioning)",
+          "In-house induction hardening (vs Montanstahl/VOL-Stahl subcontracting)",
+          "DACH proximity (2-5 day delivery vs 10-20 days from Italy/Switzerland)",
+          "18,000 t/year idle capacity (can absorb large contracts)",
+          "Custom profile design capability (core competency)"
+        ],
+        "primary_target_competitor": "VOL-Stahl GmbH"
+      },
+      "entities": [
+        {
+          "label": "Competitor",
+          "slug": "comp__savera_group",
+          "name": "Savera Group (Guide Rail Market Leader)"
+        },
+        {
+          "label": "Competitor",
+          "slug": "comp__montanstahl",
+          "name": "Montanstahl AG (Premium Specialist)"
+        },
+        {
+          "label": "Competitor",
+          "slug": "comp__vol_stahl",
+          "name": "VOL-Stahl GmbH (DACH Direct Comparator)"
+        },
+        {
+          "label": "Competitor",
+          "slug": "comp__monteferro",
+          "name": "Monteferro (Installation Kit Specialist)"
+        }
+      ]
+    }
+  ],
+  "has_bom": true,
+  "naics_sector_type": "manufacturing"
+}

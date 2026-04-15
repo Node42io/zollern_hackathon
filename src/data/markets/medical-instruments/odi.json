@@ -1,0 +1,25 @@
+{
+  "naicsCode": "339112",
+  "marketName": "Surgical and Medical Instrument Manufacturing",
+  "slug": "medical-instruments",
+  "summary": { "totalNeeds": 20, "underservedCount": 13, "overservedCount": 0, "avgOpportunityScore": 12.3 },
+  "top5Opportunities": [
+    { "rank": 1, "needId": "N03", "statement": "Increase the ability to qualify a new stainless steel instrument profile supplier to the approved supplier list within 6 months, including ISO 13485 audit and first-article approval", "importance": 9, "satisfaction": 3, "opportunity": 15, "zone": "Underserved" },
+    { "rank": 2, "needId": "N14", "statement": "Minimize batch-to-batch variability in inclusion content (non-metallic inclusion rating per ISO 4967) of instrument-grade stainless steel profiles across consecutive deliveries", "importance": 9, "satisfaction": 3, "opportunity": 15, "zone": "Underserved" },
+    { "rank": 3, "needId": "N04", "statement": "Minimize the likelihood of sole-source medical-grade profile supplier dependency causing instrument production stoppages exceeding 10 days per year", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 4, "needId": "N07", "statement": "Minimize variability in cross-section dimensional accuracy between bars within the same delivery batch of instrument-grade stainless profile, measured to +-0.02 mm", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 5, "needId": "N10", "statement": "Increase the ability to achieve first-pass yield above 97% on forged or machined instrument blanks by eliminating rework caused by profile stock dimensional or metallurgical variability", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" }
+  ],
+  "needs": [
+    { "id": "N03", "statement": "Increase the ability to qualify a new stainless steel instrument profile supplier to the approved supplier list within 6 months, including ISO 13485 audit and first-article approval", "jobStep": "LOCATE", "importance": 9, "satisfaction": 3, "opportunity": 15, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Multi-month supplier qualification in a regulated environment is the primary barrier to new profile adoption.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N14", "statement": "Minimize batch-to-batch variability in inclusion content (non-metallic inclusion rating per ISO 4967) of instrument-grade stainless steel profiles across consecutive deliveries", "jobStep": "MONITOR", "importance": 9, "satisfaction": 3, "opportunity": 15, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "Inclusion variability directly affects heat treatment response, edge retention, and sterilization durability of finished instruments.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N04", "statement": "Minimize the likelihood of sole-source medical-grade profile supplier dependency causing instrument production stoppages exceeding 10 days per year", "jobStep": "LOCATE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Die-specific geometry + ISO 13485 qualification creates inherent sole-source risk.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N07", "statement": "Minimize variability in cross-section dimensional accuracy between bars within the same delivery batch of instrument-grade stainless profile, measured to +-0.02 mm", "jobStep": "CONFIRM", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "Fixed carbide die enforces identical cross-section bar-to-bar; cold-drawing process physics eliminate dimensional scatter.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N10", "statement": "Increase the ability to achieve first-pass yield above 97% on forged or machined instrument blanks by eliminating rework caused by profile stock dimensional or metallurgical variability", "jobStep": "EXECUTE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "First-pass yield directly drives instrument production economics and delivery schedule.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] }
+  ],
+  "flaggedRationalesCount": 20,
+  "sources": [
+    { "id": "S01", "label": "JTBD_medical_instruments.md", "url": "JTBD_medical_instruments.md", "prefixedId": "ODI-MEDICAL-INSTRUMENTS-S01" },
+    { "id": "S02", "label": "ADJ_medical_instruments.md", "url": "ADJ_medical_instruments.md", "prefixedId": "ODI-MEDICAL-INSTRUMENTS-S02" }
+  ]
+}

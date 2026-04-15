@@ -1,0 +1,23 @@
+{
+  "naicsCode": "333249",
+  "marketName": "Linear Guides",
+  "slug": "linear-guides",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "2D Cross-Section Only (C1)", "constraintType": "hard", "threshold": "Constant cross-section along length", "verdict": "none", "rationale": "All linear rail applications are constant cross-section by definition. No constraint activation.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Steel-Only Material (C6)", "constraintType": "hard", "threshold": "No aluminium, polymer, or non-ferrous", "verdict": "none", "rationale": "Linear guide rails are steel (100Cr6, 42CrMo4, C45). Steel-only constraint matches market requirement. Non-steel rails (ceramic, aluminium) represent <5% niche.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Minimum Batch ~100 kg (C7)", "constraintType": "soft", "threshold": "100 kg minimum economic batch", "verdict": "none", "rationale": "Guide rail production batches typically exceed 100 kg. Standard orders are 500+ kg for repeat geometries.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Tooling Lead 6-12 Weeks (C8)", "constraintType": "soft", "threshold": "6-12 weeks for new die geometry", "verdict": "none", "rationale": "Repeat geometries from ZOLLERN 300+ die library ship within days. New geometries face 6-12 week die lead - mitigated by die library coverage.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Corrosion Protection (C10)", "constraintType": "soft", "threshold": "No inherent corrosion protection", "verdict": "none", "rationale": "Linear guides operate in controlled industrial environments. Guide rail corrosion protection is downstream (customer applies). Not a constraint for profile supply.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 0,
+    "none": 5,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": []
+}

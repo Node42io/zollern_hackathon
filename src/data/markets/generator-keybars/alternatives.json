@@ -1,0 +1,12 @@
+{
+  "naicsCode": "335312",
+  "marketName": "Motor and Generator Manufacturing",
+  "slug": "generator-keybars",
+  "alternatives": [
+    { "name": "CNC-machined from alloy bar (in-house or job shop)", "unspsc": "73152800", "tradeoffs": "~65% share; 50-70% material waste; high per-unit machining cost; in-house capital and programming burden; no die lead time; full geometry flexibility; operator-dependent consistency; +-0.05-0.1 mm typical job-shop tolerance [SRC: JTBD_generator_keybars]" },
+    { "name": "Cold-drawn near-net-shape profile (ZOLLERN path)", "unspsc": "30102304", "tradeoffs": "~20% share; 6-12 wk die lead time; 100 kg min; 40-70% machining waste eliminated; IT8 (+-0.02 mm) die-controlled tolerance; grain-flow-aligned fatigue endurance; batch consistency [SRC: JTBD_generator_keybars]" },
+    { "name": "Standard catalog steel profile stock", "unspsc": "30102304", "tradeoffs": "~10% share; limited geometry; immediate availability; secondary machining required; unknown metallurgical state; no custom geometry [SRC: VN_generator_keybars]" },
+    { "name": "Welded / fabricated keybar", "unspsc": "30103000", "tradeoffs": "~5% share; HAZ stress concentrations; poor dimensional accuracy; fatigue risk at welds; retrofit/maintenance only; not viable for new OEM build [SRC: JTBD_generator_keybars]" },
+    { "name": "Do nothing / continue in-house machining (status quo)", "unspsc": "", "tradeoffs": "Zero switching cost; zero new qualification burden; full geometry control; tradeoff: high material waste, in-house capacity tied up" }
+  ]
+}

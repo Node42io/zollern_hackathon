@@ -1,0 +1,97 @@
+{
+  "slug": "rail-vehicle-parts",
+  "marketName": "Rail Vehicle Parts",
+  "naicsCode": "336510",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies steel profiles at L1 depth within the vehicle BOM. Tier 2 material component supplier. Output type: Passenger Rail Vehicle Car (EMU/DMU coach).",
+  "outputTypes": [
+    { "id": "OT-2", "name": "Passenger Rail Vehicle Car (EMU/DMU coach - single car unit)", "hydronic": false, "sensorFit": "primary", "notes": "Primary ZOLLERN market segment. Steel carbodies dominant." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.2", "L4.3"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Running Gear Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Bogie frame material and profile type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Welded steel bogie frame (S355, 42CrMo4 structural profiles)", "sharePct": 75, "trend": "stable" },
+        { "name": "Cast steel bogie frame", "sharePct": 15, "trend": "declining" },
+        { "name": "Aluminium bogie frame (weight-critical)", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1.1", "name": "Bogie Frame Module (side frame + cross-member)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN supplies side frame longitudinal profile and cross-member box profile blanks", "alternatives": [
+          { "name": "Custom hot-rolled / cold-drawn structural profiles (ZOLLERN)", "sharePct": 40, "trend": "stable", "isMarquardt": true },
+          { "name": "Standard hot-rolled structural sections (I, U, T, H)", "sharePct": 35, "trend": "stable" },
+          { "name": "Machined from plate / bar stock", "sharePct": 25, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Carbody Structure Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Carbody material",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Steel carbody (S355 / 42CrMo4 structural profiles + sheet)", "sharePct": 55, "trend": "stable" },
+        { "name": "Aluminium carbody (extrusions + sheet)", "sharePct": 30, "trend": "growing" },
+        { "name": "Stainless steel carbody (Japanese practice)", "sharePct": 15, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.2.1", "name": "Underframe Module (solebar + floor beams + headstock)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN supplies solebar and floor beam profiles", "alternatives": [
+          { "name": "Custom hot-rolled structural profiles (ZOLLERN)", "sharePct": 40, "trend": "stable", "isMarquardt": true },
+          { "name": "Standard hot-rolled sections", "sharePct": 35, "trend": "stable" },
+          { "name": "Aluminium extrusions", "sharePct": 20, "trend": "growing" },
+          { "name": "Stainless roll-formed", "sharePct": 5, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.3",
+      "name": "Door System Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Door guide rail profile",
+      "isMarquardtAnchor": true,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Precision-drawn door guide rail profile (ZOLLERN)", "sharePct": 30, "trend": "stable" },
+        { "name": "Extruded aluminium door guide", "sharePct": 45, "trend": "growing" },
+        { "name": "Roll-formed steel door guide", "sharePct": 25, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Drive & Electrical Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Traction drive type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "AC asynchronous traction motor + VFD", "sharePct": 55, "trend": "stable" },
+        { "name": "Permanent magnet synchronous motor (PMSM)", "sharePct": 35, "trend": "growing" },
+        { "name": "Diesel-mechanical/hydraulic", "sharePct": 10, "trend": "declining" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.5",
+      "name": "Passenger Interior Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Interior materials",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Composite panel interior (GRP/HPL)", "sharePct": 65, "trend": "stable" },
+        { "name": "Aluminium panel interior", "sharePct": 25, "trend": "stable" },
+        { "name": "Stainless steel interior (metro)", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    }
+  ]
+}

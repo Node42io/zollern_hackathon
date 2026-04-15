@@ -1,0 +1,21 @@
+{
+  "slug": "construction-machinery",
+  "name": "Construction Machinery Manufacturing",
+  "naicsCode": "333120",
+  "isReference": true,
+  "rank": 10,
+  "scores": {
+    "odi": 5.56,
+    "featureFit": 5.3,
+    "constraintCompatibility": 9,
+    "jobCoverage": 5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 4.8,
+    "composite": 5.78
+  },
+  "recommendation": "reference",
+  "rationale": "Existing ZOLLERN market. Supplies structural and wear profiles — boom/arm chord sections, slide guide channels, pivot pin blanks, frame cross-members, and wear strips — to excavator, dozer, and loader OEMs. Market ~$225B global (2024). Key OEMs: Caterpillar, Komatsu, Liebherr, Volvo CE.",
+  "entryStrategy": "Existing market — grow share in new platform programs via pre-qualified die library and certified SPC data per batch; target S690QL lightweight redesign programs.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

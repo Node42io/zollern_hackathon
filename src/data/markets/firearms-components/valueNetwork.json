@@ -1,0 +1,130 @@
+{
+  "naicsCode": "332994",
+  "marketName": "Firearms Components",
+  "slug": "firearms-components",
+  "coreJobStatement": "Transform steel, polymer, and propellant inputs into safe, precisely-dimensioned small arms and ordnance components certified to performance, safety, and traceability standards for military, law enforcement, and authorized commercial markets",
+  "outputTypes": [
+    "Military / service rifles (AR/M4/M16, AK, HK G36)",
+    "Handguns / pistols (Glock 17/19, SIG P320, Beretta M9)",
+    "Commercial sporting / hunting firearms",
+    "Sub-machine guns / PDWs (MP5, FN P90, CZ Scorpion)",
+    "Ordnance accessories & sub-components"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — small arms and ordnance manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$10.75B global (2026); CAGR ~4.5-5.5%; ~617 US establishments; ~60% defense/LEO, ~40% commercial",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Material Procurement & Qualification",
+      "type": "Core",
+      "jobFamily": "Source, certify, and qualify steel bar/billet, polymer, and coating chemicals",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Blank & Semi-Finished Forming",
+      "type": "Core",
+      "jobFamily": "Transform raw steel and polymer inputs into near-net-shape component blanks",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Component Machining",
+      "type": "Core",
+      "jobFamily": "Machine blanks to final receiver, barrel, slide, and frame geometry",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Heat Treatment & Surface Hardening",
+      "type": "Core",
+      "jobFamily": "Harden, temper, and stress-relieve critical components to specified mechanical properties",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Surface Coating & Protection",
+      "type": "Core",
+      "jobFamily": "Apply corrosion-resistant and wear-resistant surface finishes",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Assembly, Headspace Setting & Proof Testing",
+      "type": "Core",
+      "jobFamily": "Integrate sub-assemblies, verify function, and certify performance before dispatch",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality & Metrology (H)",
+      "type": "Horizontal",
+      "jobFamily": "MIL-SPEC / SAAMI / CIP acceptance across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Safety, Regulatory & Export Compliance (H)",
+      "type": "Horizontal",
+      "jobFamily": "ATF / BfA serialization, ITAR/EAR, EU Dual Use Regulation across all core steps",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Precision Cold-Drawn Steel Profiles",
+      "functionalJob": "ZOLLERN PRIMARY POSITION. Near-net receiver sections, slide rails, bolt carrier profiles at +-0.02mm tolerance. Eliminates 40-60% secondary machining. Alternatives: Cold-drawn near-net profiles (~25%), Drop/hammer forged blanks (~45%), CNC billet machining (~25%), Investment casting (~5%).",
+      "description": "Receiver sections, slide rails, bolt carriers, locking/hook pieces for chambers; C45 / 42CrMo4 grades",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Steel Bar, Billet & Profile Stock",
+      "functionalJob": "Carbon/alloy steel bar (C45, 42CrMo4) machined from round (~55%). Pre-drawn near-net precision profiles (~20%, ZOLLERN). Forgeable steel billet (~25%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Multi-Axis CNC Machining Center",
+      "functionalJob": "4/5-axis CNC machining center (~70%) dominant for receiver pockets, slide rails, frame geometry. Mazak, DMG Mori, Haas.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Drop / Hammer Forgings",
+      "functionalJob": "Drop forging (~55%, primary route for rifle receiver forgings M16 lower/upper), rotary hammer forging (~30%, barrel forging at H&K/Walther), closed-die forging (~15%).",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "zollernPosition": "ZOLLERN holds PRIMARY position at L5 Precision Cold-Drawn Steel Profiles under L6b Blank & Semi-Finished Forming. Supplies receiver sections, slide rail profiles, bolt carrier profiles, and locking/hook pieces. ITAR/EAR dual-use export control (C13) is mitigable constraint.",
+  "strategicPosition": "ZOLLERN wins on dimensional precision (ES-01/02/07: +2 to +3 delta) and traceability (ES-14/22/P4: +1 to +2). Loses heavily on tooling flexibility (ES-08/09/10/18/19: -6 to -7) where CNC billet machining scores 10/10.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 332994 - US Census Bureau",
+      "url": "https://data.census.gov/profile/332994",
+      "prefixedId": "VN-FIREARMS-COMPONENTS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Market.us / Mordor Intelligence - Small Arms Market 2026",
+      "url": "",
+      "prefixedId": "VN-FIREARMS-COMPONENTS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Fortune Business Insights - Firearms Market",
+      "url": "",
+      "prefixedId": "VN-FIREARMS-COMPONENTS-S03"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "firearms-components",
+  "name": "Firearms Components",
+  "naicsCode": "332994",
+  "isReference": true,
+  "rank": 2,
+  "scores": {
+    "odi": 5.08,
+    "featureFit": 5.8,
+    "constraintCompatibility": 7.5,
+    "jobCoverage": 4.2,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 4.5,
+    "composite": 5.3
+  },
+  "recommendation": "investigate",
+  "rationale": "Existing ZOLLERN market. Active constraints: C9 (IH length range), C13 (ITAR/EAR export control), C7 (min batch), C8 (tooling lead). ZOLLERN wins 14/25 needs but net weighted delta -126 due to tooling flexibility losses. Strong on dimensional precision and traceability; weak on prototype access and tooling recovery.",
+  "entryStrategy": "Reference only - existing market. Focus on repeat-geometry military and LE programs where die investment is amortized.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

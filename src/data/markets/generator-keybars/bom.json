@@ -1,0 +1,87 @@
+{
+  "slug": "generator-keybars",
+  "marketName": "Motor and Generator Manufacturing",
+  "naicsCode": "335312",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies cold-drawn near-net-shape keybar profiles at L1 within L2 Keybar Retention Assembly within L3 Stator Frame Module within L4 Stator Assembly. The keybar is a monolithic single-material part with one-level decomposition to L0 (alloy steel billet).",
+  "outputTypes": [
+    { "id": "OT-A", "name": "Large Turbo-Generator (>=100 MW, wound-rotor synchronous)", "hydronic": false, "sensorFit": "primary", "notes": "12-72 keybars per machine; hydrogen or water cooled. Full BOM decomposition applies." },
+    { "id": "OT-B", "name": "Hydro-Generator", "hydronic": false, "sensorFit": "primary", "notes": "Slow-speed salient-pole; large stator diameter; high keybar count." },
+    { "id": "OT-C", "name": "Industrial Motor (1-100 MW)", "hydronic": false, "sensorFit": "secondary", "notes": "Multi-purpose drive; standardised frame sizes; moderate keybar count." },
+    { "id": "OT-D", "name": "Medium Generator (<100 MW)", "hydronic": false, "sensorFit": "secondary", "notes": "Gas/diesel driven; smaller keybar cross-section; air cooled." }
+  ],
+  "marquardtAnchorIds": ["L4.1"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Stator Assembly",
+      "costSharePct": 40,
+      "keyDesignChoice": "Keybar-to-lamination mating geometry (dovetail vs T-slot)",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Wound-rotor synchronous (uses stator keybars)", "sharePct": 75, "trend": "stable" },
+        { "name": "Permanent magnet synchronous (no traditional keybars)", "sharePct": 20, "trend": "growing" },
+        { "name": "Induction generator (no keybars)", "sharePct": 5, "trend": "declining" }
+      ],
+      "modules": [
+        { "id": "L3.1", "name": "Stator Frame Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "CNC-machined keybar from alloy bar (in-house)", "sharePct": 65, "trend": "stable" },
+          { "name": "Cold-drawn near-net-shape profile (ZOLLERN)", "sharePct": 20, "trend": "stable" },
+          { "name": "Standard catalog profile stock", "sharePct": 10, "trend": "stable" },
+          { "name": "Welded / fabricated keybar", "sharePct": 5, "trend": "declining" }
+        ]},
+        { "id": "L3.2", "name": "Stator Core Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "CRNO electrical steel lamination stack (Si 2-3.5%)", "sharePct": 95, "trend": "stable" },
+          { "name": "Amorphous metal lamination", "sharePct": 5, "trend": "growing" }
+        ]},
+        { "id": "L3.3", "name": "Winding System Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Hollow copper conductor bar (large machines)", "sharePct": 70, "trend": "stable" },
+          { "name": "Random-wound copper coil (medium machines)", "sharePct": 30, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Rotor Assembly",
+      "costSharePct": 30,
+      "keyDesignChoice": "Rotor shaft forging alloy",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Forged alloy steel shaft (26NiCrMoV14-5)", "sharePct": 80, "trend": "stable" },
+        { "name": "Fabricated welded shaft", "sharePct": 20, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Excitation System",
+      "costSharePct": 15,
+      "keyDesignChoice": "Excitation architecture",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Brushless exciter (rotating rectifier)", "sharePct": 65, "trend": "growing" },
+        { "name": "Static thyristor exciter", "sharePct": 30, "trend": "stable" },
+        { "name": "Brush-type DC exciter", "sharePct": 5, "trend": "declining" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Cooling System",
+      "costSharePct": 15,
+      "keyDesignChoice": "Cooling medium",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Air cooled (dominant for medium machines)", "sharePct": 50, "trend": "stable" },
+        { "name": "Hydrogen cooled (large turbo-generators)", "sharePct": 35, "trend": "stable" },
+        { "name": "Water cooled (highest power density)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

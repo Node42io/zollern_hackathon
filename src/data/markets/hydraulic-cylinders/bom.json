@@ -1,0 +1,98 @@
+{
+  "slug": "hydraulic-cylinders",
+  "marketName": "Fluid Power Cylinder and Actuator Manufacturing",
+  "naicsCode": "333995",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies near-net-shape precision steel profile blanks at L1-L2 for three positions: cylinder barrel tube (cold-drawn precision tube), piston rod (cold-drawn + IH alloy steel round bar), and end cap blanks (cold-drawn shaped profile). Output type: Double-Acting Tie-Rod Hydraulic Cylinder.",
+  "outputTypes": [
+    { "id": "OT-A", "name": "Welded Hydraulic Cylinder", "hydronic": false, "sensorFit": "primary", "notes": "53% share; heavy-duty custom bore; construction/industrial." },
+    { "id": "OT-B", "name": "Tie-Rod Hydraulic Cylinder (ISO 6020/6022)", "hydronic": false, "sensorFit": "primary", "notes": "22% share; most profile-intensive type. Full BOM decomposed." },
+    { "id": "OT-C", "name": "Mill-Type / Heavy-Duty Cylinder", "hydronic": false, "sensorFit": "secondary", "notes": "12% share; forged bodies; mining, press, steel mill." },
+    { "id": "OT-D", "name": "Telescopic Hydraulic Cylinder", "hydronic": false, "sensorFit": "secondary", "notes": "8% share; multi-stage; dump trucks, cranes." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.2", "L4.3"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Pressure Containment Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Barrel tube material and bore finish method",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Cold-drawn seamless + honed tube", "sharePct": 60, "trend": "stable" },
+        { "name": "Skived & roller-burnished tube", "sharePct": 30, "trend": "growing" },
+        { "name": "Welded-drawn tube (lower pressure)", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.1a", "name": "Cylinder Barrel Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Cylinder barrel tube (precision honed bore)", "sharePct": 100, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Piston & Rod Assembly Subsystem",
+      "costSharePct": 35,
+      "keyDesignChoice": "Rod blank alloy and surface treatment",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Cold-drawn precision round bar (C45 / 42CrMo4) — ZOLLERN primary", "sharePct": 65, "trend": "stable" },
+        { "name": "Precision-turned + OD-ground from hot-rolled", "sharePct": 25, "trend": "stable" },
+        { "name": "Forged rod blank (large OD)", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.2a", "name": "Piston Rod Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Ground + hard chrome plated rod (standard)", "sharePct": 75, "trend": "stable" },
+          { "name": "Ground + ceramic coated rod (emerging)", "sharePct": 15, "trend": "growing" },
+          { "name": "Ground + nickel-chrome plated rod", "sharePct": 10, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.3",
+      "name": "End Closure Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "End cap blank manufacturing method",
+      "isMarquardtAnchor": true,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Die-forged steel blank", "sharePct": 55, "trend": "stable" },
+        { "name": "Bar-stock blank (ZOLLERN secondary)", "sharePct": 30, "trend": "stable" },
+        { "name": "Nodular iron casting", "sharePct": 15, "trend": "declining" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Sealing Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Seal material system",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Polyurethane / PTFE dynamic seals (Parker, Trelleborg)", "sharePct": 65, "trend": "stable" },
+        { "name": "Elastomeric NBR / FKM seals", "sharePct": 25, "trend": "stable" },
+        { "name": "PEEK / high-temp specialty seals", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.5",
+      "name": "Mounting & Fastening Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Mounting type",
+      "isMarquardtAnchor": false,
+      "confidence": "low",
+      "alternatives": [
+        { "name": "Tie-rod construction (ISO 6020/6022)", "sharePct": 40, "trend": "stable" },
+        { "name": "Welded construction (ISO 6022, NFPA)", "sharePct": 45, "trend": "growing" },
+        { "name": "Mill-type / bolted construction", "sharePct": 10, "trend": "stable" },
+        { "name": "Telescopic (multi-stage)", "sharePct": 5, "trend": "stable" }
+      ],
+      "modules": []
+    }
+  ]
+}

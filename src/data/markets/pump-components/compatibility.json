@@ -1,0 +1,23 @@
+{
+  "naicsCode": "333911",
+  "marketName": "Pump Components",
+  "slug": "pump-components",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "2D Cross-Section Only (C1)", "constraintType": "hard", "threshold": "Constant cross-section along length", "verdict": "none", "rationale": "Gear rotor profiles, crescent inserts, vane profiles, and shaft blanks are all constant cross-section geometries along their length. Perfect match for cold-drawing capability.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Steel-Only Material (C6)", "constraintType": "hard", "threshold": "No non-ferrous materials", "verdict": "none", "rationale": "Pump rotors, crescent inserts, shafts are alloy steel (42CrMo4, C45, 100Cr6). Bronze/brass components (wear rings, impellers for chemical service) are not ZOLLERN's target position.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Minimum Batch ~100 kg (C7)", "constraintType": "soft", "threshold": "100 kg minimum economic batch", "verdict": "mitigable", "rationale": "New pump platform designs may require <100 kg prototype batches. Aftermarket/MRO replacement packs may be small volume per geometry.", "mitigation": "Amortize die cost into piece price; geometry sharing from die library for similar pump families", "mitigationCost": "Low", "mitigationTime": "Immediate" },
+    { "constraintName": "Tooling Lead 6-12 Weeks (C8)", "constraintType": "soft", "threshold": "6-12 weeks for new die geometry", "verdict": "mitigable", "rationale": "New rotor cross-section geometries require custom dies. For repeat geometries (established pump platforms), lead time = shipping only.", "mitigation": "Die library of common involute and crescent profiles; rapid prototyping from nearest die", "mitigationCost": "Medium", "mitigationTime": "4-6 weeks for new geometry" },
+    { "constraintName": "Corrosion Protection (C10)", "constraintType": "soft", "threshold": "No inherent corrosion protection", "verdict": "none", "rationale": "Pump internals operate in oil/hydraulic fluid environment. Corrosion protection is provided by the operating medium and downstream surface treatment (nitriding, hard chrome). Not a constraint for blank supply.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 2,
+    "none": 3,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "Low to Medium",
+    "totalMitigationTime": "Immediate to 6 weeks"
+  },
+  "sources": []
+}

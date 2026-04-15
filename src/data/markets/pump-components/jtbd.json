@@ -1,0 +1,23 @@
+{
+  "naicsCode": "333911",
+  "marketName": "Pump Components",
+  "slug": "pump-components",
+  "coreJobStatement": "Design and manufacture pump systems that convert mechanical shaft energy into controlled fluid flow at specified pressure, throughput, and efficiency for industrial process applications",
+  "productJobStatement": "Help Precision-formed steel profile blanks [L5, Material & Blank Procurement] to supply precision-dimensioned steel section blanks for pump rotor internals, crescent inserts, shaft sections, and vane profiles - within specified dimensional tolerance, surface hardness, and material certification - as ready-to-machine inputs for subsequent OEM rotor machining and pump assembly",
+  "anchorLevel": "L4 (component/subsystem within L5 Precision-formed steel profile blanks under L6a)",
+  "lPath": "",
+  "segments": [
+    { "segmentNumber": 1, "name": "High-volume continuous process (oil & gas, chemicals, water)", "qualifier": "", "characteristics": "Long-interval PM; uptime-critical; multi-year supply contracts", "isTargetable": true, "targetabilityReason": "EN 10204 3.1 mandatory; long-term qualification", "circumstance": "Long-interval preventive maintenance; uptime-critical; multi-year supply contracts", "alternativesDiffer": "EN 10204 3.1 mandatory" },
+    { "segmentNumber": 2, "name": "Precision metering / dosing (food & pharma, laboratory)", "qualifier": "", "characteristics": "Flow accuracy per revolution; hygienic or clean-room constraints", "isTargetable": true, "targetabilityReason": "FDA-grade materials; tighter geometry", "circumstance": "Flow accuracy per revolution; hygienic or clean-room constraints", "alternativesDiffer": "FDA-grade materials required" },
+    { "segmentNumber": 3, "name": "High-pressure hydraulic OEM", "qualifier": "", "characteristics": "High differential pressure; frequent duty cycles; compact packaging", "isTargetable": true, "targetabilityReason": "Fatigue-rated alloy steels; hardness critical", "circumstance": "High differential pressure; frequent duty cycles; compact packaging", "alternativesDiffer": "Fatigue-rated alloy steels; hardness critical" },
+    { "segmentNumber": 4, "name": "New platform designer", "qualifier": "", "characteristics": "Pump OEM creating a new product line; needs custom rotor geometry qualified from scratch", "isTargetable": true, "targetabilityReason": "Die design + PPAP-equivalent qualification", "circumstance": "Needs custom rotor geometry qualified from scratch", "alternativesDiffer": "Die design + PPAP qualification" },
+    { "segmentNumber": 5, "name": "Aftermarket / MRO", "qualifier": "", "characteristics": "Replacement rotor packs for installed base; interchangeability with OEM drawing; short lead-time", "isTargetable": true, "targetabilityReason": "Existing geometry; no die investment", "circumstance": "Interchangeability with OEM drawing; often short lead-time", "alternativesDiffer": "Existing geometry; no die investment" }
+  ],
+  "alternatives": [
+    { "name": "Ground/turned round bar stock (CNC-machined to rotor geometry)", "unspsc": "31161501", "tradeoffs": "50-70% material removal in machining; high machining cost; no geometry advantage for non-round cross-sections; unlimited availability. Dominant ~60% share." },
+    { "name": "Cold-drawn / cold-rolled near-net-shape profiles (ZOLLERN)", "unspsc": "30102304", "tradeoffs": "6-12 week die lead time for new geometry; ~100 kg min batch; steel-only; limited to constant 2D cross-section. ~15-25% share." },
+    { "name": "Forged steel blanks", "unspsc": "30101803", "tradeoffs": "Forging tooling EUR 10-50K; min lot sizes larger than profiles; lead time 8-16 weeks; better for 3D geometries. ~15-25% share." },
+    { "name": "Powder metal (sintered) blanks", "unspsc": "30103000", "tradeoffs": "Porosity limits high-pressure applications; dimensional tolerance requires post-sinter grinding; limited to smaller cross-sections. ~5% share." },
+    { "name": "Do nothing / continue with existing supplier (status quo)", "unspsc": "---", "tradeoffs": "Zero switching cost, zero qualification burden - most common competitor. Only displaced by cost, quality failure, or supply disruption at incumbent." }
+  ]
+}

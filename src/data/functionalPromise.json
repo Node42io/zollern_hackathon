@@ -1,0 +1,67 @@
+{
+  "productFP": {
+    "statement": "Provide custom cross-sectional metal shapes with tight dimensional tolerances and selectable surface hardness — in near-net-shape geometry that eliminates 40-80% of downstream machining waste",
+    "verb": "Provide",
+    "object": "custom cross-sectional metal shapes",
+    "context": "with tight dimensional tolerances and selectable surface hardness",
+    "differentiators": [
+      "Near-net-shape geometry eliminates 40-80% material removal vs. machining from bar stock",
+      "IT8 tolerance class (+-0.02 mm) achievable via cold finishing per ISO 286",
+      "Selective surface hardening up to 64 HRC at controllable depth 0.5-5 mm, ductile core retained",
+      "Full alloy library: carbon, alloy, bearing, spring, and tool steels through common forming equipment",
+      "In-line induction hardening — no outsourcing to third-party heat treaters, shorter lead time",
+      "IATF 16949 certified for direct automotive OEM supply"
+    ]
+  },
+  "commodityFP": {
+    "statement": "Provide elongated metal shapes with defined cross-sectional geometry for structural, mechanical, or guiding functions",
+    "commodity": "Steel profiles (UNSPSC 30102304)",
+    "unspscCode": "30102304 [SRC: 01_product_decomposition]",
+    "reasoning": "All steel profile products — standard I-beams, custom precision profiles, hot-rolled sections, cold-drawn bars — share the fundamental function of providing shaped steel for integration into assemblies. Precision, geometry complexity, and surface properties differentiate suppliers; the commodity-level promise is vendor-agnostic. [SRC: 01_product_decomposition]",
+    "fpExtension": "The underlying precision cross-section forming and controllable surface hardening capability also addresses: (1) precision linear motion systems requiring hardened running surfaces (guide rails, slideways), (2) tribological interface profiles for sliding/bearing contacts, (3) custom mechanical retention profiles (keyway inserts, spline sections in elongated form). Secondary Phase A search: industries requiring precision-formed wear-resistant guide profiles for linear motion or sliding-contact interfaces. [ASM: derived from feature set in 01_product_decomposition]",
+    "fpExtensionDomains": [
+      "Precision linear motion systems",
+      "Tribological interface profiles",
+      "Custom mechanical retention profiles"
+    ]
+  },
+  "bomPosition": {
+    "level": "L1-L2 — Semi-finished material / near-net-shape input component [SRC]",
+    "position": "Upstream material supplier providing shaped steel consumed by OEM manufacturers, Tier 1 suppliers, and specialist fabricators",
+    "parentSubsystem": "Customer part, customer subassembly",
+    "grandparentSystem": "Customer end product (machinery, vehicle, elevator, firearm, medical device, industrial equipment)"
+  },
+  "complements": [
+    {
+      "name": "Customer geometry specification (drawing or CAD)",
+      "criticality": "essential",
+      "description": "Defines die geometry; no custom profile can be produced without a defined cross-section"
+    },
+    {
+      "name": "Downstream cutting / facing operation",
+      "criticality": "essential",
+      "description": "Profiles delivered as bars or coils; customer must cut to final part length"
+    },
+    {
+      "name": "Secondary machining capability (drill, mill, grind)",
+      "criticality": "enhancing",
+      "description": "Most assembly applications require holes, chamfers, or mating features not producible via rolling"
+    },
+    {
+      "name": "Quality inspection equipment (CMM, hardness tester)",
+      "criticality": "enhancing",
+      "description": "Verifying IT8 tolerance compliance and surface hardness requires calibrated measurement"
+    },
+    {
+      "name": "Surface coating or treatment",
+      "criticality": "optional",
+      "description": "Corrosion protection, paint, or plating for environmental-exposure applications"
+    },
+    {
+      "name": "PPAP documentation system",
+      "criticality": "optional",
+      "description": "Required for automotive OEM supply under IATF 16949; not needed for non-automotive customers"
+    }
+  ],
+  "sources": []
+}

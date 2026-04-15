@@ -1,0 +1,32 @@
+{
+  "naicsCode": "336390",
+  "marketName": "Other Motor Vehicle Parts Manufacturing",
+  "slug": "automotive-components",
+  "summary": {
+    "totalNeeds": 23,
+    "underservedCount": 7,
+    "overservedCount": 0,
+    "avgOpportunityScore": 11.7
+  },
+  "top5Opportunities": [
+    { "rank": 1, "needId": "N05", "statement": "Minimize the elapsed time from profile geometry approval to first PPAP-qualified delivery of a new custom die cross-section geometry", "importance": 9, "satisfaction": 3, "opportunity": 15, "zone": "Underserved" },
+    { "rank": 2, "needId": "N17", "statement": "Minimize the time to restore qualified precision profile supply after a SCAR and production containment event", "importance": 9, "satisfaction": 3, "opportunity": 15, "zone": "Underserved" },
+    { "rank": 3, "needId": "N04", "statement": "Minimize the likelihood of selecting a profile supplier with insufficient process capability (Cpk < 1.67) requiring re-sourcing after PPAP tooling investment", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 4, "needId": "N06", "statement": "Minimize the likelihood of dimensional non-conformance at first-article PPAP inspection requiring a die re-cut and full restart of the qualification cycle", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 5, "needId": "N18", "statement": "Minimize the cost of Tier 1 production line disruption caused by a non-conforming profile delivery discovered at the machining cell", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" }
+  ],
+  "needs": [
+    { "id": "N05", "statement": "Minimize the elapsed time from profile geometry approval to first PPAP-qualified delivery of a new custom die cross-section geometry", "jobStep": "PREPARE", "importance": 9, "satisfaction": 3, "opportunity": 15, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "6-12 week tooling lead time is the single biggest timeline risk in automotive program launches using custom profiles. Each week of delay pushes the OEM SOP date.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N17", "statement": "Minimize the time to restore qualified precision profile supply after a dimensional non-conformance event triggers a Tier 1 SCAR and production containment", "jobStep": "MODIFY", "importance": 9, "satisfaction": 3, "opportunity": 15, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "SCAR-triggered containment stops the Tier 1 production line until root cause is identified and corrective action verified. Recovery speed is the primary cost driver.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N04", "statement": "Minimize the likelihood of selecting a profile supplier with insufficient process capability (Cpk < 1.67) for the required tolerance class, requiring re-sourcing after PPAP tooling investment", "jobStep": "LOCATE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Cpk < 1.67 disqualifies a supplier after tooling investment of 5-15K EUR has been committed. Re-sourcing adds 12-20 weeks to program timeline.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N06", "statement": "Minimize the likelihood of dimensional non-conformance discovered at first-article PPAP inspection requiring a die re-cut and full restart of the qualification cycle", "jobStep": "PREPARE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "Die re-cut adds 4-8 weeks to the qualification timeline plus additional material and engineering cost.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N18", "statement": "Minimize the cost of Tier 1 production line disruption caused by a non-conforming profile delivery discovered only at the machining cell — after incoming inspection release", "jobStep": "MODIFY", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Post-release detection means rework or scrap of partially machined parts plus line downtime cost.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N10", "statement": "Minimize the likelihood of a dimensionally non-conforming profile section being released to the Tier 1 machining cell undetected during incoming inspection", "jobStep": "CONFIRM", "importance": 9, "satisfaction": 5, "opportunity": 13, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Non-conforming profiles that pass incoming inspection create downstream rework and potential OEM escalation.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N12", "statement": "Increase the ability to sustain on-time delivery of qualified precision profile stock across all call-off windows in a 52-week JIT program schedule without line-stoppage events", "jobStep": "EXECUTE", "importance": 9, "satisfaction": 5, "opportunity": 13, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "JIT delivery failure causes line stoppage at Tier 1 — direct cost plus OEM penalty.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] }
+  ],
+  "flaggedRationalesCount": 23,
+  "sources": [
+    { "id": "S01", "label": "JTBD_automotive_components.md", "url": "JTBD_automotive_components.md", "prefixedId": "ODI-AUTOMOTIVE-COMPONENTS-S01" },
+    { "id": "S02", "label": "ADJ_automotive_components.md", "url": "ADJ_automotive_components.md", "prefixedId": "ODI-AUTOMOTIVE-COMPONENTS-S02" }
+  ]
+}

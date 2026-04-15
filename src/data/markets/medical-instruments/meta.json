@@ -1,0 +1,21 @@
+{
+  "slug": "medical-instruments",
+  "name": "Surgical and Medical Instrument Manufacturing",
+  "naicsCode": "339112",
+  "isReference": true,
+  "rank": 11,
+  "scores": {
+    "odi": 6.1,
+    "featureFit": 5.7,
+    "constraintCompatibility": 8.5,
+    "jobCoverage": 5,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 5.3,
+    "composite": 5.93
+  },
+  "recommendation": "reference",
+  "rationale": "Existing ZOLLERN market. High-precision cold-drawn stainless steel profiles (1.4021, 1.4028, 1.4112, 1.4542) for surgical instrument handles, jaw blanks, guide channel inserts, and device frames. Global market ~$65B. Regulatory overlay (FDA 510(k), MDR 2017/745, ISO 10993) adds qualification overhead but is not a knockout.",
+  "entryStrategy": "Existing market — expand in Tuttlingen instrument cluster and premium OEMs (Aesculap, KLS Martin) via ISO 13485-compatible traceability and biocompatibility documentation.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

@@ -1,0 +1,23 @@
+{
+  "naicsCode": "332321",
+  "marketName": "Door Systems",
+  "slug": "door-systems",
+  "coreJobStatement": "Enable controlled, safe, and weathertight passage through building openings in industrial, commercial, and residential structures while meeting fire resistance, thermal separation, acoustic attenuation, security, and structural loading code requirements",
+  "productJobStatement": "Help Structural Profile & Frame Forming to deliver guide rail cross-sections that constrain sliding door panel travel within tolerance, bear repetitive roller contact loads, and maintain dimensional stability over 10-20 year service life under industrial operating conditions",
+  "anchorLevel": "L5 (Precision Steel Track & Guide Profile within L6b Structural Profile & Frame Forming)",
+  "lPath": "",
+  "segments": [
+    { "segmentNumber": 1, "name": "High-cycle industrial door OEM", "qualifier": "", "characteristics": "Doors rated >100K cycles/year (logistics, food, auto); guide surface wear is system life-limiter", "isTargetable": true, "targetabilityReason": "Hardened profile vs standard roll-formed", "circumstance": "Doors rated >100K cycles/year; guide surface wear and roller tracking precision are system life-limiters", "alternativesDiffer": "Hardened profile vs standard roll-formed" },
+    { "segmentNumber": 2, "name": "Fire-rated door manufacturer", "qualifier": "", "characteristics": "EN 16034 / EN 1634 compliance mandatory; integral intumescent seal groove is code-critical", "isTargetable": true, "targetabilityReason": "Geometry precision and steel-only mandatory", "circumstance": "EN 16034/EN 1634 compliance mandatory; integral intumescent seal groove in profile cross-section", "alternativesDiffer": "Only cold-drawn/precision achieves seal groove tolerance" },
+    { "segmentNumber": 3, "name": "Automated high-speed door OEM", "qualifier": "", "characteristics": "Door panel velocity >2 m/s; guide flange tolerance drives roller noise, vibration, seal integrity", "isTargetable": true, "targetabilityReason": "Tighter tolerance required vs structural sections", "circumstance": "Door panel velocity >2 m/s; guide flange tolerance drives roller noise and seal integrity", "alternativesDiffer": "Tighter tolerance required" },
+    { "segmentNumber": 4, "name": "Security / blast door manufacturer", "qualifier": "", "characteristics": "High-strength alloy steel (42CrMo4) required; hardened guide surface for tamper/impact resistance", "isTargetable": true, "targetabilityReason": "Specialty grade unavailable from roll-former", "circumstance": "High-strength alloy steel required; hardened guide surface for tamper and impact resistance", "alternativesDiffer": "Specialty grade unavailable from roll-former" },
+    { "segmentNumber": 5, "name": "Regional / custom door fabricator", "qualifier": "", "characteristics": "Custom door geometry at moderate volume; no roll former investment; sources profiles externally", "isTargetable": true, "targetabilityReason": "External sourcing is the entire use case", "circumstance": "Custom door geometry at moderate volume; no roll former investment", "alternativesDiffer": "Off-the-shelf vs custom die" }
+  ],
+  "alternatives": [
+    { "name": "In-house roll forming (Dahlstrom, Metform, Bradbury lines)", "unspsc": "24111601", "tradeoffs": "CapEx EUR 200-500K; tolerance +-0.2 mm max; no hardened surface; limited to pre-coated/galvanized coil; economical only at very high volumes. ~40% share." },
+    { "name": "Cold-drawn / cold-rolled specialty profiles (ZOLLERN, GMH, Montanstahl)", "unspsc": "30102304", "tradeoffs": "6-12 week lead time for new die; min ~100 kg batch; C10 corrosion mitigation required; steel-only. ~25% share." },
+    { "name": "Standard hot-rolled structural sections (ArcelorMittal, voestalpine)", "unspsc": "30264000", "tradeoffs": "Tolerance only +-0.5 mm; no integral seal groove; no hardened running surface; limited shape catalog. ~25% share." },
+    { "name": "Aluminum extruded profiles (Hydro, Constellium)", "unspsc": "30122100", "tradeoffs": "Aluminum door systems only - constraint C6 blocks ZOLLERN; lower surface hardness; insufficient for fire-rated steel door code compliance. ~10% share." },
+    { "name": "Do nothing - CNC machine from bar stock", "unspsc": "---", "tradeoffs": "40-70% material waste; highest unit cost; fully flexible for one-off; zero minimum batch; zero tooling investment." }
+  ]
+}

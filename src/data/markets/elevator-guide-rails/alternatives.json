@@ -1,0 +1,12 @@
+{
+  "naicsCode": "333921",
+  "marketName": "Elevator Guide Rails",
+  "slug": "elevator-guide-rails",
+  "alternatives": [
+    { "name": "Cold-drawn precision T-section (ZOLLERN position)", "unspsc": "30264000", "tradeoffs": "IT8 tolerance (+-0.02 mm); in-line IH to 64 HRC; <=0.2 mm/m straightness; IATF 16949 with EN 10204 3.1 per heat. Weakness: Higher unit cost; 6m max bar length (more splice joints); 6-12 week die lead for new sizes. ~40% share." },
+    { "name": "Hot-rolled + post-machined T-section (ArcelorMittal, voestalpine)", "unspsc": "30264000", "tradeoffs": "+-0.5 mm tolerance without machining; no integrated surface hardening; 12m bar length (fewer joints). Requires secondary machining cost to tighten tolerance; dominant for standard/freight applications. ~45% share." },
+    { "name": "Cold-formed hollow steel section (MONTEFERRO, Zhangjiagang Mofeel)", "unspsc": "30264000", "tradeoffs": "~20% material/weight saving; lower cross-section inertia limits speed to <=1.6 m/s; non-standard guide shoe compatibility; cannot support safety gear clamping; mainly low/mid-rise. ~10% share." },
+    { "name": "Stainless / aluminium special rail", "unspsc": "30264000", "tradeoffs": "Corrosion advantage; lower strength limits load rating; aluminium not hardenable by IH; premium pricing; niche residential/light-duty only. ~4% share." },
+    { "name": "Machined from solid bar (legacy / repair)", "unspsc": "30264000", "tradeoffs": "60-80% material waste; highest per-unit cost; no near-net geometry; long lead time; declining share; used only for legacy repair and specialty one-offs. ~5% share." }
+  ]
+}

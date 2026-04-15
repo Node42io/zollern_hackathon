@@ -1,0 +1,12 @@
+{
+  "naicsCode": "339112",
+  "marketName": "Surgical and Medical Instrument Manufacturing",
+  "slug": "medical-instruments",
+  "alternatives": [
+    { "name": "Custom cold-drawn precision stainless steel instrument profile (near-net-shape) — ZOLLERN", "unspsc": "30102304", "tradeoffs": "6-12 week tooling lead time for new geometry; >=100 kg min batch; requires ISO 10993 biocompatibility documentation; +-0.02 mm tolerance; Ra <= 0.4 um; ~15% share [SRC: JTBD_medical_instruments]" },
+    { "name": "Standard stainless steel round/flat/hex bar stock (full machining in-house)", "unspsc": "31161501", "tradeoffs": "40-70% material waste; high machining cost and cycle time; widely available from multiple distributors (Sandvik, Bohler, Carpenter); no tooling NRE; ~55% share [SRC: VN_medical_instruments]" },
+    { "name": "Drop-forged instrument blank (closed-die, near-net-shape)", "unspsc": "31171501", "tradeoffs": "Forging die investment 5-20K EUR; forging-specific surface texture requires full finishing; 4-8 week die lead time; ~20% share. Dominant in Tuttlingen cluster (Aesculap, KLS Martin) [SRC: BOM_medical_instruments]" },
+    { "name": "MIM (metal injection molding) pre-form", "unspsc": "31171501", "tradeoffs": "Size-limited (< 50 g typical); shrinkage tolerance +-0.3%; debinding and sintering add process steps; growing for disposable and endoscopic components; ~10% share [SRC: JTBD_medical_instruments]" },
+    { "name": "Do nothing — continue with current bar stock supplier (status quo)", "unspsc": "", "tradeoffs": "Zero switching cost; zero qualification effort; hidden cost in material waste (40-70%) and CNC capacity consumption" }
+  ]
+}

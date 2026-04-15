@@ -1,0 +1,16 @@
+{
+  "naicsCode": "333120",
+  "marketName": "Construction Machinery Manufacturing",
+  "slug": "construction-machinery",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "Maximum Profile Width (160 mm)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Most boom chord and arm chord cross-sections fall within 160 mm. Oversized sections can be split into two parallel profiles.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Material Grade Range (S355-S690)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "S355J2 and S690QL are within ZOLLERN's cold-draw and hot-roll grade range. 42CrMo4 and C45 for pivot pins also available.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "IH Cross-Section Limit (4,000 mm2)", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "Slide guide channels and wear strips requiring IH are well within 4,000 mm2 limit. Boom chord profiles typically do not require IH.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "Outdoor Corrosion Exposure", "constraintType": "", "threshold": "", "verdict": "mitigable", "rationale": "Construction equipment operates outdoors year-round. Steel profiles require corrosion protection (painting or weathering steel grade).", "mitigation": "Specify S355J2W weathering steel or apply zinc-rich primer post-production for exposed frame members", "mitigationCost": "", "mitigationTime": "" },
+    { "constraintName": "EN 10204 3.1 for CE-Marked Equipment", "constraintType": "", "threshold": "", "verdict": "none", "rationale": "ZOLLERN provides EN 10204 3.1 material test reports as standard delivery. CE marking traceability requirement is met.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": { "knockouts": 0, "mitigable": 1, "none": 4, "marketStatus": "SURVIVING", "totalMitigationCost": "", "totalMitigationTime": "" },
+  "sources": []
+}

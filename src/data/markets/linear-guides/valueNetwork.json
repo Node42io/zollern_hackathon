@@ -1,0 +1,175 @@
+{
+  "naicsCode": "333249",
+  "marketName": "Linear Guides",
+  "slug": "linear-guides",
+  "coreJobStatement": "Design, manufacture, and deliver precision linear motion guide systems that enable accurate, repeatable, load-capable linear travel in industrial machinery and automation equipment",
+  "outputTypes": [
+    "Profile Rail Guide (recirculating ball)",
+    "Profile Rail Guide (recirculating roller)",
+    "Crossed Roller Rail",
+    "Round Shaft Guide",
+    "Hardened Flat/Dovetail Slide",
+    "Miniature Guide Rail"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — precision linear motion guide manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$2.7-3.0B (linear guide rails, 2024); ~$12B (full linear motion system); CAGR ~4.3% (guide rails, 2023-2030)",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Rail Material Production",
+      "type": "Core",
+      "jobFamily": "Transform steel into a hardened, near-net-shape guide rail profile - the structural and tribological core of the linear guide",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Rail Precision Grinding & Finishing",
+      "type": "Core",
+      "jobFamily": "Grind raceways and reference surfaces to final accuracy grade; straighten; cut to length",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Carriage Block Machining",
+      "type": "Core",
+      "jobFamily": "Machine carriage body: ball/roller return channels, mounting holes, seal seats, and end-cap interfaces",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Rolling Element & Retainer Supply",
+      "type": "Core",
+      "jobFamily": "Procure or manufacture precision balls, rollers, and retainer cages to specification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Sub-Assembly & Preloading",
+      "type": "Core",
+      "jobFamily": "Load rolling elements, set preload class, fit end seals and wipers, apply initial lubrication",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Accuracy Testing & Grading",
+      "type": "Core",
+      "jobFamily": "Verify dimensional accuracy grade, running resistance, static/dynamic load rating, straightness",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality Assurance (H)",
+      "type": "Horizontal",
+      "jobFamily": "ISO 9001, JIS B 1192, EN ISO 286 dimensional verification, SPC monitoring across all production steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Maintenance & Tooling Management (H)",
+      "type": "Horizontal",
+      "jobFamily": "Maintain production equipment, tooling, fixtures and plant services across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Inbound Logistics & Materials Management (H)",
+      "type": "Horizontal",
+      "jobFamily": "Manage incoming materials, WIP, finished goods, and just-in-time delivery",
+      "l5Units": []
+    },
+    {
+      "id": "L6.10",
+      "name": "Production Planning & MES/ERP (H)",
+      "type": "Horizontal",
+      "jobFamily": "Production scheduling, MES/ERP coordination, and process control across all steps",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Steel Rail Profile Stock",
+      "functionalJob": "Hardened steel profile blank - the structural and tribological base material of the guide rail, delivered in near-net-shape cross-section before final precision grinding. ZOLLERN PRIMARY POSITION. Alternatives: Custom cold-drawn induction-hardened precision profile (~25%), Bearing steel bar stock (~60%), Hot-rolled T-section/flat profile (~15%).",
+      "description": "ZOLLERN enters here with custom cold-drawn, induction-hardened precision profiles at IT8 tolerance (+-0.02 mm), Ra <= 1.6 um",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Rail Material Inspection & Certification",
+      "functionalJob": "Incoming dimensional verification and material traceability documentation for guide rail steel. EN 10204 Type 3.1 material test report + CMM incoming check (~70%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Induction Hardening Line",
+      "functionalJob": "Surface hardening of guide rail profile to 58-64 HRC to depth 0.5-5 mm while retaining ductile core. In-line induction hardening (~60%), batch furnace (~30%), outsourced (~10%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "CNC Profile Grinder",
+      "functionalJob": "CNC surface/profile grinding machine for achieving final raceway geometry, Ra <= 0.2 um, and accuracy grade SP/UP. Studer, Junker, Magerle, NUM.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Precision Ball Stock",
+      "functionalJob": "Precision rolling balls (chrome steel, ceramic, or stainless) graded G10-G25 per ISO 3290 for load transfer in rail carriage.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Assembly Station & Preload Setting Equipment",
+      "functionalJob": "Assembly workstation or line for loading rolling elements, setting preload class, fitting seals, and lubricating the guide unit.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Linear Accuracy Measurement System",
+      "functionalJob": "Laser interferometer or CMM system for verifying JIS/ISO accuracy grade, positioning accuracy, and straightness of finished guide.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "zollernPosition": "ZOLLERN holds PRIMARY position at L5 Steel Rail Profile Stock under L6a Rail Material Production. Cold-drawn, induction-hardened precision profiles at IT8 tolerance. Adjacent positions: Rail Material Inspection & Certification (zero adaptation), Induction Hardening toll service (zero CapEx).",
+  "strategicPosition": "ZOLLERN wins where physics and process control matter (dimensional consistency, hardness uniformity, traceability). Loses where the custom die model creates friction (tooling cost, lead time, single-source risk).",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333249 - US Census Bureau",
+      "url": "https://data.census.gov/profile/333249",
+      "prefixedId": "VN-LINEAR-GUIDES-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Valuates Reports - Linear Guide Rail Market 2024",
+      "url": "",
+      "prefixedId": "VN-LINEAR-GUIDES-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Mordor Intelligence - Linear Motion Market",
+      "url": "",
+      "prefixedId": "VN-LINEAR-GUIDES-S03"
+    },
+    {
+      "id": "S04",
+      "label": "THK, HIWIN, Bosch Rexroth product catalogs",
+      "url": "",
+      "prefixedId": "VN-LINEAR-GUIDES-S04"
+    }
+  ]
+}

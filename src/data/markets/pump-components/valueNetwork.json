@@ -1,0 +1,119 @@
+{
+  "naicsCode": "333911",
+  "marketName": "Pump Components",
+  "slug": "pump-components",
+  "coreJobStatement": "Design and manufacture pump systems that convert mechanical shaft energy into controlled fluid flow at specified pressure, throughput, and efficiency for industrial process applications",
+  "outputTypes": [
+    "External gear pump",
+    "Internal gear pump (crescent + gerotor)",
+    "Screw pump (twin/triple-rotor)",
+    "Sliding vane pump",
+    "Centrifugal pump",
+    "Diaphragm pump",
+    "Peristaltic pump"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — pump and fluid handling manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~USD 48B total (2025), positive displacement segment USD 20.8B (2025) -> USD 33.9B (2035), CAGR 5.0%",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Material & Blank Procurement",
+      "type": "Core",
+      "jobFamily": "Source and receive steel billets, castings, and semi-finished profile blanks as raw inputs for all pump components",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Component Machining",
+      "type": "Core",
+      "jobFamily": "Transform raw/semi-finished inputs into precision-dimensioned pump internals (rotors, crescent inserts, impeller blanks, shafts)",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Surface Treatment & Hardening",
+      "type": "Core",
+      "jobFamily": "Harden, plate, or coat wear-critical pump components to achieve specified surface hardness, corrosion resistance, and dimensional stability",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Assembly & Integration",
+      "type": "Core",
+      "jobFamily": "Assemble rotor packs, seal cartridges, bearing housings, and couplings into complete pump units at specified axial/radial clearances",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Performance Testing & Qualification",
+      "type": "Core",
+      "jobFamily": "Validate pump output against specified flow rate, head, efficiency, leakage, vibration, and noise acceptance criteria",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Packaging & Dispatch",
+      "type": "Core",
+      "jobFamily": "Package, certify, and ship qualified pump units to OEM customers or distribution",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality & Metrology (H)",
+      "type": "Horizontal",
+      "jobFamily": "Dimensional inspection, CMM measurement, test cert issuance - runs across all core steps",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Precision-formed Steel Profile Blanks",
+      "functionalJob": "ZOLLERN PRIMARY POSITION. Cold-drawn near-net-shape profiles (~15-25% of steel input by value for profile-critical pumps). Feeds inner rotor, crescent insert, housing bore liner, and drive shaft blanks. Alternatives: Ground/turned bar stock (~55-65%), Forged steel blanks (~15-25%).",
+      "description": "Custom-cross-section rotor/shaft profiles for gear, screw, vane pumps",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Cast Iron / Ductile Iron Pump Castings",
+      "functionalJob": "Sand casting (~70%), investment casting (~20%), die casting (~10%). Primary input for pump housings and larger impeller bodies.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "CNC Turning & Milling Centers",
+      "functionalJob": "5-axis CNC (~70%), 3-axis CNC (~25%), manual turning (~5%). Dominant for complex impellers, housings, and precision rotor profiles.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Gear Cutting Machines",
+      "functionalJob": "Gear hobbing (~55%, external gears), gear broaching (~35%, internal gears), wire EDM (~10%, complex profiles).",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "zollernPosition": "ZOLLERN holds PRIMARY position at L5 Precision-formed Steel Profile Blanks under L6a Material & Blank Procurement. Supplies custom-cross-section rotor/shaft profiles for gear, screw, and vane pumps. Highest differentiation on crescent insert profiles.",
+  "strategicPosition": "ZOLLERN wins in dimensional precision and hardness consistency domain. BAR stock is the dominant incumbent (~60%) with zero tooling dependency. ZOLLERN's value is delivering blanks already at final tolerance and hardness - where bar stock is structurally weakest.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333911 - US Census Bureau",
+      "url": "https://data.census.gov/profile/333911",
+      "prefixedId": "VN-PUMP-COMPONENTS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Mordor Intelligence - Pump Market 2024-2035",
+      "url": "",
+      "prefixedId": "VN-PUMP-COMPONENTS-S02"
+    }
+  ]
+}

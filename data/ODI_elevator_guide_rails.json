@@ -1,0 +1,493 @@
+{
+  "id": "ODI_elevator_guide_rails",
+  "title": "Outcome-Driven Innovation Matrix — Elevator Guide Rails (NAICS 333921)",
+  "type": "odi_matrix",
+  "market_slug": "elevator_guide_rails",
+  "is_per_market": true,
+  "sections": [
+    {
+      "title": "ODI Methodology",
+      "content": "Using Ulwick's Outcome-Driven Innovation framework, each desired outcome is scored on Importance (1-10) and Satisfaction (1-10). The **Opportunity Algorithm** identifies underserved and overserved outcomes: [SRC: Ulwick ODI]\n\n> **Opportunity Score = Importance + max(Importance - Satisfaction, 0)**\n\n- Score >= 12: **Highly underserved** (strong innovation opportunity)\n- Score 10-12: **Underserved** (meaningful opportunity)\n- Score < 10 and Satisfaction > Importance: **Overserved** (cost reduction opportunity)"
+    },
+    {
+      "title": "Full Outcome Matrix",
+      "content": "| # | Desired Outcome | Job Step | Importance | Satisfaction | Opp Score | Status |\n|---|----------------|----------|-----------|-------------|-----------|--------|\n| O1 | Minimize deviation between rail profile and ISO 7465 nominal dimensions | Define req. | 9 | 6 | 12 | UNDERSERVED |\n| O2 | Minimize time to identify qualified suppliers for a new rail profile size | Locate suppliers | 7 | 5 | 9 | APPROPRIATELY SERVED |\n| O3 | Minimize variation between sample rails and production batch rails | Evaluate samples | 9 | 5 | 13 | HIGHLY UNDERSERVED |\n| O4 | Minimize rail head straightness deviation from 0.3mm/m tolerance | Evaluate samples | 10 | 6 | 14 | HIGHLY UNDERSERVED |\n| O5 | Minimize total cost of ownership per meter of installed guide rail | Negotiate terms | 8 | 6 | 10 | UNDERSERVED |\n| O6 | Minimize lead time from purchase order to delivery (repeat orders) | Order & schedule | 8 | 5 | 11 | UNDERSERVED |\n| O7 | Minimize lead time for first order of a new profile size | Order & schedule | 7 | 4 | 10 | UNDERSERVED |\n| O8 | Minimize probability of receiving out-of-spec rails | Receive & inspect | 9 | 6 | 12 | UNDERSERVED |\n| O9 | Minimize effort required for incoming quality inspection | Receive & inspect | 8 | 5 | 11 | UNDERSERVED |\n| O10 | Minimize time to align consecutive rail sections in the hoistway | Install | 10 | 7 | 13 | HIGHLY UNDERSERVED |\n| O11 | Minimize number of rail sections requiring on-site rework | Install | 9 | 7 | 11 | UNDERSERVED |\n| O12 | Minimize ride quality deviation during commissioning test | Validate | 10 | 8 | 12 | UNDERSERVED |\n| O13 | Minimize risk of TUeV / notified body rejection at final inspection | Validate | 10 | 8 | 12 | UNDERSERVED |\n| O14 | Minimize CO2 footprint per meter of guide rail | Emerging | 5 | 3 | 7 | APPROPRIATELY SERVED |\n| O15 | Minimize packaging waste from guide rail deliveries | Emerging | 4 | 5 | 4 | OVERSERVED |"
+    },
+    {
+      "title": "Opportunity Landscape",
+      "content": "| Category | Count | Outcomes | Strategic Implication |\n|----------|-------|----------|----------------------|\n| Highly underserved (>= 13) | 3 | O3, O4, O10 | Primary innovation targets — ZOLLERN should lead here |\n| Underserved (10-12) | 8 | O1, O5, O6, O7, O8, O9, O11, O12, O13 | Secondary targets — improve vs. incumbents |\n| Appropriately served (7-9) | 2 | O2, O14 | Maintain parity |\n| Overserved (<7) | 1 | O15 | Cost reduction possible |"
+    },
+    {
+      "title": "ZOLLERN Capability vs. Top Opportunities",
+      "content": "| Outcome | Opp Score | ZOLLERN Capability | Can Address? | How? |\n|---------|-----------|-------------------|-------------|------|\n| O3 (Sample-production consistency) | 13 | Cpk > 1.33 on cold-drawn profiles | YES | Statistical process control, same tooling for sample and production |\n| O4 (Straightness) | 14 | Roller straightening to 0.5mm/m | PARTIAL | Invest in precision straightening (target 0.2mm/m) |\n| O10 (Alignment time) | 13 | Joint face machining +/-0.05mm | YES | Tighter joint face tolerance = faster alignment in shaft |\n| O6 (Repeat lead time) | 11 | 4-6 weeks with existing tooling | YES | Dedicated tooling stock, pull-based scheduling |\n| O8 (Out-of-spec risk) | 12 | In-line 100% inspection possible | YES | Automated dimensional gauging after straightening |\n| O12 (Ride quality) | 12 | Hardened running surface + straightness | PARTIAL | Combined improvement in O4 + hardness uniformity |"
+    },
+    {
+      "title": "Innovation Priority Map",
+      "content": "| Priority | Outcome | Investment Required | Impact on Market Entry |\n|----------|---------|-------------------|----------------------|\n| P1 | O4 — Rail head straightness | EUR 200-400K (precision straightening line) | HIGH — differentiator vs. all incumbents |\n| P2 | O3 — Sample-production consistency | EUR 50K (SPC system + capability study) | HIGH — builds trust with new OEM customers |\n| P3 | O10 — Alignment time reduction | EUR 15-20K (joint face machining tooling) | HIGH — directly reduces customer installation cost |\n| P4 | O8 — Zero defect delivery | EUR 100-150K (in-line automated inspection) | MEDIUM — reduces incoming inspection at customer |\n| P5 | O6 — Repeat lead time | EUR 0 (operational — dedicated stock) | MEDIUM — improves customer experience |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"odi_matrix\": {\n    \"market\": \"Elevator Guide Rails\",\n    \"naics\": \"333921\",\n    \"methodology\": \"ulwick_odi\",\n    \"opportunity_algorithm\": \"importance + max(importance - satisfaction, 0)\",\n    \"outcomes\": [\n      {\"id\": \"O1\", \"outcome\": \"Minimize profile deviation from ISO 7465\", \"importance\": 9, \"satisfaction\": 6, \"opp_score\": 12, \"status\": \"underserved\"},\n      {\"id\": \"O2\", \"outcome\": \"Minimize time to identify qualified suppliers\", \"importance\": 7, \"satisfaction\": 5, \"opp_score\": 9, \"status\": \"appropriately_served\"},\n      {\"id\": \"O3\", \"outcome\": \"Minimize sample-to-production variation\", \"importance\": 9, \"satisfaction\": 5, \"opp_score\": 13, \"status\": \"highly_underserved\"},\n      {\"id\": \"O4\", \"outcome\": \"Minimize straightness deviation\", \"importance\": 10, \"satisfaction\": 6, \"opp_score\": 14, \"status\": \"highly_underserved\"},\n      {\"id\": \"O5\", \"outcome\": \"Minimize total cost of ownership per meter\", \"importance\": 8, \"satisfaction\": 6, \"opp_score\": 10, \"status\": \"underserved\"},\n      {\"id\": \"O6\", \"outcome\": \"Minimize repeat-order lead time\", \"importance\": 8, \"satisfaction\": 5, \"opp_score\": 11, \"status\": \"underserved\"},\n      {\"id\": \"O7\", \"outcome\": \"Minimize first-order lead time for new profiles\", \"importance\": 7, \"satisfaction\": 4, \"opp_score\": 10, \"status\": \"underserved\"},\n      {\"id\": \"O8\", \"outcome\": \"Minimize out-of-spec delivery probability\", \"importance\": 9, \"satisfaction\": 6, \"opp_score\": 12, \"status\": \"underserved\"},\n      {\"id\": \"O9\", \"outcome\": \"Minimize incoming inspection effort\", \"importance\": 8, \"satisfaction\": 5, \"opp_score\": 11, \"status\": \"underserved\"},\n      {\"id\": \"O10\", \"outcome\": \"Minimize hoistway alignment time\", \"importance\": 10, \"satisfaction\": 7, \"opp_score\": 13, \"status\": \"highly_underserved\"},\n      {\"id\": \"O11\", \"outcome\": \"Minimize on-site rework of rail sections\", \"importance\": 9, \"satisfaction\": 7, \"opp_score\": 11, \"status\": \"underserved\"},\n      {\"id\": \"O12\", \"outcome\": \"Minimize ride quality deviation\", \"importance\": 10, \"satisfaction\": 8, \"opp_score\": 12, \"status\": \"underserved\"},\n      {\"id\": \"O13\", \"outcome\": \"Minimize notified body rejection risk\", \"importance\": 10, \"satisfaction\": 8, \"opp_score\": 12, \"status\": \"underserved\"},\n      {\"id\": \"O14\", \"outcome\": \"Minimize CO2 footprint per meter\", \"importance\": 5, \"satisfaction\": 3, \"opp_score\": 7, \"status\": \"appropriately_served\"},\n      {\"id\": \"O15\", \"outcome\": \"Minimize packaging waste\", \"importance\": 4, \"satisfaction\": 5, \"opp_score\": 4, \"status\": \"overserved\"}\n    ],\n    \"top_opportunities\": [\"O4\", \"O3\", \"O10\"],\n    \"innovation_priorities\": [\n      {\"priority\": 1, \"outcome_id\": \"O4\", \"investment_eur\": \"200000-400000\"},\n      {\"priority\": 2, \"outcome_id\": \"O3\", \"investment_eur\": \"50000\"},\n      {\"priority\": 3, \"outcome_id\": \"O10\", \"investment_eur\": \"15000-20000\"},\n      {\"priority\": 4, \"outcome_id\": \"O8\", \"investment_eur\": \"100000-150000\"},\n      {\"priority\": 5, \"outcome_id\": \"O6\", \"investment_eur\": 0}\n    ]\n  },\n  \"entities\": [\n    {\"label\": \"Outcome\", \"slug\": \"outcome__straightness_deviation\", \"name\": \"O4 — Minimize straightness deviation (Opp 14)\"},\n    {\"label\": \"Outcome\", \"slug\": \"outcome__sample_production_consistency\", \"name\": \"O3 — Minimize sample-to-production variation (Opp 13)\"},\n    {\"label\": \"Outcome\", \"slug\": \"outcome__alignment_time\", \"name\": \"O10 — Minimize hoistway alignment time (Opp 13)\"}\n  ]\n}\n```\n\n---\n\n*Sources: [Ulwick, A. — What Customers Want (2005)](https://jobs-to-be-done.com/), [Strategyn — ODI Process](https://strategyn.com/outcome-driven-innovation-process/), [EN 81-50:2020 — Guide rail test methods](https://standards.cencenelec.eu/), Elevator OEM procurement interviews (anonymized industry reports)*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "#",
+        "Desired Outcome",
+        "Job Step",
+        "Importance",
+        "Satisfaction",
+        "Opp Score",
+        "Status"
+      ],
+      "rows": [
+        {
+          "#": "O1",
+          "Desired Outcome": "Minimize deviation between rail profile and ISO 7465 nominal dimensions",
+          "Job Step": "Define req.",
+          "Importance": "9",
+          "Satisfaction": "6",
+          "Opp Score": "12",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O2",
+          "Desired Outcome": "Minimize time to identify qualified suppliers for a new rail profile size",
+          "Job Step": "Locate suppliers",
+          "Importance": "7",
+          "Satisfaction": "5",
+          "Opp Score": "9",
+          "Status": "APPROPRIATELY SERVED"
+        },
+        {
+          "#": "O3",
+          "Desired Outcome": "Minimize variation between sample rails and production batch rails",
+          "Job Step": "Evaluate samples",
+          "Importance": "9",
+          "Satisfaction": "5",
+          "Opp Score": "13",
+          "Status": "HIGHLY UNDERSERVED"
+        },
+        {
+          "#": "O4",
+          "Desired Outcome": "Minimize rail head straightness deviation from 0.3mm/m tolerance",
+          "Job Step": "Evaluate samples",
+          "Importance": "10",
+          "Satisfaction": "6",
+          "Opp Score": "14",
+          "Status": "HIGHLY UNDERSERVED"
+        },
+        {
+          "#": "O5",
+          "Desired Outcome": "Minimize total cost of ownership per meter of installed guide rail",
+          "Job Step": "Negotiate terms",
+          "Importance": "8",
+          "Satisfaction": "6",
+          "Opp Score": "10",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O6",
+          "Desired Outcome": "Minimize lead time from purchase order to delivery (repeat orders)",
+          "Job Step": "Order & schedule",
+          "Importance": "8",
+          "Satisfaction": "5",
+          "Opp Score": "11",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O7",
+          "Desired Outcome": "Minimize lead time for first order of a new profile size",
+          "Job Step": "Order & schedule",
+          "Importance": "7",
+          "Satisfaction": "4",
+          "Opp Score": "10",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O8",
+          "Desired Outcome": "Minimize probability of receiving out-of-spec rails",
+          "Job Step": "Receive & inspect",
+          "Importance": "9",
+          "Satisfaction": "6",
+          "Opp Score": "12",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O9",
+          "Desired Outcome": "Minimize effort required for incoming quality inspection",
+          "Job Step": "Receive & inspect",
+          "Importance": "8",
+          "Satisfaction": "5",
+          "Opp Score": "11",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O10",
+          "Desired Outcome": "Minimize time to align consecutive rail sections in the hoistway",
+          "Job Step": "Install",
+          "Importance": "10",
+          "Satisfaction": "7",
+          "Opp Score": "13",
+          "Status": "HIGHLY UNDERSERVED"
+        },
+        {
+          "#": "O11",
+          "Desired Outcome": "Minimize number of rail sections requiring on-site rework",
+          "Job Step": "Install",
+          "Importance": "9",
+          "Satisfaction": "7",
+          "Opp Score": "11",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O12",
+          "Desired Outcome": "Minimize ride quality deviation during commissioning test",
+          "Job Step": "Validate",
+          "Importance": "10",
+          "Satisfaction": "8",
+          "Opp Score": "12",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O13",
+          "Desired Outcome": "Minimize risk of TUeV / notified body rejection at final inspection",
+          "Job Step": "Validate",
+          "Importance": "10",
+          "Satisfaction": "8",
+          "Opp Score": "12",
+          "Status": "UNDERSERVED"
+        },
+        {
+          "#": "O14",
+          "Desired Outcome": "Minimize CO2 footprint per meter of guide rail",
+          "Job Step": "Emerging",
+          "Importance": "5",
+          "Satisfaction": "3",
+          "Opp Score": "7",
+          "Status": "APPROPRIATELY SERVED"
+        },
+        {
+          "#": "O15",
+          "Desired Outcome": "Minimize packaging waste from guide rail deliveries",
+          "Job Step": "Emerging",
+          "Importance": "4",
+          "Satisfaction": "5",
+          "Opp Score": "4",
+          "Status": "OVERSERVED"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Category",
+        "Count",
+        "Outcomes",
+        "Strategic Implication"
+      ],
+      "rows": [
+        {
+          "Category": "Highly underserved (>= 13)",
+          "Count": "3",
+          "Outcomes": "O3, O4, O10",
+          "Strategic Implication": "Primary innovation targets — ZOLLERN should lead here"
+        },
+        {
+          "Category": "Underserved (10-12)",
+          "Count": "8",
+          "Outcomes": "O1, O5, O6, O7, O8, O9, O11, O12, O13",
+          "Strategic Implication": "Secondary targets — improve vs. incumbents"
+        },
+        {
+          "Category": "Appropriately served (7-9)",
+          "Count": "2",
+          "Outcomes": "O2, O14",
+          "Strategic Implication": "Maintain parity"
+        },
+        {
+          "Category": "Overserved (<7)",
+          "Count": "1",
+          "Outcomes": "O15",
+          "Strategic Implication": "Cost reduction possible"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Outcome",
+        "Opp Score",
+        "ZOLLERN Capability",
+        "Can Address?",
+        "How?"
+      ],
+      "rows": [
+        {
+          "Outcome": "O3 (Sample-production consistency)",
+          "Opp Score": "13",
+          "ZOLLERN Capability": "Cpk > 1.33 on cold-drawn profiles",
+          "Can Address?": "YES",
+          "How?": "Statistical process control, same tooling for sample and production"
+        },
+        {
+          "Outcome": "O4 (Straightness)",
+          "Opp Score": "14",
+          "ZOLLERN Capability": "Roller straightening to 0.5mm/m",
+          "Can Address?": "PARTIAL",
+          "How?": "Invest in precision straightening (target 0.2mm/m)"
+        },
+        {
+          "Outcome": "O10 (Alignment time)",
+          "Opp Score": "13",
+          "ZOLLERN Capability": "Joint face machining +/-0.05mm",
+          "Can Address?": "YES",
+          "How?": "Tighter joint face tolerance = faster alignment in shaft"
+        },
+        {
+          "Outcome": "O6 (Repeat lead time)",
+          "Opp Score": "11",
+          "ZOLLERN Capability": "4-6 weeks with existing tooling",
+          "Can Address?": "YES",
+          "How?": "Dedicated tooling stock, pull-based scheduling"
+        },
+        {
+          "Outcome": "O8 (Out-of-spec risk)",
+          "Opp Score": "12",
+          "ZOLLERN Capability": "In-line 100% inspection possible",
+          "Can Address?": "YES",
+          "How?": "Automated dimensional gauging after straightening"
+        },
+        {
+          "Outcome": "O12 (Ride quality)",
+          "Opp Score": "12",
+          "ZOLLERN Capability": "Hardened running surface + straightness",
+          "Can Address?": "PARTIAL",
+          "How?": "Combined improvement in O4 + hardness uniformity"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Priority",
+        "Outcome",
+        "Investment Required",
+        "Impact on Market Entry"
+      ],
+      "rows": [
+        {
+          "Priority": "P1",
+          "Outcome": "O4 — Rail head straightness",
+          "Investment Required": "EUR 200-400K (precision straightening line)",
+          "Impact on Market Entry": "HIGH — differentiator vs. all incumbents"
+        },
+        {
+          "Priority": "P2",
+          "Outcome": "O3 — Sample-production consistency",
+          "Investment Required": "EUR 50K (SPC system + capability study)",
+          "Impact on Market Entry": "HIGH — builds trust with new OEM customers"
+        },
+        {
+          "Priority": "P3",
+          "Outcome": "O10 — Alignment time reduction",
+          "Investment Required": "EUR 15-20K (joint face machining tooling)",
+          "Impact on Market Entry": "HIGH — directly reduces customer installation cost"
+        },
+        {
+          "Priority": "P4",
+          "Outcome": "O8 — Zero defect delivery",
+          "Investment Required": "EUR 100-150K (in-line automated inspection)",
+          "Impact on Market Entry": "MEDIUM — reduces incoming inspection at customer"
+        },
+        {
+          "Priority": "P5",
+          "Outcome": "O6 — Repeat lead time",
+          "Investment Required": "EUR 0 (operational — dedicated stock)",
+          "Impact on Market Entry": "MEDIUM — improves customer experience"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "odi_matrix": {
+        "market": "Elevator Guide Rails",
+        "naics": "333921",
+        "methodology": "ulwick_odi",
+        "opportunity_algorithm": "importance + max(importance - satisfaction, 0)",
+        "outcomes": [
+          {
+            "id": "O1",
+            "outcome": "Minimize profile deviation from ISO 7465",
+            "importance": 9,
+            "satisfaction": 6,
+            "opp_score": 12,
+            "status": "underserved"
+          },
+          {
+            "id": "O2",
+            "outcome": "Minimize time to identify qualified suppliers",
+            "importance": 7,
+            "satisfaction": 5,
+            "opp_score": 9,
+            "status": "appropriately_served"
+          },
+          {
+            "id": "O3",
+            "outcome": "Minimize sample-to-production variation",
+            "importance": 9,
+            "satisfaction": 5,
+            "opp_score": 13,
+            "status": "highly_underserved"
+          },
+          {
+            "id": "O4",
+            "outcome": "Minimize straightness deviation",
+            "importance": 10,
+            "satisfaction": 6,
+            "opp_score": 14,
+            "status": "highly_underserved"
+          },
+          {
+            "id": "O5",
+            "outcome": "Minimize total cost of ownership per meter",
+            "importance": 8,
+            "satisfaction": 6,
+            "opp_score": 10,
+            "status": "underserved"
+          },
+          {
+            "id": "O6",
+            "outcome": "Minimize repeat-order lead time",
+            "importance": 8,
+            "satisfaction": 5,
+            "opp_score": 11,
+            "status": "underserved"
+          },
+          {
+            "id": "O7",
+            "outcome": "Minimize first-order lead time for new profiles",
+            "importance": 7,
+            "satisfaction": 4,
+            "opp_score": 10,
+            "status": "underserved"
+          },
+          {
+            "id": "O8",
+            "outcome": "Minimize out-of-spec delivery probability",
+            "importance": 9,
+            "satisfaction": 6,
+            "opp_score": 12,
+            "status": "underserved"
+          },
+          {
+            "id": "O9",
+            "outcome": "Minimize incoming inspection effort",
+            "importance": 8,
+            "satisfaction": 5,
+            "opp_score": 11,
+            "status": "underserved"
+          },
+          {
+            "id": "O10",
+            "outcome": "Minimize hoistway alignment time",
+            "importance": 10,
+            "satisfaction": 7,
+            "opp_score": 13,
+            "status": "highly_underserved"
+          },
+          {
+            "id": "O11",
+            "outcome": "Minimize on-site rework of rail sections",
+            "importance": 9,
+            "satisfaction": 7,
+            "opp_score": 11,
+            "status": "underserved"
+          },
+          {
+            "id": "O12",
+            "outcome": "Minimize ride quality deviation",
+            "importance": 10,
+            "satisfaction": 8,
+            "opp_score": 12,
+            "status": "underserved"
+          },
+          {
+            "id": "O13",
+            "outcome": "Minimize notified body rejection risk",
+            "importance": 10,
+            "satisfaction": 8,
+            "opp_score": 12,
+            "status": "underserved"
+          },
+          {
+            "id": "O14",
+            "outcome": "Minimize CO2 footprint per meter",
+            "importance": 5,
+            "satisfaction": 3,
+            "opp_score": 7,
+            "status": "appropriately_served"
+          },
+          {
+            "id": "O15",
+            "outcome": "Minimize packaging waste",
+            "importance": 4,
+            "satisfaction": 5,
+            "opp_score": 4,
+            "status": "overserved"
+          }
+        ],
+        "top_opportunities": [
+          "O4",
+          "O3",
+          "O10"
+        ],
+        "innovation_priorities": [
+          {
+            "priority": 1,
+            "outcome_id": "O4",
+            "investment_eur": "200000-400000"
+          },
+          {
+            "priority": 2,
+            "outcome_id": "O3",
+            "investment_eur": "50000"
+          },
+          {
+            "priority": 3,
+            "outcome_id": "O10",
+            "investment_eur": "15000-20000"
+          },
+          {
+            "priority": 4,
+            "outcome_id": "O8",
+            "investment_eur": "100000-150000"
+          },
+          {
+            "priority": 5,
+            "outcome_id": "O6",
+            "investment_eur": 0
+          }
+        ]
+      },
+      "entities": [
+        {
+          "label": "Outcome",
+          "slug": "outcome__straightness_deviation",
+          "name": "O4 — Minimize straightness deviation (Opp 14)"
+        },
+        {
+          "label": "Outcome",
+          "slug": "outcome__sample_production_consistency",
+          "name": "O3 — Minimize sample-to-production variation (Opp 13)"
+        },
+        {
+          "label": "Outcome",
+          "slug": "outcome__alignment_time",
+          "name": "O10 — Minimize hoistway alignment time (Opp 13)"
+        }
+      ]
+    }
+  ],
+  "has_bom": true,
+  "naics_sector_type": "manufacturing"
+}

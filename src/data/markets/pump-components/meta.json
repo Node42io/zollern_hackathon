@@ -1,0 +1,21 @@
+{
+  "slug": "pump-components",
+  "name": "Pump Components",
+  "naicsCode": "333911",
+  "isReference": true,
+  "rank": 3,
+  "scores": {
+    "odi": 5.0,
+    "featureFit": 5.5,
+    "constraintCompatibility": 8.5,
+    "jobCoverage": 4.3,
+    "vnHierarchy": 5,
+    "incumbentVulnerability": 4.8,
+    "composite": 5.5
+  },
+  "recommendation": "investigate",
+  "rationale": "Existing ZOLLERN market. Positive displacement pump segment (gear/screw/vane) is USD 20.8B (2025). ZOLLERN wins 14/25 needs (dimensional precision, hardness control, traceability) but net weighted delta -98. Crescent insert profiles = highest differentiation position. BAR stock is dominant incumbent.",
+  "entryStrategy": "Reference only - existing market. Prioritize crescent insert profiles (highest differentiation), then gear rotor profiles.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

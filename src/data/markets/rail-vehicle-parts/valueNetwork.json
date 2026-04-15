@@ -1,0 +1,126 @@
+{
+  "naicsCode": "336510",
+  "marketName": "Rail Vehicle Parts",
+  "slug": "rail-vehicle-parts",
+  "coreJobStatement": "Design, manufacture, and commission rail vehicles that transport passengers and freight safely, reliably, and on schedule",
+  "outputTypes": [
+    "High-speed passenger EMU/DMU (ICE, TGV, Shinkansen, Velaro)",
+    "Regional/intercity passenger cars (commuter EMU, intercity coaches)",
+    "Metro/subway cars",
+    "Light rail / tram vehicles",
+    "Freight wagons (flatcars, boxcars, tank wagons, hoppers)",
+    "Locomotives (electric, diesel-electric, diesel-hydraulic)"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — rail transportation equipment manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$16B US (2017); ~$20B US est. 2025; ~161 US establishments; ~29,400 employees; Top OEMs: Alstom, Siemens Mobility, Stadler, CAF, Hitachi Rail, CRRC",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Vehicle Design & Type Approval",
+      "type": "Core",
+      "jobFamily": "Define vehicle architecture, system engineering, and certify design for homologation",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Carbody Fabrication",
+      "type": "Core",
+      "jobFamily": "Fabricate load-bearing vehicle shell and underframe from structural materials",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Bogie & Running Gear Manufacturing",
+      "type": "Core",
+      "jobFamily": "Produce running gear that interfaces vehicle with track and transfers loads",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Mechanical Systems Integration",
+      "type": "Core",
+      "jobFamily": "Install non-electrical vehicle systems: doors, HVAC, couplers, pneumatics, gangways",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Electrical & Propulsion Integration",
+      "type": "Core",
+      "jobFamily": "Install traction drives, power electronics, onboard electrical distribution",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Interior Fit-Out",
+      "type": "Core",
+      "jobFamily": "Install passenger-facing elements: seating, wall panels, flooring, accessibility systems",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Final Assembly & System Integration",
+      "type": "Core",
+      "jobFamily": "Assemble all subsystems; verify whole-vehicle performance; pre-commissioning",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Pre-delivery Testing & Homologation",
+      "type": "Core",
+      "jobFamily": "Commission, test, and certify vehicle for railway operating environment (TSI, EN 12663)",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Quality Assurance & Weld Inspection (H)",
+      "type": "Horizontal",
+      "jobFamily": "EN 15085-CL1 certified weld inspection and quality management across all core steps",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Structural Steel Profiles",
+      "functionalJob": "ZOLLERN PRIMARY POSITION. Hot-rolled custom profiles for bogie sills, floor beams, door frames, body pillars (~40%). Standard hot-rolled structural sections (~35%). Aluminum alloy extrusions (~20%, not ZOLLERN - C6 constraint). Stainless steel roll-formed (~5%).",
+      "description": "Hot-rolled and cold-drawn steel profiles for carbody structures, bogie frames, door frames, running gear interfaces",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Carbody Sheet & Plate",
+      "functionalJob": "High-strength carbon/alloy steel S355, S420N (~65%). Stainless steel sheet (~25%). Aluminum alloy sheet (~10%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Carbody Welding & Fabrication",
+      "functionalJob": "Robotic MAG/MIG welding (~60%, EN 15085-CL1 certified). Laser welding (~25%). Manual/semi-auto welding (~15%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Bogie Frame Profiles",
+      "functionalJob": "ZOLLERN SECONDARY POSITION. Side beam / longeron and cross beam / headstock profiles for bogie frame fabrication. Hot-rolled structural sections in S355, 42CrMo4.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "zollernPosition": "ZOLLERN holds PRIMARY position at L5 Structural Steel Profiles under L6b Carbody Fabrication, and SECONDARY position at Bogie Frame Profiles under L6c. Profile types: floor beams, solesbars, roof rails, body pillars, door frames (carbody); side beams, cross beams (bogie).",
+  "strategicPosition": "Certification-intensive market (EN 15085-CL1, EN 12663, TSI). ZOLLERN's EN 10204 3.1 traceability and IATF 16949 infrastructure are key differentiators. Constraint C10 (corrosion) mitigable via weathering steel or zinc-rich primer.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 336510 - US Census Bureau / IBISWorld",
+      "url": "https://data.census.gov/profile/336510",
+      "prefixedId": "VN-RAIL-VEHICLE-PARTS-S01"
+    }
+  ]
+}

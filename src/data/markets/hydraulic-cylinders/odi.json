@@ -1,0 +1,25 @@
+{
+  "naicsCode": "333995",
+  "marketName": "Fluid Power Cylinder and Actuator Manufacturing",
+  "slug": "hydraulic-cylinders",
+  "summary": { "totalNeeds": 20, "underservedCount": 5, "overservedCount": 0, "avgOpportunityScore": 12.3 },
+  "top5Opportunities": [
+    { "rank": 1, "needId": "N17", "statement": "Minimize the risk of losing metallurgical traceability on outsourced rod blanks due to absence of supplier EN 10204 3.1 documentation under PED 2014/68/EU", "importance": 9, "satisfaction": 3, "opportunity": 15, "zone": "Underserved" },
+    { "rank": 2, "needId": "N02", "statement": "Increase the ability to specify piston rod blank alloy grade and pre-treatment state that guarantees IH surface hardness >=54 HRC without iterative sample testing cycles", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 3, "needId": "N03", "statement": "Minimize the likelihood of sourcing a rod blank supplier unable to hold +-0.05 mm OD tolerance across a production lot of 500+ bars", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 4, "needId": "N06", "statement": "Minimize the likelihood of incoming rod blanks with undetected subsurface defects (seams, inclusions) that only manifest during or after OD grinding", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 5, "needId": "N10", "statement": "Minimize the likelihood of IH surface hardness falling below 54 HRC at rod end transitions due to insufficient bulk carbon content in the supplied blank", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" }
+  ],
+  "needs": [
+    { "id": "N17", "statement": "Minimize the risk of losing metallurgical traceability on outsourced rod blanks due to absence of supplier EN 10204 3.1 documentation under PED 2014/68/EU", "jobStep": "P1", "importance": 9, "satisfaction": 3, "opportunity": 15, "isUnderserved": true, "isOverserved": false, "productRelated": true, "importanceRationale": "PED non-compliance risk; no cert = production line stop. Gap: outsourced rod blanks frequently lack 3.1 documentation.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N02", "statement": "Increase the ability to specify piston rod blank alloy grade and pre-treatment state that guarantees IH surface hardness >=54 HRC without iterative sample testing cycles", "jobStep": "DEFINE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Cannot spec blind; trial cycles = 4-8 weeks. C45 near carbon floor (0.43%) is failure-prone for IH.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N03", "statement": "Minimize the likelihood of sourcing a rod blank supplier unable to hold +-0.05 mm OD tolerance across a production lot of 500+ bars", "jobStep": "LOCATE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "+-0.05 mm across 500 bars is rarely guaranteed by non-specialist suppliers.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N06", "statement": "Minimize the likelihood of incoming rod blanks with undetected subsurface defects (seams, inclusions) that only manifest during or after OD grinding", "jobStep": "CONFIRM", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Seam + inclusion failures only visible post-grinding; costly scrap and rework.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N10", "statement": "Minimize the likelihood of IH surface hardness falling below 54 HRC at rod end transitions due to insufficient bulk carbon content in the supplied blank", "jobStep": "EXECUTE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "C45 carbon floor is 0.42%; hardness failure-prone. 42CrMo4 provides carbon assurance.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] }
+  ],
+  "flaggedRationalesCount": 20,
+  "sources": [
+    { "id": "S01", "label": "JTBD_hydraulic_cylinders.md", "url": "JTBD_hydraulic_cylinders.md", "prefixedId": "ODI-HYDRAULIC-CYLINDERS-S01" },
+    { "id": "S02", "label": "ADJ_hydraulic_cylinders.md", "url": "ADJ_hydraulic_cylinders.md", "prefixedId": "ODI-HYDRAULIC-CYLINDERS-S02" }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "PROD-S01": {
+    "id": "S01",
+    "label": "ZOLLERN Spezialprofile und Fertigteile — Company Website",
+    "url": "https://www.zollern.com/spezialprofile-und-fertigteile",
+    "prefixedId": "PROD-S01"
+  },
+  "PROD-S02": {
+    "id": "S02",
+    "label": "ZOLLERN Group Overview — Corporate Website",
+    "url": "https://www.zollern.com",
+    "prefixedId": "PROD-S02"
+  },
+  "PROD-S03": {
+    "id": "S03",
+    "label": "Cold Drawing Process Technology — ASM International Handbook",
+    "url": "https://www.asminternational.org/",
+    "prefixedId": "PROD-S03"
+  },
+  "PROD-S04": {
+    "id": "S04",
+    "label": "Induction Hardening of Steel Profiles — EFD Induction",
+    "url": "https://www.efd-induction.com/",
+    "prefixedId": "PROD-S04"
+  },
+  "PROD-S05": {
+    "id": "S05",
+    "label": "DIN 536 Crane Rail Profiles — Standard Reference",
+    "url": "https://www.din.de/en",
+    "prefixedId": "PROD-S05"
+  },
+  "PROD-S06": {
+    "id": "S06",
+    "label": "IATF 16949 Automotive Quality Management — IATF",
+    "url": "https://www.iatfglobaloversight.org/",
+    "prefixedId": "PROD-S06"
+  },
+  "PROD-S07": {
+    "id": "S07",
+    "label": "EN 10204 Material Test Certificates — Standard",
+    "url": "https://www.en-standard.eu/",
+    "prefixedId": "PROD-S07"
+  },
+  "COMP-S01": {
+    "id": "S01",
+    "label": "Montanstahl AG — Special Steel Profiles",
+    "url": "https://www.montanstahl.com/",
+    "prefixedId": "COMP-S01"
+  },
+  "COMP-S02": {
+    "id": "S02",
+    "label": "GMH Gruppe — Steel Products",
+    "url": "https://www.gmh-gruppe.de/",
+    "prefixedId": "COMP-S02"
+  },
+  "COMP-S03": {
+    "id": "S03",
+    "label": "Ovako — Engineering Steel",
+    "url": "https://www.ovako.com/",
+    "prefixedId": "COMP-S03"
+  },
+  "COMP-S04": {
+    "id": "S04",
+    "label": "Swiss Steel Group — Bright Steel",
+    "url": "https://www.swisssteelgroup.com/",
+    "prefixedId": "COMP-S04"
+  },
+  "COMP-S05": {
+    "id": "S05",
+    "label": "Saar-Blankstahl — Cold-Drawn Profiles",
+    "url": "https://www.saar-blankstahl.de/",
+    "prefixedId": "COMP-S05"
+  },
+  "MKT-S01": {
+    "id": "S01",
+    "label": "Linear Guide Rail Market Report — Valuates Reports 2024",
+    "url": "https://www.valuates.com/",
+    "prefixedId": "MKT-S01"
+  },
+  "MKT-S02": {
+    "id": "S02",
+    "label": "Global Surgical Instruments Market — Grand View Research 2024",
+    "url": "https://www.grandviewresearch.com/",
+    "prefixedId": "MKT-S02"
+  },
+  "MKT-S03": {
+    "id": "S03",
+    "label": "Global Elevator Market — Mordor Intelligence 2024",
+    "url": "https://www.mordorintelligence.com/",
+    "prefixedId": "MKT-S03"
+  },
+  "MKT-S04": {
+    "id": "S04",
+    "label": "NAICS 2022 Definitions — US Census Bureau",
+    "url": "https://www.census.gov/naics/",
+    "prefixedId": "MKT-S04"
+  },
+  "MKT-S05": {
+    "id": "S05",
+    "label": "Global Machine Tool Market — Mordor Intelligence 2024",
+    "url": "https://www.mordorintelligence.com/",
+    "prefixedId": "MKT-S05"
+  },
+  "MKT-S06": {
+    "id": "S06",
+    "label": "Global Forklift Market — Allied Market Research 2024",
+    "url": "https://www.alliedmarketresearch.com/",
+    "prefixedId": "MKT-S06"
+  },
+  "BRIEF-S01": {
+    "id": "S01",
+    "label": "Briefing Projekt Zollern Final — Prof. Dr. Uwe Sachse, HS Albstadt-Sigmaringen",
+    "url": "",
+    "prefixedId": "BRIEF-S01"
+  },
+  "BRIEF-S02": {
+    "id": "S02",
+    "label": "ZOLLERN Hackathon Kick-off Presentation — Benjamin Widmann / Frank Leyhr",
+    "url": "",
+    "prefixedId": "BRIEF-S02"
+  }
+}

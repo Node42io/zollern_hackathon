@@ -1,0 +1,109 @@
+{
+  "naicsCode": "333921",
+  "marketName": "Elevator Guide Rails",
+  "slug": "elevator-guide-rails",
+  "coreJobStatement": "Enable safe, reliable, energy-efficient vertical transport of people and goods within multi-story structures",
+  "outputTypes": [
+    "Passenger elevator - low-rise (<=10 floors, <=1.6 m/s)",
+    "Passenger elevator - high-rise (>10 floors, >2.5 m/s)",
+    "Freight / service elevator",
+    "Platform lift / accessibility lift",
+    "Escalator / moving walkway"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — vertical transportation equipment manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "Guide rail segment ~$3.5-5.4B globally (2024); CAGR ~5-6% through 2030; Key OEM buyers: Otis, KONE, Schindler, TK Elevator, Mitsubishi Electric",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Structural & Mechanical Fabrication",
+      "type": "Core",
+      "jobFamily": "Manufacture car frame, counterweight frame, and load-bearing steel components",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Hoistway Components Manufacturing",
+      "type": "Core",
+      "jobFamily": "Produce guide rail profiles, buffer assemblies, and safety devices defining cabin path",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Drive System Assembly",
+      "type": "Core",
+      "jobFamily": "Assemble traction machine, gearbox, motor, or hydraulic unit converting power to cabin motion",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Control & Safety Electronics Assembly",
+      "type": "Core",
+      "jobFamily": "Integrate elevator controller, frequency drive, and safety chain electronics",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Cabin Fabrication & Interior Fitting",
+      "type": "Core",
+      "jobFamily": "Assemble car frame, sill profiles, wall panels, door systems, and interior finish",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Factory Integration & Quality Certification",
+      "type": "Core",
+      "jobFamily": "Validate complete system against EN 81-20/50 / ASME A17.1 before shipment",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality Management (H)",
+      "type": "Horizontal",
+      "jobFamily": "Inspection, test, certification (EN 81, ISO 9001, ASME A17.1) runs at every core step",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Guide Rail System",
+      "functionalJob": "ZOLLERN PRIMARY POSITION (at L4 within this L5). Solid T-section steel rail (cold-drawn or hot-rolled + machined, ~78%). Hollow section steel guide rail (~18%). Stainless/aluminium special rail (~4%).",
+      "description": "Steel guide rail profile body - constrains cabin and counterweight lateral movement along hoistway axis",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Buffer System",
+      "functionalJob": "Pit-mounted buffer absorbing cabin overtravel. Oil hydraulic buffer (~75%), spring buffer (~23%), polyurethane buffer (~2%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Traction Machine",
+      "functionalJob": "Gearless PMSM (~50%, growing), geared VFD induction motor (~30%, declining), gearless AC induction (~15%).",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "zollernPosition": "ZOLLERN holds PRIMARY position at L4 Steel Guide Rail Profile Body within L5 Guide Rail System under L6b Hoistway Components Manufacturing. Cold-drawn precision T-section at IT8 tolerance with in-line induction hardening to 64 HRC. ~40% market share of the solid T-section segment.",
+  "strategicPosition": "Strongest ZOLLERN coverage profile of all existing markets. Wins 15/23 needs, net weighted delta +342. All losses are minor (delta=-1). Six needs with delta >= +4 including ES-12 (flange width batch variation, +6 delta = +54 weighted). Analogy leverage: T-section geometry transfers to mining cage, crane runway, and forklift mast markets.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333921 - US Census Bureau",
+      "url": "https://data.census.gov/profile/333921",
+      "prefixedId": "VN-ELEVATOR-GUIDE-RAILS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Valuates Reports / Cognitive MR - Elevator Guide Rail Market 2024",
+      "url": "",
+      "prefixedId": "VN-ELEVATOR-GUIDE-RAILS-S02"
+    }
+  ]
+}

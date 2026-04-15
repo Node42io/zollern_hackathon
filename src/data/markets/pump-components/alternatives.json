@@ -1,0 +1,12 @@
+{
+  "naicsCode": "333911",
+  "marketName": "Pump Components",
+  "slug": "pump-components",
+  "alternatives": [
+    { "name": "Ground/turned round bar stock (CNC-machined to rotor geometry)", "unspsc": "31161501", "tradeoffs": "50-70% material removal in machining; high machining cost; no geometry advantage for non-round cross-sections; unlimited availability from distributors (ThyssenKrupp, Schmolz+Bickenbach, Ovako) with 1-3 day delivery. Dominant ~60% share." },
+    { "name": "Cold-drawn / cold-rolled near-net-shape profiles (ZOLLERN)", "unspsc": "30102304", "tradeoffs": "IT8 tolerance (+-0.02 mm); in-line IH to 64 HRC with +-1.5 HRC control; Cpk >1.33 on custom cross-sections. Weakness: 6-12 week die lead; ~100 kg min batch; steel-only; single-source die dependency. ~15-25% share." },
+    { "name": "Forged steel blanks", "unspsc": "30101803", "tradeoffs": "Forging tooling EUR 10-50K; min lot sizes larger than profiles; lead time 8-16 weeks; better for 3D geometries; higher unit cost for straight/constant cross-section applications. ~15-25% share." },
+    { "name": "Powder metal (sintered) blanks", "unspsc": "30103000", "tradeoffs": "Self-lubricating porosity for low-speed pumps; good for small rotors. Porosity limits high-pressure use; dimensional tolerance requires post-sinter grinding; ~33% lower contact fatigue; limited to smaller cross-sections. ~5% share." },
+    { "name": "Do nothing / continue with existing supplier (status quo)", "unspsc": "--- (Status Quo)", "tradeoffs": "Zero switching cost, zero qualification burden. Only displaced by cost, quality failure, or supply disruption at incumbent. Most common competitive scenario." }
+  ]
+}

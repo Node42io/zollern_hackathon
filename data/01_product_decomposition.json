@@ -1,0 +1,265 @@
+{
+  "id": "01_product_decomposition",
+  "title": "Product Decomposition: ZOLLERN Steel Profiles Capability",
+  "type": "product_decomposition",
+  "market_slug": null,
+  "is_per_market": false,
+  "sections": [
+    {
+      "title": "Christensen Abstraction Framework",
+      "content": "ZOLLERN's Steel Profiles division is a **capability platform** — not a fixed product. The Christensen decomposition therefore applies at the capability level: what fundamental mechanism enables value creation, and how does that mechanism map to configurable features?\n\n| Layer | Christensen Term | ZOLLERN Equivalent | Description |\n|-------|-----------------|-------------------|-------------|\n| L0 | Core mechanism | Plastic deformation of steel | Forcing heated or cold steel through shaped dies/rolls to permanently reshape cross-section |\n| L1 | Functional promise | Deliver precision steel cross-sections with controlled geometry | The universal value proposition across all markets |\n| L2 | Feature envelope | Configurable geometry + material + surface + hardness | The set of adjustable parameters a customer can specify |\n| L3 | Product instance | e.g., T89/B elevator guide rail in C45 | A specific configuration sold to a specific market |\n| L4 | Application context | Elevator cabin guidance system | The end-use system where the profile operates |"
+    },
+    {
+      "title": "Core Mechanism: Plastic Deformation",
+      "content": "The fundamental physics mechanism is **plastic deformation** — steel is forced through a shaped aperture (die or roll gap) at temperatures above or below its recrystallization temperature, permanently reshaping its cross-section while maintaining a constant profile along the bar length. [SRC: web_search]\n\n| Process | Temperature | Deformation Type | Grain Structure Effect | Resulting Properties |\n|---------|------------|------------------|----------------------|---------------------|\n| Hot rolling | 1,050-1,250 C | Above recrystallization | Refined, equiaxed grains | Good ductility, moderate tolerance |\n| Cold drawing | Ambient | Below recrystallization | Elongated, work-hardened | High strength, tight tolerance, smooth surface |\n| Cold rolling | Ambient | Below recrystallization | Directional grain flow | Precision flat geometry, good surface |\n\n### Why This Mechanism Creates Value\n\n1. **Near-net-shape**: The profile exits the die/roll with geometry close to final dimensions, eliminating 40-80% of the machining waste that would occur if starting from rectangular bar stock [SRC: web_search]\n2. **Grain flow alignment**: Material grain follows the profile contour, improving fatigue life vs. machined-from-block parts by 15-30% [SRC: web_search]\n3. **Continuous production**: Bar lengths of 6-12m produced continuously, enabling high material yield per setup\n4. **Repeatability**: Once tooling is qualified, every meter of profile is dimensionally identical"
+    },
+    {
+      "title": "Feature Envelope (L2 Decomposition)",
+      "content": "The capability platform exposes the following configurable features to any market:\n\n| Feature | Parameter | Range | Unit | Constraint |\n|---------|-----------|-------|------|-----------|\n| Cross-section geometry | Shape | Circular, polygon, T, L, Z, custom | - | 2D only, no 3D variation along length |\n| Cross-section area | Area | 5 - 7,650 | mm2 | Cold drawing max 2,500 mm2 |\n| Dimensional precision | Tolerance | 0.02 - 0.5 | mm | Tighter = cold process only |\n| Surface finish | Roughness Ra | 0.4 - 6.3 | um | Below 0.8 requires grinding |\n| Mechanical strength | Tensile strength | 350 - 2,100 | MPa | Grade + process dependent |\n| Surface hardness | Hardness HRC | N/A - 64 | HRC | Requires induction hardening, C >= 0.35% |\n| Bar length | Length | 0.1 - 12 | m | Cold drawn max 6m |\n| Material grade | Steel type | 40+ grades | - | Steel/stainless only, no non-ferrous |"
+    },
+    {
+      "title": "Functional Promise Derivation",
+      "content": "From the mechanism and feature envelope, the functional promise emerges:\n\n> **\"Deliver precision steel cross-sections with controlled geometry, dimensional accuracy, surface quality, and mechanical properties — configured to application requirements.\"**\n\nThis promise is universal across all markets. What varies per market is which subset of the feature envelope matters most."
+    },
+    {
+      "title": "Market-Specificity Matrix",
+      "content": "| Feature | Elevator Rails | Hydraulic Cylinders | Linear Guides | Firearms | Automotive |\n|---------|---------------|--------------------|--------------|---------|-----------| \n| Geometry complexity | HIGH (T-profile) | LOW (round) | MEDIUM (flat) | HIGH (custom) | MEDIUM (custom) |\n| Tolerance criticality | HIGH (guidance) | HIGH (sealing) | VERY HIGH | HIGH (bore) | MEDIUM |\n| Surface finish need | MEDIUM | HIGH | VERY HIGH | HIGH | MEDIUM |\n| Hardness need | HIGH (rail head) | LOW | HIGH | MEDIUM | MEDIUM |\n| Volume per order | HIGH (km of rail) | MEDIUM | LOW | LOW | HIGH |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"decomposition\": {\n    \"mechanism\": {\n      \"name\": \"plastic_deformation\",\n      \"description\": \"Forcing steel through shaped dies/rolls to permanently reshape cross-section\",\n      \"sub_processes\": [\"hot_rolling\", \"cold_drawing\", \"cold_rolling\"],\n      \"physics\": \"Material flow through constrained geometry above or below recrystallization temperature\"\n    },\n    \"functional_promise\": \"Deliver precision steel cross-sections with controlled geometry, dimensional accuracy, surface quality, and mechanical properties\",\n    \"feature_envelope\": [\n      {\"name\": \"cross_section_geometry\", \"type\": \"categorical\", \"options\": [\"circular\", \"polygon\", \"t_profile\", \"l_profile\", \"z_profile\", \"custom_symmetric\", \"custom_asymmetric\"]},\n      {\"name\": \"cross_section_area_mm2\", \"type\": \"continuous\", \"min\": 5, \"max\": 7650},\n      {\"name\": \"tolerance_mm\", \"type\": \"continuous\", \"min\": 0.02, \"max\": 0.5},\n      {\"name\": \"surface_roughness_ra\", \"type\": \"continuous\", \"min\": 0.4, \"max\": 6.3},\n      {\"name\": \"tensile_strength_mpa\", \"type\": \"continuous\", \"min\": 350, \"max\": 2100},\n      {\"name\": \"hardness_hrc\", \"type\": \"continuous\", \"min\": 0, \"max\": 64},\n      {\"name\": \"bar_length_m\", \"type\": \"continuous\", \"min\": 0.1, \"max\": 12},\n      {\"name\": \"material_grade_count\", \"type\": \"integer\", \"value\": 40}\n    ],\n    \"nns_advantage\": {\n      \"material_savings_pct\": \"40-80\",\n      \"fatigue_improvement_pct\": \"15-30\",\n      \"description\": \"Near-net-shape eliminates machining waste and preserves grain flow\"\n    }\n  },\n  \"entities\": [\n    {\"label\": \"Mechanism\", \"slug\": \"mechanism__plastic_deformation\", \"name\": \"Plastic Deformation of Steel\"},\n    {\"label\": \"FunctionalPromise\", \"slug\": \"fp__precision_steel_cross_sections\", \"name\": \"Deliver precision steel cross-sections with controlled geometry\"}\n  ]\n}\n```\n\n---\n\n*Sources: [ZOLLERN Steel Profiles](https://www.zollern.com/en/steel-profiles/), [ASM International — Cold Drawing](https://www.asminternational.org/), [Christensen Institute — Modularity Theory](https://www.christenseninstitute.org/), INSTRUCTIONS.md*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Layer",
+        "Christensen Term",
+        "ZOLLERN Equivalent",
+        "Description"
+      ],
+      "rows": [
+        {
+          "Layer": "L0",
+          "Christensen Term": "Core mechanism",
+          "ZOLLERN Equivalent": "Plastic deformation of steel",
+          "Description": "Forcing heated or cold steel through shaped dies/rolls to permanently reshape cross-section"
+        },
+        {
+          "Layer": "L1",
+          "Christensen Term": "Functional promise",
+          "ZOLLERN Equivalent": "Deliver precision steel cross-sections with controlled geometry",
+          "Description": "The universal value proposition across all markets"
+        },
+        {
+          "Layer": "L2",
+          "Christensen Term": "Feature envelope",
+          "ZOLLERN Equivalent": "Configurable geometry + material + surface + hardness",
+          "Description": "The set of adjustable parameters a customer can specify"
+        },
+        {
+          "Layer": "L3",
+          "Christensen Term": "Product instance",
+          "ZOLLERN Equivalent": "e.g., T89/B elevator guide rail in C45",
+          "Description": "A specific configuration sold to a specific market"
+        },
+        {
+          "Layer": "L4",
+          "Christensen Term": "Application context",
+          "ZOLLERN Equivalent": "Elevator cabin guidance system",
+          "Description": "The end-use system where the profile operates"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Process",
+        "Temperature",
+        "Deformation Type",
+        "Grain Structure Effect",
+        "Resulting Properties"
+      ],
+      "rows": [
+        {
+          "Process": "Hot rolling",
+          "Temperature": "1,050-1,250 C",
+          "Deformation Type": "Above recrystallization",
+          "Grain Structure Effect": "Refined, equiaxed grains",
+          "Resulting Properties": "Good ductility, moderate tolerance"
+        },
+        {
+          "Process": "Cold drawing",
+          "Temperature": "Ambient",
+          "Deformation Type": "Below recrystallization",
+          "Grain Structure Effect": "Elongated, work-hardened",
+          "Resulting Properties": "High strength, tight tolerance, smooth surface"
+        },
+        {
+          "Process": "Cold rolling",
+          "Temperature": "Ambient",
+          "Deformation Type": "Below recrystallization",
+          "Grain Structure Effect": "Directional grain flow",
+          "Resulting Properties": "Precision flat geometry, good surface"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Feature",
+        "Parameter",
+        "Range",
+        "Unit",
+        "Constraint"
+      ],
+      "rows": [
+        {
+          "Feature": "Cross-section geometry",
+          "Parameter": "Shape",
+          "Range": "Circular, polygon, T, L, Z, custom",
+          "Unit": "-",
+          "Constraint": "2D only, no 3D variation along length"
+        },
+        {
+          "Feature": "Cross-section area",
+          "Parameter": "Area",
+          "Range": "5 - 7,650",
+          "Unit": "mm2",
+          "Constraint": "Cold drawing max 2,500 mm2"
+        },
+        {
+          "Feature": "Dimensional precision",
+          "Parameter": "Tolerance",
+          "Range": "0.02 - 0.5",
+          "Unit": "mm",
+          "Constraint": "Tighter = cold process only"
+        },
+        {
+          "Feature": "Surface finish",
+          "Parameter": "Roughness Ra",
+          "Range": "0.4 - 6.3",
+          "Unit": "um",
+          "Constraint": "Below 0.8 requires grinding"
+        },
+        {
+          "Feature": "Mechanical strength",
+          "Parameter": "Tensile strength",
+          "Range": "350 - 2,100",
+          "Unit": "MPa",
+          "Constraint": "Grade + process dependent"
+        },
+        {
+          "Feature": "Surface hardness",
+          "Parameter": "Hardness HRC",
+          "Range": "N/A - 64",
+          "Unit": "HRC",
+          "Constraint": "Requires induction hardening, C >= 0.35%"
+        },
+        {
+          "Feature": "Bar length",
+          "Parameter": "Length",
+          "Range": "0.1 - 12",
+          "Unit": "m",
+          "Constraint": "Cold drawn max 6m"
+        },
+        {
+          "Feature": "Material grade",
+          "Parameter": "Steel type",
+          "Range": "40+ grades",
+          "Unit": "-",
+          "Constraint": "Steel/stainless only, no non-ferrous"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "decomposition": {
+        "mechanism": {
+          "name": "plastic_deformation",
+          "description": "Forcing steel through shaped dies/rolls to permanently reshape cross-section",
+          "sub_processes": [
+            "hot_rolling",
+            "cold_drawing",
+            "cold_rolling"
+          ],
+          "physics": "Material flow through constrained geometry above or below recrystallization temperature"
+        },
+        "functional_promise": "Deliver precision steel cross-sections with controlled geometry, dimensional accuracy, surface quality, and mechanical properties",
+        "feature_envelope": [
+          {
+            "name": "cross_section_geometry",
+            "type": "categorical",
+            "options": [
+              "circular",
+              "polygon",
+              "t_profile",
+              "l_profile",
+              "z_profile",
+              "custom_symmetric",
+              "custom_asymmetric"
+            ]
+          },
+          {
+            "name": "cross_section_area_mm2",
+            "type": "continuous",
+            "min": 5,
+            "max": 7650
+          },
+          {
+            "name": "tolerance_mm",
+            "type": "continuous",
+            "min": 0.02,
+            "max": 0.5
+          },
+          {
+            "name": "surface_roughness_ra",
+            "type": "continuous",
+            "min": 0.4,
+            "max": 6.3
+          },
+          {
+            "name": "tensile_strength_mpa",
+            "type": "continuous",
+            "min": 350,
+            "max": 2100
+          },
+          {
+            "name": "hardness_hrc",
+            "type": "continuous",
+            "min": 0,
+            "max": 64
+          },
+          {
+            "name": "bar_length_m",
+            "type": "continuous",
+            "min": 0.1,
+            "max": 12
+          },
+          {
+            "name": "material_grade_count",
+            "type": "integer",
+            "value": 40
+          }
+        ],
+        "nns_advantage": {
+          "material_savings_pct": "40-80",
+          "fatigue_improvement_pct": "15-30",
+          "description": "Near-net-shape eliminates machining waste and preserves grain flow"
+        }
+      },
+      "entities": [
+        {
+          "label": "Mechanism",
+          "slug": "mechanism__plastic_deformation",
+          "name": "Plastic Deformation of Steel"
+        },
+        {
+          "label": "FunctionalPromise",
+          "slug": "fp__precision_steel_cross_sections",
+          "name": "Deliver precision steel cross-sections with controlled geometry"
+        }
+      ]
+    }
+  ],
+  "has_bom": false
+}

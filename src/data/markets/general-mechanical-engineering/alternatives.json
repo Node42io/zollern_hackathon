@@ -1,0 +1,12 @@
+{
+  "naicsCode": "332999",
+  "marketName": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+  "slug": "general-mechanical-engineering",
+  "alternatives": [
+    { "name": "Hot-rolled standard bar stock + plate stock (flame-cut, CNC-milled to geometry)", "unspsc": "31161501", "tradeoffs": "50-80% stock removal for non-rectangular shapes; separate IH or case hardening step required; unlimited availability; zero qualification burden; IS the cost benchmark; ~55% share [SRC: JTBD_general_mechanical_engineering]" },
+    { "name": "Cold-drawn / cold-rolled near-net-shape profiles (ZOLLERN position)", "unspsc": "30102304", "tradeoffs": "6-12 week die lead time for new geometry; ~100 kg min batch; steel-only; limited to constant 2D cross-section; pre-hardened delivery eliminates OEM L6c hardening step entirely; IT8 tolerance; ~12% share [SRC: JTBD_general_mechanical_engineering]" },
+    { "name": "Pre-cut flame/laser-cut plate blanks", "unspsc": "31161800", "tradeoffs": "Zero tooling cost; lead time 1-3 weeks; high material waste (nesting losses); no hardness advantage; rough cut requires finish milling; flame-cut thermal distortion; ~23% share [SRC: ADJ_general_mechanical_engineering]" },
+    { "name": "Cast iron integral slideway (GJL-250 Meehanite)", "unspsc": "31121500", "tradeoffs": "Inherent vibration damping; no hardening required; long casting lead time (6-12 weeks); heavy; declining for precision applications; ~15% of slideway segment [SRC: ADJ_general_mechanical_engineering]" },
+    { "name": "Do nothing / continue with existing supplier (status quo)", "unspsc": "", "tradeoffs": "Zero switching cost; zero qualification burden; most common competitor; only displaced by cost advantage, quality improvement, or supply failure at incumbent" }
+  ]
+}

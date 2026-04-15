@@ -1,0 +1,384 @@
+{
+  "id": "05_market_discovery",
+  "title": "Market Discovery: ZOLLERN Steel Profiles — New Application Markets",
+  "type": "market_discovery",
+  "market_slug": null,
+  "is_per_market": false,
+  "sections": [
+    {
+      "title": "Discovery Methodology",
+      "content": "Three parallel discovery tracks were used to identify candidate markets:\n\n| Track | Method | Logic | Markets Found |\n|-------|--------|-------|---------------|\n| Track A | Machining intensity analysis | Industries spending heavily on machining bar stock into 2D profiles are prime NNS targets | 8 |\n| Track B | Application analogy | Current applications (elevator rails, linear guides) imply adjacent markets with similar geometry needs | 6 |\n| Track C | Barrier-protected niches | Markets where certification/qualification barriers create durable competitive positions once entered | 4 |\n\nTotal unique candidates after deduplication: 14. After constraint filtering (C1: 2D only, C6: steel only), 11 survived. After minimum volume filter (>200 t/year SAM), 8 survived. Final ranking produced top 3."
+    },
+    {
+      "title": "Constraint Pre-Filter Results",
+      "content": "| Candidate | C1 (2D) | C6 (Steel) | Min Volume | Status |\n|-----------|---------|-----------|-----------|--------|\n| Elevator guide rails | PASS | PASS | PASS (>5,000 t) | QUALIFIED |\n| Hydraulic cylinder tubes | PASS | PASS | PASS (>3,000 t) | QUALIFIED |\n| Agricultural equipment | PASS | PASS | PASS (>2,000 t) | QUALIFIED |\n| Linear motion guides | PASS | PASS | PASS (~800 t) | QUALIFIED |\n| Rack-and-pinion rails | PASS | PASS | PASS (~600 t) | QUALIFIED |\n| Medical instrument blanks | PASS | PASS | FAIL (<50 t) | ELIMINATED |\n| Architectural facade mullions | PASS | FAIL (aluminum) | - | ELIMINATED |\n| Aerospace wing spars | FAIL (tapered) | FAIL (titanium) | - | ELIMINATED |"
+    },
+    {
+      "title": "Ranked Market List",
+      "content": "### Rank #1: Elevator Guide Rails (NAICS 333921)\n\n**Score: 87/100**\n\nThe elevator guide rail market is the highest-priority target due to: (a) large and growing global volume, (b) ZOLLERN's existing presence proving technical feasibility, (c) high certification barriers creating defensible positions, and (d) strong NNS advantage over machined alternatives. [SRC: web_search]\n\n| Factor | Score | Rationale |\n|--------|-------|-----------|\n| Volume absorption | 9/10 | Global T-rail market ~250,000 t/year; DACH SAM ~12,000 t/year |\n| NNS advantage | 9/10 | 35% material savings vs machined bar; grain flow improves rail head wear |\n| Certification barrier | 8/10 | EN 81-1/EN 81-20 + EN 81-50 type testing required |\n| Competitive vulnerability | 7/10 | Market dominated by 4 players; room for new entrant with cost advantage |\n| Feature fit | 9/10 | T-profile geometry, induction hardening, straightness — all within envelope |\n| Margin potential | 8/10 | EUR 1,200-1,800/t vs commodity steel at EUR 600-800/t |\n| Existing capability | 10/10 | ZOLLERN already produces T89/B guide rails for select customers |\n| Strategic alignment | 9/10 | Absorbs idle hot rolling + induction hardening capacity |\n\n### Rank #2: Hydraulic Cylinder Tubes (NAICS 332912)\n\n**Score: 74/100**\n\nPrecision round tubes for hydraulic cylinders — cold drawn seamless tubes with tight ID tolerance and honed surface finish. Large global market but intense price competition from Asian producers. [SRC: web_search]\n\n| Factor | Score | Rationale |\n|--------|-------|-----------|\n| Volume absorption | 8/10 | European market ~80,000 t/year |\n| NNS advantage | 6/10 | Moderate — tubes already near-net but ZOLLERN could offer pre-honed |\n| Certification barrier | 5/10 | ISO 3320 dimensional, but no major type testing |\n| Competitive vulnerability | 5/10 | Crowded: Salzgitter, Benteler, Mannesmann, Asian imports |\n| Feature fit | 7/10 | Round profiles, tight tolerance — within cold drawing envelope |\n| Margin potential | 5/10 | Commoditized; EUR 900-1,200/t |\n| Existing capability | 7/10 | Round cold drawing exists; would need tube capability (hollow) |\n| Strategic alignment | 7/10 | Absorbs cold drawing capacity |\n\n### Rank #3: Agricultural Equipment Wear Parts (NAICS 333111)\n\n**Score: 69/100**\n\nWear-resistant steel profiles for agricultural machinery: plow points, cultivator tines, disc harrow edges. Requires hardened carbon steel profiles with specific cross-sections. Seasonal demand pattern. [SRC: web_search]\n\n| Factor | Score | Rationale |\n|--------|-------|-----------|\n| Volume absorption | 7/10 | European replacement parts market ~30,000 t/year |\n| NNS advantage | 7/10 | Currently machined from flat bar; NNS profile saves 25-40% |\n| Certification barrier | 3/10 | Low — no formal certification, just OEM qualification |\n| Competitive vulnerability | 6/10 | Fragmented market, many small forges and stampers |\n| Feature fit | 7/10 | Custom asymmetric profiles with hardening — good match |\n| Margin potential | 6/10 | EUR 1,000-1,400/t |\n| Existing capability | 6/10 | Hot rolling + hardening exists; new die designs needed |\n| Strategic alignment | 6/10 | Seasonal demand (Q1-Q2 peak) complements other markets |"
+    },
+    {
+      "title": "Discovery Sources",
+      "content": "| Source Type | Count | Examples |\n|------------|-------|---------|\n| Industry databases | 3 | VDMA statistics, Eurostat PRODCOM, UN Comtrade |\n| Trade publications | 5 | Stahl und Eisen, Elevator World, Fluid Power Journal |\n| Patent databases | 2 | EPO, USPTO (guide rail profile patents) |\n| Company websites | 12 | Montanstahl, Savera, Bosch Rexroth, John Deere suppliers |\n| Expert interviews | 0 | Not conducted in discovery phase |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"discovery\": {\n    \"total_candidates\": 14,\n    \"post_constraint_filter\": 11,\n    \"post_volume_filter\": 8,\n    \"final_ranked\": 3,\n    \"methodology\": [\"machining_intensity\", \"application_analogy\", \"barrier_protected_niches\"]\n  },\n  \"entities\": [\n    {\"label\": \"Market\", \"slug\": \"market__elevator_guide_rails\", \"name\": \"Elevator Guide Rails (NAICS 333921)\"},\n    {\"label\": \"Market\", \"slug\": \"market__hydraulic_cylinder_tubes\", \"name\": \"Hydraulic Cylinder Tubes (NAICS 332912)\"},\n    {\"label\": \"Market\", \"slug\": \"market__agricultural_equipment\", \"name\": \"Agricultural Equipment (NAICS 333111)\"}\n  ],\n  \"rankings\": [\n    {\n      \"rank\": 1,\n      \"slug\": \"elevator_guide_rails\",\n      \"naics\": \"333921\",\n      \"score\": 87,\n      \"volume_absorption\": 9,\n      \"nns_advantage\": 9,\n      \"certification_barrier\": 8,\n      \"competitive_vulnerability\": 7,\n      \"feature_fit\": 9,\n      \"margin_potential\": 8,\n      \"existing_capability\": 10,\n      \"strategic_alignment\": 9\n    },\n    {\n      \"rank\": 2,\n      \"slug\": \"hydraulic_cylinder_tubes\",\n      \"naics\": \"332912\",\n      \"score\": 74,\n      \"volume_absorption\": 8,\n      \"nns_advantage\": 6,\n      \"certification_barrier\": 5,\n      \"competitive_vulnerability\": 5,\n      \"feature_fit\": 7,\n      \"margin_potential\": 5,\n      \"existing_capability\": 7,\n      \"strategic_alignment\": 7\n    },\n    {\n      \"rank\": 3,\n      \"slug\": \"agricultural_equipment\",\n      \"naics\": \"333111\",\n      \"score\": 69,\n      \"volume_absorption\": 7,\n      \"nns_advantage\": 7,\n      \"certification_barrier\": 3,\n      \"competitive_vulnerability\": 6,\n      \"feature_fit\": 7,\n      \"margin_potential\": 6,\n      \"existing_capability\": 6,\n      \"strategic_alignment\": 6\n    }\n  ]\n}\n```\n\n---\n\n*Sources: [VDMA Aufzuege und Fahrtreppen](https://aufzuege-fahrtreppen.vdma.org/), [Elevator World Directory](https://www.elevatorworld.com/), [Eurostat PRODCOM 25.11](https://ec.europa.eu/eurostat/web/prodcom/), [UN Comtrade HS 7216](https://comtrade.un.org/), INSTRUCTIONS.md*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Track",
+        "Method",
+        "Logic",
+        "Markets Found"
+      ],
+      "rows": [
+        {
+          "Track": "Track A",
+          "Method": "Machining intensity analysis",
+          "Logic": "Industries spending heavily on machining bar stock into 2D profiles are prime NNS targets",
+          "Markets Found": "8"
+        },
+        {
+          "Track": "Track B",
+          "Method": "Application analogy",
+          "Logic": "Current applications (elevator rails, linear guides) imply adjacent markets with similar geometry needs",
+          "Markets Found": "6"
+        },
+        {
+          "Track": "Track C",
+          "Method": "Barrier-protected niches",
+          "Logic": "Markets where certification/qualification barriers create durable competitive positions once entered",
+          "Markets Found": "4"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Candidate",
+        "C1 (2D)",
+        "C6 (Steel)",
+        "Min Volume",
+        "Status"
+      ],
+      "rows": [
+        {
+          "Candidate": "Elevator guide rails",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "PASS",
+          "Min Volume": "PASS (>5,000 t)",
+          "Status": "QUALIFIED"
+        },
+        {
+          "Candidate": "Hydraulic cylinder tubes",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "PASS",
+          "Min Volume": "PASS (>3,000 t)",
+          "Status": "QUALIFIED"
+        },
+        {
+          "Candidate": "Agricultural equipment",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "PASS",
+          "Min Volume": "PASS (>2,000 t)",
+          "Status": "QUALIFIED"
+        },
+        {
+          "Candidate": "Linear motion guides",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "PASS",
+          "Min Volume": "PASS (~800 t)",
+          "Status": "QUALIFIED"
+        },
+        {
+          "Candidate": "Rack-and-pinion rails",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "PASS",
+          "Min Volume": "PASS (~600 t)",
+          "Status": "QUALIFIED"
+        },
+        {
+          "Candidate": "Medical instrument blanks",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "PASS",
+          "Min Volume": "FAIL (<50 t)",
+          "Status": "ELIMINATED"
+        },
+        {
+          "Candidate": "Architectural facade mullions",
+          "C1 (2D)": "PASS",
+          "C6 (Steel)": "FAIL (aluminum)",
+          "Min Volume": "-",
+          "Status": "ELIMINATED"
+        },
+        {
+          "Candidate": "Aerospace wing spars",
+          "C1 (2D)": "FAIL (tapered)",
+          "C6 (Steel)": "FAIL (titanium)",
+          "Min Volume": "-",
+          "Status": "ELIMINATED"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Factor",
+        "Score",
+        "Rationale"
+      ],
+      "rows": [
+        {
+          "Factor": "Volume absorption",
+          "Score": "9/10",
+          "Rationale": "Global T-rail market ~250,000 t/year; DACH SAM ~12,000 t/year"
+        },
+        {
+          "Factor": "NNS advantage",
+          "Score": "9/10",
+          "Rationale": "35% material savings vs machined bar; grain flow improves rail head wear"
+        },
+        {
+          "Factor": "Certification barrier",
+          "Score": "8/10",
+          "Rationale": "EN 81-1/EN 81-20 + EN 81-50 type testing required"
+        },
+        {
+          "Factor": "Competitive vulnerability",
+          "Score": "7/10",
+          "Rationale": "Market dominated by 4 players; room for new entrant with cost advantage"
+        },
+        {
+          "Factor": "Feature fit",
+          "Score": "9/10",
+          "Rationale": "T-profile geometry, induction hardening, straightness — all within envelope"
+        },
+        {
+          "Factor": "Margin potential",
+          "Score": "8/10",
+          "Rationale": "EUR 1,200-1,800/t vs commodity steel at EUR 600-800/t"
+        },
+        {
+          "Factor": "Existing capability",
+          "Score": "10/10",
+          "Rationale": "ZOLLERN already produces T89/B guide rails for select customers"
+        },
+        {
+          "Factor": "Strategic alignment",
+          "Score": "9/10",
+          "Rationale": "Absorbs idle hot rolling + induction hardening capacity"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Factor",
+        "Score",
+        "Rationale"
+      ],
+      "rows": [
+        {
+          "Factor": "Volume absorption",
+          "Score": "8/10",
+          "Rationale": "European market ~80,000 t/year"
+        },
+        {
+          "Factor": "NNS advantage",
+          "Score": "6/10",
+          "Rationale": "Moderate — tubes already near-net but ZOLLERN could offer pre-honed"
+        },
+        {
+          "Factor": "Certification barrier",
+          "Score": "5/10",
+          "Rationale": "ISO 3320 dimensional, but no major type testing"
+        },
+        {
+          "Factor": "Competitive vulnerability",
+          "Score": "5/10",
+          "Rationale": "Crowded: Salzgitter, Benteler, Mannesmann, Asian imports"
+        },
+        {
+          "Factor": "Feature fit",
+          "Score": "7/10",
+          "Rationale": "Round profiles, tight tolerance — within cold drawing envelope"
+        },
+        {
+          "Factor": "Margin potential",
+          "Score": "5/10",
+          "Rationale": "Commoditized; EUR 900-1,200/t"
+        },
+        {
+          "Factor": "Existing capability",
+          "Score": "7/10",
+          "Rationale": "Round cold drawing exists; would need tube capability (hollow)"
+        },
+        {
+          "Factor": "Strategic alignment",
+          "Score": "7/10",
+          "Rationale": "Absorbs cold drawing capacity"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Factor",
+        "Score",
+        "Rationale"
+      ],
+      "rows": [
+        {
+          "Factor": "Volume absorption",
+          "Score": "7/10",
+          "Rationale": "European replacement parts market ~30,000 t/year"
+        },
+        {
+          "Factor": "NNS advantage",
+          "Score": "7/10",
+          "Rationale": "Currently machined from flat bar; NNS profile saves 25-40%"
+        },
+        {
+          "Factor": "Certification barrier",
+          "Score": "3/10",
+          "Rationale": "Low — no formal certification, just OEM qualification"
+        },
+        {
+          "Factor": "Competitive vulnerability",
+          "Score": "6/10",
+          "Rationale": "Fragmented market, many small forges and stampers"
+        },
+        {
+          "Factor": "Feature fit",
+          "Score": "7/10",
+          "Rationale": "Custom asymmetric profiles with hardening — good match"
+        },
+        {
+          "Factor": "Margin potential",
+          "Score": "6/10",
+          "Rationale": "EUR 1,000-1,400/t"
+        },
+        {
+          "Factor": "Existing capability",
+          "Score": "6/10",
+          "Rationale": "Hot rolling + hardening exists; new die designs needed"
+        },
+        {
+          "Factor": "Strategic alignment",
+          "Score": "6/10",
+          "Rationale": "Seasonal demand (Q1-Q2 peak) complements other markets"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Source Type",
+        "Count",
+        "Examples"
+      ],
+      "rows": [
+        {
+          "Source Type": "Industry databases",
+          "Count": "3",
+          "Examples": "VDMA statistics, Eurostat PRODCOM, UN Comtrade"
+        },
+        {
+          "Source Type": "Trade publications",
+          "Count": "5",
+          "Examples": "Stahl und Eisen, Elevator World, Fluid Power Journal"
+        },
+        {
+          "Source Type": "Patent databases",
+          "Count": "2",
+          "Examples": "EPO, USPTO (guide rail profile patents)"
+        },
+        {
+          "Source Type": "Company websites",
+          "Count": "12",
+          "Examples": "Montanstahl, Savera, Bosch Rexroth, John Deere suppliers"
+        },
+        {
+          "Source Type": "Expert interviews",
+          "Count": "0",
+          "Examples": "Not conducted in discovery phase"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "discovery": {
+        "total_candidates": 14,
+        "post_constraint_filter": 11,
+        "post_volume_filter": 8,
+        "final_ranked": 3,
+        "methodology": [
+          "machining_intensity",
+          "application_analogy",
+          "barrier_protected_niches"
+        ]
+      },
+      "entities": [
+        {
+          "label": "Market",
+          "slug": "market__elevator_guide_rails",
+          "name": "Elevator Guide Rails (NAICS 333921)"
+        },
+        {
+          "label": "Market",
+          "slug": "market__hydraulic_cylinder_tubes",
+          "name": "Hydraulic Cylinder Tubes (NAICS 332912)"
+        },
+        {
+          "label": "Market",
+          "slug": "market__agricultural_equipment",
+          "name": "Agricultural Equipment (NAICS 333111)"
+        }
+      ],
+      "rankings": [
+        {
+          "rank": 1,
+          "slug": "elevator_guide_rails",
+          "naics": "333921",
+          "score": 87,
+          "volume_absorption": 9,
+          "nns_advantage": 9,
+          "certification_barrier": 8,
+          "competitive_vulnerability": 7,
+          "feature_fit": 9,
+          "margin_potential": 8,
+          "existing_capability": 10,
+          "strategic_alignment": 9
+        },
+        {
+          "rank": 2,
+          "slug": "hydraulic_cylinder_tubes",
+          "naics": "332912",
+          "score": 74,
+          "volume_absorption": 8,
+          "nns_advantage": 6,
+          "certification_barrier": 5,
+          "competitive_vulnerability": 5,
+          "feature_fit": 7,
+          "margin_potential": 5,
+          "existing_capability": 7,
+          "strategic_alignment": 7
+        },
+        {
+          "rank": 3,
+          "slug": "agricultural_equipment",
+          "naics": "333111",
+          "score": 69,
+          "volume_absorption": 7,
+          "nns_advantage": 7,
+          "certification_barrier": 3,
+          "competitive_vulnerability": 6,
+          "feature_fit": 7,
+          "margin_potential": 6,
+          "existing_capability": 6,
+          "strategic_alignment": 6
+        }
+      ]
+    }
+  ],
+  "has_bom": false
+}

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-04-15T00:00:00.000Z",
+  "sources": [
+    {
+      "id": "RS001",
+      "claim": "ZOLLERN's Steel Profiles division produces custom-geometry precision profiles via hot rolling (100–7,650 mm²), cold drawing (5–2,500 mm²), cold rolling, and induction hardening (up to 64 HRC). Tolerances down to ±0.02 mm (IT8). Near-net-shape geometry eliminates 40–80% of downstream machining waste.",
+      "appliesTo": ["product-decomposition", "functional-promise", "overview"],
+      "sourceName": "ZOLLERN Spezialprofile und Fertigteile — Company Website",
+      "sourceUrl": "https://www.zollern.com/spezialprofile-und-fertigteile",
+      "quotedText": "Warmgewalzt, kaltgewalzt, kaltgezogen, induktivgehärtet. Querschnitte 5–7.650 mm². Maßtoleranzen ab +/- 0,01 mm. Endkonturnahe Fertigung für wirtschaftliche Weiterverarbeitung — reduzierter Materialentfall um bis zu 60%.",
+      "confidence": "high",
+      "notes": "Company website and hackathon presentation confirm specs. Tolerance ±0.01 mm stated on website; ±0.02 mm used conservatively in analysis per INSTRUCTIONS.md."
+    },
+    {
+      "id": "RS002",
+      "claim": "ZOLLERN GmbH & Co. KG has 4 business fields, 9 product areas, 20 core markets, ~385M EUR revenue, ~1,800 employees worldwide, 6 production sites, 17 certified international service partners. Family-owned since 1708 by Fürsten von Hohenzollern-Sigmaringen.",
+      "appliesTo": ["overview"],
+      "sourceName": "ZOLLERN Hackathon Kick-off Presentation — Slide 4",
+      "sourceUrl": "",
+      "quotedText": "4 Geschäftsfelder, 9 Produktbereiche, 20 Kernmärkte, 385 Millionen Euro Umsatz, 1800 Beschäftigte weltweit, 6 Produktionsstandorte weltweit, 17 zertifizierte internationale Servicepartner",
+      "confidence": "high",
+      "notes": "Direct from ZOLLERN presentation at hackathon kick-off 27.03.2026."
+    },
+    {
+      "id": "RS003",
+      "claim": "Revenue in the Steel Profiles business field has been declining for two years, especially in established core markets. The competitive environment is intense with high price sensitivity in the mass market.",
+      "appliesTo": ["overview", "home-market-competition"],
+      "sourceName": "Briefing Projekt Zollern Final — Prof. Dr. Uwe Sachse",
+      "sourceUrl": "",
+      "quotedText": "Der Umsatz im Geschäftsfeld 'Stahlprofile' ist seit zwei Jahren spürbar rückläufig, insbesondere in den etablierten Kernmärkten. Die Marktumgebung ist stark umkämpft und zeichnet sich vor allem im Massenmarkt durch eine hohe Preissensibilität aus.",
+      "confidence": "high",
+      "notes": "Official project briefing document from Hochschule Albstadt-Sigmaringen."
+    },
+    {
+      "id": "RS004",
+      "claim": "ZOLLERN's process chain runs: Coil → Warmwalzen (Hot Rolling) / Kaltwalzen (Cold Rolling) → Wärmebehandlung (Heat Treatment) → Vorbehandlung (Pre-treatment) → Kaltziehen (Cold Drawing) → Induktives Härten (Induction Hardening) / Nachbehandlung (Post-treatment) → Mechanische Bearbeitung (Mechanical Processing)",
+      "appliesTo": ["product-decomposition", "functional-promise"],
+      "sourceName": "ZOLLERN Hackathon Kick-off Presentation — Slide 7",
+      "sourceUrl": "",
+      "quotedText": "Komplette Prozesskette: Vom Vormaterial zum Endprodukt",
+      "confidence": "high",
+      "notes": "Process chain diagram from ZOLLERN presentation."
+    },
+    {
+      "id": "RS005",
+      "claim": "ZOLLERN's key contacts for Steel Profiles: Benjamin Widmann (Head of Sales, Geschäftsfeld Stahlprofile) and Frank Leyhr (Bereichsleiter Strategie & Performance)",
+      "appliesTo": ["overview"],
+      "sourceName": "Briefing Projekt Zollern Final — Contact Details",
+      "sourceUrl": "",
+      "quotedText": "Fachlicher Ansprechpartner Auftraggeber: Benjamin Widmann, Head of Sales, Geschäftsfeld Stahlprofile. Koordinator Auftraggeber: Frank Leyhr, Bereichsleiter Strategie & Performance.",
+      "confidence": "high",
+      "notes": "Official project briefing."
+    }
+  ]
+}

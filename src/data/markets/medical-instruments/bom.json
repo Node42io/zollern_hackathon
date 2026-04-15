@@ -1,0 +1,84 @@
+{
+  "slug": "medical-instruments",
+  "marketName": "Surgical and Medical Instrument Manufacturing",
+  "naicsCode": "339112",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies precision stainless steel instrument profiles at L1 (jaw blank, handle blank) within the surgical instrument BOM. Output type: Reusable Handheld Box-Lock Forceps / Needle Holder (OT1). ZOLLERN enters at L2 Jaw Blank Assembly and L2 Handle Blank Assembly.",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Reusable Handheld Surgical Instrument (Forceps/Needle Holder)", "hydronic": false, "sensorFit": "primary", "notes": "~25% of surgical instrument market by unit volume. Full BOM decomposed. ZOLLERN provides jaw and handle blank profiles." },
+    { "id": "OT-2", "name": "Rigid Endoscopic Instrument", "hydronic": false, "sensorFit": "secondary", "notes": "Tubular/profiled shafts for MIS; 3-10 mm OD; ZOLLERN provides shaft profiles." },
+    { "id": "OT-3", "name": "Orthopaedic Hand Instrument", "hydronic": false, "sensorFit": "secondary", "notes": "High-hardness cutting/shaping instruments; ZOLLERN provides jaw/handle blanks." },
+    { "id": "OT-5", "name": "Reusable Device Frame / Structural Housing", "hydronic": false, "sensorFit": "secondary", "notes": "Stainless structural frames for powered handpieces." },
+    { "id": "OT-6", "name": "Sterilization Tray Insert / Guide Rail", "hydronic": false, "sensorFit": "secondary", "notes": "Profiled stainless rails and dividers for instrument trays." }
+  ],
+  "marquardtAnchorIds": ["L4a", "L4b"],
+  "l4Subsystems": [
+    {
+      "id": "L4a",
+      "name": "Jaw / Working-End Subsystem",
+      "costSharePct": 35,
+      "keyDesignChoice": "Jaw module architecture and blank manufacturing approach",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Single-piece jaw body (integral jaw + shaft)", "sharePct": 70, "trend": "stable" },
+        { "name": "TC-tipped jaw module (stainless + tungsten carbide insert)", "sharePct": 20, "trend": "growing" },
+        { "name": "Replaceable jaw insert module (modular)", "sharePct": 7, "trend": "growing" },
+        { "name": "Ceramic-coated jaw module", "sharePct": 3, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3a.1", "name": "Jaw Body Module", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Drop-forged jaw blank (near-net-shape)", "sharePct": 45, "trend": "stable" },
+          { "name": "Standard bar stock + full CNC machining", "sharePct": 30, "trend": "declining" },
+          { "name": "Cold-drawn near-net-shape profile blank (ZOLLERN)", "sharePct": 15, "trend": "growing" },
+          { "name": "Investment cast blank", "sharePct": 7, "trend": "stable" },
+          { "name": "MIM pre-form", "sharePct": 3, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4b",
+      "name": "Handle / Ergonomic Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Handle blank manufacturing approach",
+      "isMarquardtAnchor": true,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Forged handle blank", "sharePct": 50, "trend": "stable" },
+        { "name": "Bar stock machined handle", "sharePct": 30, "trend": "declining" },
+        { "name": "Cold-drawn precision profile handle blank (ZOLLERN)", "sharePct": 15, "trend": "growing" },
+        { "name": "MIM handle", "sharePct": 5, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4c",
+      "name": "Pivot / Articulation Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Lock mechanism type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Box-lock pivot (traditional, reusable)", "sharePct": 70, "trend": "stable" },
+        { "name": "Screw-lock pivot", "sharePct": 20, "trend": "stable" },
+        { "name": "Snap-fit disposable pivot", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4d",
+      "name": "Surface & Biocompatibility Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Surface finish and passivation method",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Electropolish + passivation (ASTM A967)", "sharePct": 50, "trend": "growing" },
+        { "name": "Satin/matte finish + passivation", "sharePct": 35, "trend": "stable" },
+        { "name": "Mirror polish (premium instruments)", "sharePct": 15, "trend": "stable" }
+      ],
+      "modules": []
+    }
+  ]
+}

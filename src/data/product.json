@@ -1,0 +1,356 @@
+{
+  "productName": "ZOLLERN Special Steel Profiles",
+  "vendorName": "ZOLLERN GmbH & Co. KG",
+  "christensen": {
+    "mechanism": "Sequential plastic deformation of steel billets through custom-geometry roll sets (hot rolling) and carbide die sets (cold drawing/rolling) to produce near-net-shape 2D cross-sections, with optional selective induction surface hardening via high-frequency electromagnetic heating and rapid quench",
+    "function": "Provide custom cross-sectional metal shapes with tight dimensional tolerances and selectable surface hardness in near-net-shape geometry",
+    "outcome": "Enable OEM manufacturers and fabricators to eliminate 40-80% of downstream machining waste, reduce material costs, and shorten production lead times by starting from a near-final-shape input"
+  },
+  "technology": {
+    "class": "Precision Steel Profile Manufacturing",
+    "underlyingMechanism": "Sequential plastic deformation of steel billets through custom-geometry roll sets (hot rolling) and carbide die sets (cold drawing/rolling), achieving near-net-shape 2D cross-sections with optional selective induction surface hardening via high-frequency electromagnetic heating and rapid quench. Key physics: plastic deformation below (cold) or above (hot) recrystallization temperature; martensitic surface transformation via rapid quench.",
+    "unspscCode": "30102304",
+    "unspscTitle": "Steel profiles",
+    "unspscPath": "30 Structures and Building and Construction and Manufacturing Components and Supplies > 10 Structural components and basic shapes > 23 Profiles > 04 Steel profiles"
+  },
+  "functionalPromise": {
+    "statement": "Provide custom cross-sectional metal shapes with tight dimensional tolerances and selectable surface hardness — in near-net-shape geometry that eliminates 40-80% of downstream machining waste",
+    "verb": "Provide",
+    "object": "custom cross-sectional metal shapes",
+    "context": "with tight dimensional tolerances and selectable surface hardness"
+  },
+  "commodityFunctionalPromise": "Provide elongated metal shapes with defined cross-sectional geometry for structural, mechanical, or guiding functions",
+  "differentiators": [
+    "Near-net-shape geometry eliminates 40-80% material removal vs. machining from bar stock",
+    "IT8 tolerance class (+-0.02 mm) achievable via cold finishing per ISO 286",
+    "Selective induction surface hardening up to 64 HRC with controllable depth (0.5-5 mm), ductile core retained",
+    "Full alloy library spanning carbon, alloy, bearing, spring, and tool steels through common forming equipment",
+    "In-line induction hardening integrated into production flow — no outsourcing to third-party heat treaters",
+    "IATF 16949 certified for direct automotive OEM supply — not all European profile competitors hold this certification"
+  ],
+  "features": [
+    {
+      "scope": "technology",
+      "name": "Custom Die-Set Forming",
+      "short": "Form complex 2D cross-sections via purpose-built roller and die sets",
+      "long": "Each profile geometry requires a dedicated die or roll set designed for the target cross-section. Hot rolling achieves bulk shape from billet; cold drawing/rolling adds dimensional precision. Die cost is amortized over production volume. Minimum order quantities apply per new geometry. Profile types include round, square, hex, rectangular, symmetric custom, and asymmetric custom.",
+      "category": "performance"
+    },
+    {
+      "scope": "technology",
+      "name": "Near-Net-Shape Geometry",
+      "short": "Produce profiles requiring minimal downstream machining, eliminating 40-80% material removal vs. bar stock",
+      "long": "Profile cross-section closely matches final part geometry, eliminating 40-80% of material removal versus machining from bar stock. Economic benefit scales with part complexity and production volume. Requires upfront die design investment per geometry.",
+      "category": "performance"
+    },
+    {
+      "scope": "technology",
+      "name": "Precision Cold Finishing",
+      "short": "Achieve IT8-class tolerances (+-0.02 mm) and Ra 0.4 um surface via cold drawing or cold rolling",
+      "long": "Room-temperature drawing through carbide dies or rolling through precision rolls refines dimensions to IT8 class (+-0.02 mm) per ISO 286. Work-hardening increases tensile strength (up to 1,200 MPa for 34CrNiMo6). Surface roughness improves to Ra 0.4 um (category N8 per DIN-ISO 1302). Limited to cross-sections within cold-forming equipment capacity (2,500 mm2 for drawing).",
+      "category": "performance"
+    },
+    {
+      "scope": "technology",
+      "name": "Selective Induction Surface Hardening",
+      "short": "Harden specific surface zones up to 64 HRC via electromagnetic induction heating and quench",
+      "long": "High-frequency induction coils heat targeted surface areas above austenitizing temperature, followed by rapid water quench. Produces hard wear-resistant surface (up to 64 HRC) while core remains ductile. Hardening depth controllable from 0.5-5.0 mm. Requires minimum 0.35% carbon content for martensite formation. Geometry-dependent: hardening pattern must match profile shape.",
+      "category": "performance"
+    },
+    {
+      "scope": "technology",
+      "name": "Multi-Alloy Grade Processing",
+      "short": "Process carbon, alloy, bearing, spring, and tool steels through common forming equipment",
+      "long": "Rolling and drawing equipment accommodates diverse steel grades by adjusting process parameters (temperature, reduction ratio, speed, die design, lubrication). Each grade requires grade-specific heat treatment cycles (normalizing, Q&T, case hardening). Material qualification for new grades typically takes 3-6 months.",
+      "category": "integration"
+    },
+    {
+      "scope": "technology",
+      "name": "Continuous-Length Production",
+      "short": "Deliver profiles as bars (up to 12 m) or coils (up to 2,000 kg)",
+      "long": "Hot-rolled profiles delivered as bars up to 12 m or coils up to 2,000 kg. Cold-drawn profiles as bars up to 6 m. Length tolerance +-2 mm. Straightness 0.2 mm/m or better. Enables downstream cutting to customer length specifications.",
+      "category": "usability"
+    },
+    {
+      "scope": "vendor",
+      "name": "Proprietary Die Library",
+      "short": "Access 300+ years of accumulated die designs and metallurgical knowledge across 12+ sectors",
+      "long": "ZOLLERN's die library, accumulated since 1708, contains proven geometries across 12+ application sectors (linear guides, firearms, elevator rails, etc.). Reduces new-geometry development risk and lead time for profiles similar to existing designs. Not transferable to competitors.",
+      "category": "integration"
+    },
+    {
+      "scope": "vendor",
+      "name": "In-Line Induction Hardening Integration",
+      "short": "Perform hardening within profile production flow (up to 4,000 mm2, lengths 2,200-9,000 mm)",
+      "long": "ZOLLERN's induction hardening is integrated into the production line rather than outsourced to third-party heat treaters. Machine handles cross-sections up to 4,000 mm2 and part lengths from 2,200 to 9,000 mm. Reduces lead time and transport cost versus external hardening.",
+      "category": "performance"
+    },
+    {
+      "scope": "vendor",
+      "name": "IATF 16949 Certified Supply Chain",
+      "short": "Supply automotive OEMs under automotive quality management certification",
+      "long": "ZOLLERN holds IATF 16949 certification for the Steel Profiles division, enabling direct supply to automotive OEMs and Tier 1 suppliers. Requires ongoing audit compliance, PPAP documentation, and SPC monitoring. Not all European profile competitors hold this certification.",
+      "category": "reliability"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Hot-Roll Cross-Section Range",
+      "value": "100-7,650",
+      "unit": "mm2"
+    },
+    {
+      "name": "Cold-Draw Cross-Section Range",
+      "value": "5-2,500",
+      "unit": "mm2"
+    },
+    {
+      "name": "Cold-Roll Cross-Section Range",
+      "value": "10-500",
+      "unit": "mm2"
+    },
+    {
+      "name": "Dimensional Tolerance (cold-finished)",
+      "value": "+-0.02 (IT8)",
+      "unit": "mm",
+      "testCondition": "ISO 286"
+    },
+    {
+      "name": "Dimensional Tolerance (hot-rolled)",
+      "value": "+-0.5",
+      "unit": "mm"
+    },
+    {
+      "name": "Surface Roughness (cold-drawn)",
+      "value": "0.4-3.2",
+      "unit": "Ra um",
+      "testCondition": "DIN-ISO 1302 (N8)"
+    },
+    {
+      "name": "Surface Hardness (induction-hardened)",
+      "value": "up to 64",
+      "unit": "HRC",
+      "testCondition": "After induction hardening"
+    },
+    {
+      "name": "Induction Hardening Depth",
+      "value": "0.5-5.0",
+      "unit": "mm"
+    },
+    {
+      "name": "Induction Hardening Max Cross-Section",
+      "value": "4,000",
+      "unit": "mm2",
+      "testCondition": "Machine capacity"
+    },
+    {
+      "name": "Induction Hardening Length Range",
+      "value": "2,200-9,000",
+      "unit": "mm",
+      "testCondition": "Machine capacity"
+    },
+    {
+      "name": "Max Bar Length (hot-rolled)",
+      "value": "12",
+      "unit": "m"
+    },
+    {
+      "name": "Max Bar Length (cold-drawn)",
+      "value": "6",
+      "unit": "m"
+    },
+    {
+      "name": "Max Coil Weight",
+      "value": "2,000",
+      "unit": "kg"
+    },
+    {
+      "name": "Max Profile Width",
+      "value": "160",
+      "unit": "mm"
+    },
+    {
+      "name": "Weight per Meter",
+      "value": "0.04-60",
+      "unit": "kg/m",
+      "testCondition": "Full cross-section range"
+    },
+    {
+      "name": "Length Tolerance",
+      "value": "+-2",
+      "unit": "mm"
+    },
+    {
+      "name": "Tensile Strength (max grade)",
+      "value": "up to 1,200",
+      "unit": "MPa",
+      "testCondition": "34CrNiMo6, Q&T"
+    },
+    {
+      "name": "Straightness",
+      "value": "0.2 or better",
+      "unit": "mm/m"
+    }
+  ],
+  "constraints": [
+    {
+      "name": "2D Constant Cross-Section Only",
+      "constraintType": "physical",
+      "description": "Cannot produce 3D-varying geometry along length; profile cross-section is constant end to end. Variable cross-section applications (tapered shafts, sculptured surfaces) cannot be served.",
+      "severity": "hard",
+      "thresholdValue": null,
+      "thresholdUnit": null,
+      "isAbsolute": true
+    },
+    {
+      "name": "Max Cold-Draw Cross-Section",
+      "constraintType": "physical",
+      "description": "Cold drawing limited by draw bench capacity and force requirements.",
+      "severity": "hard",
+      "thresholdValue": "2,500",
+      "thresholdUnit": "mm2",
+      "isAbsolute": true
+    },
+    {
+      "name": "Max Profile Width",
+      "constraintType": "physical",
+      "description": "Rolling and drawing equipment limits maximum circumscribed width of profile cross-section.",
+      "severity": "hard",
+      "thresholdValue": "160",
+      "thresholdUnit": "mm",
+      "isAbsolute": true
+    },
+    {
+      "name": "Max Induction Hardening Cross-Section",
+      "constraintType": "physical",
+      "description": "Induction hardening machine capacity limits maximum hardenable cross-section.",
+      "severity": "hard",
+      "thresholdValue": "4,000",
+      "thresholdUnit": "mm2",
+      "isAbsolute": true
+    },
+    {
+      "name": "Min Carbon Content for Hardening",
+      "constraintType": "physical",
+      "description": "Induction hardening requires minimum carbon for martensite formation. Low-carbon structural steels (S235, S355) and austenitic stainless steels cannot be hardened.",
+      "severity": "hard",
+      "thresholdValue": "0.35",
+      "thresholdUnit": "% C",
+      "isAbsolute": true
+    },
+    {
+      "name": "Steel-Only Material Scope",
+      "constraintType": "physical",
+      "description": "Steel and stainless steel only. No aluminum, titanium, copper, or non-ferrous metals. Die and roll designs are specific to steel deformation characteristics.",
+      "severity": "hard",
+      "thresholdValue": null,
+      "thresholdUnit": null,
+      "isAbsolute": true
+    },
+    {
+      "name": "Min Economic Batch for Custom Die",
+      "constraintType": "economic",
+      "description": "Custom die/roll design, manufacture, and qualification costs must be amortized over minimum volume. Sub-100 kg orders for new geometries are not economically viable.",
+      "severity": "soft",
+      "thresholdValue": "~100",
+      "thresholdUnit": "kg",
+      "isAbsolute": false
+    },
+    {
+      "name": "Custom Tooling Lead Time",
+      "constraintType": "operational",
+      "description": "New die/roll design, manufacture, trial runs, and dimensional qualification. Repeat orders for existing geometries have no tooling lead time.",
+      "severity": "soft",
+      "thresholdValue": "6-12",
+      "thresholdUnit": "weeks",
+      "isAbsolute": false
+    },
+    {
+      "name": "Induction Hardening Length Range",
+      "constraintType": "physical",
+      "description": "Induction hardening machine accepts specified part lengths within this range only.",
+      "severity": "hard",
+      "thresholdValue": "2,200-9,000",
+      "thresholdUnit": "mm",
+      "isAbsolute": true
+    }
+  ],
+  "billOfMaterials": [
+    {
+      "id": "BOM-01",
+      "component": "Steel Billets / Coils (input material)",
+      "function": "Raw feedstock for hot rolling — carbon, alloy, bearing, spring, or tool steel grades",
+      "category": "Material Input",
+      "keyAttribute": "Grade determines final mechanical properties; C45, C60, 42CrMo4, 16MnCr5, 34CrNiMo6, 100Cr6"
+    },
+    {
+      "id": "BOM-02",
+      "component": "Custom Roll Sets (hot rolling)",
+      "function": "Form bulk cross-section geometry from billet via hot plastic deformation",
+      "category": "Tooling",
+      "keyAttribute": "Geometry-specific; amortized over production volume; ZOLLERN die library since 1708"
+    },
+    {
+      "id": "BOM-03",
+      "component": "Carbide Die Sets (cold drawing)",
+      "function": "Refine dimensions to IT8 tolerance (+-0.02 mm) via room-temperature drawing",
+      "category": "Tooling",
+      "keyAttribute": "Tungsten carbide dies; produces Ra 0.4 um surface finish"
+    },
+    {
+      "id": "BOM-04",
+      "component": "Heat Treatment (normalizing, Q&T, case hardening)",
+      "function": "Achieve target metallurgical properties — grain structure, hardness, ductility balance",
+      "category": "Process",
+      "keyAttribute": "Grade-specific cycles; 3-6 month qualification for new grades"
+    },
+    {
+      "id": "BOM-05",
+      "component": "Induction Hardening System",
+      "function": "Selectively harden surface zones up to 64 HRC via electromagnetic induction and quench",
+      "category": "Process",
+      "keyAttribute": "In-line integrated; cross-sections up to 4,000 mm2; lengths 2,200-9,000 mm"
+    },
+    {
+      "id": "BOM-06",
+      "component": "CNC Mechanical Processing",
+      "function": "Cutting, drilling, milling, grinding to customer part specifications",
+      "category": "Finishing",
+      "keyAttribute": "Optional value-add step; converts semi-finished profile to near-finished component"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "ZOLLERN GmbH & Co. KG — Spezialprofile und Fertigteile (official)",
+      "url": "https://www.zollern.com/spezialprofile-und-fertigteile",
+      "prefixedId": "PROD-S01"
+    },
+    {
+      "id": "S02",
+      "label": "ZOLLERN GmbH & Co. KG — Wikipedia (de)",
+      "url": "https://de.wikipedia.org/wiki/Zollern_(Unternehmen)",
+      "prefixedId": "PROD-S02"
+    },
+    {
+      "id": "S03",
+      "label": "ZOLLERN/HS Albstadt-Sigmaringen Project Briefing (2026, CONFIDENTIAL)",
+      "prefixedId": "PROD-S03"
+    },
+    {
+      "id": "S04",
+      "label": "ZOLLERN Briefing Praesentation (company presentation, CONFIDENTIAL)",
+      "prefixedId": "PROD-S04"
+    },
+    {
+      "id": "S05",
+      "label": "ISO 286 — Limits and fits (tolerance classes)",
+      "prefixedId": "PROD-S05"
+    },
+    {
+      "id": "S06",
+      "label": "DIN-ISO 1302 — Surface roughness classification",
+      "prefixedId": "PROD-S06"
+    }
+  ]
+}

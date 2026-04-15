@@ -1,0 +1,12 @@
+{
+  "naicsCode": "333120",
+  "marketName": "Construction Machinery Manufacturing",
+  "slug": "construction-machinery",
+  "alternatives": [
+    { "name": "Near-net-shape precision profiles (cold-drawn / hot-rolled) — ZOLLERN", "unspsc": "30102304", "tradeoffs": "Tooling NRE 5-15K EUR; 6-12 wk first-article lead time; min 100 kg batch; geometry fixed to 2D constant cross-section; IT8 tolerance; in-line IH available; ~20% share [SRC: JTBD_construction_machinery]" },
+    { "name": "Laser/plasma-cut flat plate + weld fabrication (dominant)", "unspsc": "40142022", "tradeoffs": "Multiple weld passes increase distortion risk (1.5-3 mm transverse shrinkage per pass); 40-60% material waste vs. near-net; zero tooling NRE; multi-source; ~60% share [SRC: ADJ_construction_machinery]" },
+    { "name": "Standard structural hollow sections (SHS/RHS from service center)", "unspsc": "30102304", "tradeoffs": "Catalog geometry only; limited cross-section optimization; standard tolerance +-1-2 mm; no IH option; fast procurement; ~15% share [SRC: JTBD_construction_machinery]" },
+    { "name": "Hot forgings (complex node elements)", "unspsc": "31162800", "tradeoffs": "Die NRE 50-150K EUR; 6-18 month qualification; near-net 3D geometry possible; better fatigue at dynamic joints; ~5% share [SRC: JTBD_construction_machinery]" },
+    { "name": "Status quo — continue machining from bar stock", "unspsc": "31161501", "tradeoffs": "Zero acquisition overhead; 40-60% material swarf waste; high machining cost per part; no geometry optimization" }
+  ]
+}

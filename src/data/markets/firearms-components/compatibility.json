@@ -1,0 +1,23 @@
+{
+  "naicsCode": "332994",
+  "marketName": "Firearms Components",
+  "slug": "firearms-components",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    { "constraintName": "IH Length Range (C9)", "constraintType": "hard", "threshold": "2,200-9,000 mm minimum bar length for in-line IH", "verdict": "mitigable", "rationale": "Short firearms components (slide rail inserts, locking pieces) are below 2,200 mm minimum IH length. Induction hardening must be performed externally or by alternative method for short parts.", "mitigation": "External IH service or batch furnace hardening for sub-2200 mm parts", "mitigationCost": "Low - toll processing EUR 0.50-2.00/kg", "mitigationTime": "1-2 weeks additional lead time" },
+    { "constraintName": "ITAR/EAR Export Control (C13)", "constraintType": "soft", "threshold": "Dual-use export control compliance required", "verdict": "mitigable", "rationale": "Steel profiles for firearms are subject to EU Dual-Use Regulation 2021/821 and potentially US ITAR. ZOLLERN must maintain export compliance documentation per shipment.", "mitigation": "BAFA-authorized export compliance program; per-shipment documentation package", "mitigationCost": "Low - administrative", "mitigationTime": "Ongoing" },
+    { "constraintName": "Minimum Batch ~100 kg (C7)", "constraintType": "soft", "threshold": "100 kg minimum economic batch", "verdict": "mitigable", "rationale": "Prototype quantities for new firearms platforms may fall below 100 kg. Blocks precision/custom gunsmith segment.", "mitigation": "NRE die model with amortized piece price; nearest-existing-die prototype service", "mitigationCost": "Low - commercial model change", "mitigationTime": "Immediate" },
+    { "constraintName": "Tooling Lead 6-12 Weeks (C8)", "constraintType": "soft", "threshold": "6-12 weeks for new die geometry", "verdict": "mitigable", "rationale": "New receiver and slide rail geometries require custom dies. Lead time is the primary barrier to new program adoption.", "mitigation": "Pre-qualified common receiver/slide geometries in die library; express tooling program", "mitigationCost": "Medium - die library investment", "mitigationTime": "4-6 weeks for express program" },
+    { "constraintName": "Steel-Only Material (C6)", "constraintType": "hard", "threshold": "No polymer or non-ferrous", "verdict": "none", "rationale": "Firearms structural components (receivers, slides, barrels) are steel. Polymer frames are not ZOLLERN's target BOM position. Steel-only matches requirement.", "mitigation": "", "mitigationCost": "", "mitigationTime": "" }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 4,
+    "none": 1,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "Low to Medium",
+    "totalMitigationTime": "1-6 weeks depending on constraint"
+  },
+  "sources": []
+}

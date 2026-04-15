@@ -1,0 +1,392 @@
+{
+  "id": "00_product_portfolio",
+  "title": "Product Portfolio: ZOLLERN Steel Profiles Division",
+  "type": "product_portfolio",
+  "market_slug": null,
+  "is_per_market": false,
+  "sections": [
+    {
+      "title": "Capability Platform Overview",
+      "content": "ZOLLERN Steel Profiles is a **capability platform**, not a fixed-product manufacturer. The division produces custom-geometry precision steel profiles configured to customer specifications. The \"product\" is the manufacturing capability envelope itself.\n\n| Parameter | Cold Drawing | Cold Rolling | Hot Rolling | Unit |\n|-----------|-------------|--------------|-------------|------|\n| Cross-section range | 5 - 2,500 | 10 - 1,200 | 100 - 7,650 | mm2 |\n| Dimensional tolerance | +/- 0.02 | +/- 0.05 | +/- 0.5 | mm |\n| Surface roughness (Ra) | 0.4 - 1.6 | 0.8 - 3.2 | 1.6 - 6.3 | um |\n| Max bar length | 6 | 6 | 12 | m |\n| Weight per meter | 0.04 - 20 | 0.08 - 9.5 | 0.8 - 60 | kg/m |\n| Min economic batch | ~100 | ~200 | ~500 | kg |\n| Custom tooling lead time | 6 - 12 | 8 - 14 | 10 - 16 | weeks |"
+    },
+    {
+      "title": "Profile Type Families",
+      "content": "| Profile Family | Geometry | Primary Process | Typical Application | Annual Volume (est.) |\n|---------------|----------|-----------------|--------------------|--------------------|\n| Round bars | Circular, precision | Cold drawing | Hydraulic cylinders, shafts | ~3,500 t |\n| Square / Hex bars | Regular polygon | Cold drawing | General machining stock | ~2,000 t |\n| Flat profiles | Rectangular, strip | Cold rolling | Linear guides, springs | ~1,800 t |\n| T-profiles | T-shaped, asymmetric | Hot rolling + cold finishing | Elevator guide rails, structural | ~1,200 t |\n| Custom symmetric | Mirror-symmetric custom | Cold drawing | Automotive, firearms | ~2,500 t |\n| Custom asymmetric | Fully custom cross-section | Hot rolling + cold drawing | Door systems, special machinery | ~800 t |\n\nTotal division throughput estimated at ~12,000 t/year against installed capacity of ~18,000-20,000 t/year (30-40% idle). [SRC: web_search]"
+    },
+    {
+      "title": "Secondary Processing Capabilities",
+      "content": "| Process | Capability | Equipment | Value Add |\n|---------|-----------|-----------|-----------|\n| Induction hardening | Surface hardness to 64 HRC, depth 0.5-5mm | Multi-frequency induction line | Wear resistance for guide rails, linear guides |\n| CNC cutting | Precision cut to length +/- 0.1mm | Automated CNC saws | Eliminates customer sawing waste |\n| Straightening | Straightness to 0.5mm/m | Roller straightening machines | Critical for guide rail applications |\n| Heat treatment | Normalizing, Q&T, case hardening | Continuous furnace, batch furnace | Mechanical property optimization |\n| Grinding | Surface finish to Ra 0.4 | Centerless + profile grinding | Bearing surfaces, sealing surfaces |\n| Drilling / milling | CNC secondary machining | 5-axis CNC centers | Near-finished part delivery |"
+    },
+    {
+      "title": "Material Grades",
+      "content": "| Grade Family | Representative Grades | Carbon (%) | Application Domain |\n|-------------|----------------------|-----------|-------------------|\n| Carbon structural | S235, S355, C45 | 0.17 - 0.50 | General structural, automotive |\n| Carbon hardening | C60, C67, C75 | 0.57 - 0.80 | Springs, wear parts |\n| Alloy structural | 42CrMo4, 34CrNiMo6 | 0.30 - 0.38 | High-strength shafts, gears |\n| Case hardening | 16MnCr5, 20MnCr5 | 0.14 - 0.22 | Gears, pins, bushings |\n| Bearing steel | 100Cr6 | 0.95 - 1.05 | Bearing races, rollers |\n| Tool steel | X210Cr12, 90MnCrV8 | 0.85 - 2.10 | Cutting tools, dies |\n| Stainless (limited) | 1.4301, 1.4404 | < 0.08 | Medical, food processing |"
+    },
+    {
+      "title": "Current Market Breakdown (estimated)",
+      "content": "| Market Segment | Revenue Share | Volume Share | Trend | Margin |\n|---------------|--------------|-------------|-------|--------|\n| Automotive components | 25% | 28% | Declining | Low |\n| General mechanical engineering | 20% | 22% | Declining | Medium |\n| Elevator guide rails | 12% | 10% | Stable | Medium-High |\n| Linear motion / guides | 10% | 8% | Growing | High |\n| Hydraulic cylinders | 8% | 10% | Stable | Medium |\n| Firearms components | 7% | 5% | Stable | High |\n| Railway / rail vehicles | 5% | 7% | Growing | Medium |\n| Construction machinery | 5% | 5% | Stable | Low |\n| Other / project business | 8% | 5% | Mixed | Variable |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"capability_platform\": {\n    \"division\": \"Steel Profiles\",\n    \"division_local\": \"Stahlprofile\",\n    \"total_capacity_t_year\": 19000,\n    \"current_utilization_pct\": 63,\n    \"idle_capacity_t_year\": 7000,\n    \"processes\": [\n      {\n        \"name\": \"cold_drawing\",\n        \"cross_section_min_mm2\": 5,\n        \"cross_section_max_mm2\": 2500,\n        \"tolerance_mm\": 0.02,\n        \"surface_ra_min\": 0.4,\n        \"max_length_m\": 6\n      },\n      {\n        \"name\": \"cold_rolling\",\n        \"cross_section_min_mm2\": 10,\n        \"cross_section_max_mm2\": 1200,\n        \"tolerance_mm\": 0.05,\n        \"surface_ra_min\": 0.8,\n        \"max_length_m\": 6\n      },\n      {\n        \"name\": \"hot_rolling\",\n        \"cross_section_min_mm2\": 100,\n        \"cross_section_max_mm2\": 7650,\n        \"tolerance_mm\": 0.5,\n        \"surface_ra_min\": 1.6,\n        \"max_length_m\": 12\n      }\n    ],\n    \"secondary_processes\": [\n      \"induction_hardening\",\n      \"cnc_cutting\",\n      \"straightening\",\n      \"heat_treatment\",\n      \"grinding\",\n      \"drilling_milling\"\n    ],\n    \"profile_families\": [\n      {\"name\": \"round_bars\", \"volume_t_year\": 3500},\n      {\"name\": \"square_hex_bars\", \"volume_t_year\": 2000},\n      {\"name\": \"flat_profiles\", \"volume_t_year\": 1800},\n      {\"name\": \"t_profiles\", \"volume_t_year\": 1200},\n      {\"name\": \"custom_symmetric\", \"volume_t_year\": 2500},\n      {\"name\": \"custom_asymmetric\", \"volume_t_year\": 800}\n    ]\n  }\n}\n```\n\n---\n\n*Sources: [ZOLLERN Steel Profiles](https://www.zollern.com/en/company/about-zollern/steel-profiles/), [ZOLLERN Cold Drawing](https://www.zollern.com/en/steel-profiles/cold-drawing/), [ZOLLERN Hot Rolling](https://www.zollern.com/en/steel-profiles/hot-rolling/), INSTRUCTIONS.md capability brief*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Parameter",
+        "Cold Drawing",
+        "Cold Rolling",
+        "Hot Rolling",
+        "Unit"
+      ],
+      "rows": [
+        {
+          "Parameter": "Cross-section range",
+          "Cold Drawing": "5 - 2,500",
+          "Cold Rolling": "10 - 1,200",
+          "Hot Rolling": "100 - 7,650",
+          "Unit": "mm2"
+        },
+        {
+          "Parameter": "Dimensional tolerance",
+          "Cold Drawing": "+/- 0.02",
+          "Cold Rolling": "+/- 0.05",
+          "Hot Rolling": "+/- 0.5",
+          "Unit": "mm"
+        },
+        {
+          "Parameter": "Surface roughness (Ra)",
+          "Cold Drawing": "0.4 - 1.6",
+          "Cold Rolling": "0.8 - 3.2",
+          "Hot Rolling": "1.6 - 6.3",
+          "Unit": "um"
+        },
+        {
+          "Parameter": "Max bar length",
+          "Cold Drawing": "6",
+          "Cold Rolling": "6",
+          "Hot Rolling": "12",
+          "Unit": "m"
+        },
+        {
+          "Parameter": "Weight per meter",
+          "Cold Drawing": "0.04 - 20",
+          "Cold Rolling": "0.08 - 9.5",
+          "Hot Rolling": "0.8 - 60",
+          "Unit": "kg/m"
+        },
+        {
+          "Parameter": "Min economic batch",
+          "Cold Drawing": "~100",
+          "Cold Rolling": "~200",
+          "Hot Rolling": "~500",
+          "Unit": "kg"
+        },
+        {
+          "Parameter": "Custom tooling lead time",
+          "Cold Drawing": "6 - 12",
+          "Cold Rolling": "8 - 14",
+          "Hot Rolling": "10 - 16",
+          "Unit": "weeks"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Profile Family",
+        "Geometry",
+        "Primary Process",
+        "Typical Application",
+        "Annual Volume (est.)"
+      ],
+      "rows": [
+        {
+          "Profile Family": "Round bars",
+          "Geometry": "Circular, precision",
+          "Primary Process": "Cold drawing",
+          "Typical Application": "Hydraulic cylinders, shafts",
+          "Annual Volume (est.)": "~3,500 t"
+        },
+        {
+          "Profile Family": "Square / Hex bars",
+          "Geometry": "Regular polygon",
+          "Primary Process": "Cold drawing",
+          "Typical Application": "General machining stock",
+          "Annual Volume (est.)": "~2,000 t"
+        },
+        {
+          "Profile Family": "Flat profiles",
+          "Geometry": "Rectangular, strip",
+          "Primary Process": "Cold rolling",
+          "Typical Application": "Linear guides, springs",
+          "Annual Volume (est.)": "~1,800 t"
+        },
+        {
+          "Profile Family": "T-profiles",
+          "Geometry": "T-shaped, asymmetric",
+          "Primary Process": "Hot rolling + cold finishing",
+          "Typical Application": "Elevator guide rails, structural",
+          "Annual Volume (est.)": "~1,200 t"
+        },
+        {
+          "Profile Family": "Custom symmetric",
+          "Geometry": "Mirror-symmetric custom",
+          "Primary Process": "Cold drawing",
+          "Typical Application": "Automotive, firearms",
+          "Annual Volume (est.)": "~2,500 t"
+        },
+        {
+          "Profile Family": "Custom asymmetric",
+          "Geometry": "Fully custom cross-section",
+          "Primary Process": "Hot rolling + cold drawing",
+          "Typical Application": "Door systems, special machinery",
+          "Annual Volume (est.)": "~800 t"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Process",
+        "Capability",
+        "Equipment",
+        "Value Add"
+      ],
+      "rows": [
+        {
+          "Process": "Induction hardening",
+          "Capability": "Surface hardness to 64 HRC, depth 0.5-5mm",
+          "Equipment": "Multi-frequency induction line",
+          "Value Add": "Wear resistance for guide rails, linear guides"
+        },
+        {
+          "Process": "CNC cutting",
+          "Capability": "Precision cut to length +/- 0.1mm",
+          "Equipment": "Automated CNC saws",
+          "Value Add": "Eliminates customer sawing waste"
+        },
+        {
+          "Process": "Straightening",
+          "Capability": "Straightness to 0.5mm/m",
+          "Equipment": "Roller straightening machines",
+          "Value Add": "Critical for guide rail applications"
+        },
+        {
+          "Process": "Heat treatment",
+          "Capability": "Normalizing, Q&T, case hardening",
+          "Equipment": "Continuous furnace, batch furnace",
+          "Value Add": "Mechanical property optimization"
+        },
+        {
+          "Process": "Grinding",
+          "Capability": "Surface finish to Ra 0.4",
+          "Equipment": "Centerless + profile grinding",
+          "Value Add": "Bearing surfaces, sealing surfaces"
+        },
+        {
+          "Process": "Drilling / milling",
+          "Capability": "CNC secondary machining",
+          "Equipment": "5-axis CNC centers",
+          "Value Add": "Near-finished part delivery"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Grade Family",
+        "Representative Grades",
+        "Carbon (%)",
+        "Application Domain"
+      ],
+      "rows": [
+        {
+          "Grade Family": "Carbon structural",
+          "Representative Grades": "S235, S355, C45",
+          "Carbon (%)": "0.17 - 0.50",
+          "Application Domain": "General structural, automotive"
+        },
+        {
+          "Grade Family": "Carbon hardening",
+          "Representative Grades": "C60, C67, C75",
+          "Carbon (%)": "0.57 - 0.80",
+          "Application Domain": "Springs, wear parts"
+        },
+        {
+          "Grade Family": "Alloy structural",
+          "Representative Grades": "42CrMo4, 34CrNiMo6",
+          "Carbon (%)": "0.30 - 0.38",
+          "Application Domain": "High-strength shafts, gears"
+        },
+        {
+          "Grade Family": "Case hardening",
+          "Representative Grades": "16MnCr5, 20MnCr5",
+          "Carbon (%)": "0.14 - 0.22",
+          "Application Domain": "Gears, pins, bushings"
+        },
+        {
+          "Grade Family": "Bearing steel",
+          "Representative Grades": "100Cr6",
+          "Carbon (%)": "0.95 - 1.05",
+          "Application Domain": "Bearing races, rollers"
+        },
+        {
+          "Grade Family": "Tool steel",
+          "Representative Grades": "X210Cr12, 90MnCrV8",
+          "Carbon (%)": "0.85 - 2.10",
+          "Application Domain": "Cutting tools, dies"
+        },
+        {
+          "Grade Family": "Stainless (limited)",
+          "Representative Grades": "1.4301, 1.4404",
+          "Carbon (%)": "< 0.08",
+          "Application Domain": "Medical, food processing"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Market Segment",
+        "Revenue Share",
+        "Volume Share",
+        "Trend",
+        "Margin"
+      ],
+      "rows": [
+        {
+          "Market Segment": "Automotive components",
+          "Revenue Share": "25%",
+          "Volume Share": "28%",
+          "Trend": "Declining",
+          "Margin": "Low"
+        },
+        {
+          "Market Segment": "General mechanical engineering",
+          "Revenue Share": "20%",
+          "Volume Share": "22%",
+          "Trend": "Declining",
+          "Margin": "Medium"
+        },
+        {
+          "Market Segment": "Elevator guide rails",
+          "Revenue Share": "12%",
+          "Volume Share": "10%",
+          "Trend": "Stable",
+          "Margin": "Medium-High"
+        },
+        {
+          "Market Segment": "Linear motion / guides",
+          "Revenue Share": "10%",
+          "Volume Share": "8%",
+          "Trend": "Growing",
+          "Margin": "High"
+        },
+        {
+          "Market Segment": "Hydraulic cylinders",
+          "Revenue Share": "8%",
+          "Volume Share": "10%",
+          "Trend": "Stable",
+          "Margin": "Medium"
+        },
+        {
+          "Market Segment": "Firearms components",
+          "Revenue Share": "7%",
+          "Volume Share": "5%",
+          "Trend": "Stable",
+          "Margin": "High"
+        },
+        {
+          "Market Segment": "Railway / rail vehicles",
+          "Revenue Share": "5%",
+          "Volume Share": "7%",
+          "Trend": "Growing",
+          "Margin": "Medium"
+        },
+        {
+          "Market Segment": "Construction machinery",
+          "Revenue Share": "5%",
+          "Volume Share": "5%",
+          "Trend": "Stable",
+          "Margin": "Low"
+        },
+        {
+          "Market Segment": "Other / project business",
+          "Revenue Share": "8%",
+          "Volume Share": "5%",
+          "Trend": "Mixed",
+          "Margin": "Variable"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "capability_platform": {
+        "division": "Steel Profiles",
+        "division_local": "Stahlprofile",
+        "total_capacity_t_year": 19000,
+        "current_utilization_pct": 63,
+        "idle_capacity_t_year": 7000,
+        "processes": [
+          {
+            "name": "cold_drawing",
+            "cross_section_min_mm2": 5,
+            "cross_section_max_mm2": 2500,
+            "tolerance_mm": 0.02,
+            "surface_ra_min": 0.4,
+            "max_length_m": 6
+          },
+          {
+            "name": "cold_rolling",
+            "cross_section_min_mm2": 10,
+            "cross_section_max_mm2": 1200,
+            "tolerance_mm": 0.05,
+            "surface_ra_min": 0.8,
+            "max_length_m": 6
+          },
+          {
+            "name": "hot_rolling",
+            "cross_section_min_mm2": 100,
+            "cross_section_max_mm2": 7650,
+            "tolerance_mm": 0.5,
+            "surface_ra_min": 1.6,
+            "max_length_m": 12
+          }
+        ],
+        "secondary_processes": [
+          "induction_hardening",
+          "cnc_cutting",
+          "straightening",
+          "heat_treatment",
+          "grinding",
+          "drilling_milling"
+        ],
+        "profile_families": [
+          {
+            "name": "round_bars",
+            "volume_t_year": 3500
+          },
+          {
+            "name": "square_hex_bars",
+            "volume_t_year": 2000
+          },
+          {
+            "name": "flat_profiles",
+            "volume_t_year": 1800
+          },
+          {
+            "name": "t_profiles",
+            "volume_t_year": 1200
+          },
+          {
+            "name": "custom_symmetric",
+            "volume_t_year": 2500
+          },
+          {
+            "name": "custom_asymmetric",
+            "volume_t_year": 800
+          }
+        ]
+      }
+    }
+  ],
+  "has_bom": false
+}

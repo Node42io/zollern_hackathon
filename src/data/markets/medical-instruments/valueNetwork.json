@@ -1,0 +1,169 @@
+{
+  "naicsCode": "339112",
+  "marketName": "Surgical and Medical Instrument Manufacturing",
+  "slug": "medical-instruments",
+  "coreJobStatement": "Design, manufacture, and deliver precision surgical and medical instruments that enable clinicians to perform diagnostic, therapeutic, and interventional procedures with controlled force, accurate positioning, and repeatable ergonomic handling",
+  "outputTypes": [
+    "Handheld non-powered surgical instrument (forceps, retractors, needle holders) — reusable, autoclave-sterilizable",
+    "Rigid endoscopic instrument (trocar sleeve, laparoscopic shaft, arthroscopic probe) — 3-10 mm OD",
+    "Orthopaedic hand instrument (osteotome, chisel, bone curette, rasp) — high-hardness cutting/shaping",
+    "Microsurgical / ophthalmic instrument — ultra-fine profiled tips; cross-sections < 10 mm2",
+    "Reusable device frame / structural housing — powered handpieces, retractor systems",
+    "Sterilization tray insert / guide rail — profiled stainless rails and dividers"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what process steps and equipment compose the surgical instrument manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "Global surgical instruments ~$65B (2024); ~$130B full surgical devices incl. powered; CAGR ~6.1% (2024-2030). Key manufacturers: Medtronic, J&J/DePuy Synthes, Stryker, B. Braun/Aesculap, Integra LifeSciences, KLS Martin [SRC: Grand View Research, Mordor Intelligence 2024]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Instrument Material Production",
+      "type": "Core",
+      "jobFamily": "Transform medical-grade steel into a near-net-shape profile or blank with controlled metallurgical properties",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Precision Forging / Forming",
+      "type": "Core",
+      "jobFamily": "Hot-forge or cold-form instrument blanks into near-final geometry (jaw profiles, handle contours, shaft tapers)",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "CNC Machining & Grinding",
+      "type": "Core",
+      "jobFamily": "Machine functional surfaces: jaw serrations, ratchet teeth, pivot bores, shaft flutes, and mating interfaces to final tolerance",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Heat Treatment & Hardening",
+      "type": "Core",
+      "jobFamily": "Through-harden or precipitation-harden instrument blanks to target hardness (45-58 HRC for cutting; 38-45 HRC for clamping)",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Surface Finishing & Passivation",
+      "type": "Core",
+      "jobFamily": "Electropolish, bead-blast, or satin-finish instrument surfaces; passivate per ASTM A967 to form stable chromium oxide layer; achieve Ra 0.4-0.8 um",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Assembly, Inspection & Sterilization Validation",
+      "type": "Core",
+      "jobFamily": "Assemble multi-part instruments; final dimensional and functional inspection; sterilization cycle validation per ISO 17665",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality Assurance (ISO 13485, FDA 21 CFR 820, MDR 2017/745)",
+      "type": "Horizontal",
+      "jobFamily": "ISO 13485 quality system, design history file, CAPA, and FDA/MDR compliance across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Regulatory Affairs (510(k), CE marking, UDI)",
+      "type": "Horizontal",
+      "jobFamily": "Product classification, regulatory submission, and UDI registration across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Biocompatibility & Materials Compliance (ISO 10993, REACH, RoHS)",
+      "type": "Horizontal",
+      "jobFamily": "Biocompatibility testing, materials compliance documentation at L6a, L6e, L6f",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Instrument-Grade Steel Profile / Bar Stock",
+      "functionalJob": "Custom cold-drawn precision stainless steel profile (near-net-shape, 1.4021/1.4028/1.4112/1.4542) at +-0.02 mm tolerance. ZOLLERN PRIMARY POSITION. ~15% share.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Standard Stainless Bar Stock",
+      "functionalJob": "Standard round/flat/hex bar stock (1.4021, 1.4028, AISI 420/440A) — customer machines instrument blank. ~55% share. Sourced from Sandvik, Bohler, Carpenter, Ugitech.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Pre-Forged Instrument Blank",
+      "functionalJob": "Drop-forged or investment-cast near-net-shape blanks for forceps, scissors, retractors. ~20% share. Sonthofen, Fritz Kruger, Siepmann.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "MIM Pre-Form",
+      "functionalJob": "Powder metallurgy (metal injection molding) for small/complex instrument parts. ~10% share. Growing for microsurgical and endoscopic components.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Drop Forging Press / Hammer",
+      "functionalJob": "Closed-die drop forging (1-5 ton hammer, steel dies) — dominant for forceps, scissors, retractors (~55% share). Tuttlingen cluster.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "CNC Multi-Axis Machining Center",
+      "functionalJob": "5-axis CNC milling (DMG Mori, Mazak, Haas) for jaw serration, ratchet teeth, pivot bore machining. ~60% share.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Vacuum Hardening Furnace",
+      "functionalJob": "Vacuum or protective-atmosphere through-hardening of martensitic stainless to 45-58 HRC without surface oxidation.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Electropolishing Cell",
+      "functionalJob": "Electrolytic surface finishing to achieve biocompatible mirror or satin surface at Ra 0.4-0.8 um.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": null,
+  "strategicPosition": "ZOLLERN holds position at L5 (Instrument-Grade Steel Profile / Bar Stock) under L6a (Instrument Material Production). Cold-drawn precision stainless profiles (1.4021, 1.4028, 1.4112, 1.4542) at +-0.02 mm tolerance, Ra <= 0.4 um, hardenable to 50-60 HRC. ~15% share of instrument material input. Competing against standard bar stock (~55%), forged blanks (~20%), and MIM (~10%).",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 339112 — Surgical and Medical Instrument Manufacturing",
+      "url": "https://data.census.gov",
+      "prefixedId": "VN-MEDICAL-INSTRUMENTS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Grand View Research — Surgical Instruments Market",
+      "url": "https://www.grandviewresearch.com",
+      "prefixedId": "VN-MEDICAL-INSTRUMENTS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "04b_existing_markets.md — ZOLLERN capability mapping",
+      "prefixedId": "VN-MEDICAL-INSTRUMENTS-S03"
+    }
+  ]
+}

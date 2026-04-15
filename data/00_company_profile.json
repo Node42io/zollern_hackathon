@@ -1,0 +1,374 @@
+{
+  "id": "00_company_profile",
+  "title": "00 Company Profile",
+  "type": "company_profile",
+  "market_slug": null,
+  "is_per_market": false,
+  "sections": [
+    {
+      "title": "Company Profile: ZOLLERN GmbH & Co. KG",
+      "content": "| Field | Value | Source |\n|-------|-------|--------|\n| Legal Name | ZOLLERN GmbH & Co. KG | Company website |\n| Legal Form | GmbH & Co. KG | Handelsregister (HRA 710542, AG Ulm) |\n| Former Name | Fuerstlich Hohenzollernsche Huettenwerke | Wikipedia |\n| Headquarters | Sigmaringendorf-Laucherthal, Baden-Wuerttemberg, Germany | Company website |\n| Country Code | DE | - |\n| Founded | 1708 | Company website |\n| Ownership | family_owned | Company website, Wikipedia |\n| Ownership Detail | 50% Fuersten von Hohenzollern-Sigmaringen, 50% Merckle Group (since 1989) | Wikipedia |\n| Advisory Board Chair | Karl Friedrich Fuerst von Hohenzollern | Company website |\n| Employees (Group) | ~2,000 | Company website, Wikipedia |\n| Employees (Profiles Div.) | ~800 (estimated, proportional) | INSTRUCTIONS.md |\n| Revenue (EUR M) | ~385 | Industry estimate, not publicly disclosed |\n| Revenue Confidence | industry_estimate | Private company, no public filings |\n| Primary NAICS (Group) | 331110 — Iron and Steel Mills and Ferroalloy Manufacturing | census.gov |\n| Primary NAICS (Profiles Div.) | 331221 — Rolled Steel Shape Manufacturing | census.gov |\n| Secondary NAICS | 332111 — Iron and Steel Forging | census.gov |\n\n### Cross-Validation\n\n| Metric | Web Research | CrustData / 3rd Party | Delta | Status |\n|--------|-------------|----------------------|-------|--------|\n| Employees (Group) | ~2,000 (Wikipedia, company site) | ~2,150 (LinkedIn/RocketReach) | +8% | PASS (within 30%) |\n| Revenue (EUR M) | ~385 (INSTRUCTIONS.md) | $100M-500M range (Owler) | consistent | SINGLE SOURCE — not publicly disclosed |"
+    },
+    {
+      "title": "Business Units",
+      "content": "| Unit | Name (Local) | Description | Focus | Status |\n|------|-------------|-------------|-------|--------|\n| Steel Profiles | Stahlprofile | Custom precision steel profiles via hot/cold rolling and drawing | Division under analysis | core |\n| Drive Technology | Antriebstechnik | Gear units, winches, direct drive motors, automation, rotary table systems | Industrial drive systems | core |\n| Investment Casting | Feinguss | Precision investment casting | Aerospace, industrial, medical | core |\n| Sand Casting & Forging | Sandguss & Schmiedetechnik | Sand casting and forging of metal components | Industrial components | core |\n\nProduction sites: Laucherthal (steel profiles, casting, forging), Herbertingen (drive technology). Global presence across 11 plants and 7 subsidiaries in Europe, North America, and Asia."
+    },
+    {
+      "title": "Subsidiaries (Selected)",
+      "content": "| Name | Location | Business Unit | Focus |\n|------|----------|---------------|-------|\n| ZOLLERN BHW Gleitlager GmbH & Co. KG | Braunschweig, DE | Drive Technology | Plain bearings |\n| ZOLLERN Alusingen GmbH | Sigmaringen, DE | Systems Engineering | Aluminum smelter systems |\n| ZOLLERN do Brasil | Brazil | Drive Technology | Plain bearings (manufacturing) |"
+    },
+    {
+      "title": "Key Persons",
+      "content": "| Name | Role | Since | Relevance |\n|------|------|-------|-----------|\n| Dr. Jerry Mackel | Managing Director (CEO) | ~2023 | Group strategy, operational transformation |\n| Dr. Oliver Picht | Managing Director (COO/CTO) | ~2023 | Technology, operations |\n| Mario Zirn | Managing Director (CFO) | ~2023 | Finance, controlling |\n| Karl Friedrich Fuerst von Hohenzollern | Chairman, Advisory Board (Beirat) | n/a | Ownership representative, strategic oversight |"
+    },
+    {
+      "title": "Strategic Context",
+      "content": "ZOLLERN's Steel Profiles division operates in a structurally declining German metal processing market. Revenue erosion in traditional segments (automotive, general mechanical engineering) collides with a rigid fixed-cost base: IG Metall labor contracts prevent rapid headcount adjustment, machine capacity sits 30-40% idle, and per-unit logistics costs rise as volumes shrink. The company has already completed a cost reduction program but cannot cut its way to profitability.\n\nThe strategic imperative is **capacity utilization through new market entry** — finding high-value application markets that absorb idle tonnage and improve margin mix. Family ownership (Hohenzollern-Sigmaringen + Merckle) provides financial runway but not indefinitely. The near-net-shape value proposition (reducing customer machining waste by 40-80% vs. machined bar stock) is the primary entry wedge for new markets."
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"company\": {\n    \"legal_name\": \"ZOLLERN GmbH & Co. KG\",\n    \"legal_form\": \"GmbH & Co. KG\",\n    \"former_name\": \"Fuerstlich Hohenzollernsche Huettenwerke\",\n    \"headquarters\": \"Sigmaringendorf-Laucherthal, Baden-Wuerttemberg, Germany\",\n    \"country_code\": \"DE\",\n    \"founded\": 1708,\n    \"ownership_type\": \"family_owned\",\n    \"ownership_detail\": \"50% Fuersten von Hohenzollern-Sigmaringen, 50% Merckle Group (since 1989)\",\n    \"employee_count_group\": 2000,\n    \"employee_count_division\": 800,\n    \"revenue_eur_m\": 385,\n    \"revenue_confidence\": \"industry_estimate\",\n    \"naics_primary\": \"331221\",\n    \"naics_primary_label\": \"Rolled Steel Shape Manufacturing\",\n    \"naics_group\": \"331110\",\n    \"naics_group_label\": \"Iron and Steel Mills and Ferroalloy Manufacturing\",\n    \"naics_secondary\": [\"332111\"]\n  },\n  \"divisions\": [\n    {\n      \"name\": \"Steel Profiles\",\n      \"name_local\": \"Stahlprofile\",\n      \"description\": \"Custom precision steel profiles via hot/cold rolling and drawing\",\n      \"focus\": \"Division under analysis\",\n      \"status\": \"core\"\n    },\n    {\n      \"name\": \"Drive Technology\",\n      \"name_local\": \"Antriebstechnik\",\n      \"description\": \"Gear units, winches, direct drive motors, automation, rotary table systems\",\n      \"focus\": \"Industrial drive systems\",\n      \"status\": \"core\"\n    },\n    {\n      \"name\": \"Investment Casting\",\n      \"name_local\": \"Feinguss\",\n      \"description\": \"Precision investment casting for aerospace, industrial, and medical\",\n      \"focus\": \"Aerospace, industrial, medical\",\n      \"status\": \"core\"\n    },\n    {\n      \"name\": \"Sand Casting & Forging\",\n      \"name_local\": \"Sandguss & Schmiedetechnik\",\n      \"description\": \"Sand casting and forging of metal components\",\n      \"focus\": \"Industrial components\",\n      \"status\": \"core\"\n    }\n  ],\n  \"key_persons\": [\n    {\n      \"name\": \"Dr. Jerry Mackel\",\n      \"role\": \"Managing Director (CEO)\",\n      \"since\": \"2023\"\n    },\n    {\n      \"name\": \"Dr. Oliver Picht\",\n      \"role\": \"Managing Director (COO/CTO)\",\n      \"since\": \"2023\"\n    },\n    {\n      \"name\": \"Mario Zirn\",\n      \"role\": \"Managing Director (CFO)\",\n      \"since\": \"2023\"\n    },\n    {\n      \"name\": \"Karl Friedrich Fuerst von Hohenzollern\",\n      \"role\": \"Chairman, Advisory Board\",\n      \"since\": null\n    }\n  ],\n  \"subsidiaries\": [\n    {\n      \"name\": \"ZOLLERN BHW Gleitlager GmbH & Co. KG\",\n      \"location\": \"Braunschweig, DE\",\n      \"business_unit\": \"Drive Technology\",\n      \"focus\": \"Plain bearings\"\n    },\n    {\n      \"name\": \"ZOLLERN Alusingen GmbH\",\n      \"location\": \"Sigmaringen, DE\",\n      \"business_unit\": \"Systems Engineering\",\n      \"focus\": \"Aluminum smelter systems\"\n    },\n    {\n      \"name\": \"ZOLLERN do Brasil\",\n      \"location\": \"Brazil\",\n      \"business_unit\": \"Drive Technology\",\n      \"focus\": \"Plain bearings manufacturing\"\n    }\n  ],\n  \"certifications\": [\n    {\n      \"name\": \"Quality Management\",\n      \"standard\": \"DIN EN ISO 9001:2015\",\n      \"scope\": \"Group-wide\",\n      \"market_access\": \"Baseline for all B2B\"\n    },\n    {\n      \"name\": \"Automotive Quality\",\n      \"standard\": \"IATF 16949:2016\",\n      \"scope\": \"Automotive-supplying divisions\",\n      \"market_access\": \"Automotive OEM supply chains\"\n    },\n    {\n      \"name\": \"Aerospace Quality\",\n      \"standard\": \"EN 9100\",\n      \"scope\": \"Aerospace-supplying divisions (casting)\",\n      \"market_access\": \"Aerospace and defense supply chains\"\n    },\n    {\n      \"name\": \"Environmental Management\",\n      \"standard\": \"ISO 14001:2015\",\n      \"scope\": \"Group-wide (not confirmed for all sites)\",\n      \"market_access\": \"ESG-sensitive customers\"\n    }\n  ]\n}\n```\n\n---\n\n*Sources: [ZOLLERN Group](https://www.zollern.com/en/company/about-zollern/zollern-group/), [Wikipedia — Zollern (Unternehmen)](https://de.wikipedia.org/wiki/Zollern_(Unternehmen)), [ZOLLERN Quality](https://zollern.com/en/company/quality/), [ZOLLERN Steel Profiles](https://www.zollern.com/en/company/about-zollern/steel-profiles/), [NAICS 331221 — census.gov](https://www.census.gov/naics/?input=331221&year=2022&details=331221), [Familienunternehmen — Mario Zirn CFO](https://familienunternehmen.eu/familienunternehmen-zollern-mario-zirn/), [North Data — Zollern](https://www.northdata.com/Zollern+GmbH+&+Co.+KG,+Sigmaringendorf/Amtsgericht+Ulm+HRA+710542)*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Field",
+        "Value",
+        "Source"
+      ],
+      "rows": [
+        {
+          "Field": "Legal Name",
+          "Value": "ZOLLERN GmbH & Co. KG",
+          "Source": "Company website"
+        },
+        {
+          "Field": "Legal Form",
+          "Value": "GmbH & Co. KG",
+          "Source": "Handelsregister (HRA 710542, AG Ulm)"
+        },
+        {
+          "Field": "Former Name",
+          "Value": "Fuerstlich Hohenzollernsche Huettenwerke",
+          "Source": "Wikipedia"
+        },
+        {
+          "Field": "Headquarters",
+          "Value": "Sigmaringendorf-Laucherthal, Baden-Wuerttemberg, Germany",
+          "Source": "Company website"
+        },
+        {
+          "Field": "Country Code",
+          "Value": "DE",
+          "Source": "-"
+        },
+        {
+          "Field": "Founded",
+          "Value": "1708",
+          "Source": "Company website"
+        },
+        {
+          "Field": "Ownership",
+          "Value": "family_owned",
+          "Source": "Company website, Wikipedia"
+        },
+        {
+          "Field": "Ownership Detail",
+          "Value": "50% Fuersten von Hohenzollern-Sigmaringen, 50% Merckle Group (since 1989)",
+          "Source": "Wikipedia"
+        },
+        {
+          "Field": "Advisory Board Chair",
+          "Value": "Karl Friedrich Fuerst von Hohenzollern",
+          "Source": "Company website"
+        },
+        {
+          "Field": "Employees (Group)",
+          "Value": "~2,000",
+          "Source": "Company website, Wikipedia"
+        },
+        {
+          "Field": "Employees (Profiles Div.)",
+          "Value": "~800 (estimated, proportional)",
+          "Source": "INSTRUCTIONS.md"
+        },
+        {
+          "Field": "Revenue (EUR M)",
+          "Value": "~385",
+          "Source": "Industry estimate, not publicly disclosed"
+        },
+        {
+          "Field": "Revenue Confidence",
+          "Value": "industry_estimate",
+          "Source": "Private company, no public filings"
+        },
+        {
+          "Field": "Primary NAICS (Group)",
+          "Value": "331110 — Iron and Steel Mills and Ferroalloy Manufacturing",
+          "Source": "census.gov"
+        },
+        {
+          "Field": "Primary NAICS (Profiles Div.)",
+          "Value": "331221 — Rolled Steel Shape Manufacturing",
+          "Source": "census.gov"
+        },
+        {
+          "Field": "Secondary NAICS",
+          "Value": "332111 — Iron and Steel Forging",
+          "Source": "census.gov"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Metric",
+        "Web Research",
+        "CrustData / 3rd Party",
+        "Delta",
+        "Status"
+      ],
+      "rows": [
+        {
+          "Metric": "Employees (Group)",
+          "Web Research": "~2,000 (Wikipedia, company site)",
+          "CrustData / 3rd Party": "~2,150 (LinkedIn/RocketReach)",
+          "Delta": "+8%",
+          "Status": "PASS (within 30%)"
+        },
+        {
+          "Metric": "Revenue (EUR M)",
+          "Web Research": "~385 (INSTRUCTIONS.md)",
+          "CrustData / 3rd Party": "$100M-500M range (Owler)",
+          "Delta": "consistent",
+          "Status": "SINGLE SOURCE — not publicly disclosed"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Unit",
+        "Name (Local)",
+        "Description",
+        "Focus",
+        "Status"
+      ],
+      "rows": [
+        {
+          "Unit": "Steel Profiles",
+          "Name (Local)": "Stahlprofile",
+          "Description": "Custom precision steel profiles via hot/cold rolling and drawing",
+          "Focus": "Division under analysis",
+          "Status": "core"
+        },
+        {
+          "Unit": "Drive Technology",
+          "Name (Local)": "Antriebstechnik",
+          "Description": "Gear units, winches, direct drive motors, automation, rotary table systems",
+          "Focus": "Industrial drive systems",
+          "Status": "core"
+        },
+        {
+          "Unit": "Investment Casting",
+          "Name (Local)": "Feinguss",
+          "Description": "Precision investment casting",
+          "Focus": "Aerospace, industrial, medical",
+          "Status": "core"
+        },
+        {
+          "Unit": "Sand Casting & Forging",
+          "Name (Local)": "Sandguss & Schmiedetechnik",
+          "Description": "Sand casting and forging of metal components",
+          "Focus": "Industrial components",
+          "Status": "core"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Name",
+        "Location",
+        "Business Unit",
+        "Focus"
+      ],
+      "rows": [
+        {
+          "Name": "ZOLLERN BHW Gleitlager GmbH & Co. KG",
+          "Location": "Braunschweig, DE",
+          "Business Unit": "Drive Technology",
+          "Focus": "Plain bearings"
+        },
+        {
+          "Name": "ZOLLERN Alusingen GmbH",
+          "Location": "Sigmaringen, DE",
+          "Business Unit": "Systems Engineering",
+          "Focus": "Aluminum smelter systems"
+        },
+        {
+          "Name": "ZOLLERN do Brasil",
+          "Location": "Brazil",
+          "Business Unit": "Drive Technology",
+          "Focus": "Plain bearings (manufacturing)"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Name",
+        "Role",
+        "Since",
+        "Relevance"
+      ],
+      "rows": [
+        {
+          "Name": "Dr. Jerry Mackel",
+          "Role": "Managing Director (CEO)",
+          "Since": "~2023",
+          "Relevance": "Group strategy, operational transformation"
+        },
+        {
+          "Name": "Dr. Oliver Picht",
+          "Role": "Managing Director (COO/CTO)",
+          "Since": "~2023",
+          "Relevance": "Technology, operations"
+        },
+        {
+          "Name": "Mario Zirn",
+          "Role": "Managing Director (CFO)",
+          "Since": "~2023",
+          "Relevance": "Finance, controlling"
+        },
+        {
+          "Name": "Karl Friedrich Fuerst von Hohenzollern",
+          "Role": "Chairman, Advisory Board (Beirat)",
+          "Since": "n/a",
+          "Relevance": "Ownership representative, strategic oversight"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "company": {
+        "legal_name": "ZOLLERN GmbH & Co. KG",
+        "legal_form": "GmbH & Co. KG",
+        "former_name": "Fuerstlich Hohenzollernsche Huettenwerke",
+        "headquarters": "Sigmaringendorf-Laucherthal, Baden-Wuerttemberg, Germany",
+        "country_code": "DE",
+        "founded": 1708,
+        "ownership_type": "family_owned",
+        "ownership_detail": "50% Fuersten von Hohenzollern-Sigmaringen, 50% Merckle Group (since 1989)",
+        "employee_count_group": 2000,
+        "employee_count_division": 800,
+        "revenue_eur_m": 385,
+        "revenue_confidence": "industry_estimate",
+        "naics_primary": "331221",
+        "naics_primary_label": "Rolled Steel Shape Manufacturing",
+        "naics_group": "331110",
+        "naics_group_label": "Iron and Steel Mills and Ferroalloy Manufacturing",
+        "naics_secondary": [
+          "332111"
+        ]
+      },
+      "divisions": [
+        {
+          "name": "Steel Profiles",
+          "name_local": "Stahlprofile",
+          "description": "Custom precision steel profiles via hot/cold rolling and drawing",
+          "focus": "Division under analysis",
+          "status": "core"
+        },
+        {
+          "name": "Drive Technology",
+          "name_local": "Antriebstechnik",
+          "description": "Gear units, winches, direct drive motors, automation, rotary table systems",
+          "focus": "Industrial drive systems",
+          "status": "core"
+        },
+        {
+          "name": "Investment Casting",
+          "name_local": "Feinguss",
+          "description": "Precision investment casting for aerospace, industrial, and medical",
+          "focus": "Aerospace, industrial, medical",
+          "status": "core"
+        },
+        {
+          "name": "Sand Casting & Forging",
+          "name_local": "Sandguss & Schmiedetechnik",
+          "description": "Sand casting and forging of metal components",
+          "focus": "Industrial components",
+          "status": "core"
+        }
+      ],
+      "key_persons": [
+        {
+          "name": "Dr. Jerry Mackel",
+          "role": "Managing Director (CEO)",
+          "since": "2023"
+        },
+        {
+          "name": "Dr. Oliver Picht",
+          "role": "Managing Director (COO/CTO)",
+          "since": "2023"
+        },
+        {
+          "name": "Mario Zirn",
+          "role": "Managing Director (CFO)",
+          "since": "2023"
+        },
+        {
+          "name": "Karl Friedrich Fuerst von Hohenzollern",
+          "role": "Chairman, Advisory Board",
+          "since": null
+        }
+      ],
+      "subsidiaries": [
+        {
+          "name": "ZOLLERN BHW Gleitlager GmbH & Co. KG",
+          "location": "Braunschweig, DE",
+          "business_unit": "Drive Technology",
+          "focus": "Plain bearings"
+        },
+        {
+          "name": "ZOLLERN Alusingen GmbH",
+          "location": "Sigmaringen, DE",
+          "business_unit": "Systems Engineering",
+          "focus": "Aluminum smelter systems"
+        },
+        {
+          "name": "ZOLLERN do Brasil",
+          "location": "Brazil",
+          "business_unit": "Drive Technology",
+          "focus": "Plain bearings manufacturing"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Quality Management",
+          "standard": "DIN EN ISO 9001:2015",
+          "scope": "Group-wide",
+          "market_access": "Baseline for all B2B"
+        },
+        {
+          "name": "Automotive Quality",
+          "standard": "IATF 16949:2016",
+          "scope": "Automotive-supplying divisions",
+          "market_access": "Automotive OEM supply chains"
+        },
+        {
+          "name": "Aerospace Quality",
+          "standard": "EN 9100",
+          "scope": "Aerospace-supplying divisions (casting)",
+          "market_access": "Aerospace and defense supply chains"
+        },
+        {
+          "name": "Environmental Management",
+          "standard": "ISO 14001:2015",
+          "scope": "Group-wide (not confirmed for all sites)",
+          "market_access": "ESG-sensitive customers"
+        }
+      ]
+    }
+  ],
+  "has_bom": false
+}

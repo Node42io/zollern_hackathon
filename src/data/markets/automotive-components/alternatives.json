@@ -1,0 +1,32 @@
+{
+  "naicsCode": "336390",
+  "marketName": "Other Motor Vehicle Parts Manufacturing",
+  "slug": "automotive-components",
+  "alternatives": [
+    {
+      "name": "Near-net-shape precision cold-drawn / cold-rolled profile stock",
+      "unspsc": "30102304",
+      "tradeoffs": "Custom tooling lead 6-12 weeks; min 100 kg economic batch; 2D constant cross-section only; die ownership complication at program end; higher unit cost vs. bar stock; IT8 tolerance (+-0.02 mm); in-line IH available [SRC: JTBD_automotive_components]"
+    },
+    {
+      "name": "Standard round / flat bar stock machined at Tier 1",
+      "unspsc": "31161501",
+      "tradeoffs": "40-80% material waste at Tier 1; machining cycle time consumes Tier 1 CNC capacity; no integrated surface hardness; zero tooling cost; commodity sourcing from multiple distributors; ~53% market share [SRC: VN_automotive_components]"
+    },
+    {
+      "name": "Cold roll-formed structural open section",
+      "unspsc": "30102200",
+      "tradeoffs": "Tolerance +-0.5 mm inadequate for IT8 bearing surfaces; limited cross-section complexity; no in-line IH; cost-efficient at volume; suitable only for structural (OT3) not precision (OT1/OT4); ~25% share [SRC: JTBD_automotive_components]"
+    },
+    {
+      "name": "Hot-stamped / press-hardened section (22MnB5)",
+      "unspsc": "31161600",
+      "tradeoffs": "Ultra-high strength 1,500 MPa; uniform hardness; die lead 12-20+ weeks; complex process PPAP; limited capacity; higher per-unit cost; ~12% share growing at 8% CAGR [SRC: ADJ_automotive_components]"
+    },
+    {
+      "name": "Do nothing — continue machining from bar stock (status quo)",
+      "unspsc": "",
+      "tradeoffs": "Zero P1 burden; 40-80% machining waste embedded in Tier 1 unit cost; no new qualification; no tooling investment; most common competitor in all segments"
+    }
+  ]
+}

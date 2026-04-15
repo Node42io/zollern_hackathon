@@ -1,0 +1,162 @@
+{
+  "naicsCode": "333120",
+  "marketName": "Construction Machinery Manufacturing",
+  "slug": "construction-machinery",
+  "coreJobStatement": "Design, manufacture, and deliver powered earthmoving, lifting, compaction, and drilling equipment that repositions terrain, lifts loads, and prepares ground at construction, mining, and infrastructure job sites [SRC: VN_construction_machinery]",
+  "productJobStatement": "Help Steel Input Materials selection to provide constant-cross-section steel structural profiles at specified dimensional tolerances (+-0.02 to +-0.5 mm), strength grade (S355-S690), and optional surface hardness (>=55 HRC) for direct integration into excavator boom/arm subassemblies, frame structures, and sliding interface components",
+  "anchorLevel": "L4 (component — structural profile within steel input materials)",
+  "lPath": "L7 Construction Equipment Manufacturing Ecosystem > L6a Structural Steel Fabrication > L5 Steel Input Materials > L4 Boom/Arm Chord Profiles, Slide Guide Channels, Pivot Pins, Wear Strips",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "New platform development",
+      "qualifier": "",
+      "characteristics": "First-article geometry undefined; design freedom; 6-18 month tooling lead accepted",
+      "isTargetable": true,
+      "targetabilityReason": "All alternatives compete — plate, hollow sections, forgings, near-net profiles",
+      "circumstance": "First-article geometry undefined; design freedom; 6-18 month tooling lead accepted",
+      "alternativesDiffer": "Yes — all alternatives compete"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "High-volume serial production",
+      "qualifier": "",
+      "characteristics": "Geometry frozen; annual call-off contracts; zero tooling lead time acceptable",
+      "isTargetable": true,
+      "targetabilityReason": "Incumbent wins; competitor = re-qualification cost",
+      "circumstance": "Geometry frozen; annual call-off contracts; zero tooling lead time acceptable",
+      "alternativesDiffer": "Yes — incumbent wins; competitor = re-qualification cost"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Aftermarket / wear part replacement",
+      "qualifier": "",
+      "characteristics": "Condition-based replacement; needs standard geometry stock",
+      "isTargetable": true,
+      "targetabilityReason": "Standard geometry stock; bolt-on aftermarket plates compete",
+      "circumstance": "Condition-based replacement (inspect every 250 hr; replace at 50% wear); needs standard geometry stock",
+      "alternativesDiffer": "Yes — bolt-on aftermarket plates and polymer liners compete"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Platform redesign / lightweighting",
+      "qualifier": "",
+      "characteristics": "Boom/arm geometry revised to reduce weight; S690QL upgrade path",
+      "isTargetable": true,
+      "targetabilityReason": "High-strength plate (S690/Weldox) competes with near-net profile",
+      "circumstance": "Boom/arm geometry revised to reduce weight; S690QL / Weldox 700 upgrade path",
+      "alternativesDiffer": "Yes — high-strength plate and near-net profile in upgraded grade compete"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Near-net-shape precision profiles (cold-drawn / hot-rolled)",
+      "unspsc": "30102304",
+      "tradeoffs": "Tooling NRE 5-15K EUR; 6-12 wk first-article lead time; min 100 kg batch; geometry fixed to 2D constant cross-section"
+    },
+    {
+      "name": "Laser/plasma-cut flat plate + weld fabrication",
+      "unspsc": "40142022",
+      "tradeoffs": "Multiple weld passes increase distortion risk; 40-60% material waste vs. near-net; weld sequence controls geometry; dominant at ~60% share"
+    },
+    {
+      "name": "Standard structural hollow sections (SHS/RHS from service center)",
+      "unspsc": "30102304",
+      "tradeoffs": "Catalog geometry only; limited cross-section optimization; standard tolerance +-1-2 mm; no IH option; ~15% share"
+    },
+    {
+      "name": "Hot forgings (complex node elements)",
+      "unspsc": "31162800",
+      "tradeoffs": "Die NRE 50-150K EUR; 6-18 month qualification; near-net 3D geometry possible; better fatigue at dynamic joints; ~5% share"
+    },
+    {
+      "name": "Status quo — continue machining from bar stock",
+      "unspsc": "31161501",
+      "tradeoffs": "Zero acquisition overhead; 40-60% material swarf waste; high machining cost per part; no geometry optimization"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Specify profile cross-section geometry, dimensional tolerances, material grade, surface hardness, and certification requirements for boom/arm/frame components",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Profile geometry specification determines die design feasibility and near-net-shape advantage",
+      "rawStatement": "Specify profile cross-section geometry, dimensional tolerances, material grade, surface hardness, and certification requirements for boom/arm/frame components",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Profile geometry specification determines production feasibility and die design"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify and pre-qualify suppliers capable of producing the specified profile cross-section in required grade, tolerance, and hardness",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Profile supplier pool for custom cross-sections is narrow; qualification is effort-intensive",
+      "rawStatement": "Identify and pre-qualify suppliers capable of producing the specified profile cross-section in required grade, tolerance, and hardness",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Profile supplier pool for custom cross-sections is narrow; qualification is effort-intensive"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Submit DXF drawing for die design; receive first-article profiles; validate dimensional compliance, hardness, and material certificate",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Die qualification is the primary barrier step for near-net-shape profile supply",
+      "rawStatement": "Submit DXF drawing for die design; receive first-article profiles; validate dimensional compliance, hardness, and material certificate",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Die qualification is the primary barrier step for near-net-shape profile supply"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Approve first-article inspection, material certificate, and PPAP-equivalent documentation before serial supply",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Certification integrity is critical — slideway dimensional errors propagate to machine accuracy",
+      "rawStatement": "Approve first-article inspection, material certificate, and PPAP-equivalent documentation before serial supply",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Certification integrity is critical — dimensional errors propagate to machine accuracy"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Receive production batch; incoming dimensional, hardness, and straightness inspection; release to machining or direct assembly",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Lot-level compliance is the execution risk; pre-hardened profiles go to assembly, not heat treatment",
+      "rawStatement": "Receive production batch; incoming dimensional, hardness, and straightness inspection; release to machining or direct assembly",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Lot-level compliance is the execution risk; pre-hardened profiles go to assembly, not heat treatment"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Track lot-to-lot dimensional, hardness, and straightness consistency across ongoing deliveries",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Drift causes silent machine accuracy degradation across multiple machines",
+      "rawStatement": "Track lot-to-lot dimensional, hardness, and straightness consistency across ongoing deliveries",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Drift causes silent machine accuracy degradation across multiple machines"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "VN_construction_machinery.md",
+      "url": "VN_construction_machinery.md",
+      "prefixedId": "JTBD-CONSTRUCTION-MACHINERY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "BOM_construction_machinery.md",
+      "url": "BOM_construction_machinery.md",
+      "prefixedId": "JTBD-CONSTRUCTION-MACHINERY-S02"
+    }
+  ]
+}

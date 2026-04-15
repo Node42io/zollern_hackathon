@@ -1,0 +1,111 @@
+{
+  "naicsCode": "332321",
+  "marketName": "Door Systems",
+  "slug": "door-systems",
+  "coreJobStatement": "Enable controlled, safe, and weathertight passage through building openings in industrial, commercial, and residential structures while meeting fire resistance, thermal separation, acoustic attenuation, security, and structural loading code requirements",
+  "outputTypes": [
+    "Steel sliding door systems",
+    "Sectional / overhead door systems",
+    "Fire-rated steel doors (EN 16034 / EN 1634)",
+    "Security / blast doors",
+    "Automated high-speed doors",
+    "Residential entrance doors"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — building envelope and controlled access manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$36.3B global industrial door systems (2025); industrial sectional segment ~$2.1B EU; industrial sliding door ~$5B (2025), CAGR 7% through 2033",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Raw Material Intake & Prep",
+      "type": "Core",
+      "jobFamily": "Receive and pre-process metal feedstock (coil, billets, purchased profiles) to manufacturing-ready state",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Structural Profile & Frame Forming",
+      "type": "Core",
+      "jobFamily": "Form load-bearing frame sections, guide rails, and sliding tracks into required cross-section geometry",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Door Leaf Fabrication",
+      "type": "Core",
+      "jobFamily": "Assemble door panel body from face skins, insulation core, and internal stiffeners",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Hardware & Drive Component Production",
+      "type": "Core",
+      "jobFamily": "Produce or source rollers, hinges, locking systems, springs, and drive mechanisms enabling door motion and retention",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Surface Treatment & Finishing",
+      "type": "Core",
+      "jobFamily": "Apply corrosion protection, fire-resistant treatment, and decorative coating to frames and panels",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Assembly & Systems Integration",
+      "type": "Core",
+      "jobFamily": "Integrate frame, door leaf, hardware, seals, glazing, and automation into complete tested door unit",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Compliance Testing & Certification",
+      "type": "Core",
+      "jobFamily": "Verify fire resistance class, thermal transmittance (Uw), acoustic rating (Rw), and structural loading against EN/NFPA standards",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Quality Assurance (H)",
+      "type": "Horizontal",
+      "jobFamily": "Maintain dimensional, surface, and performance conformance at all process gates",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Precision Steel Track & Guide Profile",
+      "functionalJob": "ZOLLERN PRIMARY POSITION. Cold-drawn/cold-rolled specialty profiles (~25%) for guide rails with roller guidance groove + sealing lip at IT8 tolerance, optional induction hardening. Alternatives: In-house roll-formed sections (~40%), Hot-rolled structural sections (~25%), Extruded aluminum (~10%, not ZOLLERN - C6).",
+      "description": "Custom cold-drawn alloy steel guide rail profiles with asymmetric cross-section, roller guidance groove, sealing lip",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Roll Forming Line",
+      "functionalJob": "Continuous in-line roll former (~65%, Dahlstrom, Metform, Bradbury). Flexible/quick-change (~20%). CNC servo (~15%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Steel Strip & Coil",
+      "functionalJob": "Hot-dip galvanized coil (~55%), pre-painted coil (~30%), cold-rolled bare coil (~15%).",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "zollernPosition": "ZOLLERN holds PRIMARY position at L5 Precision Steel Track & Guide Profile under L6b Structural Profile & Frame Forming. Supplies guide rail cross-sections for industrial sliding, fire-rated, security, and automated high-speed door systems.",
+  "strategicPosition": "Against volume-viable incumbents (roll forming + hot-rolled), ZOLLERN net weighted delta is +83. Key differentiators: surface hardness for rated cycle count (N04, delta +3), fire door seal groove precision (N19, delta +1), EN 10204 3.1 material certificates (N21, delta +3).",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 332321 - US Census Bureau",
+      "url": "https://data.census.gov/profile/332321",
+      "prefixedId": "VN-DOOR-SYSTEMS-S01"
+    }
+  ]
+}

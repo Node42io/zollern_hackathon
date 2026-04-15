@@ -1,0 +1,152 @@
+{
+  "naicsCode": "335312",
+  "marketName": "Motor and Generator Manufacturing",
+  "slug": "generator-keybars",
+  "coreJobStatement": "Manufacture rotating electrical machines that reliably convert between mechanical and electrical energy at specified power, voltage, frequency, and efficiency ratings",
+  "outputTypes": [
+    "Large turbo-generator (>=100 MW) — steam or gas turbine driven; hydrogen or water cooled; 12-72 keybars per machine",
+    "Hydro-generator — slow-speed salient-pole; large stator diameter; high keybar count",
+    "Industrial motor (1-100 MW) — multi-purpose drive; standardised frame sizes",
+    "Medium generator (<100 MW) — gas/diesel driven; smaller keybar cross-section",
+    "Small / fractional motor (<1 MW) — automated coil insertion; keybars not applicable"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what process steps and equipment compose the electrical machine manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "Global electric generator market ~$31.7B (2024); ~$57.9B by 2034 (CAGR 6.2%) [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Lamination Fabrication",
+      "type": "Core",
+      "jobFamily": "Stamp silicon steel lamination segments to specified geometry and insulation coating",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Stator Core Assembly",
+      "type": "Core",
+      "jobFamily": "Stack lamination segments onto structural keybar frame and compress to specified core density",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Coil & Bar Winding",
+      "type": "Core",
+      "jobFamily": "Wind and form electrical conductor bars/coils to stator slot geometry and insulation spec",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Insulation & Impregnation",
+      "type": "Core",
+      "jobFamily": "Impregnate wound stator with resin system to achieve required electrical isolation and thermal conductivity",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Rotor Assembly",
+      "type": "Core",
+      "jobFamily": "Assemble rotor core, field winding/magnets, and shaft into balanced rotating subassembly",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Final Assembly & Integration",
+      "type": "Core",
+      "jobFamily": "Integrate stator, rotor, bearings, and enclosure into complete rotating machine assembly",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Factory Testing & Certification",
+      "type": "Core",
+      "jobFamily": "Verify electrical, mechanical, and safety performance of completed machine to OEM and customer specification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Design & Simulation Engineering",
+      "type": "Horizontal",
+      "jobFamily": "Electromagnetic, thermal, and mechanical design governs all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Quality & Dimensional Inspection",
+      "type": "Horizontal",
+      "jobFamily": "CMM, hardness testing, insulation resistance, and dimensional audit at every process gate",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Stator Structural Frame",
+      "functionalJob": "Precision steel skeleton onto which silicon steel lamination segments are stacked. Laminations interlock with keybars via dovetail/T-slot mating geometry. ZOLLERN PRIMARY POSITION at L4 (keybar profiles) within this L5.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Core Stacking & Pressing Equipment",
+      "functionalJob": "Hydraulic core press (OEM-proprietary, ~90% share) for compressing lamination stacks to specified core density.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Core Testing Equipment",
+      "functionalJob": "El-CID (electromagnetic core imperfection detection, ~60%) and ring flux test (~35%) for stator core quality verification.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Lamination Stamping Systems",
+      "functionalJob": "Progressive die stamping (automated strip feed, ~70%) for silicon steel lamination segment production.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Bar Winding Machines",
+      "functionalJob": "Semi-automated bar forming machine (~55%) for stator conductor bar winding.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Vacuum Pressure Impregnation (VPI) System",
+      "functionalJob": "Impregnation of wound stator with epoxy resin under vacuum to achieve Class F/H insulation.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": null,
+  "strategicPosition": "ZOLLERN holds position at L4 (Keybar Profiles) within L5 (Stator Structural Frame) under L6b (Stator Core Assembly). Cold-drawn near-net-shape dovetail/T-slot profiles at IT8 tolerance. ~20% share of keybar supply. Competing against CNC-machined from bar (~65%), catalog profiles (~10%), and welded/fabricated (~5%).",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 335312 — US Census Bureau",
+      "url": "https://data.census.gov",
+      "prefixedId": "VN-GENERATOR-KEYBARS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Global Electric Generator Market — Market Reports",
+      "url": "",
+      "prefixedId": "VN-GENERATOR-KEYBARS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "04b_existing_markets.md — ZOLLERN capability mapping",
+      "prefixedId": "VN-GENERATOR-KEYBARS-S03"
+    }
+  ]
+}

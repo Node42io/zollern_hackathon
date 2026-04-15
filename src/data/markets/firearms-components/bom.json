@@ -1,0 +1,95 @@
+{
+  "slug": "firearms-components",
+  "marketName": "Firearms Components",
+  "naicsCode": "332994",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies near-net-shape steel profiles consumed by firearms OEMs. Tier 2 material/blank supplier at L1 depth. Output type: semi-automatic pistol (polymer-frame, striker-fired).",
+  "outputTypes": [
+    { "id": "OT-B", "name": "Semi-automatic pistol (polymer-frame, striker-fired)", "hydronic": false, "sensorFit": "primary", "notes": "~66% of production. Representative design for BOM decomposition." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.2"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Frame/Receiver Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Frame architecture (polymer vs metal)",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Polymer frame with steel rail inserts (Glock, S&W M&P, SIG P320)", "sharePct": 66, "trend": "growing" },
+        { "name": "Metal-frame / steel machined/forged (CZ 75, 1911 types)", "sharePct": 22, "trend": "declining" },
+        { "name": "Aluminium-frame / machined (Beretta 92, SIG P226 classic)", "sharePct": 12, "trend": "declining" }
+      ],
+      "modules": [
+        { "id": "L3.1.1", "name": "Rail Interface Module (front + rear rail guide inserts)", "isMarquardtAnchor": true, "sensorNote": "ZOLLERN PRIMARY - cold-drawn precision profiles for rail guide inserts, insert-molded into polymer frame", "alternatives": [
+          { "name": "Cold-drawn precision steel profile (near-net, IH) - ZOLLERN", "sharePct": 50, "trend": "growing", "isMarquardt": true },
+          { "name": "MIM (Metal Injection Molded) alloy steel rail insert", "sharePct": 30, "trend": "growing" },
+          { "name": "Stamped / machined billet steel insert (no near-net profile)", "sharePct": 20, "trend": "declining" }
+        ]},
+        { "id": "L3.1.2", "name": "Frame Body Structural Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Injection-molded polymer (PA66-GF30)", "sharePct": 66, "trend": "growing" },
+          { "name": "CNC-machined / forged carbon steel frame", "sharePct": 22, "trend": "declining" },
+          { "name": "CNC-machined aluminium billet (6061-T6)", "sharePct": 12, "trend": "declining" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Slide/Action Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Slide manufacturing method",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "CNC-machined from billet or forged 4140 steel", "sharePct": 60, "trend": "stable" },
+        { "name": "CNC-machined from cold-drawn profile blank (ZOLLERN)", "sharePct": 25, "trend": "growing" },
+        { "name": "Sheet metal stamped slide (low-cost)", "sharePct": 15, "trend": "declining" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Barrel & Chamber Subsystem",
+      "costSharePct": 20,
+      "keyDesignChoice": "Barrel blank manufacturing",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Hammer-forged barrel (H&K, Walther, FN)", "sharePct": 55, "trend": "growing" },
+        { "name": "Button-rifled barrel (from drilled blank)", "sharePct": 35, "trend": "stable" },
+        { "name": "Cut-rifled barrel (precision/match grade)", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Fire Control Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Trigger mechanism",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Striker-fired (Glock, M&P, SIG P320)", "sharePct": 65, "trend": "growing" },
+        { "name": "DA/SA hammer-fired (Beretta, SIG P226, CZ)", "sharePct": 25, "trend": "declining" },
+        { "name": "SAO hammer-fired (1911 types)", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.5",
+      "name": "Magazine/Feed Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Magazine body material",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Steel stamped magazine body", "sharePct": 55, "trend": "stable" },
+        { "name": "Polymer magazine body (Magpul PMAG type)", "sharePct": 40, "trend": "growing" },
+        { "name": "Aluminium magazine body", "sharePct": 5, "trend": "stable" }
+      ],
+      "modules": []
+    }
+  ]
+}

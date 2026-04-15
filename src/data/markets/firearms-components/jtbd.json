@@ -1,0 +1,23 @@
+{
+  "naicsCode": "332994",
+  "marketName": "Firearms Components",
+  "slug": "firearms-components",
+  "coreJobStatement": "Transform steel, polymer, and propellant inputs into safe, precisely-dimensioned small arms and ordnance components certified to performance, safety, and traceability standards for military, law enforcement, and authorized commercial markets",
+  "productJobStatement": "Help Blank and Semi-Finished Forming to supply near-net-shape steel component blanks within firearms-grade dimensional and material property specifications to downstream CNC machining operations",
+  "anchorLevel": "L5 (Precision Cold-Drawn Steel Profiles within L6b Blank & Semi-Finished Forming)",
+  "lPath": "",
+  "segments": [
+    { "segmentNumber": 1, "name": "Military OEM", "qualifier": "", "characteristics": "Select-fire capable, MIL-SPEC acceptance, ITAR-controlled supply chain, 100% lot traceability", "isTargetable": true, "targetabilityReason": "Receiver / bolt carrier profiles; ITAR registration required", "circumstance": "Select-fire capable, MIL-SPEC acceptance, ITAR-controlled supply chain", "alternativesDiffer": "Long-term qualification; ITAR compliance mandatory" },
+    { "segmentNumber": 2, "name": "Law Enforcement Supply", "qualifier": "", "characteristics": "Semi-auto, service-grade, domestic supply preferred, contract volume", "isTargetable": true, "targetabilityReason": "Slide rail + receiver profiles; lower regulatory burden than military", "circumstance": "Semi-auto, service-grade, domestic supply preferred, contract volume", "alternativesDiffer": "Lower regulatory burden than military" },
+    { "segmentNumber": 3, "name": "Commercial / Sporting OEM", "qualifier": "", "characteristics": "SAAMI/CIP, no ITAR, cost-sensitive, innovation-driven", "isTargetable": true, "targetabilityReason": "Barrel blanks + slide rails; strongest near-term growth segment", "circumstance": "SAAMI/CIP, no ITAR, cost-sensitive, innovation-driven", "alternativesDiffer": "Cost competition stronger" },
+    { "segmentNumber": 4, "name": "Precision / Custom Gunsmith", "qualifier": "", "characteristics": "Low volume, high geometry specificity, prototype quantities", "isTargetable": false, "targetabilityReason": "Blocked by C7 (100kg min batch) except with NRE die model", "circumstance": "Low volume, high geometry specificity, prototype quantities", "alternativesDiffer": "CNC billet machining dominant" },
+    { "segmentNumber": 5, "name": "Sub-Component Supplier (no final assembly)", "qualifier": "", "characteristics": "Component-only, no proof/assembly step, OEM-grade tolerances", "isTargetable": true, "targetabilityReason": "Profile blanks for machining shops supplying firearms OEMs", "circumstance": "Component-only, no proof/assembly step, OEM-grade tolerances", "alternativesDiffer": "Diverse alternative set" }
+  ],
+  "alternatives": [
+    { "name": "Cold-drawn near-net steel profiles (ZOLLERN)", "unspsc": "30102304", "tradeoffs": "6-12 week tooling lead; 100 kg min batch; cannot IH short parts in-house (C9); steel-only (C6). ~25% share." },
+    { "name": "Drop / hammer forged blanks", "unspsc": "31162200", "tradeoffs": "Superior grain structure for high-stress military receivers; longer die lead + forging trial; flash removal adds machining step. ~45% share." },
+    { "name": "CNC billet machining from bar stock", "unspsc": "31161501", "tradeoffs": "Zero tooling lead; full geometry flexibility; 40-60% material waste; high machining time per part; uneconomic at volume. ~25% share." },
+    { "name": "Investment casting (trigger groups, small parts)", "unspsc": "31161900", "tradeoffs": "Enables complex 3D geometries; +-0.3-0.5mm accuracy requires secondary machining; not suitable for constant-cross-section profiles. ~5% share." },
+    { "name": "Do nothing / continue billet machining (Status Quo)", "unspsc": "---", "tradeoffs": "Zero switching cost; zero new supplier qualification; retains all machining waste; dominant competitor." }
+  ]
+}

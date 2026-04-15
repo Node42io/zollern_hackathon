@@ -1,0 +1,148 @@
+{
+  "naicsCode": "332999",
+  "marketName": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+  "slug": "general-mechanical-engineering",
+  "coreJobStatement": "Design and manufacture miscellaneous fabricated metal products — including machine bases, slideways, clamping fixtures, jigs, structural brackets, and custom mechanical assemblies — that meet specified dimensional accuracy, load capacity, and surface quality requirements for industrial machinery and equipment applications",
+  "outputTypes": [
+    "Machine bases (sub-frame structural profiles)",
+    "Slideways & guide elements (slideway rail profiles with IH face, wear strip profiles) — highest differentiation",
+    "Clamping sections & fixtures (T-slot, dovetail, custom clamping profiles)",
+    "Jigs & tooling plates (precision rectangular bar profiles, fixture base profiles)",
+    "Custom structural brackets (C-channel, L-angle, asymmetric structural profiles)",
+    "Wear strips & inserts (IH flat/profiled wear sections in C60, 100Cr6)"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what process steps and equipment compose the general fabricated metal product manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~USD 32B global (NAICS 332999 + adjacent misc. fabricated metal, 2025); CAGR ~4.2%. Profile-intensive segment (custom structural sections, precision slideways, clamping/fixture elements): estimated USD 4-6B (2025), CAGR ~4.5% [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Material & Semi-Finished Stock Procurement",
+      "type": "Core",
+      "jobFamily": "Source and receive steel bar stock, plate, tube, and semi-finished profile sections as raw inputs for all fabricated metal assemblies",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Precision Machining & Shaping",
+      "type": "Core",
+      "jobFamily": "Transform raw/semi-finished inputs into dimensioned mechanical components — slideways, clamping jaws, fixture bodies, bracket sections",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Surface Treatment & Hardening",
+      "type": "Core",
+      "jobFamily": "Harden, grind, or coat wear-critical surfaces to achieve specified hardness, flatness, and corrosion resistance",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Assembly & Integration",
+      "type": "Core",
+      "jobFamily": "Join machined components into sub-assemblies and complete mechanical units via bolting, welding, pressing, and alignment",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Functional Testing & Inspection",
+      "type": "Core",
+      "jobFamily": "Verify dimensional accuracy, alignment, load capacity, and surface finish against customer drawings and DIN/ISO standards",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Packaging & Dispatch",
+      "type": "Core",
+      "jobFamily": "Preserve, package, and ship qualified fabricated metal products to machinery builders or end-user maintenance operations",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality & Metrology",
+      "type": "Horizontal",
+      "jobFamily": "CMM dimensional inspection, surface roughness measurement, hardness verification across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "HSE Compliance",
+      "type": "Horizontal",
+      "jobFamily": "Cutting fluid management, weld fume extraction, operator safety across all steps",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Precision-Formed Steel Profile Sections",
+      "functionalJob": "Cold-drawn/cold-rolled near-net-shape profiles for slideways, clamping sections, wear strips, jig bases, and structural brackets. ZOLLERN PRIMARY POSITION. ~10-15% of steel input by value for profile-addressable assemblies.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Hot-Rolled Standard Bar Stock",
+      "functionalJob": "Standard round, flat, square, hex bar stock (dominant — ~50-60% of steel input). Requires flame-cutting and extensive CNC milling.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Pre-Cut Plate Stock",
+      "functionalJob": "Flame/laser-cut blanks from EN 10025 plate (~20-25% of steel input). Zero tooling cost but high nesting waste.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "Cast Iron / Steel Castings",
+      "functionalJob": "Sand casting (GJL-250, GJS-500) for machine bases and housings (~65% of castings share).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "CNC Milling & Turning Centers",
+      "functionalJob": "3-axis CNC milling (dominant ~55%), 5-axis CNC milling (25%), CNC turning (15%), manual machining (5%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Induction Hardening Equipment",
+      "functionalJob": "Induction hardening (dominant ~50% of hardening), case hardening furnaces (20%), flame hardening (15%), through hardening (15%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Surface Grinding Machines",
+      "functionalJob": "Horizontal surface grinder (slideway faces, ~65%), cylindrical grinder (25%), jig grinder (10%).",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": null,
+  "strategicPosition": "ZOLLERN PRIMARY at L5 Precision-Formed Steel Profile Sections under L6a Material & Semi-Finished Stock Procurement. Supplies slideway rail profiles (IH face), wear strip inserts (IH up to 64 HRC), and structural sub-frame sections. Strongest differentiation in hardened flat slideway segment (40% of linear guidance market) where pre-hardened profile delivery eliminates OEM L6c step entirely.",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 332999 — All Other Miscellaneous Fabricated Metal Product Manufacturing",
+      "url": "https://data.census.gov",
+      "prefixedId": "VN-GENERAL-MECHANICAL-ENGINEERING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "04b_existing_markets.md — ZOLLERN capability mapping",
+      "prefixedId": "VN-GENERAL-MECHANICAL-ENGINEERING-S02"
+    }
+  ]
+}

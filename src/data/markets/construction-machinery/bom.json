@@ -1,0 +1,83 @@
+{
+  "slug": "construction-machinery",
+  "marketName": "Construction Machinery Manufacturing",
+  "naicsCode": "333120",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "ZOLLERN supplies near-net-shape steel profile blanks and IH wear profiles at L1-L2 across five positions: boom chord profiles, arm chord profiles, slide guide channels, pivot pin blanks, frame cross-members, and wear strips. Output type: Hydraulic Excavator (20-40 t class).",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Hydraulic Excavator (20-40 t class)", "hydronic": false, "sensorFit": "primary", "notes": "Highest-volume; most profile-intensive structure. Full BOM decomposed." },
+    { "id": "OT-2", "name": "Crawler Dozer", "hydronic": false, "sensorFit": "secondary", "notes": "Track undercarriage + blade; slide guide channels." },
+    { "id": "OT-3", "name": "Wheel Loader", "hydronic": false, "sensorFit": "secondary", "notes": "Articulated frame + bucket; wear strip profiles." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.3"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Working Attachment Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Boom architecture and material grade",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Mono-boom (single-piece boom + dipper arm)", "sharePct": 75, "trend": "stable" },
+        { "name": "Two-piece (knuckle) boom", "sharePct": 15, "trend": "stable" },
+        { "name": "Telescopic boom", "sharePct": 10, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1a", "name": "Boom Assembly", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "Welded box-section from plate (dominant)", "sharePct": 60, "trend": "stable" },
+          { "name": "Near-net-shape profile chord + plate side (ZOLLERN)", "sharePct": 20, "trend": "stable" },
+          { "name": "Standard hollow section (SHS/RHS)", "sharePct": 15, "trend": "stable" },
+          { "name": "Hot forging (complex nodes)", "sharePct": 5, "trend": "stable" }
+        ]},
+        { "id": "L3.1c", "name": "Slide Guide Assembly", "isMarquardtAnchor": true, "alternatives": [
+          { "name": "IH near-net-shape channel profile (ZOLLERN)", "sharePct": 30, "trend": "growing" },
+          { "name": "Flame-cut plate + surface hardening", "sharePct": 50, "trend": "stable" },
+          { "name": "Bolt-on polymer liner", "sharePct": 20, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Undercarriage Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Track chain and roller system",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Forged alloy steel track chain", "sharePct": 85, "trend": "stable" },
+        { "name": "Rubber track (compact excavators)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Upperstructure & Swing Subsystem",
+      "costSharePct": 20,
+      "keyDesignChoice": "Frame construction method",
+      "isMarquardtAnchor": true,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Welded plate frame", "sharePct": 70, "trend": "stable" },
+        { "name": "Profile-reinforced welded frame (ZOLLERN cross-members)", "sharePct": 20, "trend": "stable" },
+        { "name": "Cast steel frame sections", "sharePct": 10, "trend": "declining" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.4",
+      "name": "Hydraulic Power Subsystem",
+      "costSharePct": 15,
+      "keyDesignChoice": "Pump and valve architecture",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Variable displacement axial piston pump", "sharePct": 75, "trend": "stable" },
+        { "name": "Load-sensing variable gear pump", "sharePct": 20, "trend": "growing" },
+        { "name": "Electric direct-drive actuator", "sharePct": 5, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

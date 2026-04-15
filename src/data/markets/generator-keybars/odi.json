@@ -1,0 +1,25 @@
+{
+  "naicsCode": "335312",
+  "marketName": "Motor and Generator Manufacturing",
+  "slug": "generator-keybars",
+  "summary": { "totalNeeds": 25, "underservedCount": 9, "overservedCount": 0, "avgOpportunityScore": 11.2 },
+  "top5Opportunities": [
+    { "rank": 1, "needId": "N15", "statement": "Minimize keybar geometry drift under 2x line-frequency electromagnetic forcing (100-120 Hz) causing progressive stator slot deformation >0.05 mm over service life", "importance": 9, "satisfaction": 3, "opportunity": 15, "zone": "Underserved" },
+    { "rank": 2, "needId": "N11", "statement": "Minimize the likelihood of keybar slot-contact surface deviation >+-0.05 mm causing lamination misalignment during stator core stacking", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 3, "needId": "N20", "statement": "Minimize stator core structural failures from keybar fatigue cracking under cyclic electromagnetic forcing over a 30-year machine operating lifetime", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 4, "needId": "N21", "statement": "Minimize dimensional deviation of installed keybars from the stator design envelope exceeding 0.03 mm on lamination-contact surfaces after final core assembly", "importance": 9, "satisfaction": 4, "opportunity": 14, "zone": "Underserved" },
+    { "rank": 5, "needId": "N03", "statement": "Increase the ability to source qualified keybar profiles for any required cross-section geometry within 4 weeks to avoid stator assembly schedule delays", "importance": 8, "satisfaction": 3, "opportunity": 13, "zone": "Underserved" }
+  ],
+  "needs": [
+    { "id": "N15", "statement": "Minimize keybar geometry drift under 2x line-frequency electromagnetic forcing (100-120 Hz) causing progressive stator slot deformation >0.05 mm over the machine's service life", "jobStep": "MONITOR", "importance": 9, "satisfaction": 3, "opportunity": 15, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "In-service fatigue and EM forcing resistance is the #1 long-term reliability concern for stator structures. Cold-drawn grain flow alignment improves fatigue endurance; 42CrMo4 Q&T shows no HCF failure between 10^6 and 10^9 cycles at UTS <1,400 MPa.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N11", "statement": "Minimize the likelihood of keybar slot-contact surface deviation >+-0.05 mm causing lamination misalignment during stator core stacking", "jobStep": "EXECUTE", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "IT8 cold-drawn tolerance (+-0.02 mm) directly addresses this need. CNC-machined incumbents at +-0.05-0.1 mm are underperforming.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N20", "statement": "Minimize stator core structural failures from keybar fatigue cracking under cyclic electromagnetic forcing over a 30-year machine operating lifetime", "jobStep": "P2", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "30-year lifetime fatigue integrity is mission-critical. Grain-flow-aligned cold-drawn 42CrMo4: fatigue limit ~480 MPa at 10^7 cycles.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N21", "statement": "Minimize dimensional deviation of installed keybars from the stator design envelope exceeding 0.03 mm on lamination-contact surfaces after final core assembly", "jobStep": "P2", "importance": 9, "satisfaction": 4, "opportunity": 14, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "IT8 = +-0.02 mm directly achieves 0.03 mm contact-face target with margin. CNC job-shop typical +-0.05 mm.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] },
+    { "id": "N03", "statement": "Increase the ability to source qualified keybar profiles for any required cross-section geometry within 4 weeks to avoid stator assembly schedule delays", "jobStep": "LOCATE", "importance": 8, "satisfaction": 3, "opportunity": 13, "isUnderserved": true, "isOverserved": false, "productRelated": false, "importanceRationale": "Repeat dies can be delivered in 2-3 weeks; new geometry requires 6-12 weeks. CNC in-house is queue-dependent.", "satisfactionRationale": "", "needsRationale": true, "primaryStakeholder": "", "stakeholderIds": [] }
+  ],
+  "flaggedRationalesCount": 25,
+  "sources": [
+    { "id": "S01", "label": "JTBD_generator_keybars.md", "url": "JTBD_generator_keybars.md", "prefixedId": "ODI-GENERATOR-KEYBARS-S01" },
+    { "id": "S02", "label": "ADJ_generator_keybars.md", "url": "ADJ_generator_keybars.md", "prefixedId": "ODI-GENERATOR-KEYBARS-S02" }
+  ]
+}

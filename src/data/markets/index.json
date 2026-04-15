@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "linear-guides",
+    "name": "Linear Guides",
+    "naics": "333249",
+    "isReference": true,
+    "sourceFile": "linear_guides"
+  },
+  {
+    "slug": "firearms-components",
+    "name": "Firearms Components",
+    "naics": "332994",
+    "isReference": true,
+    "sourceFile": "firearms_components"
+  },
+  {
+    "slug": "pump-components",
+    "name": "Pump Components",
+    "naics": "333911",
+    "isReference": true,
+    "sourceFile": "pump_components"
+  },
+  {
+    "slug": "rail-vehicle-parts",
+    "name": "Rail Vehicle Parts",
+    "naics": "336510",
+    "isReference": true,
+    "sourceFile": "rail_vehicle_parts"
+  },
+  {
+    "slug": "door-systems",
+    "name": "Door Systems",
+    "naics": "332321",
+    "isReference": true,
+    "sourceFile": "door_systems"
+  },
+  {
+    "slug": "elevator-guide-rails",
+    "name": "Elevator Guide Rails",
+    "naics": "333921",
+    "isReference": true,
+    "sourceFile": "elevator_guide_rails"
+  },
+  {
+    "slug": "automotive-components",
+    "name": "Automotive Components",
+    "naics": "336390",
+    "isReference": true,
+    "sourceFile": "automotive_components"
+  },
+  {
+    "slug": "generator-keybars",
+    "name": "Generator Keybars",
+    "naics": "335312",
+    "isReference": true,
+    "sourceFile": "generator_keybars"
+  },
+  {
+    "slug": "hydraulic-cylinders",
+    "name": "Hydraulic Cylinders",
+    "naics": "333995",
+    "isReference": true,
+    "sourceFile": "hydraulic_cylinders"
+  },
+  {
+    "slug": "construction-machinery",
+    "name": "Construction Machinery",
+    "naics": "333120",
+    "isReference": true,
+    "sourceFile": "construction_machinery"
+  },
+  {
+    "slug": "medical-instruments",
+    "name": "Medical Instruments",
+    "naics": "339112",
+    "isReference": true,
+    "sourceFile": "medical_instruments"
+  },
+  {
+    "slug": "general-mechanical-engineering",
+    "name": "General Mechanical Engineering",
+    "naics": "332999",
+    "isReference": true,
+    "sourceFile": "general_mechanical_engineering"
+  },
+  {
+    "slug": "packaging-machinery",
+    "name": "Packaging Machinery Manufacturing",
+    "naics": "333993",
+    "isReference": false,
+    "sourceFile": "packaging_machinery_manufacturing"
+  },
+  {
+    "slug": "machine-tool-mfg",
+    "name": "Machine Tool Manufacturing",
+    "naics": "333517",
+    "isReference": false,
+    "sourceFile": "machine_tool_manufacturing"
+  },
+  {
+    "slug": "cutting-tool-acc",
+    "name": "Cutting Tool and Machine Tool Accessory Manufacturing",
+    "naics": "333515",
+    "isReference": false,
+    "sourceFile": "cutting_tool_and_machine_tool_accessory"
+  },
+  {
+    "slug": "special-die-tool",
+    "name": "Special Die and Tool, Die Set, Jig, and Fixture Manufacturing",
+    "naics": "333514",
+    "isReference": false,
+    "sourceFile": "special_die_and_tool_die_set_jig_and_fi"
+  },
+  {
+    "slug": "power-transmission",
+    "name": "Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing",
+    "naics": "333613",
+    "isReference": false,
+    "sourceFile": "speed_changer_industrial_high_speed_driv"
+  },
+  {
+    "slug": "farm-machinery",
+    "name": "Farm Machinery and Equipment Manufacturing",
+    "naics": "333111",
+    "isReference": false,
+    "sourceFile": "farm_machinery_and_equipment_manufacturi"
+  },
+  {
+    "slug": "mining-machinery",
+    "name": "Mining Machinery and Equipment Manufacturing",
+    "naics": "333131",
+    "isReference": false,
+    "sourceFile": "mining_machinery_and_equipment_manufactu"
+  },
+  {
+    "slug": "conveyor-equipment",
+    "name": "Conveyor and Conveying Equipment Manufacturing",
+    "naics": "333922",
+    "isReference": false,
+    "sourceFile": "conveyor_and_conveying_equipment_manufac"
+  },
+  {
+    "slug": "turbine-generator",
+    "name": "Turbine and Turbine Generator Set Units Manufacturing",
+    "naics": "333611",
+    "isReference": false,
+    "sourceFile": "turbine_and_turbine_generator_set_units"
+  },
+  {
+    "slug": "printing-machinery",
+    "name": "Printing Machinery and Equipment Manufacturing",
+    "naics": "333244",
+    "isReference": false,
+    "sourceFile": "printing_machinery_and_equipment_manufac"
+  },
+  {
+    "slug": "crane-hoist",
+    "name": "Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",
+    "naics": "333923",
+    "isReference": false,
+    "sourceFile": "overhead_traveling_crane_hoist_and_monor"
+  },
+  {
+    "slug": "forklift-mast",
+    "name": "Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",
+    "naics": "333924",
+    "isReference": false,
+    "sourceFile": "industrial_truck_tractor_trailer_and_sta"
+  },
+  {
+    "slug": "boat-building",
+    "name": "Boat Building",
+    "naics": "336612",
+    "isReference": false,
+    "sourceFile": "boat_building"
+  },
+  {
+    "slug": "woodworking-paper",
+    "name": "Sawmill, Woodworking, and Paper Machinery Manufacturing",
+    "naics": "333243",
+    "isReference": false,
+    "sourceFile": "sawmill_woodworking_and_paper_machinery"
+  }
+]

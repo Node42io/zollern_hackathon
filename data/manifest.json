@@ -1,0 +1,83 @@
+{
+  "analysis_pages": [
+    {
+      "id": "00_company_profile",
+      "title": "00 Company Profile",
+      "type": "company_profile",
+      "file": "00_company_profile.json"
+    },
+    {
+      "id": "00_product_portfolio",
+      "title": "Product Portfolio: ZOLLERN Steel Profiles Division",
+      "type": "product_portfolio",
+      "file": "00_product_portfolio.json"
+    },
+    {
+      "id": "01_product_decomposition",
+      "title": "Product Decomposition: ZOLLERN Steel Profiles Capability",
+      "type": "product_decomposition",
+      "file": "01_product_decomposition.json"
+    },
+    {
+      "id": "02_functional_promise",
+      "title": "Functional Promise: ZOLLERN Steel Profiles",
+      "type": "functional_promise",
+      "file": "02_functional_promise.json"
+    },
+    {
+      "id": "03_constraints",
+      "title": "Constraints Analysis: ZOLLERN Steel Profiles",
+      "type": "constraints",
+      "file": "03_constraints.json"
+    },
+    {
+      "id": "05_market_discovery",
+      "title": "Market Discovery: ZOLLERN Steel Profiles — New Application Markets",
+      "type": "market_discovery",
+      "file": "05_market_discovery.json"
+    }
+  ],
+  "markets": [
+    {
+      "slug": "elevator_guide_rails",
+      "title": "Elevator Guide Rails (NAICS 333921)",
+      "available_analyses": [
+        "application_engineering",
+        "business_model_canvas",
+        "product_bom",
+        "constraint_compatibility",
+        "competitive_intel",
+        "feature_market_fit",
+        "go_to_market",
+        "jtbd_analysis",
+        "odi_matrix",
+        "market_sizing",
+        "value_network"
+      ],
+      "has_bom": true,
+      "has_application_engineering": true,
+      "has_business_model": true,
+      "has_market_sizing": true,
+      "has_go_to_market": true,
+      "has_competitive_intel": true,
+      "has_feasibility": false,
+      "has_value_chain": false,
+      "has_working_capital": false
+    }
+  ],
+  "market_types": {
+    "elevator_guide_rails": [
+      "application_engineering",
+      "business_model_canvas",
+      "product_bom",
+      "constraint_compatibility",
+      "competitive_intel",
+      "feature_market_fit",
+      "go_to_market",
+      "jtbd_analysis",
+      "odi_matrix",
+      "market_sizing",
+      "value_network"
+    ]
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "id": "02_functional_promise",
+  "title": "Functional Promise: ZOLLERN Steel Profiles",
+  "type": "functional_promise",
+  "market_slug": null,
+  "is_per_market": false,
+  "sections": [
+    {
+      "title": "Promise Statement",
+      "content": "> **\"Deliver precision steel cross-sections with controlled geometry, dimensional accuracy, surface quality, and mechanical properties — configured to application requirements.\"**\n\nThis is the universal functional promise of the ZOLLERN Steel Profiles capability platform. It is derived from the core mechanism (plastic deformation through shaped dies/rolls) and the configurable feature envelope."
+    },
+    {
+      "title": "Promise Decomposition",
+      "content": "The functional promise decomposes into five independently measurable sub-promises:\n\n| Sub-Promise | Metric | Range | Why It Matters |\n|-------------|--------|-------|---------------|\n| Geometric fidelity | Profile deviation from design | +/- 0.02 to +/- 0.5 mm | Determines fit in mating assemblies |\n| Dimensional consistency | Bar-to-bar variation | Cpk >= 1.33 | Enables batch processing without individual inspection |\n| Surface integrity | Roughness Ra, defect rate | Ra 0.4 - 6.3 um | Affects sealing, wear, fatigue life |\n| Mechanical property control | Yield strength, hardness | 350 - 2,100 MPa / 0-64 HRC | Ensures structural performance in end-use |\n| Material efficiency | Buy-to-fly ratio | 0.85 - 0.98 | Near-net-shape minimizes customer machining waste |"
+    },
+    {
+      "title": "Promise vs. Alternatives",
+      "content": "The functional promise gains meaning when compared against alternative manufacturing approaches:\n\n| Alternative | Geometric Fidelity | Material Efficiency | Lead Time | Cost at Volume | Best For |\n|------------|-------------------|-------------------|-----------|---------------|---------|\n| **ZOLLERN profile** | HIGH | 0.85-0.98 | 8-16 wks (1st), days (repeat) | LOW | Repeating cross-sections, medium-high volume |\n| Machined bar stock | VERY HIGH | 0.20-0.60 | 1-4 wks | HIGH | Prototypes, very low volume |\n| Open-die forging | LOW | 0.40-0.70 | 6-12 wks | MEDIUM | Large, 3D shapes |\n| Investment casting | HIGH | 0.85-0.95 | 10-20 wks | MEDIUM | Complex 3D, low volume |\n| 3D printing (DMLS) | MEDIUM | 0.90-0.99 | 1-2 wks | VERY HIGH | Prototypes, topology-optimized |\n| Extrusion (aluminum) | HIGH | 0.90-0.98 | 4-8 wks | LOW | Non-ferrous only |"
+    },
+    {
+      "title": "Promise Boundary Conditions",
+      "content": "The promise holds **only within** these boundary conditions:\n\n| Condition | Constraint | Implication |\n|-----------|-----------|-------------|\n| 2D geometry | Cross-section constant along length | Cannot produce 3D-varying geometry (e.g., tapered, twisted) |\n| Steel only | No aluminum, titanium, brass, copper | Excludes lightweight and corrosion-critical applications requiring non-ferrous |\n| Minimum batch | ~100 kg cold drawn, ~500 kg hot rolled | Not economical for one-off prototypes |\n| Tooling investment | EUR 3K-20K per new die/roll set | Requires volume commitment to amortize |\n| Length constraint | Max 12m hot rolled, 6m cold drawn | Longer continuous pieces require welding |"
+    },
+    {
+      "title": "Value Proposition Hierarchy",
+      "content": "For capability platforms, the value proposition operates at three levels:\n\n| Level | Statement | Target Audience |\n|-------|-----------|----------------|\n| Strategic | \"Replace machined bar stock with near-net-shape profiles to cut material cost 35-60% and improve part performance\" | C-level, procurement directors |\n| Technical | \"Custom cross-section geometry with +/-0.02mm tolerance, controlled hardness to 64 HRC, and grain flow aligned to load path\" | Engineering, quality managers |\n| Commercial | \"Amortize tooling over 12-24 months, then ongoing per-meter pricing with 4-6 week delivery on repeat orders\" | Purchasing, supply chain |"
+    },
+    {
+      "title": "Structured Data",
+      "content": "```json\n{\n  \"functional_promise\": {\n    \"statement\": \"Deliver precision steel cross-sections with controlled geometry, dimensional accuracy, surface quality, and mechanical properties — configured to application requirements.\",\n    \"sub_promises\": [\n      {\"name\": \"geometric_fidelity\", \"metric\": \"profile_deviation_mm\", \"range_min\": 0.02, \"range_max\": 0.5},\n      {\"name\": \"dimensional_consistency\", \"metric\": \"cpk\", \"threshold\": 1.33},\n      {\"name\": \"surface_integrity\", \"metric\": \"roughness_ra_um\", \"range_min\": 0.4, \"range_max\": 6.3},\n      {\"name\": \"mechanical_property_control\", \"metric\": \"yield_strength_mpa\", \"range_min\": 350, \"range_max\": 2100},\n      {\"name\": \"material_efficiency\", \"metric\": \"buy_to_fly_ratio\", \"range_min\": 0.85, \"range_max\": 0.98}\n    ],\n    \"boundary_conditions\": [\n      {\"constraint\": \"2d_geometry_only\", \"description\": \"Cross-section constant along bar length\"},\n      {\"constraint\": \"steel_only\", \"description\": \"No non-ferrous metals\"},\n      {\"constraint\": \"minimum_batch_kg\", \"cold_drawn\": 100, \"hot_rolled\": 500},\n      {\"constraint\": \"tooling_investment_eur\", \"min\": 3000, \"max\": 20000},\n      {\"constraint\": \"max_length_m\", \"cold_drawn\": 6, \"hot_rolled\": 12}\n    ],\n    \"nns_advantage_vs_machined\": {\n      \"material_savings_pct\": \"35-60\",\n      \"machining_time_reduction_pct\": \"60-90\",\n      \"fatigue_life_improvement_pct\": \"15-30\"\n    }\n  },\n  \"entities\": [\n    {\"label\": \"FunctionalPromise\", \"slug\": \"fp__precision_steel_cross_sections\", \"name\": \"Deliver precision steel cross-sections with controlled geometry\"}\n  ]\n}\n```\n\n---\n\n*Sources: [ZOLLERN Cold Drawing Capabilities](https://www.zollern.com/en/steel-profiles/cold-drawing/), [ZOLLERN Hot Rolling](https://www.zollern.com/en/steel-profiles/hot-rolling/), INSTRUCTIONS.md capability brief*"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Sub-Promise",
+        "Metric",
+        "Range",
+        "Why It Matters"
+      ],
+      "rows": [
+        {
+          "Sub-Promise": "Geometric fidelity",
+          "Metric": "Profile deviation from design",
+          "Range": "+/- 0.02 to +/- 0.5 mm",
+          "Why It Matters": "Determines fit in mating assemblies"
+        },
+        {
+          "Sub-Promise": "Dimensional consistency",
+          "Metric": "Bar-to-bar variation",
+          "Range": "Cpk >= 1.33",
+          "Why It Matters": "Enables batch processing without individual inspection"
+        },
+        {
+          "Sub-Promise": "Surface integrity",
+          "Metric": "Roughness Ra, defect rate",
+          "Range": "Ra 0.4 - 6.3 um",
+          "Why It Matters": "Affects sealing, wear, fatigue life"
+        },
+        {
+          "Sub-Promise": "Mechanical property control",
+          "Metric": "Yield strength, hardness",
+          "Range": "350 - 2,100 MPa / 0-64 HRC",
+          "Why It Matters": "Ensures structural performance in end-use"
+        },
+        {
+          "Sub-Promise": "Material efficiency",
+          "Metric": "Buy-to-fly ratio",
+          "Range": "0.85 - 0.98",
+          "Why It Matters": "Near-net-shape minimizes customer machining waste"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Alternative",
+        "Geometric Fidelity",
+        "Material Efficiency",
+        "Lead Time",
+        "Cost at Volume",
+        "Best For"
+      ],
+      "rows": [
+        {
+          "Alternative": "**ZOLLERN profile**",
+          "Geometric Fidelity": "HIGH",
+          "Material Efficiency": "0.85-0.98",
+          "Lead Time": "8-16 wks (1st), days (repeat)",
+          "Cost at Volume": "LOW",
+          "Best For": "Repeating cross-sections, medium-high volume"
+        },
+        {
+          "Alternative": "Machined bar stock",
+          "Geometric Fidelity": "VERY HIGH",
+          "Material Efficiency": "0.20-0.60",
+          "Lead Time": "1-4 wks",
+          "Cost at Volume": "HIGH",
+          "Best For": "Prototypes, very low volume"
+        },
+        {
+          "Alternative": "Open-die forging",
+          "Geometric Fidelity": "LOW",
+          "Material Efficiency": "0.40-0.70",
+          "Lead Time": "6-12 wks",
+          "Cost at Volume": "MEDIUM",
+          "Best For": "Large, 3D shapes"
+        },
+        {
+          "Alternative": "Investment casting",
+          "Geometric Fidelity": "HIGH",
+          "Material Efficiency": "0.85-0.95",
+          "Lead Time": "10-20 wks",
+          "Cost at Volume": "MEDIUM",
+          "Best For": "Complex 3D, low volume"
+        },
+        {
+          "Alternative": "3D printing (DMLS)",
+          "Geometric Fidelity": "MEDIUM",
+          "Material Efficiency": "0.90-0.99",
+          "Lead Time": "1-2 wks",
+          "Cost at Volume": "VERY HIGH",
+          "Best For": "Prototypes, topology-optimized"
+        },
+        {
+          "Alternative": "Extrusion (aluminum)",
+          "Geometric Fidelity": "HIGH",
+          "Material Efficiency": "0.90-0.98",
+          "Lead Time": "4-8 wks",
+          "Cost at Volume": "LOW",
+          "Best For": "Non-ferrous only"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Condition",
+        "Constraint",
+        "Implication"
+      ],
+      "rows": [
+        {
+          "Condition": "2D geometry",
+          "Constraint": "Cross-section constant along length",
+          "Implication": "Cannot produce 3D-varying geometry (e.g., tapered, twisted)"
+        },
+        {
+          "Condition": "Steel only",
+          "Constraint": "No aluminum, titanium, brass, copper",
+          "Implication": "Excludes lightweight and corrosion-critical applications requiring non-ferrous"
+        },
+        {
+          "Condition": "Minimum batch",
+          "Constraint": "~100 kg cold drawn, ~500 kg hot rolled",
+          "Implication": "Not economical for one-off prototypes"
+        },
+        {
+          "Condition": "Tooling investment",
+          "Constraint": "EUR 3K-20K per new die/roll set",
+          "Implication": "Requires volume commitment to amortize"
+        },
+        {
+          "Condition": "Length constraint",
+          "Constraint": "Max 12m hot rolled, 6m cold drawn",
+          "Implication": "Longer continuous pieces require welding"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Level",
+        "Statement",
+        "Target Audience"
+      ],
+      "rows": [
+        {
+          "Level": "Strategic",
+          "Statement": "\"Replace machined bar stock with near-net-shape profiles to cut material cost 35-60% and improve part performance\"",
+          "Target Audience": "C-level, procurement directors"
+        },
+        {
+          "Level": "Technical",
+          "Statement": "\"Custom cross-section geometry with +/-0.02mm tolerance, controlled hardness to 64 HRC, and grain flow aligned to load path\"",
+          "Target Audience": "Engineering, quality managers"
+        },
+        {
+          "Level": "Commercial",
+          "Statement": "\"Amortize tooling over 12-24 months, then ongoing per-meter pricing with 4-6 week delivery on repeat orders\"",
+          "Target Audience": "Purchasing, supply chain"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "functional_promise": {
+        "statement": "Deliver precision steel cross-sections with controlled geometry, dimensional accuracy, surface quality, and mechanical properties — configured to application requirements.",
+        "sub_promises": [
+          {
+            "name": "geometric_fidelity",
+            "metric": "profile_deviation_mm",
+            "range_min": 0.02,
+            "range_max": 0.5
+          },
+          {
+            "name": "dimensional_consistency",
+            "metric": "cpk",
+            "threshold": 1.33
+          },
+          {
+            "name": "surface_integrity",
+            "metric": "roughness_ra_um",
+            "range_min": 0.4,
+            "range_max": 6.3
+          },
+          {
+            "name": "mechanical_property_control",
+            "metric": "yield_strength_mpa",
+            "range_min": 350,
+            "range_max": 2100
+          },
+          {
+            "name": "material_efficiency",
+            "metric": "buy_to_fly_ratio",
+            "range_min": 0.85,
+            "range_max": 0.98
+          }
+        ],
+        "boundary_conditions": [
+          {
+            "constraint": "2d_geometry_only",
+            "description": "Cross-section constant along bar length"
+          },
+          {
+            "constraint": "steel_only",
+            "description": "No non-ferrous metals"
+          },
+          {
+            "constraint": "minimum_batch_kg",
+            "cold_drawn": 100,
+            "hot_rolled": 500
+          },
+          {
+            "constraint": "tooling_investment_eur",
+            "min": 3000,
+            "max": 20000
+          },
+          {
+            "constraint": "max_length_m",
+            "cold_drawn": 6,
+            "hot_rolled": 12
+          }
+        ],
+        "nns_advantage_vs_machined": {
+          "material_savings_pct": "35-60",
+          "machining_time_reduction_pct": "60-90",
+          "fatigue_life_improvement_pct": "15-30"
+        }
+      },
+      "entities": [
+        {
+          "label": "FunctionalPromise",
+          "slug": "fp__precision_steel_cross_sections",
+          "name": "Deliver precision steel cross-sections with controlled geometry"
+        }
+      ]
+    }
+  ],
+  "has_bom": false
+}
