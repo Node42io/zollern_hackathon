@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "marketsAnalyzed": 26,
+    "existingMarkets": 12,
+    "newMarkets": 14,
+    "totalOpportunities": 90,
+    "baseScenario": "€103M",
+    "conservativeScenario": "€52M",
+    "optimisticScenario": "€154M",
+    "zollernGroupRevenue": "€385M",
+    "baseScenarioUplift": "~27%",
+    "topStrategicMove": "Catalog profile program — €100–300K, serves all 26 markets"
+  },
+
+  "crossMarketTable": [
+    {
+      "rank": 1,
+      "market": "Linear Guides",
+      "naics": "333249",
+      "trackA": "Custom slideway bed profiles (8/10, STRONG)",
+      "trackB": "Hot-rolled structural profiles (PURSUE)",
+      "trackCCoverage": "60%→80%",
+      "topOpportunity": "Slideway bed profiles + hot-rolled volume play"
+    },
+    {
+      "rank": 2,
+      "market": "Firearms",
+      "naics": "332994",
+      "trackA": "Barrel blank round profiles (9/10, STRONG)",
+      "trackB": "Single-source Tier 1 supply (PURSUE)",
+      "trackCCoverage": "20%→40% (capped)",
+      "topOpportunity": "Barrel blanks — zero capex, immediate"
+    },
+    {
+      "rank": 3,
+      "market": "Pump Components",
+      "naics": "333911",
+      "trackA": "Pre-hardened profile blanks (9/10, STRONG)",
+      "trackB": "Profile grinding (PURSUE)",
+      "trackCCoverage": "50%→87.5%",
+      "topOpportunity": "Pre-hardened blanks + centrifugal shaft expansion"
+    },
+    {
+      "rank": 4,
+      "market": "Rail Vehicle Parts",
+      "naics": "336510",
+      "trackA": "Bogie frame profiles (7/10, MODERATE)",
+      "trackB": "Wider alloy grades (PURSUE)",
+      "trackCCoverage": "17%→50% (not recommended)",
+      "topOpportunity": "Alloy expansion + weld-prep delivery"
+    },
+    {
+      "rank": 5,
+      "market": "Door Systems",
+      "naics": "332321",
+      "trackA": "Hot-rolled structural frame sections (8/10, STRONG)",
+      "trackB": "Galvanized delivery (PURSUE)",
+      "trackCCoverage": "—",
+      "topOpportunity": "Frame profile expansion — 10–20x market access"
+    },
+    {
+      "rank": 6,
+      "market": "Elevator Guide Rails",
+      "naics": "333921",
+      "trackA": "Sill/frame jamb profiles (8/10, STRONG)",
+      "trackB": "Straightening & drilling (PURSUE)",
+      "trackCCoverage": "20%→80%",
+      "topOpportunity": "Vertical integration to finished rail (2.5x rev/m)"
+    },
+    {
+      "rank": 7,
+      "market": "Automotive",
+      "naics": "336390",
+      "trackA": "Fertigteile CNC blanks (8/10, STRONG)",
+      "trackB": "CQI-9 induction hardening service (PURSUE)",
+      "trackCCoverage": "50%→83%",
+      "topOpportunity": "Fertigteile + vertical integration"
+    },
+    {
+      "rank": 8,
+      "market": "Generator Keybars",
+      "naics": "335312",
+      "trackA": "Rotor slot wedges (9/10, STRONG)",
+      "trackB": "—",
+      "trackCCoverage": "25%→50%",
+      "topOpportunity": "Slot wedge profiles — 90% capability overlap"
+    },
+    {
+      "rank": 9,
+      "market": "Hydraulic Cylinders",
+      "naics": "333995",
+      "trackA": "Rod IH hardening as value-add (9/10, STRONG)",
+      "trackB": "End-cap blank expansion (PURSUE)",
+      "trackCCoverage": "60%→80%",
+      "topOpportunity": "Rod IH value-add — zero capex, existing equipment"
+    },
+    {
+      "rank": 10,
+      "market": "Construction Machinery",
+      "naics": "333120",
+      "trackA": "S690QL high-strength grade qualification (8/10, STRONG)",
+      "trackB": "Piston rod blanks (PURSUE)",
+      "trackCCoverage": "20% (not recommended)",
+      "topOpportunity": "High-strength grade unlock + wear strip aftermarket"
+    },
+    {
+      "rank": 11,
+      "market": "Medical Instruments",
+      "naics": "339112",
+      "trackA": "Sterilization tray profiles (9/10, STRONG)",
+      "trackB": "ISO 13485 certification (PURSUE)",
+      "trackCCoverage": "40%→80%",
+      "topOpportunity": "ISO 13485 + tray profiles — Tuttlingen cluster play"
+    },
+    {
+      "rank": 12,
+      "market": "Gen. Mech. Engineering",
+      "naics": "332999",
+      "trackA": "Hardened slideway profiles (9/10, STRONG)",
+      "trackB": "Catalog program (PURSUE)",
+      "trackCCoverage": "67%→100%",
+      "topOpportunity": "Catalog program + double-process-elimination slideways"
+    }
+  ],
+
+  "top15Opportunities": [
+    {
+      "rank": 1,
+      "tier": 2,
+      "opportunity": "Catalog profile program (20–30 standard geometries on stock)",
+      "markets": "Gen. mech eng, all markets",
+      "track": "B",
+      "investment": "€100–300K inventory",
+      "timeToRevenue": "3–6 mo",
+      "revenuePotential": "€5–15M/yr",
+      "strategicValue": "Eliminates #1 customer objection (die cost + lead time) across ALL markets"
+    },
+    {
+      "rank": 2,
+      "tier": 1,
+      "opportunity": "Pre-hardened induction-hardened blanks as standard value-add",
+      "markets": "Pump, hydraulic, linear guides",
+      "track": "A",
+      "investment": "Zero",
+      "timeToRevenue": "Immediate",
+      "revenuePotential": "€2–5M/yr",
+      "strategicValue": "Repositions from 'profile supplier' to 'pre-hardened blank supplier' — 20–40% price premium"
+    },
+    {
+      "rank": 3,
+      "tier": 2,
+      "opportunity": "Sterilization tray profiles + ISO 13485 certification",
+      "markets": "Medical",
+      "track": "A+B+C",
+      "investment": "€100–200K",
+      "timeToRevenue": "12–18 mo",
+      "revenuePotential": "€2–5M/yr",
+      "strategicValue": "Opens €65B medical market; Tuttlingen proximity = logistics moat"
+    },
+    {
+      "rank": 4,
+      "tier": 1,
+      "opportunity": "Fertigteile expansion (pre-cut, faced, drilled profiles)",
+      "markets": "Automotive, gen. mech eng, all",
+      "track": "B",
+      "investment": "Low (sawing + facing)",
+      "timeToRevenue": "1–3 mo",
+      "revenuePotential": "€3–8M/yr",
+      "strategicValue": "2–3x revenue per meter; same equipment"
+    },
+    {
+      "rank": 5,
+      "tier": 1,
+      "opportunity": "Barrel blank round profiles",
+      "markets": "Firearms",
+      "track": "A",
+      "investment": "Zero",
+      "timeToRevenue": "Immediate",
+      "revenuePotential": "€0.5–1M/yr",
+      "strategicValue": "Simplest die geometry; 90%+ capability overlap"
+    },
+    {
+      "rank": 6,
+      "tier": 2,
+      "opportunity": "Door system frame profiles (structural + galvanized)",
+      "markets": "Door systems",
+      "track": "A+B",
+      "investment": "Low + galvanizing partnership",
+      "timeToRevenue": "3–6 mo",
+      "revenuePotential": "€3–8M/yr",
+      "strategicValue": "10–20x addressable market expansion"
+    },
+    {
+      "rank": 7,
+      "tier": 1,
+      "opportunity": "Rotor slot wedge profiles",
+      "markets": "Generator keybars",
+      "track": "A",
+      "investment": "Zero",
+      "timeToRevenue": "Immediate",
+      "revenuePotential": "€1–3M/yr",
+      "strategicValue": "90% overlap with existing keybar capability; same OEM buyers"
+    },
+    {
+      "rank": 8,
+      "tier": 3,
+      "opportunity": "Elevator vertical integration (profile → straightened/drilled rail)",
+      "markets": "Elevator",
+      "track": "B+C",
+      "investment": "€500K–1M",
+      "timeToRevenue": "6–12 mo",
+      "revenuePotential": "€5–15M/yr",
+      "strategicValue": "2.5x revenue per meter; 20%→80% coverage"
+    },
+    {
+      "rank": 9,
+      "tier": 2,
+      "opportunity": "S690QL high-strength grade qualification",
+      "markets": "Construction machinery",
+      "track": "A",
+      "investment": "Zero (process qual only)",
+      "timeToRevenue": "3–6 mo",
+      "revenuePotential": "€1–3M/yr",
+      "strategicValue": "Unlocks lightweighting segment"
+    },
+    {
+      "rank": 10,
+      "tier": 1,
+      "opportunity": "Hardened slideway profiles (double process-elimination)",
+      "markets": "Gen. mech eng, linear guides",
+      "track": "A",
+      "investment": "Zero",
+      "timeToRevenue": "Immediate",
+      "revenuePotential": "€1–3M/yr",
+      "strategicValue": "Flagship differentiation; saves OEM milling + hardening"
+    },
+    {
+      "rank": 11,
+      "tier": 1,
+      "opportunity": "Wear strip / insert aftermarket program",
+      "markets": "Construction, gen. mech eng",
+      "track": "A",
+      "investment": "Zero",
+      "timeToRevenue": "1–3 mo",
+      "revenuePotential": "€0.5–2M/yr",
+      "strategicValue": "Recurring revenue (250–1,000 hr replacement cycle)"
+    },
+    {
+      "rank": 12,
+      "tier": 2,
+      "opportunity": "Automotive CQI-9 IH service",
+      "markets": "Automotive",
+      "track": "B",
+      "investment": "CQI-9 audit (~€20K)",
+      "timeToRevenue": "6–9 mo",
+      "revenuePotential": "€1–3M/yr",
+      "strategicValue": "Enables component-level supply to OEMs"
+    },
+    {
+      "rank": 13,
+      "tier": 1,
+      "opportunity": "Piston rod blanks (cross-market)",
+      "markets": "Construction, hydraulic",
+      "track": "A",
+      "investment": "Zero",
+      "timeToRevenue": "Immediate",
+      "revenuePotential": "€0.5–2M/yr",
+      "strategicValue": "Chrome replacement trend (REACH Cr(VI)) benefits pre-hardened rod"
+    },
+    {
+      "rank": 14,
+      "tier": 2,
+      "opportunity": "Wider alloy grade program (rail, construction)",
+      "markets": "Rail vehicle, construction",
+      "track": "B",
+      "investment": "€50–100K per grade qual",
+      "timeToRevenue": "6–12 mo",
+      "revenuePotential": "€1–3M/yr",
+      "strategicValue": "S690QL, S355J2, Weldox/Strenx grades"
+    },
+    {
+      "rank": 15,
+      "tier": 3,
+      "opportunity": "Precision grinding integration (long-term)",
+      "markets": "Linear guides, gen. mech eng, elevator",
+      "track": "B+C",
+      "investment": "€2–10M",
+      "timeToRevenue": "18–36 mo",
+      "revenuePotential": "€10–30M/yr",
+      "strategicValue": "Captures highest-margin downstream step"
+    }
+  ],
+
+  "capabilityThemes": [
+    {
+      "id": "pre-hardened",
+      "title": "Pre-Hardened Near-Net-Shape",
+      "subtitle": "Zero Investment",
+      "markets": ["Pump", "Hydraulic", "Linear Guides", "Gen. Mech. Eng.", "Construction"],
+      "pattern": "ZOLLERN's C3 (induction hardening) applied as standard value-add turns raw profile into pre-hardened blank. 20–40% price premium. Immediate.",
+      "investment": "Zero",
+      "timeframe": "Immediate",
+      "impact": "HIGH",
+      "color": "green"
+    },
+    {
+      "id": "fertigteile",
+      "title": "Fertigteile / Ready-to-Install",
+      "subtitle": "Low Investment",
+      "markets": ["Automotive", "Gen. Mech. Eng.", "Elevator", "All Markets"],
+      "pattern": "C7 (mechanical processing) extended with sawing, facing, chamfering, drilling. 2–3x revenue per meter. Already operational for some customers.",
+      "investment": "€50–100K (sawing/facing jigs)",
+      "timeframe": "1–3 months",
+      "impact": "HIGH",
+      "color": "green"
+    },
+    {
+      "id": "catalog",
+      "title": "Catalog Program",
+      "subtitle": "Commercial Investment",
+      "markets": ["All 12 markets — horizontal play"],
+      "pattern": "Stock 20–30 standard geometries to eliminate the #1 purchase barrier (die cost + 6–12 week lead time). €100–300K inventory. 3–6 months to launch.",
+      "investment": "€100–300K inventory",
+      "timeframe": "3–6 months",
+      "impact": "HIGHEST",
+      "color": "yellow"
+    },
+    {
+      "id": "certification",
+      "title": "Regulated Market Certification",
+      "subtitle": "Strategic Investment",
+      "markets": ["Medical (ISO 13485)", "Automotive (CQI-9)", "Aerospace (future)"],
+      "pattern": "Quality system certification creates competitive moats. €100–200K per certification. 12–18 months. Once obtained, very few competitors can match.",
+      "investment": "€100–200K per cert.",
+      "timeframe": "12–18 months",
+      "impact": "MOAT",
+      "color": "orange"
+    }
+  ],
+
+  "verticalIntegrationSummary": [
+    {
+      "market": "Gen. Mech. Engineering",
+      "current": 67,
+      "potential": 100,
+      "investment": "€500K–1M",
+      "verdict": "Most feasible",
+      "verdictDetail": "Grinding investment covers multiple markets",
+      "recommended": true
+    },
+    {
+      "market": "Elevator Guide Rails",
+      "current": 20,
+      "potential": 80,
+      "investment": "€500K–1M",
+      "verdict": "Highly attractive",
+      "verdictDetail": "2.5x revenue multiplier",
+      "recommended": true
+    },
+    {
+      "market": "Pump Components",
+      "current": 50,
+      "potential": 87.5,
+      "investment": "€3.5–7.3M",
+      "verdict": "Viable but capital-intensive",
+      "verdictDetail": "Phased approach recommended",
+      "recommended": true
+    },
+    {
+      "market": "Hydraulic Cylinders",
+      "current": 60,
+      "potential": 80,
+      "investment": "Partnership model",
+      "verdict": "Feasible via bundled supply",
+      "verdictDetail": "",
+      "recommended": true
+    },
+    {
+      "market": "Medical Instruments",
+      "current": 40,
+      "potential": 80,
+      "investment": "€100–200K",
+      "verdict": "Easiest",
+      "verdictDetail": "Certification, not capex",
+      "recommended": true
+    },
+    {
+      "market": "Automotive",
+      "current": 50,
+      "potential": 83,
+      "investment": "CQI-9 audit",
+      "verdict": "Moderate",
+      "verdictDetail": "Regulatory, not capex",
+      "recommended": true
+    },
+    {
+      "market": "Linear Guides",
+      "current": 60,
+      "potential": 80,
+      "investment": "€5–10M",
+      "verdict": "Capital-intensive",
+      "verdictDetail": "Grinding line required",
+      "recommended": false
+    },
+    {
+      "market": "Generator Keybars",
+      "current": 25,
+      "potential": 50,
+      "investment": "Partnership",
+      "verdict": "Partial",
+      "verdictDetail": "Partnership model only",
+      "recommended": false
+    },
+    {
+      "market": "Construction Machinery",
+      "current": 20,
+      "potential": 20,
+      "investment": "Not recommended",
+      "verdict": "No",
+      "verdictDetail": "Fundamentally different business model",
+      "recommended": false
+    },
+    {
+      "market": "Firearms",
+      "current": 20,
+      "potential": 40,
+      "investment": "Not recommended",
+      "verdict": "No",
+      "verdictDetail": "Forging barrier + regulatory burden",
+      "recommended": false
+    },
+    {
+      "market": "Rail Vehicle Parts",
+      "current": 17,
+      "potential": 50,
+      "investment": "Not recommended",
+      "verdict": "No",
+      "verdictDetail": "Heavy fabrication, different capability set",
+      "recommended": false
+    }
+  ],
+
+  "marketClassification": {
+    "pursue": [
+      { "market": "General Mechanical Engineering", "type": "Existing", "topAction": "Catalog program + hardened slideway profiles" },
+      { "market": "Pump Components", "type": "Existing", "topAction": "Pre-hardened blanks + centrifugal shaft expansion" },
+      { "market": "Hydraulic Cylinders", "type": "Existing", "topAction": "Rod IH value-add + end-cap expansion" },
+      { "market": "Medical Instruments", "type": "Existing", "topAction": "ISO 13485 certification + sterilization tray profiles" },
+      { "market": "Elevator Guide Rails", "type": "Existing", "topAction": "Vertical integration to finished rail" },
+      { "market": "Door Systems", "type": "Existing", "topAction": "Frame profile expansion + galvanized delivery" },
+      { "market": "Turbine/Generator Sets", "type": "NEW", "topAction": "Wind turbine stator keybars" },
+      { "market": "Forklift Mast Profiles", "type": "NEW", "topAction": "Mast channel profiles with IH inner raceways" }
+    ],
+    "investigate": [
+      { "market": "Automotive Components", "type": "Existing", "keyQuestion": "Does CQI-9 capex justify automotive volume commitment?" },
+      { "market": "Mining Machinery", "type": "NEW", "keyQuestion": "Does shaft guide certification timeline fit ZOLLERN's cash flow?" },
+      { "market": "Machine Tool Manufacturing", "type": "NEW", "keyQuestion": "Can ZOLLERN compete on precision grinding without owning the process?" },
+      { "market": "Crane/Hoist Systems", "type": "NEW", "keyQuestion": "Is DIN 536 rail volume sufficient for dedicated die investment?" },
+      { "market": "Power Transmission", "type": "NEW", "keyQuestion": "Can gear rack quality standards (DIN 3962) be met via cold drawing?" },
+      { "market": "Farm Machinery", "type": "NEW", "keyQuestion": "Can near-net-shape compete on price vs. hot-forged blanks at farm scale?" }
+    ],
+    "defer": [
+      { "market": "Conveyor Equipment", "type": "NEW", "reason": "Growing market but low switching barriers; pursue via catalog program" },
+      { "market": "Packaging Machinery", "type": "NEW", "reason": "Good fit but fragmented OEM base" },
+      { "market": "Cutting Tool Accessories", "type": "NEW", "reason": "Moderate fit; fragmented volumes per geometry" },
+      { "market": "Special Die & Tool", "type": "NEW", "reason": "Low switching barriers undermine premium pricing" },
+      { "market": "Construction Machinery", "type": "Existing", "reason": "Focus on high-strength grade + wear strip aftermarket only" },
+      { "market": "Rail Vehicle Parts", "type": "Existing", "reason": "Focus on alloy expansion + weld-prep only" }
+    ],
+    "noGo": [
+      { "market": "Printing Machinery", "type": "NEW", "reason": "Low capability match (6/10); thin profiles below economic threshold" },
+      { "market": "Woodworking/Paper Machinery", "type": "NEW", "reason": "Low capability match (6/10); moderate volumes" },
+      { "market": "Boat Building", "type": "NEW", "reason": "ZOLLERN's differentiators (precision, IH) have no value in marine structural" },
+      { "market": "Firearms (vertical integration)", "type": "Existing", "reason": "Forging barrier + ITAR regulatory burden make vertical integration unviable" }
+    ]
+  },
+
+  "investmentPriorities": [
+    {
+      "rank": 1,
+      "investment": "Catalog program (inventory + catalog)",
+      "cost": "€100–300K",
+      "marketsServed": "ALL 26",
+      "payback": "3–6 months"
+    },
+    {
+      "rank": 2,
+      "investment": "ISO 13485 certification",
+      "cost": "€100–200K",
+      "marketsServed": "Medical",
+      "payback": "12–18 months"
+    },
+    {
+      "rank": 3,
+      "investment": "S690QL + additional grade qualifications",
+      "cost": "€50–100K/grade",
+      "marketsServed": "Construction, farm, mining, rail",
+      "payback": "6–12 months"
+    },
+    {
+      "rank": 4,
+      "investment": "CQI-9 IH audit",
+      "cost": "€20K",
+      "marketsServed": "Automotive",
+      "payback": "6–9 months"
+    },
+    {
+      "rank": 5,
+      "investment": "Wind turbine OEM qualification",
+      "cost": "€100–200K",
+      "marketsServed": "Turbine/generator",
+      "payback": "12–18 months"
+    },
+    {
+      "rank": 6,
+      "investment": "Forklift mast dies",
+      "cost": "€200–400K",
+      "marketsServed": "Forklift",
+      "payback": "12–18 months"
+    },
+    {
+      "rank": 7,
+      "investment": "Elevator straightening + drilling line",
+      "cost": "€500K–1M",
+      "marketsServed": "Elevator, mining, crane",
+      "payback": "18–24 months"
+    },
+    {
+      "rank": 8,
+      "investment": "Surface grinding line",
+      "cost": "€2–10M",
+      "marketsServed": "Linear guides, gen mech eng, elevator, machine tool",
+      "payback": "24–36 months"
+    },
+    {
+      "rank": 9,
+      "investment": "Pump rotor machining (phased)",
+      "cost": "€3.5–7.3M",
+      "marketsServed": "Pump components",
+      "payback": "24–36 months"
+    }
+  ],
+
+  "revenueScenarios": {
+    "tiers": [
+      {
+        "tier": 1,
+        "label": "Tier 1: Immediate Revenue",
+        "subtitle": "Zero/Minimal Investment, 0–6 Months",
+        "conservative": "€8M",
+        "base": "€16M",
+        "optimistic": "€24M",
+        "opportunities": 7
+      },
+      {
+        "tier": 2,
+        "label": "Tier 2: Near-Term Growth",
+        "subtitle": "€100K–€500K Investment, 6–18 Months",
+        "conservative": "€17M",
+        "base": "€33M",
+        "optimistic": "€49M",
+        "opportunities": 7
+      },
+      {
+        "tier": 3,
+        "label": "Tier 3: Strategic Bets",
+        "subtitle": "€500K–€10M Investment, 18–36 Months",
+        "conservative": "€27M",
+        "base": "€54M",
+        "optimistic": "€81M",
+        "opportunities": 6
+      }
+    ],
+    "totals": {
+      "conservative": "€52M",
+      "base": "€103M",
+      "optimistic": "€154M"
+    }
+  }
+}

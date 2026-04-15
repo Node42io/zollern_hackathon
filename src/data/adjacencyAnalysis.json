@@ -1,0 +1,1117 @@
+{
+  "markets": [
+    {
+      "slug": "linear-guides",
+      "name": "Linear Guides",
+      "naics": "333249",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Steel Rail Profile Stock",
+        "parentL6": "L6a: Rail Material Production",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Custom slideway bed profiles",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Help machine tool builders integrate hardened, precision-ground linear running surfaces into machine beds — replacing hand-scraped cast iron ways with consistent, high-hardness steel inserts"
+          },
+          {
+            "unit": "Carriage block body blanks",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 2,
+            "coreJob": "Help carriage machining receive block blanks with near-final external geometry — reducing CNC cycle time and material waste"
+          },
+          {
+            "unit": "Rack profiles for linear drives",
+            "relevance": 5,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Provide precision-toothed rack profiles for meshing with pinion drives in linear motion systems"
+          },
+          {
+            "unit": "End-cap / seal-seat inserts",
+            "relevance": 6,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Provide dimensionally stable inserts that house seal grooves, wiper channels, and ball return paths in carriage end-caps"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Hot-rolled structural profiles (H-grade)",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Help guide system makers source lower-cost, high-volume structural rail profiles for H-grade and Normal-grade linear guides"
+          },
+          {
+            "unit": "Rail precision grinding",
+            "relevanceXEase": 4,
+            "verdict": "INVESTIGATE",
+            "priority": 2,
+            "coreJob": "Grind raceways and reference surfaces to final accuracy grade (H through UP), achieving straightness ≤0.005 mm/m and Ra ≤0.2 µm"
+          },
+          {
+            "unit": "Sub-assembly for custom guides",
+            "relevanceXEase": 3,
+            "verdict": "DEFER",
+            "priority": 3,
+            "coreJob": "Assemble complete custom guide systems with preloaded carriages, seals, and lubrication"
+          },
+          {
+            "unit": "Rolling element supply",
+            "relevanceXEase": 1,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Supply precision balls and rollers for guide carriage assemblies"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6a: Rail Material Production",
+        "targetLevel": "L6a + L6b: Finished Ground Rail",
+        "currentCoverage": 0.6,
+        "potentialCoverage": 0.8,
+        "missing": "Accuracy-grade metrology/certification",
+        "investment": "€5–10M precision grinding line",
+        "verdict": "FEASIBLE but capital-intensive"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Custom slideway bed profiles", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Hot-rolled structural profiles (H-grade)", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Carriage block body blanks", "track": "A", "verdict": "MODERATE", "effort": "LOW" },
+        { "priority": 4, "opportunity": "Rail precision grinding (vertical integration)", "track": "B+C", "verdict": "INVESTIGATE", "effort": "HIGH" },
+        { "priority": 5, "opportunity": "Rack profiles for linear drives", "track": "A", "verdict": "MODERATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "pump-components",
+      "name": "Pump Components",
+      "naics": "333911",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Precision-formed steel profile blanks",
+        "parentL6": "L6a: Material & Blank Procurement",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Pre-hardened profile blanks (bypass OEM L6c)",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Deliver profile blanks with final surface hardness already achieved, eliminating OEM L6c step and reducing total process steps from 6 to 5"
+          },
+          {
+            "unit": "Expanded shaft blanks (all pump types incl. centrifugal)",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 2,
+            "coreJob": "Provide cold-drawn alloy steel shaft blanks with consistent OD and minimal runout for impeller/rotor shafts across ALL pump types"
+          },
+          {
+            "unit": "Housing bore liner profiles",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Provide pre-formed bore liner inserts with press-fit H7/p6 outer tolerance and hardened inner bore surface"
+          },
+          {
+            "unit": "Drive coupling blanks",
+            "relevance": 6,
+            "verdict": "MODERATE",
+            "priority": 4,
+            "coreJob": "Provide near-net-shape hub and flange blanks with pre-formed keyway and bolt circle features — reducing CNC turning time from solid bar by 40–60%"
+          },
+          {
+            "unit": "Bearing sleeve / journal blanks",
+            "relevance": 5,
+            "verdict": "WEAK",
+            "priority": 5,
+            "coreJob": "Provide precision-bore sleeve blanks for plain journal bearings in low-speed pump applications"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Profile grinding — ground rotor blanks",
+            "relevanceXEase": 8,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Deliver profile-ground pump rotor blanks at final dimensional accuracy, eliminating OEM in-house grinding from cold-drawn stock"
+          },
+          {
+            "unit": "Gear cutting / rotor machining",
+            "relevanceXEase": 5,
+            "verdict": "INVESTIGATE",
+            "priority": 2,
+            "coreJob": "Transform profile blanks into fully machined, gear-cut, balanced pump rotors"
+          },
+          {
+            "unit": "Corrosion-resistant coating (HVOF / ENP)",
+            "relevanceXEase": 3,
+            "verdict": "DEFER",
+            "priority": 3,
+            "coreJob": "Apply HVOF or electroless nickel coating to pump rotors for corrosive service environments"
+          },
+          {
+            "unit": "Forged steel blanks",
+            "relevanceXEase": 1,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Provide forged steel blanks for large-bore high-pressure pump components"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L5: Precision-formed profile blanks",
+        "targetLevel": "L5: Finished pump rotors (gear-cut, ground, balanced, certified)",
+        "currentCoverage": 0.5,
+        "potentialCoverage": 0.875,
+        "missing": "OEM-specific PPAP rotor qualification (relationship + time barrier, not capital)",
+        "investment": "€3.5–7.3M phased investment (grinding + gear cutting + balancing)",
+        "verdict": "VIABLE — highest-value strategic option; phased investment path recommended"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Pre-hardened profile blanks (bypass OEM L6c)", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Expanded shaft blanks (all pump types)", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Profile grinding — ground rotor blanks", "track": "B", "verdict": "PURSUE", "effort": "MEDIUM-HIGH" },
+        { "priority": 4, "opportunity": "Finished pump rotors (vertical integration)", "track": "C", "verdict": "VIABLE", "effort": "HIGH" },
+        { "priority": 5, "opportunity": "Housing bore liner profiles", "track": "A", "verdict": "MODERATE", "effort": "LOW" }
+      ]
+    },
+    {
+      "slug": "automotive-components",
+      "name": "Automotive Components",
+      "naics": "336390",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Precision Steel Profile Stock",
+        "parentL6": "L6a: Incoming Material Qualification",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5", "C9"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "CNC machining blanks (near-net)",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Provide near-net-shape profile blanks optimized for CNC machining — reducing cycle time and material waste for automotive structural components"
+          },
+          {
+            "unit": "Cold roll-forming pre-form stock",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 2,
+            "coreJob": "Deliver cold roll-forming compatible pre-forms with consistent gauge and mechanical properties for body-in-white applications"
+          },
+          {
+            "unit": "Induction hardening input stock",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Provide profile stock optimized for inline induction hardening at automotive tier suppliers"
+          },
+          {
+            "unit": "Hot stamping blank alternatives",
+            "relevance": 6,
+            "verdict": "MODERATE",
+            "priority": 4,
+            "coreJob": "Supply precision-formed steel profiles as alternatives to press-hardened blanks for selected non-crash-critical applications"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Cut-to-Length & Punching (Fertigteile)",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Deliver finished cut-and-punched profile parts (Fertigteile) directly usable by the tier supplier without further processing"
+          },
+          {
+            "unit": "Induction hardening as service",
+            "relevanceXEase": 6,
+            "verdict": "INVESTIGATE",
+            "priority": 2,
+            "coreJob": "Offer induction hardening as a stand-alone tolling service for automotive tier suppliers"
+          },
+          {
+            "unit": "Corrosion protection delivery",
+            "relevanceXEase": 2,
+            "verdict": "DEFER",
+            "priority": 3,
+            "coreJob": "Deliver profiles with integrated zinc-nickel or E-coat corrosion protection"
+          },
+          {
+            "unit": "Servo press assembly",
+            "relevanceXEase": 2,
+            "verdict": "DEFER",
+            "priority": 4,
+            "coreJob": "Provide servo-press stamped sub-assemblies for body-in-white modules"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6a: Incoming Material Qualification",
+        "targetLevel": "L6a + L6b: Machined Fertigteile Delivery",
+        "currentCoverage": 0.5,
+        "potentialCoverage": 0.83,
+        "missing": "Corrosion protection (zinc-nickel / E-coat) — outsource as pass-through",
+        "investment": "EUR 2–5M CNC program lines + EUR 0.5–1M CQI-9 qualification",
+        "verdict": "FEASIBLE and strategically compelling"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Cut-to-Length & Punching (Fertigteile)", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 2, "opportunity": "CNC machining blanks (near-net)", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Cold roll-forming pre-form stock", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 4, "opportunity": "Vertical integration to Fertigteile delivery", "track": "C", "verdict": "FEASIBLE", "effort": "MEDIUM" },
+        { "priority": 5, "opportunity": "Induction hardening as service", "track": "B", "verdict": "INVESTIGATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "construction-machinery",
+      "name": "Construction Machinery",
+      "naics": "333120",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Steel Input Materials / Pivot Pins & Bushings",
+        "parentL6": "L6a: Structural Steel Fabrication",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5", "C6"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Piston rod blanks",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Provide hardened, precision-ground piston rod blanks ready for chrome plating — replacing turned-from-bar stock with near-net-shape cold-drawn profiles"
+          },
+          {
+            "unit": "Track pin blanks",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 2,
+            "coreJob": "Supply case-hardened, precision-ground pin blanks for undercarriage track chain assemblies"
+          },
+          {
+            "unit": "ROPS/FOPS cab frame sections",
+            "relevance": 6,
+            "verdict": "WEAK",
+            "priority": 3,
+            "coreJob": "Provide structural hollow sections for rollover and falling-object protective structures"
+          },
+          {
+            "unit": "Cylinder barrel tube",
+            "relevance": 5,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Supply precision honed cylinder barrel tubes for hydraulic actuators in construction equipment"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "High-strength profiles (S690QL)",
+            "relevanceXEase": 8,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Supply S690QL and S960QL high-strength structural profiles for boom and arm fabrication — enabling weight reduction vs. standard S355 sections"
+          },
+          {
+            "unit": "Wear strip aftermarket program",
+            "relevanceXEase": 7,
+            "verdict": "PURSUE",
+            "priority": 2,
+            "coreJob": "Provide hardened wear-strip profiles as direct aftermarket replacements for dozer blade edges, bucket lips, and excavator arm wear plates"
+          },
+          {
+            "unit": "Piston rod blanks (cross-L6)",
+            "relevanceXEase": 6,
+            "verdict": "PURSUE",
+            "priority": 3,
+            "coreJob": "Supply precision rod blanks to hydraulic cylinder shops as a cross-segment capability extension"
+          },
+          {
+            "unit": "Kelly bar profiles",
+            "relevanceXEase": 3,
+            "verdict": "INVESTIGATE",
+            "priority": 4,
+            "coreJob": "Supply precision-formed polygonal profiles for Kelly bar drive systems used in foundation drilling"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6a: Structural Steel Fabrication",
+        "targetLevel": "L6a: Full structural fabrication unit",
+        "currentCoverage": 0.2,
+        "potentialCoverage": 1.0,
+        "missing": "CNC plate cutting, press brakes/rolls, welding, NDE — full fabrication chain",
+        "investment": "€5–15M capex + 3+ years; fundamentally different business model",
+        "verdict": "NOT RECOMMENDED — horizontal expansion across L6 segments preferred over vertical integration"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "High-strength profiles (S690QL)", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Wear strip aftermarket program", "track": "B", "verdict": "PURSUE", "effort": "LOW-MEDIUM" },
+        { "priority": 3, "opportunity": "Piston rod blanks", "track": "A+B", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 4, "opportunity": "Track pin blanks", "track": "A", "verdict": "MODERATE", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Kelly bar profiles", "track": "B", "verdict": "INVESTIGATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "door-systems",
+      "name": "Door Systems",
+      "naics": "332321",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Precision Steel Track & Guide Profile",
+        "parentL6": "L6b: Structural Profile & Frame Forming",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Hot-rolled structural frame sections",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply hot-rolled door frame sections (jamb, head, threshold) that set the dimensional reference for the entire door assembly"
+          },
+          {
+            "unit": "Threshold & sill profiles",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 2,
+            "coreJob": "Provide precision-formed sill and threshold profiles that carry the door weight and provide the sealing datum"
+          },
+          {
+            "unit": "Guide roller axle blanks",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Supply cold-drawn alloy steel axle blanks for overhead and sliding door roller assemblies"
+          },
+          {
+            "unit": "Door frame corner connectors",
+            "relevance": 6,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Provide precision-machined corner connector profiles for mitered door frame assembly"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Anti-corrosion profile variants (galvanized delivery)",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Deliver galvanized or hot-dip zinc-coated track and frame profiles to door OEMs — eliminating the OEM's in-house galvanizing step"
+          },
+          {
+            "unit": "Fire-rated door frame profiles",
+            "relevanceXEase": 7,
+            "verdict": "PURSUE",
+            "priority": 2,
+            "coreJob": "Supply intumescent-compatible steel profiles qualified for fire-rated door assemblies (E30/E60/E90)"
+          },
+          {
+            "unit": "Standard catalog door frame profile kit",
+            "relevanceXEase": 5,
+            "verdict": "INVESTIGATE",
+            "priority": 3,
+            "coreJob": "Offer a catalog of 15–25 standard door frame profiles available from stock with 5-day lead time"
+          },
+          {
+            "unit": "Door leaf stiffener profiles",
+            "relevanceXEase": 4,
+            "verdict": "INVESTIGATE",
+            "priority": 4,
+            "coreJob": "Provide cold-formed internal stiffener profiles that maintain door leaf flatness and rigidity"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6b: Structural Profile & Frame Forming",
+        "targetLevel": "L6b: Full Frame Profile Supply (track + frame + threshold kit)",
+        "currentCoverage": 0.33,
+        "potentialCoverage": 0.83,
+        "missing": "Standard product catalog + kitting logistics (commercial model change, not capability gap)",
+        "investment": "Low capex (outsourced galvanizing + new dies EUR 15–40K each); 12–24 months OEM qualification",
+        "verdict": "FEASIBLE and highly attractive — 10–20x addressable market expansion"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Anti-corrosion profile variants (galvanized)", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Hot-rolled structural frame sections", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Fire-rated door frame profiles", "track": "B", "verdict": "PURSUE", "effort": "MEDIUM" },
+        { "priority": 4, "opportunity": "Threshold & sill profiles", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Vertical integration to frame kit", "track": "C", "verdict": "FEASIBLE", "effort": "LOW-MEDIUM" }
+      ]
+    },
+    {
+      "slug": "elevator-guide-rails",
+      "name": "Elevator Guide Rails",
+      "naics": "333921",
+      "currentPosition": {
+        "vnLevel": "L4",
+        "vnUnit": "Steel guide rail profile body",
+        "parentL6": "L6b: Hoistway Components Manufacturing",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Sill profile (steel door threshold)",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Provide precision steel sill profiles that form the elevator door threshold — requiring consistent T-section geometry and controlled surface finish"
+          },
+          {
+            "unit": "Frame jamb section (bundled with sill)",
+            "relevance": 7,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply door frame jamb sections bundled with sill profile as a complete steel door surround kit"
+          },
+          {
+            "unit": "Car frame channel / hollow section",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 2,
+            "coreJob": "Provide structural hollow sections and channels for elevator car frame construction"
+          },
+          {
+            "unit": "Rail fishplate (splice connector)",
+            "relevance": 6,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Supply machined fishplate connectors that splice guide rail sections while maintaining alignment accuracy"
+          },
+          {
+            "unit": "Handrail profile",
+            "relevance": 5,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Provide cold-formed handrail profiles for elevator cab and hoistway interiors"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Door Frame & Threshold Profile (complete steel set)",
+            "relevanceXEase": 7,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Supply complete steel door surround kits (guide rail + sill + jamb) to elevator OEMs as a single SKU"
+          },
+          {
+            "unit": "Guide rail straightening & drilling",
+            "relevanceXEase": 6,
+            "verdict": "PURSUE",
+            "priority": 2,
+            "coreJob": "Deliver guide rails straightened to <0.5 mm/m and pre-drilled with standard fishplate bolt patterns — ready for hoistway installation"
+          },
+          {
+            "unit": "Hollow section guide rail",
+            "relevanceXEase": 3,
+            "verdict": "INVESTIGATE",
+            "priority": 3,
+            "coreJob": "Supply hollow guide rail profiles offering weight reduction for mid-speed elevators while maintaining adequate stiffness"
+          },
+          {
+            "unit": "Safety Gear — gripping element",
+            "relevanceXEase": 2,
+            "verdict": "DEFER",
+            "priority": 4,
+            "coreJob": "Provide hardened gripping elements for progressive safety gear assemblies"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L4: Steel guide rail profile body",
+        "targetLevel": "L5: Guide Rail System (finished, drilled, packaged guide rail)",
+        "currentCoverage": 0.2,
+        "potentialCoverage": 0.8,
+        "missing": "Guide shoe / roller guide (tribological part — correctly excluded from bundle)",
+        "investment": "€500K–1M (straightening + drilling line + fishplate/bracket tooling + EN 81-20 qualification)",
+        "verdict": "FEASIBLE and strategically compelling — moderate investment, 2.5x value capture"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Guide Rail System vertical integration to L5", "track": "C", "verdict": "STRONG", "effort": "MEDIUM" },
+        { "priority": 2, "opportunity": "Steel door frame bundle (sill + jamb)", "track": "A+B", "verdict": "STRONG", "effort": "LOW-MEDIUM" },
+        { "priority": 3, "opportunity": "Guide rail straightening & drilling", "track": "B", "verdict": "PURSUE", "effort": "LOW-MEDIUM" },
+        { "priority": 4, "opportunity": "Car frame channel / hollow section", "track": "A", "verdict": "MODERATE", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Hollow section guide rail", "track": "B", "verdict": "INVESTIGATE", "effort": "HIGH" }
+      ]
+    },
+    {
+      "slug": "firearms-components",
+      "name": "Firearms Components",
+      "naics": "332994",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Precision Cold-Drawn Steel Profiles",
+        "parentL6": "L6b: Blank & Semi-Finished Forming",
+        "capabilities": ["C1", "C2", "C4", "C5"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Barrel blank (straight drawn round)",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply straight cold-drawn barrel blanks with consistent bore, minimal runout, and certified chromoly or stainless grade properties — reducing OEM material prep before gun drilling"
+          },
+          {
+            "unit": "Finished machined firearm components",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 2,
+            "coreJob": "Provide fully machined firearm components (receivers, bolts, trigger group housings) to licensed firearm OEMs"
+          },
+          {
+            "unit": "Workholding / custom fixture",
+            "relevance": 4,
+            "verdict": "WEAK",
+            "priority": 3,
+            "coreJob": "Supply custom workholding fixtures for CNC machining of firearm components"
+          },
+          {
+            "unit": "Induction hardening service",
+            "relevance": 3,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Provide induction hardening as a tolling service for firearm component heat treatment"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Expanded material procurement (single-source Tier 1)",
+            "relevanceXEase": 7,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Offer firearm OEMs a single-source supply of all steel grades (chromoly, stainless, tool steel) with MIL-spec equivalency testing"
+          },
+          {
+            "unit": "Dedicated firearms CNC machining cell",
+            "relevanceXEase": 6,
+            "verdict": "INVESTIGATE",
+            "priority": 2,
+            "coreJob": "Operate a dedicated ITAR-compliant CNC cell producing machined firearm components under contract for licensed OEMs"
+          },
+          {
+            "unit": "Alloy grade expansion (416/17-4PH)",
+            "relevanceXEase": 5,
+            "verdict": "INVESTIGATE",
+            "priority": 3,
+            "coreJob": "Qualify and supply 416 stainless and 17-4PH profiles for the premium stainless firearm segment"
+          },
+          {
+            "unit": "Drop forging supply",
+            "relevanceXEase": 1,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Supply drop-forged receiver blanks for high-volume firearm OEMs"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6b: Blank & Semi-Finished Forming",
+        "targetLevel": "L6b + L6c: Steel-relevant units (profile + CNC machining)",
+        "currentCoverage": 0.2,
+        "potentialCoverage": 0.67,
+        "missing": "Gun drilling/rifling, Multi-spindle transfer machining",
+        "investment": "EUR 1–3M CNC cell + ITAR/ATF compliance",
+        "verdict": "FEASIBLE for L6b→L6c lateral upgrade; NOT FEASIBLE for full L6b (forging/polymer excluded)"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Barrel blank round profiles", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Expanded material procurement (Tier 1)", "track": "B", "verdict": "PURSUE", "effort": "LOW-MEDIUM" },
+        { "priority": 3, "opportunity": "Finished machined firearm components", "track": "A+B+C", "verdict": "MODERATE", "effort": "MEDIUM-HIGH" },
+        { "priority": 4, "opportunity": "Dedicated firearms CNC machining cell", "track": "B", "verdict": "INVESTIGATE", "effort": "MEDIUM-HIGH" },
+        { "priority": 5, "opportunity": "Alloy grade expansion (416/17-4PH)", "track": "A", "verdict": "INVESTIGATE", "effort": "LOW" }
+      ]
+    },
+    {
+      "slug": "general-mechanical-engineering",
+      "name": "General Mechanical Engineering",
+      "naics": "332999",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Precision-formed steel profile sections",
+        "parentL6": "L6a: Material & Semi-Finished Stock Procurement",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5", "C6"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Hardened slideway rail profiles",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply induction-hardened slideway rail profiles with consistent hardness and ground reference surfaces for machine tool builders"
+          },
+          {
+            "unit": "Clamping jaw/section profiles",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 2,
+            "coreJob": "Provide precision-formed jaw profiles for vises, chucks, and work-holding systems with consistent serration geometry"
+          },
+          {
+            "unit": "Wear strip / insert profiles",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 3,
+            "coreJob": "Supply hardened wear strips and liner inserts used throughout general mechanical assemblies to protect sliding and bearing surfaces"
+          },
+          {
+            "unit": "Machine base sub-frame profiles",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 4,
+            "coreJob": "Provide structural profiles for machine base fabrication requiring consistent cross-section for vibration damping and bed flatness"
+          },
+          {
+            "unit": "Jig/tooling plate rail profiles",
+            "relevance": 6,
+            "verdict": "MODERATE",
+            "priority": 5,
+            "coreJob": "Supply T-slot and precision rail profiles embedded in fixture plates and jig bodies"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Catalog profile program",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Launch a standard-profile catalog with 30–50 SKUs available from stock with 5-day delivery — targeting general mechanical engineering distributors"
+          },
+          {
+            "unit": "Pre-cut Fertigteile",
+            "relevanceXEase": 8,
+            "verdict": "PURSUE",
+            "priority": 2,
+            "coreJob": "Offer cut-to-length and deburred profile sections (Fertigteile) with tight length tolerances, eliminating the customer's sawing and deburring step"
+          },
+          {
+            "unit": "Profile grinding",
+            "relevanceXEase": 7,
+            "verdict": "INVESTIGATE",
+            "priority": 3,
+            "coreJob": "Expand into profile grinding service to deliver ground reference surfaces on precision profile stock"
+          },
+          {
+            "unit": "Surface coating",
+            "relevanceXEase": 3,
+            "verdict": "DEFER",
+            "priority": 4,
+            "coreJob": "Offer hard chrome or DLC coating on delivered profiles as a value-added service"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6a: Material & Semi-Finished Stock Procurement",
+        "targetLevel": "L6a: Full coverage including grinding and CMM validation",
+        "currentCoverage": 0.67,
+        "potentialCoverage": 0.83,
+        "missing": "Surface grinder + CMM upgrade",
+        "investment": "€500K–1M",
+        "verdict": "FEASIBLE — 67% today, 100% achievable with grinding investment"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Catalog profile program", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Hardened slideway rail profiles", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Wear strip / insert profiles", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 4, "opportunity": "Pre-cut Fertigteile", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Profile grinding + vertical integration", "track": "B+C", "verdict": "INVESTIGATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "generator-keybars",
+      "name": "Generator Keybars",
+      "naics": "335312",
+      "currentPosition": {
+        "vnLevel": "L4",
+        "vnUnit": "Keybar Profiles",
+        "parentL6": "L6b: Stator Core Assembly",
+        "capabilities": ["C1", "C2", "C3", "C4", "C5"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Rotor Slot Wedges",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply precision-formed rotor slot wedge profiles that retain rotor windings under centrifugal load — requiring consistent dimensional accuracy and high-grade electrical steel compatibility"
+          },
+          {
+            "unit": "Stacking Template Jig Profiles",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 2,
+            "coreJob": "Provide precision reference profiles used as stacking templates during stator core lamination assembly"
+          },
+          {
+            "unit": "Frame Shell Structural Sections",
+            "relevance": 6,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Supply structural sections for generator frame shells requiring consistent cross-section for welding distortion control"
+          },
+          {
+            "unit": "End Pressure Plates (profile input)",
+            "relevance": 5,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Provide profile stock inputs for machining of stator core end pressure plates"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Core Clamping Tie Rods",
+            "relevanceXEase": 7,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Supply precision-ground tie rod profiles that axially clamp the stator core lamination stack — requiring tight runout and certified tensile properties"
+          },
+          {
+            "unit": "Bearing Housing Sleeves",
+            "relevanceXEase": 5,
+            "verdict": "INVESTIGATE",
+            "priority": 2,
+            "coreJob": "Provide cold-drawn sleeve profiles for bearing housing bores in large generator end brackets"
+          },
+          {
+            "unit": "End Pressure Plates (complete part)",
+            "relevanceXEase": 3,
+            "verdict": "DEFER",
+            "priority": 3,
+            "coreJob": "Supply fully machined end pressure plates as a complete welded and machined assembly"
+          },
+          {
+            "unit": "Frame Shell / Stator Yoke",
+            "relevanceXEase": 1,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Fabricate complete generator frame shell / stator yoke assemblies"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L4: Keybar Profiles (within L6b: Stator Core Assembly)",
+        "targetLevel": "L4 + L5: Keybar + Tie Rod + Slot Wedge (stator structural package)",
+        "currentCoverage": 0.25,
+        "potentialCoverage": 0.5,
+        "missing": "End pressure plates (welded fabrication), Frame shell / stator yoke (heavy ring fabrication)",
+        "investment": "Partnership-based integration model; tie rod capex ~€300–700K; program management capability build",
+        "verdict": "FEASIBLE via integration/partnership model; organic manufacturing of full frame NOT recommended"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Rotor Slot Wedges", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Core Clamping Tie Rods", "track": "B", "verdict": "PURSUE", "effort": "LOW-MEDIUM" },
+        { "priority": 3, "opportunity": "Stator structural package (keybar + tie rod + wedge)", "track": "C", "verdict": "FEASIBLE", "effort": "MEDIUM" },
+        { "priority": 4, "opportunity": "Stacking Template Jig Profiles", "track": "A", "verdict": "MODERATE", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Bearing Housing Sleeves", "track": "B", "verdict": "INVESTIGATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "hydraulic-cylinders",
+      "name": "Hydraulic Cylinders",
+      "naics": "333995",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Precision Steel Bar / Rod Blank",
+        "parentL6": "L6a: Input Material & Blank Supply",
+        "capabilities": ["C1", "C2", "C3", "C5", "C9"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Rod Induction Hardening (value-add)",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Deliver piston rod blanks with induction-hardened surface (58–62 HRC) already applied — eliminating the OEM's separate heat treatment step before chrome plating"
+          },
+          {
+            "unit": "End-Cap / Flange Blank (near-net)",
+            "relevance": 8,
+            "verdict": "STRONG",
+            "priority": 2,
+            "coreJob": "Provide near-net-shape end-cap and flange blanks with pre-formed port boss geometry — reducing CNC turning time by 40–60% vs. from-bar"
+          },
+          {
+            "unit": "Semi-finished chrome rod (bundled)",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Bundle cold-drawn rod blank + outsourced chrome plating into a single semi-finished piston rod supply"
+          },
+          {
+            "unit": "Piston blanks (bar-stock)",
+            "relevance": 6,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Supply cold-drawn alloy steel piston blanks for hydraulic cylinder pistons"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "End-cap blank catalog expansion",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Offer a standard catalog of 20+ end-cap blank profiles covering 80% of cylinder OEM demand from stock"
+          },
+          {
+            "unit": "EN 10204 3.1 as standard",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Mandate EN 10204 3.1 material certification as standard on all hydraulic cylinder deliveries — eliminating OEM qualification testing"
+          },
+          {
+            "unit": "Semi-finished chrome rod (outsource)",
+            "relevanceXEase": 6,
+            "verdict": "INVESTIGATE",
+            "priority": 3,
+            "coreJob": "Build a trading relationship with a chrome plating shop to offer bundled semi-finished piston rods"
+          },
+          {
+            "unit": "Cylinder tube blank",
+            "relevanceXEase": 1,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Supply cylinder barrel tube blanks from a tube rolling process"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6a: Input Material & Blank Supply",
+        "targetLevel": "L6a + trading: Bundled supply (rod + tube + end-cap)",
+        "currentCoverage": 0.6,
+        "potentialCoverage": 0.8,
+        "missing": "Cylinder tube blank (structural gap — different technology); Seal kits (excluded — different material class)",
+        "investment": "Trading/distribution agreement with tube mill (Benteler, Mannesmann); logistics bundling capability",
+        "verdict": "FEASIBLE via bundled supply / trading model; organic tube manufacturing NOT feasible"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Rod Induction Hardening (value-add)", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 2, "opportunity": "End-Cap / Flange Blank (near-net)", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 3, "opportunity": "End-cap blank catalog expansion", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 4, "opportunity": "EN 10204 3.1 as standard", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Semi-finished chrome rod (bundled supply)", "track": "A+C", "verdict": "MODERATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "medical-instruments",
+      "name": "Medical Instruments",
+      "naics": "339112",
+      "currentPosition": {
+        "vnLevel": "L5",
+        "vnUnit": "Instrument-Grade Steel Profile Stock",
+        "parentL6": "L6a: Instrument Material Production",
+        "capabilities": ["C1", "C2", "C4", "C5"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Sterilization tray insert profiles",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply precision stainless profiles for CSSD sterilization tray frames and inserts — requiring consistent 316L/1.4404 grade certification and Ra ≤0.8 µm surface finish"
+          },
+          {
+            "unit": "Endoscopic shaft profiles",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 2,
+            "coreJob": "Provide cold-drawn thin-wall tubular profiles for rigid endoscope shaft construction"
+          },
+          {
+            "unit": "Device frame structural profiles",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Supply structural profiles for medical device frames and housings requiring corrosion resistance and dimensional stability"
+          },
+          {
+            "unit": "Orthopaedic hand instrument blanks",
+            "relevance": 6,
+            "verdict": "MODERATE",
+            "priority": 4,
+            "coreJob": "Provide cold-drawn stainless blanks for machining orthopaedic hand instruments (chisels, gouges, retractors)"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "ISO 13485 certified material supply",
+            "relevanceXEase": 7,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Achieve ISO 13485 QMS certification to supply material to medical device OEMs under documented design-history file requirements"
+          },
+          {
+            "unit": "Passivation & electropolishing",
+            "relevanceXEase": 6,
+            "verdict": "INVESTIGATE",
+            "priority": 2,
+            "coreJob": "Offer passivation and electropolishing as an in-line or toll service to deliver instrument-ready surface finish"
+          },
+          {
+            "unit": "Instrument CNC machining",
+            "relevanceXEase": 4,
+            "verdict": "DEFER",
+            "priority": 3,
+            "coreJob": "Operate a cleanroom-adjacent CNC machining cell producing finished surgical instrument components"
+          },
+          {
+            "unit": "Medical-grade heat treatment",
+            "relevanceXEase": 3,
+            "verdict": "DEFER",
+            "priority": 4,
+            "coreJob": "Provide martensitic hardening and aging of surgical grade stainless for cutting instruments"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L6a: Instrument Material Production",
+        "targetLevel": "L6a + ISO 13485: Full qualified material supply",
+        "currentCoverage": 0.4,
+        "potentialCoverage": 0.8,
+        "missing": "UDI labeling system",
+        "investment": "€100–200K (ISO 13485 + biocomp testing + UDI)",
+        "verdict": "HIGHLY FEASIBLE — modest investment, high strategic value"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "ISO 13485 certified material supply", "track": "B", "verdict": "PURSUE", "effort": "LOW-MEDIUM" },
+        { "priority": 2, "opportunity": "Sterilization tray insert profiles", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Vertical integration to ISO 13485 qualified supply", "track": "C", "verdict": "HIGHLY FEASIBLE", "effort": "LOW-MEDIUM" },
+        { "priority": 4, "opportunity": "Endoscopic shaft profiles", "track": "A", "verdict": "MODERATE", "effort": "LOW" },
+        { "priority": 5, "opportunity": "Passivation & electropolishing", "track": "B", "verdict": "INVESTIGATE", "effort": "MEDIUM" }
+      ]
+    },
+    {
+      "slug": "rail-vehicle-parts",
+      "name": "Rail Vehicle Parts",
+      "naics": "336510",
+      "currentPosition": {
+        "vnLevel": "L5 (primary) + L4 (secondary)",
+        "vnUnit": "Structural Steel Profiles (Carbody) + Bogie Frame Profiles (Running Gear)",
+        "parentL6": "L6b: Carbody Fabrication + L6c: Bogie & Running Gear Manufacturing",
+        "capabilities": ["C1", "C2", "C5", "C6", "C8"]
+      },
+      "trackA": {
+        "candidates": [
+          {
+            "unit": "Door frame profiles (rail vehicle doors)",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 1,
+            "coreJob": "Supply precision steel door frame profiles for rail vehicle sliding and plug door systems — requiring consistent cross-section and tight straightness tolerances for reliable door operation"
+          },
+          {
+            "unit": "Bogie frame profiles (formalized)",
+            "relevance": 9,
+            "verdict": "STRONG",
+            "priority": 2,
+            "coreJob": "Formalize supply of bogie frame profiles (H-beams, channels, gusset plates) as a qualified program with EN 15085 documentation support"
+          },
+          {
+            "unit": "Spring seat / bolster bracket profiles",
+            "relevance": 7,
+            "verdict": "MODERATE",
+            "priority": 3,
+            "coreJob": "Provide precision-formed profiles for spring seat housings and bolster brackets in bogie primary and secondary suspension systems"
+          },
+          {
+            "unit": "Coupler draft gear housing profiles",
+            "relevance": 6,
+            "verdict": "WEAK",
+            "priority": 4,
+            "coreJob": "Supply structural profiles for draft gear housings and coupler yoke assemblies"
+          }
+        ]
+      },
+      "trackB": {
+        "candidates": [
+          {
+            "unit": "Wider alloy grade portfolio (S420N, S460N, S355J2W)",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 1,
+            "coreJob": "Expand certified alloy grade supply to include S420N, S460N (high-strength structural) and S355J2W (weathering steel) for carbody weight reduction and weathering applications"
+          },
+          {
+            "unit": "Weld-prep delivery standard",
+            "relevanceXEase": 9,
+            "verdict": "PURSUE",
+            "priority": 2,
+            "coreJob": "Deliver all profiles with standardized weld-prep chamfers, degreased surface, and EN 10204 3.1 cert — eliminating OEM pre-weld preparation"
+          },
+          {
+            "unit": "Anticorrosion primed delivery",
+            "relevanceXEase": 4,
+            "verdict": "INVESTIGATE",
+            "priority": 3,
+            "coreJob": "Offer shop-primed (zinc epoxy) profiles as an option, eliminating the rail OEM's blasting and priming step"
+          },
+          {
+            "unit": "Carbody sheet & plate",
+            "relevanceXEase": 1,
+            "verdict": "NO-GO",
+            "priority": 4,
+            "coreJob": "Supply carbody outer skin sheet and structural plate for rail vehicle carbody fabrication"
+          }
+        ]
+      },
+      "trackC": {
+        "currentLevel": "L5: Structural profiles / L4: Bogie frame profiles",
+        "targetLevel": "L5 + L4: Deeper vertical hold in carbody + bogie segments",
+        "currentCoverage": 0.17,
+        "potentialCoverage": 0.5,
+        "missing": "EN 15085-CL1 welding, large-format dimensional inspection, EN 13749 type approval",
+        "investment": "EUR 10–20M+ for welding shop + inspection + homologation; 2–3 years",
+        "verdict": "NOT RECOMMENDED — deepen L5/L4 profile supply instead"
+      },
+      "consolidatedMap": [
+        { "priority": 1, "opportunity": "Wider alloy grade portfolio (S420N, S460N, S355J2W)", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 2, "opportunity": "Weld-prep delivery standard", "track": "B", "verdict": "PURSUE", "effort": "LOW" },
+        { "priority": 3, "opportunity": "Door frame profiles (rail vehicle doors)", "track": "A", "verdict": "STRONG", "effort": "LOW" },
+        { "priority": 4, "opportunity": "Bogie frame profiles (formalized program)", "track": "A", "verdict": "STRONG", "effort": "LOW-MEDIUM" },
+        { "priority": 5, "opportunity": "Anticorrosion primed delivery", "track": "B", "verdict": "INVESTIGATE", "effort": "MEDIUM" }
+      ]
+    }
+  ]
+}

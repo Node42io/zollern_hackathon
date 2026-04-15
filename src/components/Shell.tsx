@@ -9,6 +9,7 @@
  *     04  Market Competition
  *     05  New Market Discovery
  *     06  New Market Analysis    ← tabbed
+ *     08  Strategic Synthesis    ← conclusion
  */
 
 import { useState, useEffect, useCallback } from "react";
@@ -85,7 +86,11 @@ function buildNavFromManifest(): NavItem[] {
 
   if (manifest.markets?.length > 0) {
     items.push({ to: "/analysis", label: "Market Analysis", kicker: String(idx).padStart(2, "0") });
+    idx++;
   }
+
+  // Always append Strategic Synthesis as the final item
+  items.push({ ...staticNavItems[staticNavItems.length - 1], kicker: String(idx).padStart(2, "0") });
 
   return items;
 }
@@ -158,8 +163,24 @@ const staticNavItems: NavItem[] = [
     ],
   },
   { to: "/home-market", label: "Home Market", kicker: "04" },
-  { to: "/discovery", label: "New Market Discovery", kicker: "05" },
-  { to: "/analysis", label: "New Market Analysis", kicker: "06" },
+  { to: "/capabilities", label: "Capability Register", kicker: "05" },
+  { to: "/adjacency", label: "Adjacency Analysis", kicker: "06" },
+  { to: "/discovery", label: "New Market Discovery", kicker: "07" },
+  { to: "/analysis", label: "New Market Analysis", kicker: "08" },
+  {
+    to: "/synthesis",
+    label: "Strategic Synthesis",
+    kicker: "09",
+    sections: [
+      { id: "syn-executive",      label: "Executive Summary" },
+      { id: "syn-opportunities",  label: "Top 15 Opportunities" },
+      { id: "syn-themes",         label: "Capability Themes" },
+      { id: "syn-classification", label: "Market Classification" },
+      { id: "syn-vertical",       label: "Vertical Integration" },
+      { id: "syn-investments",    label: "Investment Priorities" },
+      { id: "syn-revenue",        label: "Revenue Scenarios" },
+    ],
+  },
 ];
 
 export default function Shell() {
