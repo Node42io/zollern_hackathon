@@ -110,19 +110,19 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
         title="Value Network Analysis"
       >
         <p className="answer">
-          This section maps where the Marquardt Ultrasonic Flow Sensor fits within the{" "}
+          This section maps where ZOLLERN's steel profile offering fits within the{" "}
           <strong>{vnData.marketName}</strong> value network. Value-network positioning
           directly informs sales-channel strategy: it tells the sales team which buyers
           to approach first, which systems integrators control purchasing decisions,
-          and where Marquardt can capture margin rather than ceding it to a channel
+          and where ZOLLERN can capture margin rather than ceding it to a channel
           partner. The analysis is based on NAICS code{" "}
           <strong>{vnData.naicsCode}</strong> and an architecture distance score of{" "}
           <strong>{archDist}</strong> ({archDistanceLabel(archDist)}).
         </p>
         <p className="answer" style={{ marginTop: 12 }}>
           The tab is structured in two parts: (1) position in the general value
-          network, and (2) the detailed process-level map with Marquardt's anchor
-          position. The sensor's Bill of Materials is available on the separate{" "}
+          network, and (2) the detailed process-level map with ZOLLERN's anchor
+          position. The product Bill of Materials is available on the separate{" "}
           <strong>Bill of Materials</strong> tab.
         </p>
       </ExecutiveSummary>
@@ -146,8 +146,8 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
         <p className="answer" style={{ marginTop: 12 }}>
           In this section you are seeing the <strong>{vnData.marketName}</strong>{" "}
           production chain decomposed to the L6 (functional sub-system) and L5 (specific process step)
-          levels. The highlighted rows show where the Marquardt sensor fits as a primary,
-          secondary, or tertiary measurement point. Click any row to read the functional
+          levels. The highlighted rows show where ZOLLERN's steel profiles fit as a primary,
+          secondary, or tertiary supply point. Click any row to read the functional
           job statement and a plain-language description of that process step.
         </p>
       </ExecutiveSummary>
@@ -292,18 +292,18 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
         </p>
         <p className="answer" style={{ marginTop: 12 }}>
           <strong>What the steps mean.</strong> Each L5 unit represents a discrete
-          buying occasion or integration point. The Marquardt sensor must fit into at
-          least one L5 unit as the measurement device of record. The "PRIMARY" badge
-          marks the L5 unit where the sensor's functional promise (measuring flow rate
-          and temperature of liquids with no moving parts) maps most directly. Secondary
-          and tertiary positions are adjacent buying opportunities once the primary
+          buying occasion or integration point. ZOLLERN's steel profiles must fit into at
+          least one L5 unit as the material/blank supply point of record. The "PRIMARY" badge
+          marks the L5 unit where ZOLLERN's functional promise (near-net-shape precision
+          steel profiles with integrated induction hardening) maps most directly. Secondary
+          and tertiary positions are adjacent supply opportunities once the primary
           position is established.
         </p>
         <p className="answer" style={{ marginTop: 12 }}>
           <strong>How the following analysis will be conducted.</strong> The diagram
           below is interactive — click any L6 row to expand its L5 children, and click
           any row to read the functional job statement and a plain-language description.
-          The goal is to identify the shortest path from the sensor's current positioning
+          The goal is to identify the shortest path from ZOLLERN's current positioning
           to a volume-production relationship with a systems integrator or OEM in this
           market.
         </p>
@@ -337,7 +337,7 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
       )}
 
       {/* ── Strategic position note ── */}
-      {vnData.marquardtPosition && (
+      {(vnData.marquardtPosition || (vnData as any).zollernPosition) && (
         <div
           style={{
             marginTop: 24,
@@ -361,9 +361,9 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
               marginBottom: 6,
             }}
           >
-            Marquardt Strategic Position
+            ZOLLERN Strategic Position
           </span>
-          {vnData.marquardtPosition}
+          {vnData.marquardtPosition || (vnData as any).zollernPosition}
         </div>
       )}
 

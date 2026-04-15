@@ -122,12 +122,12 @@ export default function BOMSection({ product }: { product: ProductDecomposition 
       <SectionAnchor
         id="bom"
         kicker="Product Reference"
-        title="Sensor Bill of Materials"
+        title="Product Bill of Materials"
       />
 
       <ExecutiveSummary kicker="Bill of Materials Note">
         <p className="answer">
-          Below is the sensor's bill of materials — useful for understanding the physical cost structure as we evaluate each market. Because the product data file does not yet include a dedicated BOM field, this table is derived from the sensor's documented features, technology class, and specifications. It reflects the logical component architecture of the Marquardt Ultrasonic Flow Sensor rather than a formal manufacturing BOM.
+          Below is the product's bill of materials — useful for understanding the physical cost structure as we evaluate each market. Because the product data file does not yet include a dedicated BOM field, this table is derived from the documented features, technology class, and specifications. It reflects the logical component architecture of ZOLLERN's precision steel profile offering rather than a formal manufacturing BOM.
         </p>
       </ExecutiveSummary>
 

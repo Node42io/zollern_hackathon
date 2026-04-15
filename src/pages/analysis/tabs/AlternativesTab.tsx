@@ -47,22 +47,22 @@ export default function AlternativesTab({ marketSlug }: { marketSlug: string }) 
       {/* Item 38: Executive summary with full context */}
       <ExecutiveSummary kicker="Alternatives / Executive Summary">
         <p className="answer">
-          This tab maps the <strong>competing technologies</strong> that customers in{" "}
+          This tab maps the <strong>competing supply options</strong> that customers in{" "}
           <strong>{marketName}</strong>
           {naicsCode && (
             <>
               {" "}(<ClickableCode kind="naics" code={naicsCode} />)
             </>
           )}{" "}
-          could use <em>instead of</em> Marquardt's ultrasonic flow sensor to fulfil their
-          flow-measurement need. An "alternative" here means any technology, workaround, or
-          existing installed solution that satisfies the same functional requirement — whether
+          could use <em>instead of</em> ZOLLERN's precision steel profiles to fulfil their
+          material or blank supply need. An "alternative" here means any technology, process, or
+          existing supply arrangement that satisfies the same functional requirement — whether
           or not it is technically equivalent.
           <SourceFootnote sourceIds={["HOME-S19", "HOME-S20"]} />
         </p>
         <p className="answer">
           The reader learns: <strong>how hard is displacement?</strong> — i.e., what are the
-          inherent trade-offs of each alternative and how does Marquardt's ultrasonic approach
+          inherent trade-offs of each alternative and how does ZOLLERN's precision profile approach
           compare? This matters because displacement difficulty directly sets the sales cycle
           length, the required value-proposition strength, and the expected pricing pressure
           in the target market.

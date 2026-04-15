@@ -49,20 +49,18 @@ export default function NoMarketSelected() {
       {/* Market picker grid */}
       <div className="market-grid">
         {ranked.map((rm) => {
-          const idx = indexBySlug[rm.slug];
-          const isRef = idx?.isReference ?? false;
+          const idx = indexBySlug[rm.slug]; void idx;
 
           return (
             <Link
               key={rm.slug}
               to={`/analysis/${rm.slug}/jtbd`}
               className="market-card"
-              style={isRef ? { opacity: 0.55 } : undefined}
             >
               {/* Top row: rank + badge */}
               <div className="market-card__top">
                 <span className="market-card__priority">
-                  {isRef ? "Reference" : `Rank ${rm.rank}`}
+                  {`Rank ${rm.rank}`}
                 </span>
                 <span className={recBadgeClass(rm.recommendation)}>
                   {rm.recommendation}

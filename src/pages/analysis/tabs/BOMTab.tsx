@@ -221,11 +221,10 @@ export default function BOMTab({ marketSlug }: { marketSlug: string }) {
         <p className="answer">
           A Bill of Materials (BOM) is the complete hierarchical breakdown of every component,
           module, and sub-system that makes up the final product or equipment in this market.
-          Reading the BOM for market entry reveals <strong>where the Marquardt sensor fits
-          in the physical product architecture</strong> — whether it is a critical measurement
-          component inside the OEM's assembly (e.g., inside a heat pump hydronic circuit) or
-          a piece of process equipment that monitors how the product is manufactured (e.g.,
-          glycol cooling in a brewery).
+          Reading the BOM for market entry reveals <strong>where ZOLLERN's steel profile fits
+          in the physical product architecture</strong> — whether it is a critical structural
+          blank supplied to an OEM's machining line (e.g., guide rail body profile) or
+          a near-net-shape input that eliminates downstream CNC waste steps.
         </p>
         <p className="answer" style={{ marginTop: 12 }}>
           Each row below is a <strong>L4 subsystem</strong> (the top-level functional block — L4 = major subsystem, L3 = module, L2 = assembly, L1 = part). Clicking a row expands the
@@ -246,9 +245,9 @@ export default function BOMTab({ marketSlug }: { marketSlug: string }) {
               letterSpacing: "0.06em",
             }}
           >
-            Marquardt anchor
+            ZOLLERN anchor
           </span>{" "}
-          badge are the subsystems or modules where the DN20 sensor competes directly.
+          badge are the subsystems or modules where ZOLLERN's steel profiles compete directly.
         </p>
       </ExecutiveSummary>
 
@@ -287,7 +286,7 @@ export default function BOMTab({ marketSlug }: { marketSlug: string }) {
               show competing technologies for that subsystem — <strong>green = high
               confidence data</strong>, amber = medium confidence, red = low confidence /
               analyst estimate. Click any row to see L3 module-level detail and the specific
-              BOM position where Marquardt competes.
+              BOM position where ZOLLERN's steel profiles compete.
             </p>
           </ExecutiveSummary>
 

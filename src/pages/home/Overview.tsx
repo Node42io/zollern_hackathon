@@ -124,20 +124,19 @@ export default function Overview() {
         {/* ── Executive Summary ── */}
         <ExecutiveSummary kicker="00 / What you are reading" title="Report scope">
           <p className="answer">
-            This report answers a single strategic question posed by Marquardt GmbH: which
-            new markets can the existing DN20 Ultrasonic Flow Sensor enter, how attractive
-            are they, and what business model fits? The analysis evaluated eight candidate
-            markets through a six-factor composite scoring model covering architecture
-            distance, job-to-be-done coverage, feature fit, constraint compatibility,
-            value-network position, and incumbent vulnerability. Five markets advanced to
-            full deep-dive. This page is the entry point — it explains the question,
-            introduces the company and product, and gives a one-page summary of findings.
+            This report answers the strategic questions posed by ZOLLERN GmbH &amp; Co. KG: which
+            new markets exist for precision steel profiles, how attractive are these segments,
+            and what business model fits? The analysis evaluates 12 application markets through a
+            six-factor composite scoring model covering architecture distance, job-to-be-done coverage,
+            feature fit, constraint compatibility, value-network position, and incumbent vulnerability.
+            This page is the entry point — it explains the question, introduces the company and product,
+            and gives a one-page summary of findings.
           </p>
         </ExecutiveSummary>
 
         {/* ── The Question ── */}
         <hr />
-        <h2 id="ovw-question">The Question Marquardt Asked</h2>
+        <h2 id="ovw-question">The Question ZOLLERN Asked</h2>
 
         <div
           style={{
@@ -247,8 +246,8 @@ export default function Overview() {
 
         <hr />
 
-        {/* ── About Marquardt ── */}
-        <h2 id="ovw-company">About Marquardt GmbH</h2>
+        {/* ── About ZOLLERN ── */}
+        <h2 id="ovw-company">About ZOLLERN GmbH &amp; Co. KG</h2>
         <SourceFootnote sourceIds={["OVW-S01", "OVW-S02", "OVW-S03"]} />
 
         <table>
@@ -364,7 +363,7 @@ export default function Overview() {
             <tr>
               <td><span className="badge badge--accent">Company</span></td>
               <td><strong>{company.name}</strong></td>
-              <td>Family-owned mechatronic systems supplier. Automotive (main) + Building/HVAC + Industrial.</td>
+              <td>Family-owned precision steel profiles and engineering manufacturer. Serves 12+ application sectors across Europe, Asia, and North America.</td>
             </tr>
             {subjectDivision && (
               <tr>
@@ -379,11 +378,11 @@ export default function Overview() {
               <td>{productGroup.scope}</td>
             </tr>
             <tr>
-              <td><span className="badge badge--strong">Product (L5)</span></td>
-              <td><strong>{product.name} — DN20 serial</strong></td>
+              <td><span className="badge badge--strong">Product (L1-L2)</span></td>
+              <td><strong>{product.name}</strong></td>
               <td>
                 Home market: <ClickableCode kind="naics" code={product.homeMarketNaics} />{" "}
-                {product.homeMarketTitle}. Sellable unit — the subject of this entire analysis.
+                {product.homeMarketTitle}. Semi-finished material — the subject of this entire analysis.
               </td>
             </tr>
           </tbody>
@@ -414,7 +413,7 @@ export default function Overview() {
           </tbody>
         </table>
 
-        <h3>Sensor Product Families</h3>
+        <h3>Product Families</h3>
 
         <table>
           <thead>
@@ -431,15 +430,15 @@ export default function Overview() {
                 <td>{f.technology}</td>
                 <td>
                   <span className={
-                    f.status.startsWith("Current") ? "badge badge--strong" :
-                    f.status.startsWith("Legacy") ? "badge badge--weak" :
+                    (f.status || "").startsWith("Current") ? "badge badge--strong" :
+                    (f.status || "").startsWith("Legacy") ? "badge badge--weak" :
                     "badge badge--moderate"
                   }>
-                    {f.status.split(" — ")[0]}
+                    {(f.status || "—").split(" — ")[0]}
                   </span>
-                  {f.status.includes(" — ") && (
+                  {(f.status || "").includes(" — ") && (
                     <span style={{ display: "block", fontSize: 11, color: "var(--text-gray)", marginTop: 2 }}>
-                      {f.status.split(" — ")[1]}
+                      {(f.status || "").split(" — ")[1]}
                     </span>
                   )}
                 </td>
@@ -451,14 +450,14 @@ export default function Overview() {
         <hr />
 
         {/* ── Product Variants ── */}
-        <h2 id="ovw-product">The Product: Ultrasonic Flow Sensor Variants</h2>
-        <SourceFootnote sourceIds={["OVW-S06", "OVW-S09"]} />
+        <h2 id="ovw-product">The Product: ZOLLERN Steel Profile Variants</h2>
+        <SourceFootnote sourceIds={["OVW-S01", "OVW-S02"]} />
 
         <p>
-          The sensor family spans four pipe diameters. The <strong>DN20 is the current
-          serial product</strong> — it is the basis for all market analysis in this report.
-          DN12 and DN25 expansions are required to unlock additional markets (residential
-          combi-boiler DHW and commercial HVAC main headers respectively).
+          The steel profile family spans multiple manufacturing processes and geometries.
+          The <strong>cold-drawn profile is the primary value driver</strong> — delivering IT8
+          dimensional tolerance (±0.02 mm) for precision applications. All variants are subject
+          of this analysis.
         </p>
 
         <table>
@@ -505,9 +504,9 @@ export default function Overview() {
         <h2 id="ovw-portfolio">Market Priorities at a Glance</h2>
 
         <p>
-          Eight candidate markets were screened. Five advanced to full deep-dive analysis.
-          The table below shows the final priority ranking with fit score, time-to-first-revenue,
-          required hardware changes, and projected 5-year base revenue.
+          Twelve application markets were evaluated. The table below shows the priority ranking
+          with fit score, time-to-first-revenue, required product adaptations, and projected 5-year
+          base revenue where available.
         </p>
 
         <table>
@@ -605,12 +604,12 @@ export default function Overview() {
           </thead>
           <tbody>
             {[
-              ["01 Product Profile", "What the sensor does at mechanism, function, and outcome level. Features, specs, UNSPSC classification.", "Foundation for every compatibility check that follows"],
-              ["02 Functional Promise", "The two-level functional promise used as the market search query. What the product does independent of technology.", "Commodity-level promise drives the NAICS market discovery in Chapter 05"],
-              ["03 Constraints", "12 physical, chemical, and operational limits. 3 are absolute barriers; 9 are conditional.", "Every new market candidate is screened against these — absolute violations eliminate a market"],
-              ["04 Market Competition", "Competition, alternatives, and value network position in the existing HVAC manufacturing market.", "Baseline for comparison — the sensor's current home"],
-              ["05 New Market Discovery", "UNSPSC-to-NAICS cross-classification pipeline. Architecture distance scoring. 6-factor composite ranking.", "The ranked shortlist of markets to enter"],
-              ["06 New Market Analysis", "Per-market deep-dive: Job-to-be-Done, ODI matrix, Kano fit, value network, alternatives, compatibility.", "Decision data per market — what to build, who to sell to, what it costs to enter"],
+              ["01 Product Profile", "What ZOLLERN steel profiles do at mechanism, function, and outcome level. Features, specs, UNSPSC classification.", "Foundation for every compatibility check that follows"],
+              ["02 Functional Promise", "The two-level functional promise used as the market search query. What the profile does independent of geometry.", "Commodity-level promise drives the NAICS market discovery in Chapter 05"],
+              ["03 Constraints", "Physical, process, and operational limits. Absolute barriers and conditional constraints.", "Every new market candidate is screened against these — absolute violations eliminate a market"],
+              ["04 Market Competition", "Competition, alternatives, and value network position in the existing steel profile manufacturing market.", "Baseline for comparison — ZOLLERN's current home market"],
+              ["05 New Market Discovery", "NAICS market discovery via commodity functional promise. Architecture distance scoring. 6-factor composite ranking.", "The ranked shortlist of 12 markets to investigate"],
+              ["06 New Market Analysis", "Per-market deep-dive: Job-to-be-Done, ODI matrix, Kano fit, value network, BOM, alternatives, compatibility.", "Decision data per market — what to build, who to sell to, what it costs to enter"],
             ].map(([ch, what, output]) => (
               <tr key={ch}>
                 <td><strong>{ch}</strong></td>

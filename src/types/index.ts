@@ -601,17 +601,42 @@ export interface BOMAlternative {
   name: string;
   sharePct: number;
   trend: "growing" | "stable" | "declining" | "growing" | string;
-  /** True when this alternative is the Marquardt product or technology */
+  /** True when this alternative is the subject product or technology */
   isMarquardt?: boolean;
+}
+
+export interface BOML0Material {
+  name: string;
+  sharePct: number;
+  trend?: string;
+  confidence?: string;
+  source?: string;
+}
+
+export interface BOML1ToL0 {
+  /** L1 component name (e.g. "Torsion spring") */
+  component: string;
+  materials: BOML0Material[];
+}
+
+export interface BOML2Component {
+  id: string;
+  name: string;
+  alternatives: BOMAlternative[];
+  rawMaterials: BOML1ToL0[];
 }
 
 export interface BOMModule {
   id: string;
   name: string;
   isMarquardtAnchor: boolean;
-  /** Short note shown in sensor-anchor badge */
+  /** Short note shown in product-anchor badge */
   sensorNote?: string;
   alternatives: BOMAlternative[];
+  /** L2 sub-components nested below this L3 module */
+  children?: BOML2Component[];
+  /** L1→L0 raw material tables directly on the L3 (when no L2 sub-sections exist) */
+  rawMaterials?: BOML1ToL0[];
 }
 
 export interface BOML4Subsystem {

@@ -80,6 +80,12 @@ export default function GenericAnalysisTab({
     // Try to load the JSON file dynamically from the data directory
     // The json_exporter produces files like: APPENG_elevator_guide_rails.json
     const prefixMap: Record<string, string> = {
+      value_network: "VN",
+      product_bom: "BOM",
+      jtbd_analysis: "JTBD",
+      odi_matrix: "ODI",
+      feature_market_fit: "FIT",
+      constraint_compatibility: "COMPAT",
       application_engineering: "APPENG",
       market_sizing: "SIZE",
       business_model_canvas: "BMC",
@@ -90,8 +96,6 @@ export default function GenericAnalysisTab({
       working_capital_simulation: "WCAP",
       financial_scenarios: "FIN",
       product_decomposition: "PROD",
-      constraint_compatibility: "COMPAT",
-      feature_market_fit: "FIT",
     };
 
     const prefix = prefixMap[analysisType] || analysisType.toUpperCase();
@@ -130,8 +134,10 @@ export default function GenericAnalysisTab({
       <h2 style={{ marginBottom: 8 }}>{label}</h2>
 
       {/* Executive summary from first section if it looks like one */}
-      {data.sections.length > 0 && data.sections[0].title.toLowerCase().includes("summary") && (
-        <ExecutiveSummary><p>{data.sections[0].content.slice(0, 500)}</p></ExecutiveSummary>
+      {data.sections.length > 0 && (data.sections[0].title || "").toLowerCase().includes("summary") && (
+        <ExecutiveSummary kicker={label}>
+          <p className="answer">{data.sections[0].content.slice(0, 500)}</p>
+        </ExecutiveSummary>
       )}
 
       {/* Tables first — most valuable for quick scanning */}
@@ -199,7 +205,7 @@ export default function GenericAnalysisTab({
 
       {/* Sections as formatted text blocks */}
       {data.sections
-        .filter((s) => !s.title.toLowerCase().includes("structured data"))
+        .filter((s) => !(s.title || "").toLowerCase().includes("structured data"))
         .map((section, i) => (
           <div key={i} style={{ marginBottom: 28 }}>
             <h3

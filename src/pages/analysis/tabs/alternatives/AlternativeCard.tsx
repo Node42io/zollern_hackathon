@@ -109,7 +109,7 @@ function StatusBadge({ name }: { name: string }) {
       </span>
     );
   }
-  if (name.includes("Ultrasonic")) {
+  if (name.includes("ZOLLERN") || name.includes("Ultrasonic")) {
     return (
       <span
         style={{
@@ -127,7 +127,7 @@ function StatusBadge({ name }: { name: string }) {
           verticalAlign: "middle",
         }}
       >
-        Marquardt's approach
+        ZOLLERN's approach
       </span>
     );
   }

@@ -75,20 +75,30 @@ const TAB_TO_TYPE: Record<string, string> = {
 
 /** Build the full tab list: base tabs + any extended tabs that have data */
 function buildAnalysisTabs(marketSlug: string): AnalysisTab[] {
-  const tabs = [...BASE_TABS];
-  // Check manifest for available analyses and add extended tabs
+  let tabs = [...BASE_TABS];
   try {
     const manifest = (window as any).__CLAYTON_MANIFEST__;
-    if (manifest?.market_types?.[marketSlug]) {
-      const available = manifest.market_types[marketSlug] as string[];
-      for (const ext of EXTENDED_TABS) {
-        const typeName = TAB_TO_TYPE[ext.slug];
-        if (typeName && available.includes(typeName)) {
-          tabs.push(ext);
+    if (manifest) {
+      // Hide BOM tab if this market has no BOM (service industries)
+      const marketEntry = manifest.markets?.find((m: any) => m.slug === marketSlug);
+      if (marketEntry && !marketEntry.has_bom) {
+        tabs = tabs.filter(t => t.slug !== "bom");
+      }
+      // Add extended tabs if data exists
+      if (manifest.market_types?.[marketSlug]) {
+        const available = manifest.market_types[marketSlug] as string[];
+        for (const ext of EXTENDED_TABS) {
+          const typeName = TAB_TO_TYPE[ext.slug];
+          if (typeName && available.includes(typeName)) {
+            tabs.push(ext);
+          }
         }
+      } else {
+        // No manifest loaded — show all extended tabs (they'll show "no data" gracefully)
+        tabs.push(...EXTENDED_TABS);
       }
     } else {
-      // No manifest loaded — show all extended tabs (they'll show "no data" gracefully)
+      // No manifest — show all extended tabs
       tabs.push(...EXTENDED_TABS);
     }
   } catch {
@@ -113,14 +123,17 @@ function buildMarketTabs(): MarketTab[] {
     ])
   );
 
-  return marketsIndex.map((m) => {
-    const ranked = rankBySLug[m.slug];
-    return {
-      slug: m.slug,
-      label: m.name,
-      meta: ranked && ranked.composite != null ? ranked.composite.toFixed(2) : undefined,
-    };
-  });
+  // Only show markets that have static data bundles (the 12 reference markets)
+  return marketsIndex
+    .filter((m) => !!markets[m.slug])
+    .map((m) => {
+      const ranked = rankBySLug[m.slug];
+      return {
+        slug: m.slug,
+        label: m.name,
+        meta: ranked && ranked.composite != null ? ranked.composite.toFixed(2) : undefined,
+      };
+    });
 }
 
 /* =========================================================================

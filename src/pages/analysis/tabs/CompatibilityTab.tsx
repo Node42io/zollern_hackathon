@@ -92,7 +92,7 @@ export default function CompatibilityTab({ marketSlug }: { marketSlug: string })
             </>
           )}
           . For each constraint the question is: does this market's typical operating
-          environment exceed the sensor's limit, and if so, can it be mitigated?
+          environment exceed ZOLLERN's product capability limit, and if so, can it be mitigated?
           <SourceFootnote sourceIds={sectionSourceIds.slice(0, 2)} />
         </p>
         <p className="answer">

@@ -292,8 +292,8 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
             The job map breaks the customer's core job into discrete sequential
             steps. Steps highlighted in{" "}
             <span style={{ color: "var(--accent-yellow)" }}>yellow</span> are
-            directly relevant to flow sensing; dimmed steps represent phases
-            where the Marquardt sensor has limited or no touchpoint.
+            directly relevant to ZOLLERN's steel profile supply; dimmed steps represent phases
+            where ZOLLERN's offering has limited or no touchpoint.
           </p>
         </div>
 
@@ -332,8 +332,8 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
               lineHeight: 1.6,
             }}
           >
-            Key roles involved in purchasing, operating, and maintaining flow
-            measurement solutions in this market — and their JTBD pyramid level
+            Key roles involved in purchasing, specifying, and using precision
+            steel profiles in this market — and their JTBD pyramid level
             (which layer of the job hierarchy they primarily act on).
           </p>
         </div>

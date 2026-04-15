@@ -11,8 +11,8 @@
  *     06  New Market Analysis    ← tabbed
  */
 
-import { useState, useEffect } from "react";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { useState, useEffect, useCallback } from "react";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 
 interface NavSection {
   id: string;
@@ -65,23 +65,24 @@ function buildNavFromManifest(): NavItem[] {
   if (!manifest?.analysis_pages) return staticNavItems;
 
   const items: NavItem[] = [
-    { to: "/overview", label: "Overview", kicker: "00" },
+    staticNavItems[0], // Overview with sections
   ];
 
-  // Add analysis pages from manifest
   let idx = 1;
   for (const page of manifest.analysis_pages) {
     const label = TYPE_LABELS[page.type] || page.title;
     const route = TYPE_ROUTES[page.type];
-    // Skip types that map to overview or already-added routes
     if (!route || route === "/overview") continue;
     if (items.some(i => i.to === route)) continue;
-    const kicker = String(idx).padStart(2, "0");
-    items.push({ to: route, label, kicker });
+    const staticMatch = staticNavItems.find(s => s.to === route);
+    if (staticMatch) {
+      items.push({ ...staticMatch, kicker: String(idx).padStart(2, "0") });
+    } else {
+      items.push({ to: route, label, kicker: String(idx).padStart(2, "0") });
+    }
     idx++;
   }
 
-  // Always add market analysis at the end
   if (manifest.markets?.length > 0) {
     items.push({ to: "/analysis", label: "Market Analysis", kicker: String(idx).padStart(2, "0") });
   }
@@ -89,27 +90,85 @@ function buildNavFromManifest(): NavItem[] {
   return items;
 }
 
-/** Static fallback nav items (Marquardt-compatible) */
+/** Static nav items with section anchors for chapter subsections */
 const staticNavItems: NavItem[] = [
-  { to: "/overview", label: "Overview", kicker: "00" },
-  { to: "/product", label: "Product Profile", kicker: "01" },
-  { to: "/functional-promise", label: "Functional Promise", kicker: "02" },
-  { to: "/constraints", label: "Constraints", kicker: "03" },
+  {
+    to: "/overview",
+    label: "Overview",
+    kicker: "00",
+    sections: [
+      { id: "ovw-question",   label: "The Question" },
+      { id: "ovw-company",    label: "About ZOLLERN" },
+      { id: "ovw-hierarchy",  label: "Division → Product" },
+      { id: "ovw-product",    label: "Product Variants" },
+      { id: "ovw-portfolio",  label: "Market Priorities" },
+      { id: "ovw-financials", label: "Financial Scenarios" },
+      { id: "ovw-howto",      label: "How to Read" },
+    ],
+  },
+  {
+    to: "/product",
+    label: "Product Profile",
+    kicker: "01",
+    sections: [
+      { id: "prod-three-levels", label: "What the Product Does" },
+      { id: "prod-tech-class",   label: "Technology Classification" },
+      { id: "prod-fp",           label: "Functional Promise" },
+      { id: "prod-commodity-fp", label: "Commodity-Level FP", sub: true },
+      { id: "prod-features",     label: "Features" },
+      { id: "prod-specs",        label: "Specifications" },
+      { id: "prod-constraints",  label: "Key Constraints" },
+      { id: "prod-unspsc",       label: "UNSPSC Classification" },
+      { id: "prod-validation",   label: "Validation Notes" },
+      { id: "prod-sources",      label: "Sources" },
+    ],
+  },
+  {
+    to: "/functional-promise",
+    label: "Functional Promise",
+    kicker: "02",
+    sections: [
+      { id: "fp-mechanism",    label: "Underlying Mechanism" },
+      { id: "fp-product-fp",   label: "Product Functional Promise" },
+      { id: "fp-unspsc",       label: "UNSPSC / Product Group" },
+      { id: "fp-extension",    label: "FP Extension", sub: true },
+      { id: "fp-bom",          label: "BOM Position" },
+      { id: "fp-complements",  label: "Required Complements" },
+      { id: "fp-downstream",   label: "Downstream Analysis" },
+      { id: "fp-quality",      label: "Quality Checklist" },
+      { id: "fp-sources",      label: "Sources" },
+    ],
+  },
+  {
+    to: "/constraints",
+    label: "Constraints",
+    kicker: "03",
+    sections: [
+      { id: "con-summary",       label: "Summary" },
+      { id: "con-detailed",      label: "Detailed Constraints" },
+      { id: "con-regulatory",    label: "Regulatory", sub: true },
+      { id: "con-physical",      label: "Physical", sub: true },
+      { id: "con-operational",   label: "Operational", sub: true },
+      { id: "con-economic",      label: "Economic", sub: true },
+      { id: "con-environmental", label: "Environmental", sub: true },
+      { id: "con-coverage",      label: "Coverage Table" },
+      { id: "con-absolute",      label: "Absolute vs Conditional" },
+      { id: "con-downstream",    label: "Downstream Analysis" },
+      { id: "con-sources",       label: "Sources" },
+    ],
+  },
   { to: "/home-market", label: "Home Market", kicker: "04" },
   { to: "/discovery", label: "New Market Discovery", kicker: "05" },
   { to: "/analysis", label: "New Market Analysis", kicker: "06" },
 ];
 
-function scrollToSection(id: string) {
-  const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-}
-
 export default function Shell() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [projectInfo, setProjectInfo] = useState<{company: string; division: string; archetype: string} | null>(null);
   const [navItems, setNavItems] = useState<NavItem[]>(staticNavItems);
+  const [pendingScroll, setPendingScroll] = useState<string | null>(null);
 
   // Load project info and build dynamic nav
   useEffect(() => {
@@ -118,14 +177,13 @@ export default function Shell() {
       .then(p => setProjectInfo(p))
       .catch(() => setProjectInfo({ company: "Clayton Analysis", division: "", archetype: "Analysis" }));
 
-    // Build nav from manifest once it's loaded
     const checkManifest = setInterval(() => {
       if ((window as any).__CLAYTON_MANIFEST__) {
         setNavItems(buildNavFromManifest());
         clearInterval(checkManifest);
       }
     }, 200);
-    setTimeout(() => clearInterval(checkManifest), 5000); // give up after 5s
+    setTimeout(() => clearInterval(checkManifest), 5000);
     return () => clearInterval(checkManifest);
   }, []);
 
@@ -140,6 +198,39 @@ export default function Shell() {
       setExpanded((prev) => ({ ...prev, [activeItem.to]: true }));
     }
   }, [location.pathname, navItems]);
+
+  // Execute pending scroll after navigation completes and DOM updates
+  useEffect(() => {
+    if (!pendingScroll) return;
+    const raf = requestAnimationFrame(() => {
+      setTimeout(() => {
+        const el = document.getElementById(pendingScroll);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        setPendingScroll(null);
+      }, 100);
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [pendingScroll, location.pathname]);
+
+  /**
+   * Navigate to a section anchor. If already on the target page, scroll
+   * immediately. If on a different page, navigate first then scroll after render.
+   */
+  const goToSection = useCallback((parentRoute: string, sectionId: string) => {
+    const isOnPage =
+      location.pathname === parentRoute ||
+      (parentRoute === "/overview" && location.pathname === "/");
+
+    if (isOnPage) {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      setPendingScroll(sectionId);
+      navigate(parentRoute);
+    }
+  }, [location.pathname, navigate]);
 
   function toggle(to: string) {
     setExpanded((prev) => ({ ...prev, [to]: !prev[to] }));
@@ -230,7 +321,7 @@ export default function Shell() {
                         {item.sections!.map((sec) => (
                           <button
                             key={sec.id}
-                            onClick={() => scrollToSection(sec.id)}
+                            onClick={() => goToSection(item.to, sec.id)}
                             style={{
                               display: "flex",
                               alignItems: "center",

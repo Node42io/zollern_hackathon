@@ -55,7 +55,7 @@ function VariantDetailPanel({
               padding: "2px 5px",
             }}
           >
-            Marquardt
+            ZOLLERN
           </span>
         )}
         {alternative.name}

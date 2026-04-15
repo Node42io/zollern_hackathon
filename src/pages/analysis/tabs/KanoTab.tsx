@@ -434,7 +434,7 @@ export default function KanoTab({ marketSlug }: { marketSlug: string }) {
     <div className="section">
       {/* Eyebrow + Title */}
       <div className="section__eyebrow">
-        Kano Classification · {kanoData.marketName ?? marketSlug}
+        Kano Classification · {kanoData.marketName || marketSlug}
       </div>
       <h2 className="section__title">Kano Classification</h2>
       <p className="section__sub">
@@ -446,9 +446,9 @@ export default function KanoTab({ marketSlug }: { marketSlug: string }) {
       <ExecutiveSummary kicker="Kano · What you're reading">
         <p className="answer">
           We classified each product feature by how customers in{" "}
-          <strong>{kanoData.marketName}</strong> perceive it — must-be, performance
+          <strong>{kanoData.marketName || marketSlug}</strong> perceive it — must-be, performance
           (one-dimensional), attractive, indifferent, or reverse — to identify where
-          Marquardt&apos;s ultrasonic flow sensor wins or loses on value.{" "}
+          ZOLLERN&apos;s steel profile offering wins or loses on value.{" "}
           <strong>Must-be</strong> features are the price of entry; <strong>attractive</strong>{" "}
           features are where differentiation lives. Click any feature pill below to see
           detailed fit scores across nine customer-value dimensions.

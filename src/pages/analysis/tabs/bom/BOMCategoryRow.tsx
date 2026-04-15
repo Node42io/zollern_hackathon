@@ -36,7 +36,7 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
-/* ── Marquardt anchor badge ──────────────────────────────────────────────── */
+/* ── Product anchor badge ──────────────────────────────────────────────── */
 function MarquardtBadge({ note }: { note?: string }) {
   return (
     <span
@@ -58,7 +58,7 @@ function MarquardtBadge({ note }: { note?: string }) {
       }}
       title={note}
     >
-      Marquardt anchor
+      Product anchor
     </span>
   );
 }
