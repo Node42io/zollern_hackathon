@@ -327,7 +327,7 @@ export default function FunctionalPromise() {
         {/* ── Bill of Materials / Value Network Position ── */}
         <h2 id="fp-bom">Bill of Materials (BOM) Position in the Product Hierarchy</h2>
         <p style={{ color: "var(--text-gray)", fontSize: "0.85rem", marginBottom: "0.5rem" }}>
-          Level notation: L4 = major subsystem · L3 = module · L2 = assembly · L1 = part. The sensor sits at L5 — an individual component within a subsystem.
+          Level notation: L7 = ecosystem · L6 = process step · L5 = equipment · L4 = subsystem · L3 = module · L2 = assembly · L1 = part. ZOLLERN's steel profiles sit at L1–L2 as semi-finished material input.
         </p>
 
         <table>
@@ -340,7 +340,7 @@ export default function FunctionalPromise() {
           <tbody>
             <tr>
               <td><strong>Bill of Materials Level</strong></td>
-              <td>L5 — Component</td>
+              <td>{bomPosition.level}</td>
             </tr>
             <tr>
               <td><strong>Position</strong></td>

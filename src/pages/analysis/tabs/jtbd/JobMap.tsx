@@ -471,7 +471,7 @@ export default function JobMap({
                   </div>
                 </div>
 
-                {/* Rationale / sensor dependency as commodity-style tag */}
+                {/* Rationale / product dependency as commodity-style tag */}
                 {isRelevant && step.rationale && (
                   <div className="commodity-tags">
                     <div className="commodity-tag" style={{ maxWidth: "100%", whiteSpace: "normal" }}>

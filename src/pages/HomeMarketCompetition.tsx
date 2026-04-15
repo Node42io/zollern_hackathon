@@ -120,7 +120,7 @@ export default function HomeMarketCompetition() {
     <div>
       {/* ─── Page header ─────────────────────────────────────────────── */}
       <PageHeader
-        kicker="04 · Market Competition · NAICS 333415"
+        kicker="04 · Market Competition · NAICS 331110"
         title="Market Competition"
       />
 

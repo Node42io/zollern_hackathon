@@ -1,8 +1,8 @@
 /**
- * BOMSection — Bill of Materials for the base sensor product.
+ * BOMSection — Bill of Materials for the base product (ZOLLERN steel profiles).
  *
  * product.json does not have a `billOfMaterials` field. Instead we derive
- * the sensor's component breakdown from its features + specifications.
+ * the product's component breakdown from its features + specifications.
  * A graceful note is shown explaining the derivation.
  */
 
@@ -10,7 +10,7 @@ import type { ProductDecomposition } from "@/types";
 import SectionAnchor from "@/components/SectionAnchor";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 
-/* ── Derived BOM item from sensor features ──────────────────────────────── */
+/* ── Derived BOM item from product features ──────────────────────────────── */
 interface BOMItem {
   id: string;
   component: string;
@@ -20,7 +20,7 @@ interface BOMItem {
 }
 
 /**
- * Build a logical BOM from the sensor's feature list.
+ * Build a logical BOM from the product's feature list.
  * Maps technology-scope features to physical components.
  */
 function buildBOMFromProduct(product: ProductDecomposition): BOMItem[] {
@@ -163,7 +163,7 @@ export default function BOMSection({ product }: { product: ProductDecomposition 
         </table>
       </div>
 
-      {/* Sensor specifications as supplementary reference */}
+      {/* ZOLLERN steel profiles specifications as supplementary reference */}
       <div style={{ marginTop: 32 }}>
         <p
           style={{

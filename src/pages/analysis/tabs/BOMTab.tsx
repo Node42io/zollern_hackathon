@@ -6,7 +6,7 @@
  *   - Output type chip row (product variant selector)
  *   - L6.N rows (L4 subsystems) with confidence badges and variant chips
  *   - Expandable L3 module detail per subsystem
- *   - Marquardt anchor highlighting (yellow border + badge)
+ *   - ZOLLERN anchor highlighting (yellow border + badge)
  *   - Data-pending placeholder for markets without BOM markdown
  *   - Source footnote + source list
  *
@@ -77,7 +77,7 @@ function BOMPendingPlaceholder({ bomData }: { bomData: BOMData }) {
           }}
         >
           <span style={{ color: "var(--text-gray-dark)", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-            Sensor note:{" "}
+            ZOLLERN position note:{" "}
           </span>
           {bomData.sensorNote}
         </p>
@@ -86,7 +86,7 @@ function BOMPendingPlaceholder({ bomData }: { bomData: BOMData }) {
   );
 }
 
-/* ── Sensor note callout ─────────────────────────────────────────────────── */
+/* ── ZOLLERN position note callout ──────────────────────────────────────── */
 function SensorNoteCallout({ note }: { note: string }) {
   if (!note) return null;
   return (
@@ -114,7 +114,7 @@ function SensorNoteCallout({ note }: { note: string }) {
           marginBottom: 5,
         }}
       >
-        Sensor position note
+        ZOLLERN position note
       </span>
       {note}
     </div>
@@ -256,7 +256,7 @@ export default function BOMTab({ marketSlug }: { marketSlug: string }) {
         <BOMPendingPlaceholder bomData={bomData} />
       ) : (
         <>
-          {/* ── Sensor note ── */}
+          {/* ── ZOLLERN position note ── */}
           <SensorNoteCallout note={bomData.sensorNote} />
 
           {/* ── Output type filter row ── */}

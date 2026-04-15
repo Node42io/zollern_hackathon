@@ -109,7 +109,7 @@ function StatusBadge({ name }: { name: string }) {
       </span>
     );
   }
-  if (name.includes("ZOLLERN") || name.includes("Ultrasonic")) {
+  if (name.includes("ZOLLERN")) {
     return (
       <span
         style={{
