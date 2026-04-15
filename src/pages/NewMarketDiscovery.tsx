@@ -309,7 +309,7 @@ export default function NewMarketDiscovery() {
         <div className="md">
           <p>
             The table below summarises why each NAICS code was selected:
-            the primary job to be done, why flow measurement is required, what
+            the primary job to be done, why precision steel profiles are relevant, what
             alternatives exist, and our best-available market size estimate.
           </p>
 

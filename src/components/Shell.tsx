@@ -175,8 +175,6 @@ const staticNavItems: NavItem[] = [
       { id: "syn-themes",         label: "Capability Themes" },
       { id: "syn-classification", label: "Market Classification" },
       { id: "syn-vertical",       label: "Vertical Integration" },
-      { id: "syn-investments",    label: "Investment Priorities" },
-      { id: "syn-revenue",        label: "Revenue Scenarios" },
     ],
   },
 ];
