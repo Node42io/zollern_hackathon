@@ -26,7 +26,7 @@ import NeedsList from "./jtbd/NeedsList";
 import JobMap from "./jtbd/JobMap";
 import StakeholderMap from "./jtbd/StakeholderMap";
 import ODIMatrix from "./jtbd/ODIMatrix";
-import JTBDPyramid from "./jtbd/JTBDPyramid";
+// JTBDPyramid removed — not used in this workflow
 import { loadMarketData } from "./jtbd/loadMarketData";
 import type { ODINeed } from "@/types";
 
