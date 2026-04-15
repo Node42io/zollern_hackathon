@@ -236,37 +236,6 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
       </div>
 
       {/* ══════════════════════════════════════════════════════════════════
-          Section 2 — Customer Needs Pyramid
-          ══════════════════════════════════════════════════════════════════ */}
-      <div style={{ marginTop: 56 }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "baseline",
-            gap: 12,
-            marginBottom: 16,
-            flexWrap: "wrap",
-          }}
-        >
-          <h3
-            style={{
-              margin: 0,
-              fontSize: 16,
-              fontWeight: 600,
-              color: "var(--text-white)",
-            }}
-          >
-            Job-to-be-Done Pyramid
-          </h3>
-          <span className="badge badge--neutral" style={{ fontSize: 10 }}>
-            5-tier customer needs pyramid
-          </span>
-        </div>
-
-        <JTBDPyramid jtbd={jtbd} odi={odi} marketName={marketName} />
-      </div>
-
-      {/* ══════════════════════════════════════════════════════════════════
           Section 3 — Job Map
           ══════════════════════════════════════════════════════════════════ */}
       <div style={{ marginTop: 56 }}>
