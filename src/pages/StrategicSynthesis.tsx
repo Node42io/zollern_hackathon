@@ -204,8 +204,6 @@ export default function StrategicSynthesis() {
     capabilityThemes,
     verticalIntegrationSummary,
     marketClassification,
-    investmentPriorities,
-    revenueScenarios,
   } = data;
 
   return (
