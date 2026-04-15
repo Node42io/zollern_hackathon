@@ -184,7 +184,7 @@ export default function HomeMarketCompetition() {
 
         {incumbents.map((tech, i) => {
           const shareSourceIds = tech.shareSourceIds ?? ["HOME-S20"];
-          const switchingCostText = tech.switchingCostNarrative ?? "Switching cost assessment — pending per-technology data.";
+          const switchingCostText = tech.switchingCostNarrative ?? "—";
           const tNum = i + 1;
 
           return (
@@ -314,17 +314,15 @@ export default function HomeMarketCompetition() {
           <thead>
             <tr>
               <th>Alternative</th>
-              <th>Share</th>
+              <th>Market Share</th>
+              <th>Share Tier</th>
               <th>Custom Geometry</th>
-              <th>Tolerance Class</th>
-              <th>Material Waste</th>
               <th>Unit Cost (OEM)</th>
-              <th>Near-Net-Shape</th>
               <th>Surface Hardening</th>
             </tr>
           </thead>
           <tbody>
-            {homeMarket.positioningTable.map((row, i) => {
+            {homeMarket.positioningTable.map((row) => {
               const r = row as Record<string, string>;
               const isSubject = r.share === "subject";
               return (
@@ -338,21 +336,14 @@ export default function HomeMarketCompetition() {
                       : <strong>{r.technology}</strong>
                     }
                   </td>
+                  <td>{r.marketShare || "—"}</td>
                   <td>
                     <span className={SHARE_CLASS[r.share] ?? "badge badge--neutral"}>
                       {r.share}
                     </span>
-                    {!isSubject && (
-                      <SourceFootnote
-                        sourceIds={incumbents[i]?.shareSourceIds ?? ["HOME-S20"]}
-                      />
-                    )}
                   </td>
                   <td>{r.customGeometry || "—"}</td>
-                  <td>{r.toleranceClass || "—"}</td>
-                  <td>{r.materialWaste || "—"}</td>
                   <td>{r.unitCost || "—"}</td>
-                  <td>{r.nearNetShape || "—"}</td>
                   <td>{r.surfaceHardening || "—"}</td>
                 </tr>
               );

@@ -195,138 +195,124 @@
     {
       "technology": "Hot-Rolled Structural (ArcelorMittal, SSAB)",
       "share": "dominant",
-      "toleranceClass": "±0.5–3.0mm",
+      "marketShare": "~35–40%",
       "customGeometry": "No (standard only)",
       "surfaceHardening": "No",
-      "materialWaste": "Low (near-final)",
-      "unitCost": "€",
-      "nearNetShape": "No"
+      "unitCost": "€"
     },
     {
-      "technology": "Bright-Drawn Round Bar (BGH, Ovako)",
+      "technology": "Bright-Drawn Round Bar (Swiss Steel, Ovako)",
       "share": "significant",
-      "toleranceClass": "h9/h11",
+      "marketShare": "~25–30%",
       "customGeometry": "No (round/hex/square)",
       "surfaceHardening": "No",
-      "materialWaste": "High (40–80% for complex)",
-      "unitCost": "€€",
-      "nearNetShape": "No"
-    },
-    {
-      "technology": "Roll-Formed Strip (Welser, voestalpine)",
-      "share": "significant",
-      "toleranceClass": "±0.2–0.5mm",
-      "customGeometry": "Limited (thin-wall open)",
-      "surfaceHardening": "No",
-      "materialWaste": "Low",
-      "unitCost": "€",
-      "nearNetShape": "Partial"
-    },
-    {
-      "technology": "Aluminum Extrusion (Hydro, Schüco)",
-      "share": "significant",
-      "toleranceClass": "±0.1–0.3mm",
-      "customGeometry": "Yes (incl. hollow)",
-      "surfaceHardening": "No (anodizing only)",
-      "materialWaste": "Low",
-      "unitCost": "€€",
-      "nearNetShape": "Yes"
+      "unitCost": "€€"
     },
     {
       "technology": "CNC from Bar Stock (machine shops)",
       "share": "dominant",
-      "toleranceClass": "IT6–IT8",
+      "marketShare": "~15–20%",
       "customGeometry": "Yes (any 3D)",
       "surfaceHardening": "Outsourced",
-      "materialWaste": "Very High (40–80%)",
-      "unitCost": "€€€€",
-      "nearNetShape": "No"
+      "unitCost": "€€€€"
     },
     {
-      "technology": "Cold-Drawn T-Rail (Monteferro, VOL-Stahl)",
-      "share": "dominant (elevator)",
-      "toleranceClass": "EN 81 Class T",
-      "customGeometry": "Standard T only",
-      "surfaceHardening": "Partial (flange)",
-      "materialWaste": "Low",
-      "unitCost": "€€",
-      "nearNetShape": "Yes"
+      "technology": "Cold-Drawn Special Profiles (ZOLLERN, Montanstahl, GMH)",
+      "share": "niche",
+      "marketShare": "~8–12%",
+      "customGeometry": "Yes (custom 2D cross-section)",
+      "surfaceHardening": "Yes (integrated IH)",
+      "unitCost": "€€–€€€"
+    },
+    {
+      "technology": "Roll-Formed Strip (Welser, voestalpine)",
+      "share": "significant",
+      "marketShare": "~3–5%",
+      "customGeometry": "Limited (thin-wall open)",
+      "surfaceHardening": "No",
+      "unitCost": "€"
+    },
+    {
+      "technology": "Aluminum Extrusion (Hydro, Schüco)",
+      "share": "significant",
+      "marketShare": "~2–4%",
+      "customGeometry": "Yes (incl. hollow)",
+      "surfaceHardening": "No (anodizing only)",
+      "unitCost": "€€"
     },
     {
       "technology": "ZOLLERN Steel Profiles (subject)",
       "share": "subject",
-      "toleranceClass": "IT8–IT10 (cold-drawn)",
+      "marketShare": "included in ~8–12% cold-drawn",
       "customGeometry": "Yes (custom 2D cross-section)",
       "surfaceHardening": "Yes (integrated IH)",
-      "materialWaste": "Very Low (near-net)",
-      "unitCost": "€€–€€€",
-      "nearNetShape": "Yes"
+      "unitCost": "€€–€€€"
     }
   ],
   "sources": [
     {
       "id": "S01",
-      "label": "ArcelorMittal Europe — Long Products catalog",
+      "label": "Eurofer — European Steel Association Annual Report 2024 (eurofer.eu)",
       "prefixedId": "HOME-S01"
     },
     {
       "id": "S02",
-      "label": "SSAB — Hardox wear plate product range",
+      "label": "VDMA Stahlverarbeitung — Market Analysis 2024 (vdma.org)",
       "prefixedId": "HOME-S02"
     },
     {
       "id": "S03",
-      "label": "BGH Edelstahl — Cold-drawn special steel profiles",
+      "label": "IBISWorld — Iron & Steel Forging in Germany, Report C25.50 (ibisworld.com)",
       "prefixedId": "HOME-S03"
     },
     {
       "id": "S04",
-      "label": "Ovako — Precision bar and tube products",
+      "label": "Mordor Intelligence — Europe Steel Products Market 2024 (mordorintelligence.com)",
       "prefixedId": "HOME-S04"
     },
     {
       "id": "S05",
-      "label": "Welser Profile — Roll-formed steel profiles",
+      "label": "Swiss Steel Group — Annual Report 2024 (swisssteelgroup.com)",
       "prefixedId": "HOME-S05"
     },
     {
       "id": "S06",
-      "label": "voestalpine Profilafroid — Cold-rolled profiles",
+      "label": "Ovako — Annual Review 2024 (ovako.com)",
       "prefixedId": "HOME-S06"
     },
     {
       "id": "S07",
-      "label": "Hydro Building Systems — Aluminum extrusion profiles",
+      "label": "ArcelorMittal Europe — Long Products catalog (arcelormittal.com)",
       "prefixedId": "HOME-S07"
     },
     {
       "id": "S08",
-      "label": "Constellium — Automotive aluminum extrusions",
+      "label": "voestalpine Profilafroid — Cold-rolled profiles product range (voestalpine.com)",
       "prefixedId": "HOME-S08"
     },
     {
       "id": "S09",
-      "label": "Rathbone Precision Metals — Cold-drawn profiles (competitor reference)",
+      "label": "Montanstahl — Special steel profiles (montanstahl.com)",
       "prefixedId": "HOME-S09"
     },
     {
       "id": "S10",
-      "label": "Montanstahl — Special steel profiles",
+      "label": "Saar-Blankstahl — Bright-drawn precision bar stock (saar-blankstahl.de)",
       "prefixedId": "HOME-S10"
     },
     {
       "id": "S11",
-      "label": "MONTEFERRO — Elevator guide rails",
+      "label": "MONTEFERRO — Elevator guide rails (monteferro.it)",
       "prefixedId": "HOME-S11"
     },
     {
       "id": "S12",
-      "label": "VOL-Stahl — Elevator guide rails and precision profiles",
+      "label": "ZOLLERN GmbH & Co. KG — Steel profiles product range (zollern.com)",
       "prefixedId": "HOME-S12"
     },
     {
       "id": "S13",
-      "label": "04_incumbents_home.md — full incumbent technology analysis across 12 markets",
+      "label": "Grand View Research — Europe Cold Drawn Steel Bar Market Report 2024 (grandviewresearch.com)",
       "prefixedId": "HOME-S13"
     }
   ]

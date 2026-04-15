@@ -13,6 +13,7 @@ interface Capability {
   id: string;
   name: string;
   type: "core" | "supporting";
+  description: string;
   fpLinkage: string;
   constraints: string[];
 }
@@ -21,6 +22,8 @@ interface Combination {
   ids: string[];
   name: string;
   targetApplications: string;
+  distinctContributions: Record<string, string>;
+  compoundDescription: string;
 }
 
 interface TrackATarget {
@@ -267,6 +270,18 @@ export default function CapabilityRegister() {
                 {cap.name}
               </div>
 
+              {/* Description */}
+              <p
+                style={{
+                  fontSize: 12,
+                  color: "var(--text-gray-light)",
+                  lineHeight: 1.6,
+                  margin: 0,
+                }}
+              >
+                {cap.description}
+              </p>
+
               {/* FP Linkage */}
               <div
                 style={{
@@ -361,34 +376,153 @@ export default function CapabilityRegister() {
         <h2 id="cap-combinations">Capability Interaction Map</h2>
         <p>
           Capabilities combine to create compound value propositions. The table below shows which
-          capabilities combine, what compound capability they create, and where it matters.
+          capabilities combine, what compound capability they create, where it matters, and what
+          each individual capability specifically contributes.
         </p>
 
-        <div style={{ overflowX: "auto", marginTop: 16 }}>
-          <table>
-            <thead>
-              <tr>
-                <th style={{ width: "22%" }}>Combination</th>
-                <th style={{ width: "28%" }}>Compound Capability</th>
-                <th>Target Applications</th>
-              </tr>
-            </thead>
-            <tbody>
-              {combinations.map((combo, i) => (
-                <tr key={i}>
-                  <td>
-                    <IdPillGroup ids={combo.ids} />
-                  </td>
-                  <td style={{ fontWeight: 600, color: "var(--text-white)" }}>
-                    {combo.name}
-                  </td>
-                  <td style={{ color: "var(--text-gray-light)", fontSize: 12 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 24, marginTop: 16 }}>
+          {combinations.map((combo, i) => (
+            <div
+              key={i}
+              style={{
+                background: "var(--bg-card)",
+                border: "1px solid var(--border-subtle)",
+                borderRadius: 8,
+                overflow: "hidden",
+              }}
+            >
+              {/* Combination header */}
+              <div
+                style={{
+                  padding: "14px 20px",
+                  background: "var(--bg-card-inner)",
+                  borderBottom: "1px solid var(--border-subtle)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  flexWrap: "wrap",
+                }}
+              >
+                <IdPillGroup ids={combo.ids} />
+                <span
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 600,
+                    color: "var(--text-white)",
+                  }}
+                >
+                  {combo.name}
+                </span>
+              </div>
+
+              <div style={{ padding: "16px 20px", display: "flex", flexDirection: "column", gap: 16 }}>
+                {/* Compound description */}
+                <div>
+                  <div
+                    style={{
+                      fontSize: 10,
+                      fontWeight: 700,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "var(--text-gray)",
+                      marginBottom: 6,
+                    }}
+                  >
+                    Compound Capability
+                  </div>
+                  <p
+                    style={{
+                      fontSize: 12,
+                      color: "var(--text-gray-light)",
+                      lineHeight: 1.6,
+                      margin: 0,
+                    }}
+                  >
+                    {combo.compoundDescription}
+                  </p>
+                </div>
+
+                {/* Distinct contributions */}
+                <div>
+                  <div
+                    style={{
+                      fontSize: 10,
+                      fontWeight: 700,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "var(--text-gray)",
+                      marginBottom: 8,
+                    }}
+                  >
+                    Distinct Contribution per Capability
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 6,
+                    }}
+                  >
+                    {combo.ids.map((id) => (
+                      <div
+                        key={id}
+                        style={{
+                          display: "flex",
+                          gap: 10,
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <IdBadge id={id} />
+                        <span
+                          style={{
+                            fontSize: 12,
+                            color: "var(--text-gray-light)",
+                            lineHeight: 1.5,
+                            paddingTop: 3,
+                          }}
+                        >
+                          {combo.distinctContributions[id]}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Target applications */}
+                <div
+                  style={{
+                    padding: "10px 12px",
+                    background: "var(--bg-card-inner)",
+                    borderRadius: 5,
+                    borderLeft: "2px solid rgba(111, 213, 155, 0.4)",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: 10,
+                      fontWeight: 700,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "var(--text-gray)",
+                      marginBottom: 4,
+                    }}
+                  >
+                    Target Applications
+                  </div>
+                  <p
+                    style={{
+                      fontSize: 12,
+                      color: "var(--text-gray-light)",
+                      lineHeight: 1.5,
+                      margin: 0,
+                    }}
+                  >
                     {combo.targetApplications}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <hr />

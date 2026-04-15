@@ -4,91 +4,157 @@
       "id": "C1",
       "name": "Custom cross-section geometry design & die engineering",
       "type": "core",
+      "description": "ZOLLERN designs and manufactures custom die and roll sets that define the exact 2D cross-section geometry of each steel profile. This capability transforms customer engineering drawings into production-ready tooling, enabling profiles that match final part geometry with minimal downstream machining. The 300+ year accumulated die library and metallurgical know-how create a significant experience advantage that new entrants cannot shortcut.",
       "fpLinkage": "Enables 'custom cross-sectional shapes' — translates functional geometry requirements into producible die/roll set designs",
-      "constraints": ["Die cost €5–15K per geometry", "Lead time 6–12 weeks", "2D constant cross-section only", "Max width 160 mm"]
+      "constraints": [
+        "Requires upfront tooling investment per geometry; new profiles need a development phase before production",
+        "Limited to constant 2D cross-sections along the length; variable or 3D geometries are outside scope",
+        "Width is bounded; very wide profiles must be produced via hot rolling rather than cold forming"
+      ]
     },
     {
       "id": "C2",
       "name": "Precision cold finishing to IT8 tolerances",
       "type": "core",
+      "description": "ZOLLERN achieves IT8-class dimensional tolerances by drawing or rolling steel profiles through calibrated carbide dies at room temperature, producing bar-to-bar repeatability at the ±0.02 mm level. This enables customers to use profiles as precision blanks — skipping or drastically shortening the grinding step that standard hot-rolled bar would require. The combination of cold-forming process control and in-house die manufacturing makes this precision level consistently repeatable at industrial volumes.",
       "fpLinkage": "Enables 'tight dimensional tolerances' — cold drawing/rolling through carbide dies achieves ±0.02 mm repeatability bar-to-bar",
-      "constraints": ["Max cross-section 2,500 mm²", "Requires hot-rolled pre-form"]
+      "constraints": [
+        "Limited to small-to-medium cross-sections; large profiles require hot rolling instead",
+        "Requires a hot-rolled pre-form as input material; cannot start from billet directly"
+      ]
     },
     {
       "id": "C3",
       "name": "Selective induction surface hardening",
       "type": "core",
+      "description": "ZOLLERN applies induction hardening to selectively harden the surface of finished steel profiles to 58–64 HRC while retaining a tough, ductile core beneath. The hardening depth is controllable from 0.5 to 5 mm, allowing the profile's mechanical response to be tuned to the specific wear and impact loads of the application. This in-house capability — combined with geometry and precision forming — means ZOLLERN can deliver a fully functionalised profile in a single supply chain step instead of requiring the customer to source hardening externally.",
       "fpLinkage": "Enables 'selectable surface hardness' — produces 58–64 HRC surface with ductile core, controllable depth 0.5–5 mm",
-      "constraints": ["Requires ≥0.35% C content", "Max cross-section 4,000 mm²", "Part length 2,200–9,000 mm"]
+      "constraints": [
+        "Only applicable to medium/high-carbon steels; low-carbon and austenitic stainless grades cannot be hardened this way",
+        "Limited to profiles below a maximum cross-sectional area; very large cross-sections exceed induction equipment capacity",
+        "Part length must fall within the process window; very short or very long pieces require special handling"
+      ]
     },
     {
       "id": "C4",
       "name": "Near-net-shape forming",
       "type": "core",
+      "description": "ZOLLERN produces profiles whose cross-section closely matches the final part geometry, so the customer receives material that is already 'near' the finished shape and requires only light machining. This eliminates 40–80% of the material that would otherwise be machined away from a standard bar, translating directly into lower input material cost, shorter cycle times, and reduced tool wear for the customer. The capability is enabled by the custom die engineering competence (C1) and becomes a structural cost advantage that grows with part complexity.",
       "fpLinkage": "Enables '40–80% machining waste elimination' — profile cross-section closely matches final part geometry",
-      "constraints": ["Minimum batch ~100 kg to amortize die setup", "Geometry locked once die is cut"]
+      "constraints": [
+        "Economics require minimum production volumes; not viable for prototype or single-piece quantities",
+        "Profile geometry is fixed once the die is cut; design changes require new tooling"
+      ]
     },
     {
       "id": "C5",
       "name": "Multi-alloy grade processing",
       "type": "core",
+      "description": "ZOLLERN can process a broad spectrum of ferrous alloys — carbon, alloy, bearing, spring, and tool steels — through a common equipment base, allowing a single supplier relationship to cover diverse application requirements across a customer's portfolio. This breadth is underpinned by accumulated metallurgical knowledge about how each grade behaves during cold forming, heat treatment, and hardening, and by the supplier qualification infrastructure that covers a wide range of certified input materials. For customers consolidating supply, the ability to source multiple alloy families from one vendor with consistent quality management is a meaningful switching-cost advantage.",
       "fpLinkage": "Enables supply across diverse application requirements — carbon, alloy, bearing, spring, tool steels processable through common equipment",
-      "constraints": ["New grade qualification takes 3–6 months", "Steel and stainless only — no Al, Ti, non-ferrous"]
+      "constraints": [
+        "New material grades require a qualification period before production clearance",
+        "Limited to ferrous alloys; non-ferrous metals such as aluminium, titanium, and copper require different process routes"
+      ]
     },
     {
       "id": "C6",
       "name": "Hot rolling of large cross-sections",
       "type": "supporting",
+      "description": "ZOLLERN uses hot rolling from billet to produce steel profiles with large cross-sections that exceed the capacity of cold-forming equipment, enabling bar lengths up to 12 m and section areas up to 7,650 mm². This capability serves as the necessary first stage for large-format profiles that subsequently undergo cold finishing, and it allows ZOLLERN to cover the full range from small precision profiles to large structural sections within a single facility. While hot rolling itself is a standard industry process, its integration with ZOLLERN's cold finishing and die engineering capabilities creates a unified production pathway that eliminates inter-supplier handoffs for the customer.",
       "fpLinkage": "Bulk forming from billet for large profiles (100–7,650 mm²); enables bar lengths up to 12 m",
-      "constraints": ["Lower precision ±0.5 mm", "Requires cold finishing for tight tolerances"]
+      "constraints": [
+        "Produces wider dimensional tolerances than cold finishing; achieves only ±0.5 mm without a subsequent cold-forming step",
+        "Hot-rolled profiles require downstream cold finishing to reach precision tolerances"
+      ]
     },
     {
       "id": "C7",
       "name": "Mechanical post-processing",
       "type": "supporting",
+      "description": "ZOLLERN operates CNC cutting, drilling, milling, and grinding to transform semi-finished profiles into fully machined Fertigteile (finished parts) that are ready to install. This extends ZOLLERN's value chain from material supplier to parts supplier, allowing customers to outsource the entire sequence from raw steel through finished geometry to a single source. The capability is most compelling when combined with custom profile geometry (C1) and near-net-shape forming (C4), because the reduced machining stock from C4 makes the machining step faster and cheaper than it would be starting from standard bar.",
       "fpLinkage": "CNC cutting, drilling, milling, grinding transforms profiles into finished parts (Fertigteile)",
-      "constraints": ["Adds cost and lead time", "Competes with customer in-house machining"]
+      "constraints": [
+        "Adds lead time and cost relative to supplying semi-finished profiles; only economical when the customer values single-source supply",
+        "Overlaps with customer in-house machining capacity, which can create make-or-buy resistance in procurement"
+      ]
     },
     {
       "id": "C8",
       "name": "Heat treatment",
       "type": "supporting",
+      "description": "ZOLLERN performs bulk heat treatment — normalising, quenching and tempering, and case hardening — to achieve specified mechanical properties in the steel profile before or after forming. This capability ensures that material delivered to the customer meets the required strength, toughness, and hardness profile for the end application, and avoids the need for the customer to arrange external treatment. Although heat treatment is available at many steel service centres, having it integrated within the same facility as forming and precision finishing reduces handling, maintains traceability, and keeps process parameters consistent.",
       "fpLinkage": "Normalizing, quenching & tempering, case hardening to achieve target mechanical properties",
-      "constraints": ["Standard capability — not differentiating vs. competitors"]
+      "constraints": [
+        "Standard capability widely available in the market; does not differentiate ZOLLERN versus competitors on its own",
+        "Value is primarily in integration with the rest of the production chain rather than in the heat treatment step itself"
+      ]
     },
     {
       "id": "C9",
       "name": "Traceability & automotive quality certification",
       "type": "supporting",
+      "description": "ZOLLERN holds IATF 16949 automotive quality certification and issues EN 10204 Type 3.1 material test certificates, providing the documentation chain required to supply regulated industries including automotive, aerospace, medical devices, and defence. This certification infrastructure creates a compliance gateway that many smaller profile manufacturers cannot or choose not to maintain, effectively limiting the competitive pool for ZOLLERN's regulated-market customers. Beyond the certificates themselves, the associated process discipline — FMEA, PPAP, control plans — raises the baseline quality consistency across ZOLLERN's entire production.",
       "fpLinkage": "IATF 16949 + EN 10204 3.1 enable supply to regulated markets (automotive, aerospace, medical, defense)",
-      "constraints": ["Ongoing audit compliance cost", "Not all markets require this"]
+      "constraints": [
+        "Maintaining certification requires continuous audit compliance investment; the overhead is fixed regardless of volume from regulated markets",
+        "Certification is a threshold requirement — it qualifies ZOLLERN to bid, but does not differentiate the offer once the threshold is cleared"
+      ]
     }
   ],
   "combinations": [
     {
       "ids": ["C1", "C2"],
       "name": "Custom precision profiles",
-      "targetApplications": "Linear guides, elevator rails, firearms components, pump components — any unit requiring custom-geometry precision steel bars"
+      "targetApplications": "Linear guides, elevator rails, firearms components, pump components — any unit requiring custom-geometry precision steel bars",
+      "distinctContributions": {
+        "C1": "Provides the custom geometry design that defines the profile's unique cross-section, matching the customer's functional requirement without downstream rework",
+        "C2": "Delivers IT8 dimensional precision (±0.02 mm) that makes the custom geometry usable as a precision blank without further grinding or machining"
+      },
+      "compoundDescription": "Custom precision profiles combine bespoke geometry with IT8 tolerances in a single manufacturing step — something neither standard bar stock (no custom geometry) nor hot-rolled profiles (no precision) can achieve. This compound capability is ZOLLERN's primary value proposition for guide rail, slideway, and precision blank applications where both shape and dimensional accuracy are non-negotiable."
     },
     {
       "ids": ["C1", "C2", "C3"],
       "name": "Custom precision hardened profiles",
-      "targetApplications": "Linear motion guides, machine tool slideways, hydraulic cylinder rods — units requiring hardened running surfaces"
+      "targetApplications": "Linear motion guides, machine tool slideways, hydraulic cylinder rods — units requiring hardened running surfaces",
+      "distinctContributions": {
+        "C1": "Defines the custom cross-section geometry matched to the functional running or bearing surface of the application",
+        "C2": "Ensures the profile enters the hardening step with IT8 tolerances, preserving dimensional integrity through the thermal process",
+        "C3": "Adds 58–64 HRC surface hardness at controlled depth, creating the wear-resistant contact surface while retaining a tough core"
+      },
+      "compoundDescription": "Custom precision hardened profiles deliver geometry, tolerance, and surface hardness as a single-source supply — an integration that would otherwise require the customer to manage three separate process steps across multiple suppliers. For linear motion and sliding-contact applications, this compound capability removes the supply chain complexity that is the primary reason customers tolerate higher unit prices."
     },
     {
       "ids": ["C4", "C5"],
       "name": "Near-net-shape multi-alloy",
-      "targetApplications": "Any high-volume application currently machined from bar stock where near-net-shape offers >30% material savings at ≥100 kg/batch"
+      "targetApplications": "Any high-volume application currently machined from bar stock where near-net-shape offers >30% material savings at ≥100 kg/batch",
+      "distinctContributions": {
+        "C4": "Eliminates 40–80% of machining waste by shaping the profile cross-section close to the final part geometry before any cutting begins",
+        "C5": "Extends the near-net-shape benefit across the customer's full alloy portfolio — bearing steel, spring steel, tool steel — without requiring separate supplier relationships per grade"
+      },
+      "compoundDescription": "Near-net-shape forming across multiple alloy grades means a customer consolidating bar stock procurement can redirect a single RFQ to ZOLLERN and receive optimised pre-forms in every material family they use. The compound saving is multiplicative: each alloy substituted from bar to near-net-shape delivers its own material and machining cost reduction."
     },
     {
       "ids": ["C1", "C4", "C7"],
       "name": "Complete finished parts",
-      "targetApplications": "Fertigteile — outsourced end-to-end part production from die design through machining to ready-to-install component"
+      "targetApplications": "Fertigteile — outsourced end-to-end part production from die design through machining to ready-to-install component",
+      "distinctContributions": {
+        "C1": "Designs the custom profile geometry that already incorporates the part's functional cross-section, so machining starts from the optimal pre-form",
+        "C4": "Reduces the machining stock to a minimum through near-net-shape forming, making the downstream machining step fast and material-efficient",
+        "C7": "Completes the part to final drawing dimensions via CNC operations, delivering a ready-to-install component that the customer does not need to touch"
+      },
+      "compoundDescription": "The complete-finished-parts compound capability converts ZOLLERN from a materials supplier into a parts-on-demand manufacturer — the customer sends a drawing and receives a finished component. For OEMs looking to reduce their internal machining footprint or qualify a second-source parts supplier, this end-to-end capability removes the need to coordinate die suppliers, profile rollers, and machine shops separately."
     },
     {
       "ids": ["C2", "C3", "C9"],
       "name": "Certified precision hardened supply",
-      "targetApplications": "Automotive OEM, defense, medical device, aerospace — traceable, qualified for regulated industries"
+      "targetApplications": "Automotive OEM, defense, medical device, aerospace — traceable, qualified for regulated industries",
+      "distinctContributions": {
+        "C2": "Provides the dimensional precision baseline that regulated applications require before hardening, ensuring the profile meets engineering tolerances at incoming inspection",
+        "C3": "Adds the controlled-depth surface hardness that wear and fatigue specifications in regulated industries demand, with a process that is repeatable and auditable",
+        "C9": "Wraps precision and hardness in the IATF 16949 / EN 10204 3.1 documentation chain, enabling the supply to pass supplier qualification without additional third-party testing"
+      },
+      "compoundDescription": "Certified precision hardened supply is the only compound capability in the register that opens regulated-market supply chains — without C9, the physical performance of C2 and C3 cannot be documented to the standard that automotive, aerospace, or medical procurement requires. Together, the three capabilities create a qualification-ready offer that shrinks the approved-supplier list to a very short set of competitors who have invested in all three."
     }
   ],
   "trackATargets": [
